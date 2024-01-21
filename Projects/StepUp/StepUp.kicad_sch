@@ -1,0 +1,71 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid e0cca1c7-c263-49eb-8c40-74000ebe5285)
+
+  (paper "A4")
+
+  (title_block
+    (title "System diagram")
+    (rev "v0.1")
+    (company "Samio")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 125.73 80.01) (size 39.37 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid 3af138f5-65b6-4464-96c0-d1b764f3b0d1)
+    (property "Sheetname" "MCU" (at 125.73 79.2984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "microcontroller.kicad_sch" (at 125.73 111.0746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "StepUp"
+        (path "/e0cca1c7-c263-49eb-8c40-74000ebe5285" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 50.8 85.09) (size 33.02 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid e827d0b4-d448-43f9-95b8-3deddd7cd4ee)
+    (property "Sheetname" "Power" (at 50.8 84.3784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 50.8 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "StepUp"
+        (path "/e0cca1c7-c263-49eb-8c40-74000ebe5285" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 199.39 85.09) (size 39.37 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7)
+    (property "Sheetname" "Motor Driver" (at 199.39 84.3784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "motor_driver.kicad_sch" (at 199.39 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "StepUp"
+        (path "/e0cca1c7-c263-49eb-8c40-74000ebe5285" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
