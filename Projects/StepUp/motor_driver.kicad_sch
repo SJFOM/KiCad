@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "6f0777da-6e37-46ed-8c3a-b4fc3a792d26")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "Motor Driver")
 		(rev "v0.1")
@@ -520,7 +520,7 @@
 	)
 	(symbol
 		(lib_id "2024-01-13_14-51-57:TMC2300-LA")
-		(at 116.84 91.44 0)
+		(at 170.18 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -529,7 +529,7 @@
 		(fields_autoplaced yes)
 		(uuid "c38f41ee-fb89-4763-9297-2040c9382d1d")
 		(property "Reference" "U1"
-			(at 147.32 81.28 0)
+			(at 200.66 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -537,7 +537,7 @@
 			)
 		)
 		(property "Value" "TMC2300-LA"
-			(at 147.32 83.82 0)
+			(at 200.66 125.73 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -545,7 +545,7 @@
 			)
 		)
 		(property "Footprint" "footprints:QFN20_3x3_TRI-L"
-			(at 116.84 91.44 0)
+			(at 170.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -555,7 +555,7 @@
 			)
 		)
 		(property "Datasheet" "TMC2300-LA"
-			(at 116.84 91.44 0)
+			(at 170.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -565,7 +565,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 91.44 0)
+			(at 170.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)

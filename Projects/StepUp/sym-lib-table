@@ -151,4 +151,6 @@
   (lib (name "dk_TVS-Diodes")(type "Legacy")(uri "${KICAD_LIBRARIES_DIR}/digikey-kicad-library/digikey-symbols/dk_TVS-Diodes.lib")(options "")(descr ""))
   (lib (name "dk_TVS-Mixed-Technology")(type "Legacy")(uri "${KICAD_LIBRARIES_DIR}/digikey-kicad-library/digikey-symbols/dk_TVS-Mixed-Technology.lib")(options "")(descr ""))
   (lib (name "dk_USB-DVI-HDMI-Connectors")(type "Legacy")(uri "${KICAD_LIBRARIES_DIR}/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_RP2040")(type "Legacy")(uri "${KICAD_LIBRARIES_DIR}/RP2040/MCU_RaspberryPi_RP2040.lib")(options "")(descr ""))
+  (lib (name "1043P")(type "KiCad")(uri "${KICAD_LIBRARIES_DIR}/Keystone/1043P.kicad_sym")(options "")(descr ""))
 )

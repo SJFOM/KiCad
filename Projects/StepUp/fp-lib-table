@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "digikey-footprints")(type "KiCad")(uri "${KICAD_LIBRARIES_DIR}/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
   (lib (name "footprints")(type "KiCad")(uri "${KICAD_LIBRARIES_DIR}/Ultra Librarian/footprints.pretty")(options "")(descr ""))
+  (lib (name "Keystone")(type "KiCad")(uri "${KICAD_LIBRARIES_DIR}/Keystone/footprints.pretty")(options "")(descr ""))
+  (lib (name "RP2040_minimal_r2")(type "KiCad")(uri "${KICAD_LIBRARIES_DIR}/RP2040/RP2040_minimal_r2.pretty")(options "")(descr ""))
 )

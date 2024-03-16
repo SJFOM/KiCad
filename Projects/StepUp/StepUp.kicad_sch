@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "e0cca1c7-c263-49eb-8c40-74000ebe5285")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "System diagram")
 		(rev "v0.1")
@@ -11,7 +11,7 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 125.73 80.01)
+		(at 190.5 123.19)
 		(size 39.37 30.48)
 		(fields_autoplaced yes)
 		(stroke
@@ -23,7 +23,7 @@
 		)
 		(uuid "3af138f5-65b6-4464-96c0-d1b764f3b0d1")
 		(property "Sheetname" "MCU"
-			(at 125.73 79.2984 0)
+			(at 190.5 122.4784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 125.73 111.0746 0)
+			(at 190.5 154.2546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49,7 +49,7 @@
 		)
 	)
 	(sheet
-		(at 50.8 85.09)
+		(at 115.57 128.27)
 		(size 33.02 17.78)
 		(fields_autoplaced yes)
 		(stroke
@@ -61,7 +61,7 @@
 		)
 		(uuid "e827d0b4-d448-43f9-95b8-3deddd7cd4ee")
 		(property "Sheetname" "Power"
-			(at 50.8 84.3784 0)
+			(at 115.57 127.5584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70,7 +70,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 50.8 103.4546 0)
+			(at 115.57 146.6346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -87,7 +87,7 @@
 		)
 	)
 	(sheet
-		(at 199.39 85.09)
+		(at 264.16 128.27)
 		(size 39.37 17.78)
 		(fields_autoplaced yes)
 		(stroke
@@ -99,7 +99,7 @@
 		)
 		(uuid "f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7")
 		(property "Sheetname" "Motor Driver"
-			(at 199.39 84.3784 0)
+			(at 264.16 127.5584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -108,7 +108,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_driver.kicad_sch"
-			(at 199.39 103.4546 0)
+			(at 264.16 146.6346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
