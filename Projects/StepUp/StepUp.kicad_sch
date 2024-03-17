@@ -12,7 +12,7 @@
 	(lib_symbols)
 	(sheet
 		(at 190.5 123.19)
-		(size 39.37 30.48)
+		(size 39.37 58.42)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -23,16 +23,16 @@
 		)
 		(uuid "3af138f5-65b6-4464-96c0-d1b764f3b0d1")
 		(property "Sheetname" "MCU"
-			(at 190.5 122.4784 0)
+			(at 190.5 121.8434 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 190.5 154.2546 0)
+			(at 190.5 182.1946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,6 +44,44 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 157.48)
+		(size 33.02 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "62dd6998-8b69-42c0-9c2f-b18953d44bc4")
+		(property "Sheetname" "User Input"
+			(at 115.57 156.1334 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "user_input.kicad_sch"
+			(at 115.57 177.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
+					(page "6")
 				)
 			)
 		)
@@ -61,10 +99,10 @@
 		)
 		(uuid "e827d0b4-d448-43f9-95b8-3deddd7cd4ee")
 		(property "Sheetname" "Power"
-			(at 115.57 127.5584 0)
+			(at 115.57 126.9234 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 				(justify left bottom)
 			)
@@ -87,7 +125,7 @@
 		)
 	)
 	(sheet
-		(at 264.16 128.27)
+		(at 264.16 125.73)
 		(size 39.37 17.78)
 		(fields_autoplaced yes)
 		(stroke
@@ -99,16 +137,16 @@
 		)
 		(uuid "f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7")
 		(property "Sheetname" "Motor Driver"
-			(at 264.16 127.5584 0)
+			(at 264.16 124.3834 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 2.54 2.54)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "motor_driver.kicad_sch"
-			(at 264.16 146.6346 0)
+			(at 264.16 144.0946 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -424,6 +424,10 @@
     [
       "e827d0b4-d448-43f9-95b8-3deddd7cd4ee",
       "Power"
+    ],
+    [
+      "62dd6998-8b69-42c0-9c2f-b18953d44bc4",
+      "User Input"
     ]
   ],
   "text_variables": {}

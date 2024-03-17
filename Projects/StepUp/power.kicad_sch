@@ -2979,7 +2979,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 68.58) (xy 161.29 69.85)
+			(xy 161.29 68.58) (xy 161.29 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3279,43 +3279,43 @@
 			)
 		)
 		(pin "10"
-			(uuid "fc0d6e91-afc8-4cb6-aa89-e6406f9a5442")
+			(uuid "f524b468-e000-4a5a-95a7-4d997f67d45c")
 		)
 		(pin "5"
-			(uuid "96b8c724-805d-44a5-aa79-fa7c7ac55268")
+			(uuid "c6c57b57-e4d8-4c58-a0d2-fab55999743c")
 		)
 		(pin "7"
-			(uuid "59464694-4685-4fa7-8f3e-e69dd228dfc3")
+			(uuid "a4aa9504-6389-420e-a0f1-1d69e489e2e8")
 		)
 		(pin "9"
-			(uuid "144b7419-2acf-42d6-bb72-9a6ccfb4e451")
+			(uuid "3f071d25-e05a-48e7-8c54-0ea4bdeb5bde")
 		)
 		(pin "11"
-			(uuid "83ea8d2c-b3e3-482c-8009-6e7767571109")
+			(uuid "1e5e1ba5-0c0c-41a1-ab46-10e1f2ce33e3")
 		)
 		(pin "12"
-			(uuid "7f5c6e44-c174-4774-86ae-d5c966da9238")
+			(uuid "d83a70f0-5437-4d7c-9a8a-780d82ed084b")
 		)
 		(pin "13"
-			(uuid "2160117a-6449-4993-9760-526018ed8dda")
+			(uuid "2ad397b2-23e2-45f5-b679-5354ddb2e65d")
 		)
 		(pin "1"
-			(uuid "af736098-6c4b-48a6-bfe4-ad0f538a653f")
+			(uuid "ce185072-7380-4a0b-affa-6f3c4a1cdc9c")
 		)
 		(pin "3"
-			(uuid "015088a8-6b96-463d-b5d0-6a6fccf1d521")
+			(uuid "070c9772-7af9-4f27-a088-58cb25c22d1f")
 		)
 		(pin "6"
-			(uuid "da515a08-a749-4d62-8ea8-895e6c1e990b")
+			(uuid "2296d6f2-7be2-4579-a3fe-5044734686cf")
 		)
 		(pin "8"
-			(uuid "c3c8571d-4511-4230-b5ee-435300ced7fd")
+			(uuid "c309b81b-6fe5-4358-b512-866d27a427ab")
 		)
 		(pin "2"
-			(uuid "aa7b95b2-f77e-48b0-b420-fd21aa132be1")
+			(uuid "98a489ff-8e9d-4211-945f-70c78856c118")
 		)
 		(pin "4"
-			(uuid "bacd18b2-6b52-4e33-9e20-075264bdf14e")
+			(uuid "38a6a75a-a1d9-48d1-a238-fe76bac56d21")
 		)
 		(instances
 			(project "StepUp"
@@ -3381,22 +3381,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "22916706-9ee5-4b32-9344-fcdcbf7e6770")
+			(uuid "bec4a8b6-3b86-4044-b762-a8f80f9fc5aa")
 		)
 		(pin "2"
-			(uuid "13913f2a-4d3f-437e-b5bb-5012268225f9")
+			(uuid "5e4fc50e-1877-4123-8455-16ddd1ce2d47")
 		)
 		(pin "3"
-			(uuid "384698c3-4a84-46fb-a8ab-66462c60510b")
+			(uuid "88dcfde1-fb85-40fe-ae89-b5f10e4a194d")
 		)
 		(pin "4"
-			(uuid "8586fc25-7a99-49ee-88dc-5fb0fe6f82f4")
+			(uuid "cb59cc6b-3686-436e-85e2-f698d18d5018")
 		)
 		(pin "5"
-			(uuid "3f3a1b60-0e93-4fe1-9eb1-ec616060e0e9")
+			(uuid "66d5d0d2-908a-47e1-9a41-b01f7d424e4b")
 		)
 		(pin "6"
-			(uuid "12a7aee3-a14c-4bcc-8ff3-ae97ba25c459")
+			(uuid "c77486b3-1f5c-4d3d-a5c3-24b5f708ffd1")
 		)
 		(instances
 			(project "StepUp"
@@ -3462,7 +3462,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b145f55-54f1-480c-84b2-d97123d1e6af")
+			(uuid "62dcb875-1f3d-41b2-b855-d842a3f90c32")
 		)
 		(instances
 			(project "StepUp"
@@ -3535,10 +3535,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "13a4ab69-f6bf-4ac5-94de-1bb776dc4c81")
+			(uuid "10f521ee-0edf-4dd4-9485-984d88f5a428")
 		)
 		(pin "1"
-			(uuid "aaba50aa-8218-4c88-947a-512b2e17976d")
+			(uuid "3a99da76-bcc3-49ac-9811-ecfd3f4efe7e")
 		)
 		(instances
 			(project "StepUp"
@@ -3610,10 +3610,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "01c52144-cfe7-4cf5-b983-cf6571a1a982")
+			(uuid "b2af4693-3ebc-4ee5-bda5-313260cbb60f")
 		)
 		(pin "1"
-			(uuid "9153caa1-8ca8-43a4-b99b-f96353d42e89")
+			(uuid "23baa3c8-076c-450d-a67a-3229eda5be97")
 		)
 		(instances
 			(project "StepUp"
@@ -3679,10 +3679,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ccc149a6-7641-45ac-885f-caaaaf5f3156")
+			(uuid "12167985-7f71-4707-82fc-5450164b0a30")
 		)
 		(pin "2"
-			(uuid "91226153-7c6e-49f7-b6d8-7769b10f2b8f")
+			(uuid "0e15a446-13b1-47d4-abd4-a1e7c0c266dc")
 		)
 		(instances
 			(project "StepUp"
@@ -3756,10 +3756,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "1150b6de-5a2a-4182-9c7f-ebe433ffefc6")
+			(uuid "8e49482d-74f4-45e0-a064-1a5af2d21842")
 		)
 		(pin "1"
-			(uuid "89eb6686-437d-4bca-816c-110a39e950df")
+			(uuid "21fc8c90-684b-41ff-ae90-3fa74e80cf9d")
 		)
 		(instances
 			(project "StepUp"
@@ -3842,10 +3842,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8b9583ab-bb90-45c2-a5a1-ad2477c0a4b1")
+			(uuid "da6653de-6993-4a6e-a636-27036fdb5a2d")
 		)
 		(pin "1"
-			(uuid "c61617c9-94ac-410f-a324-f0f986ffde88")
+			(uuid "eed0799e-528d-433e-b309-1c583ad04b68")
 		)
 		(instances
 			(project "StepUp"
@@ -3912,10 +3912,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "1e770d05-d05c-4ffe-8513-c8c0f117a488")
+			(uuid "6b906a02-47a6-4f58-ad53-0e519140d2bf")
 		)
 		(pin "1"
-			(uuid "eb5b3083-1a78-463a-bc5d-b84f90b443c6")
+			(uuid "f69540f7-fe8c-47b1-90d9-a09c45c2b44c")
 		)
 		(instances
 			(project "StepUp"
@@ -3981,7 +3981,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f42840b8-3047-4b88-b65f-393ee835064d")
+			(uuid "1d4e0b17-1309-488f-bd29-3785c80c774e")
 		)
 		(instances
 			(project "StepUp"
@@ -4055,10 +4055,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f3e4a590-b6d8-404e-ba06-4894acd8b6eb")
+			(uuid "712f71c8-63ef-40e1-bda7-05c68040b214")
 		)
 		(pin "1"
-			(uuid "855659f5-249e-4d71-9065-894b71eb8b75")
+			(uuid "92918247-1ee5-415b-987f-0f02e000d35c")
 		)
 		(instances
 			(project "StepUp"
@@ -4131,10 +4131,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b53bfa07-9c7c-46b7-a7d9-3810b21ff546")
+			(uuid "91f92d02-e6bc-4f43-aac5-7415efea4d44")
 		)
 		(pin "2"
-			(uuid "7e0e86bf-d64c-4fd7-8274-b5d6b2a7ed0f")
+			(uuid "ebca12f6-55ff-4325-87e0-47a783c27c54")
 		)
 		(instances
 			(project "StepUp"
@@ -4200,7 +4200,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "47084390-430f-4969-8dd4-b7ace96c8c79")
+			(uuid "c5d76eb9-6f83-4351-9e86-091d4853ea7e")
 		)
 		(instances
 			(project "StepUp"
@@ -4265,7 +4265,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ff26c4e-c206-4dc4-972b-3700f77c28ae")
+			(uuid "bd78cdd2-9b22-4e2c-8a44-c0f7085337f5")
 		)
 		(instances
 			(project "StepUp"
@@ -4331,7 +4331,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6f10747e-c36b-4f77-9e64-ccd8a0159543")
+			(uuid "93cd3a64-22b9-4e75-b1e9-84d9a9fb48c4")
 		)
 		(instances
 			(project "StepUp"
@@ -4406,10 +4406,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef24ff8a-4d0b-42b4-ad7b-a8968eebef47")
+			(uuid "99dacaf1-b339-4264-9e2d-51423138a0b9")
 		)
 		(pin "2"
-			(uuid "7bf105e1-6f90-46b5-b042-f73b7269fae0")
+			(uuid "e6c9c873-9101-4e75-8c08-5fc7285e59b0")
 		)
 		(instances
 			(project "StepUp"
@@ -4475,7 +4475,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "cb9bd86c-71da-44bc-aa6f-f17e9e62cca2")
+			(uuid "7d7a9129-d88c-4c60-baca-c8bb76e67462")
 		)
 		(instances
 			(project "StepUp"
@@ -4541,7 +4541,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3af99191-93c7-4e2c-a0c7-b8d75eb3404f")
+			(uuid "936fe478-cd8c-4b90-a98c-bbdde50fe96f")
 		)
 		(instances
 			(project "StepUp"
@@ -4615,10 +4615,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8724a982-5d03-454e-8eef-778494e69824")
+			(uuid "ecb85c64-8ab3-4eb0-a5a9-badddad5c133")
 		)
 		(pin "1"
-			(uuid "b6bd2d84-1507-4511-ae6f-6b7a79faaf90")
+			(uuid "d1ec18c6-64ae-4d61-b4b4-020731ebad5a")
 		)
 		(instances
 			(project "StepUp"
@@ -4684,7 +4684,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "84cdcac9-7ef4-47d7-9141-332dccbd96f2")
+			(uuid "283b533f-0deb-45c1-9ea7-9582d2059921")
 		)
 		(instances
 			(project "StepUp"
@@ -4750,7 +4750,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1483e25-6dc9-4e0f-8fdf-099c614da505")
+			(uuid "32856d34-22ad-4bb7-bc35-c70971394ccc")
 		)
 		(instances
 			(project "StepUp"
@@ -4816,7 +4816,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "36aaab7f-2615-4242-8074-b694ee25c8aa")
+			(uuid "782e05cf-a1cf-45af-a9e2-c4e36252b9ab")
 		)
 		(instances
 			(project "StepUp"
@@ -4883,10 +4883,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "9af82279-bbb9-43b3-bc9c-9954422d85fc")
+			(uuid "f6be99a6-6788-4b38-93f7-f1bd59d0d99a")
 		)
 		(pin "1"
-			(uuid "d4b96145-fad2-4f9c-98dc-3509c572c959")
+			(uuid "28c4ad22-13c6-460b-a0fc-e6c771b3dec1")
 		)
 		(instances
 			(project "StepUp"
@@ -4960,10 +4960,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "514b916d-0cca-4f64-bd88-89568646a669")
+			(uuid "62f9b330-f5fa-45cc-87d5-f68ef3426146")
 		)
 		(pin "1"
-			(uuid "bdc95315-d0e5-46d9-ad35-430e9a9cd071")
+			(uuid "8244b29b-f110-442e-8e89-407279d50abc")
 		)
 		(instances
 			(project "StepUp"
@@ -5028,7 +5028,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "a8e2ae41-4051-4525-9b43-9b0fcebe6af6")
+			(uuid "47eb8ccb-9a6d-41f1-9e9d-7c5c7f9cf0b4")
 		)
 		(instances
 			(project "StepUp"
@@ -5102,10 +5102,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "cd868be2-04d7-44e4-9810-e2c6b8a34133")
+			(uuid "828fb31d-0860-4332-8f22-db10b1d9829d")
 		)
 		(pin "1"
-			(uuid "c8fe4342-13cd-49a2-bcf9-7258482e443e")
+			(uuid "24c09fd4-df0d-42ce-b866-1346de1e68d4")
 		)
 		(instances
 			(project "StepUp"
@@ -5169,13 +5169,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "cea3a82c-b64b-4e86-997f-9420a51b99b4")
+			(uuid "88fb2a47-e977-4792-96be-990f6b2c60b7")
 		)
 		(pin "2"
-			(uuid "629917f6-f308-473f-a69a-e4e43cfdc335")
+			(uuid "59379eec-5244-4cf1-9516-81d4780bf7cf")
 		)
 		(pin "3"
-			(uuid "6df832f8-bbf5-4365-877a-366d75194dea")
+			(uuid "10944f8d-d071-4c70-90e3-3c4daa00dc6f")
 		)
 		(instances
 			(project "StepUp"
@@ -5241,10 +5241,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b8332b9d-e53a-4c04-864e-1dd853969919")
+			(uuid "06dc525a-2b66-4637-9284-404c4716e608")
 		)
 		(pin "2"
-			(uuid "632ffa5a-da3e-4f81-bac9-910449487134")
+			(uuid "74d9c10a-77fb-41ca-a8f6-f5889368d573")
 		)
 		(instances
 			(project "StepUp"
@@ -5450,10 +5450,10 @@
 			)
 		)
 		(pin "N"
-			(uuid "e963fef5-33d1-4dd7-ac85-fe4adab43d86")
+			(uuid "8425136b-2d54-49a7-851e-0b8f511e4157")
 		)
 		(pin "P"
-			(uuid "83b177dc-b0d3-46ba-bde0-42ff48da8205")
+			(uuid "9e5b3118-fdef-48bc-bcb0-0773db332e55")
 		)
 		(instances
 			(project "StepUp"
@@ -5466,7 +5466,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 69.85 0)
+		(at 161.29 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5474,7 +5474,7 @@
 		(dnp no)
 		(uuid "e6c53e89-25f8-4412-a9e3-bedc236a9fea")
 		(property "Reference" "#PWR016"
-			(at 161.29 76.2 0)
+			(at 161.29 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5483,7 +5483,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.48 71.12 0)
+			(at 157.48 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5491,7 +5491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 69.85 0)
+			(at 161.29 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5500,7 +5500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 69.85 0)
+			(at 161.29 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,7 +5509,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 69.85 0)
+			(at 161.29 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5518,7 +5518,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "af8057a7-8230-44b0-9015-827e3724ba8d")
+			(uuid "8ec578ac-2643-4e37-b494-556dfdeca71c")
 		)
 		(instances
 			(project "StepUp"
@@ -5583,7 +5583,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f839d5a-2709-4e42-8501-43ffcec82a44")
+			(uuid "e994f7d5-d42b-49f2-973a-1e67c7881804")
 		)
 		(instances
 			(project "StepUp"
@@ -5648,7 +5648,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "87382db3-9e5d-4e6d-8d1b-6ffae922f1f9")
+			(uuid "c9af01e3-2a3d-4956-92d9-5059f6ff41e9")
 		)
 		(instances
 			(project "StepUp"
@@ -5722,10 +5722,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "13d5cee9-8340-4280-b5c8-d338bf8511d0")
+			(uuid "f123293e-a654-4719-a83f-9c96d0796352")
 		)
 		(pin "1"
-			(uuid "3526d295-59ae-47b2-8f36-2285e5227967")
+			(uuid "f8fb8014-bbcd-4e7e-8511-2e184363df9f")
 		)
 		(instances
 			(project "StepUp"
@@ -5799,10 +5799,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "01aa668f-e50d-4396-bef4-1b068c7d3717")
+			(uuid "6d3c1417-1382-4cf6-8584-1ddb01e0aa26")
 		)
 		(pin "2"
-			(uuid "1aa3a407-10e6-4abb-8772-d15dcad32451")
+			(uuid "1fc47763-7eb8-4657-a16c-2795cd859f66")
 		)
 		(instances
 			(project "StepUp"
@@ -5876,10 +5876,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5ebcc199-b123-4810-a7d5-272280a0b823")
+			(uuid "79417b9c-8ce4-44e7-9161-f6e6b10acc56")
 		)
 		(pin "1"
-			(uuid "c45e8299-78a1-41a4-80ad-2fdbd4cdbffe")
+			(uuid "969664b5-4ae6-4fcd-8cd1-51dea57c61f1")
 		)
 		(instances
 			(project "StepUp"
@@ -5944,7 +5944,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "acedb5b5-9a63-4221-9dba-1a730c4e1e52")
+			(uuid "4bc7427f-4f0c-4a17-a8dd-8aac143d6d71")
 		)
 		(instances
 			(project "StepUp"
