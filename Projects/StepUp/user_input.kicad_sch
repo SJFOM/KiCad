@@ -421,7 +421,7 @@
 	)
 	(symbol
 		(lib_id "COM-09032:COM-09032")
-		(at 115.57 130.81 0)
+		(at 200.66 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -430,7 +430,7 @@
 		(fields_autoplaced yes)
 		(uuid "71e45816-398e-41d0-aea9-7eea67487ebb")
 		(property "Reference" "U6"
-			(at 124.46 130.8099 0)
+			(at 209.55 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -439,7 +439,7 @@
 			)
 		)
 		(property "Value" "COM-09032"
-			(at 124.46 133.3499 0)
+			(at 209.55 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -448,7 +448,7 @@
 			)
 		)
 		(property "Footprint" "joystick_footprints:XDCR_COM-09032"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -458,7 +458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -467,7 +467,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,7 +476,7 @@
 			)
 		)
 		(property "MF" "SparkFun Electronics"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -486,7 +486,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "30.1mm"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -496,7 +496,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -506,7 +506,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -516,7 +516,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/COM-09032/SparkFun+Electronics/view-part/?ref=eda"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -526,7 +526,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -536,7 +536,7 @@
 			)
 		)
 		(property "PARTREV" "N/A"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -546,7 +546,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/COM-09032/SparkFun+Electronics/view-part/?ref=snap"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -556,7 +556,7 @@
 			)
 		)
 		(property "MP" "COM-09032"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -566,7 +566,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=888157&manufacturer=SparkFun Electronics&part_name=COM-09032&search_term=joystick"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -576,7 +576,7 @@
 			)
 		)
 		(property "Description_1" "\nJoystick, 2 - Axis Analog (Resistive) Output\n"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -586,7 +586,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -596,7 +596,7 @@
 			)
 		)
 		(property "MANUFACTURER" "SparkFun Electronics"
-			(at 115.57 130.81 0)
+			(at 200.66 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
