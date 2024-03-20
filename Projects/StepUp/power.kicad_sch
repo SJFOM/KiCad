@@ -691,6 +691,145 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -2471,6 +2610,301 @@
 				)
 			)
 		)
+		(symbol "Transistor_FET:BSS83P"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "BSS83P"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.farnell.com/datasheets/1835997.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "-0.33A Id, -60V Vds, P-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "P-Channel MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BSS83P_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "BSS83P_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "dk_PMIC-Battery-Chargers:MCP73832T-2ACI_OT"
 			(pin_names
 				(offset 1.016)
@@ -2517,7 +2951,7 @@
 				)
 			)
 			(property "Description" "IC LI-ION/LI-POLY CTRLR SOT23-5"
-				(at 5.08 10.16 0)
+				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2568,16 +3002,6 @@
 			)
 			(property "DK_Detail_Page" "/product-detail/en/microchip-technology/MCP73832T-2ACI-OT/MCP73832T-2ACI-OTCT-ND/1979805"
 				(at 5.08 22.86 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "IC LI-ION/LI-POLY CTRLR SOT23-5"
-				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -3059,7 +3483,7 @@
 		)
 	)
 	(junction
-		(at 184.15 52.07)
+		(at 227.33 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09345b00-610b-4aee-9d05-22d5806e394e")
@@ -3071,7 +3495,7 @@
 		(uuid "0ffd90fd-c953-4127-9975-9129e8fd1efd")
 	)
 	(junction
-		(at 149.86 125.73)
+		(at 163.83 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12ac32e9-c8ad-4ea4-a273-42e78ab602c0")
@@ -3093,6 +3517,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2187c006-15bc-46e5-8ac3-8239ab7ddfbb")
+	)
+	(junction
+		(at 191.77 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28a1b388-4aea-4ec9-bb83-9b48d54d4300")
 	)
 	(junction
 		(at 115.57 227.33)
@@ -3129,6 +3559,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76aab550-cefe-45c3-999b-e90f73e450b9")
+	)
+	(junction
+		(at 294.64 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9001fb2d-8f7a-43e6-93a0-bd9cbddf2dd2")
 	)
 	(junction
 		(at 167.64 252.73)
@@ -3173,18 +3609,6 @@
 		(uuid "c6673d56-ac58-46d5-b099-0652489d75d0")
 	)
 	(junction
-		(at 148.59 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce9f14b7-308c-4edc-a937-7cd59a2fa444")
-	)
-	(junction
-		(at 106.68 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f50cb151-7feb-4a53-bf95-7e9df43944ff")
-	)
-	(junction
 		(at 88.9 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3193,6 +3617,16 @@
 	(no_connect
 		(at 99.06 62.23)
 		(uuid "446de00f-e671-45dd-99bc-a53eec00b206")
+	)
+	(wire
+		(pts
+			(xy 303.53 67.31) (xy 303.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "006178fe-6f03-47d3-8aff-8bd84c553d6e")
 	)
 	(wire
 		(pts
@@ -3233,6 +3667,16 @@
 			(type default)
 		)
 		(uuid "062a8838-7fde-4ae1-9971-48d04f5e7821")
+	)
+	(wire
+		(pts
+			(xy 294.64 62.23) (xy 295.91 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06fb26b3-edd7-4520-81ce-160d86e8e701")
 	)
 	(wire
 		(pts
@@ -3296,7 +3740,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 52.07) (xy 116.84 52.07)
+			(xy 99.06 52.07) (xy 116.84 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3316,7 +3760,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 53.34) (xy 184.15 52.07)
+			(xy 227.33 57.15) (xy 227.33 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3326,7 +3770,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 53.34) (xy 148.59 52.07)
+			(xy 285.75 52.07) (xy 303.53 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c8368cb-c4b6-4aa3-835b-f7afc0ecbc2f")
+	)
+	(wire
+		(pts
+			(xy 191.77 57.15) (xy 191.77 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3343,6 +3797,26 @@
 			(type default)
 		)
 		(uuid "2f6fa185-b121-4e05-b423-ff06667bd8a2")
+	)
+	(wire
+		(pts
+			(xy 153.67 123.19) (xy 153.67 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30d60103-f676-46da-a12a-33ebd131f8c6")
+	)
+	(wire
+		(pts
+			(xy 147.32 52.07) (xy 147.32 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34807bf3-9987-4593-9ef5-43c76d208335")
 	)
 	(wire
 		(pts
@@ -3396,7 +3870,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 60.96) (xy 148.59 62.23)
+			(xy 191.77 64.77) (xy 191.77 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3413,6 +3887,26 @@
 			(type default)
 		)
 		(uuid "4d283831-c088-40e9-aa77-f7f9e2031eb1")
+	)
+	(wire
+		(pts
+			(xy 138.43 52.07) (xy 147.32 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d73dc24-6347-4adc-a0bd-3681f1aa3284")
+	)
+	(wire
+		(pts
+			(xy 294.64 72.39) (xy 294.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510d4a9e-45d9-4022-a1d0-6b1edca311de")
 	)
 	(wire
 		(pts
@@ -3486,16 +3980,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 52.07) (xy 148.59 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61718dd6-6d2e-4f7f-9c48-5af0976e52be")
-	)
-	(wire
-		(pts
 			(xy 210.82 214.63) (xy 223.52 214.63)
 		)
 		(stroke
@@ -3513,6 +3997,16 @@
 			(type default)
 		)
 		(uuid "66f6b8ef-80a4-4b58-8b23-ea4e2de05ebe")
+	)
+	(wire
+		(pts
+			(xy 179.07 55.88) (xy 191.77 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "687970fc-f4f3-4185-a670-6146818e35b9")
 	)
 	(wire
 		(pts
@@ -3536,6 +4030,16 @@
 	)
 	(wire
 		(pts
+			(xy 303.53 69.85) (xy 320.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70369981-0465-4f7b-8b0c-d3abc9fc339c")
+	)
+	(wire
+		(pts
 			(xy 210.82 237.49) (xy 210.82 241.3)
 		)
 		(stroke
@@ -3543,6 +4047,16 @@
 			(type default)
 		)
 		(uuid "70f70536-b11d-45c1-aaff-795d60993a57")
+	)
+	(wire
+		(pts
+			(xy 135.89 49.53) (xy 135.89 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7177939c-0df4-4833-ae99-031ecabc7003")
 	)
 	(wire
 		(pts
@@ -3576,6 +4090,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 49.53) (xy 138.43 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79849538-2e7f-4c02-b14d-b502929e292c")
+	)
+	(wire
+		(pts
 			(xy 110.49 224.79) (xy 110.49 227.33)
 		)
 		(stroke
@@ -3583,16 +4107,6 @@
 			(type default)
 		)
 		(uuid "85dc2fa8-63eb-4cce-bfb7-eb7768ecd40e")
-	)
-	(wire
-		(pts
-			(xy 99.06 52.07) (xy 106.68 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88913fcc-cb14-49ee-8beb-3a014bab623a")
 	)
 	(wire
 		(pts
@@ -3613,6 +4127,26 @@
 			(type default)
 		)
 		(uuid "8b13589d-f424-4eaf-8718-6c9e66b7e9a7")
+	)
+	(wire
+		(pts
+			(xy 294.64 62.23) (xy 294.64 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c75c220-8238-4db7-9c04-1464e6d68d26")
+	)
+	(wire
+		(pts
+			(xy 278.13 62.23) (xy 284.48 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca90f1c-7e24-4aff-8ef7-82c88ba0ad42")
 	)
 	(wire
 		(pts
@@ -3656,7 +4190,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 52.07) (xy 148.59 52.07)
+			(xy 116.84 52.07) (xy 135.89 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96115c0e-69a3-4ec0-8ada-db5c1231b660")
+	)
+	(wire
+		(pts
+			(xy 191.77 55.88) (xy 201.93 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3666,7 +4210,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 52.07) (xy 184.15 50.8)
+			(xy 227.33 55.88) (xy 227.33 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3736,7 +4280,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 52.07) (xy 184.15 52.07)
+			(xy 217.17 55.88) (xy 227.33 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3796,6 +4340,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 62.23) (xy 294.64 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4914d83-c040-4063-a9d5-c28dbad08d41")
+	)
+	(wire
+		(pts
 			(xy 198.12 232.41) (xy 198.12 241.3)
 		)
 		(stroke
@@ -3803,6 +4357,16 @@
 			(type default)
 		)
 		(uuid "b7de03c0-1af6-4a2b-a908-d73816ca007d")
+	)
+	(wire
+		(pts
+			(xy 278.13 58.42) (xy 278.13 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b86bce5c-a0ef-4e76-b831-7d9eb61f96c7")
 	)
 	(wire
 		(pts
@@ -3846,7 +4410,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 125.73) (xy 149.86 125.73)
+			(xy 303.53 52.07) (xy 303.53 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce09bc7e-9533-4d6a-9bb3-615df947b06d")
+	)
+	(wire
+		(pts
+			(xy 137.16 125.73) (xy 151.13 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3876,7 +4450,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 125.73) (xy 156.21 125.73)
+			(xy 163.83 125.73) (xy 170.18 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3936,13 +4510,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 50.8) (xy 106.68 52.07)
+			(xy 179.07 53.34) (xy 186.69 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da9cc797-aac3-4b10-badc-4e68eedfbed8")
+		(uuid "de6cdff8-cceb-458d-acc7-1d2f983dad23")
 	)
 	(wire
 		(pts
@@ -3953,6 +4527,16 @@
 			(type default)
 		)
 		(uuid "de913fe1-703d-4f0f-8737-1eb5e2b458d5")
+	)
+	(wire
+		(pts
+			(xy 153.67 125.73) (xy 163.83 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deb49370-13d9-4272-8dbe-15bdfd2047e6")
 	)
 	(wire
 		(pts
@@ -3996,7 +4580,17 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 60.96) (xy 184.15 62.23)
+			(xy 151.13 123.19) (xy 151.13 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8884707-8c18-47a3-a460-511ebb0f35d3")
+	)
+	(wire
+		(pts
+			(xy 227.33 64.77) (xy 227.33 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4056,7 +4650,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 59.69) (xy 166.37 62.23)
+			(xy 209.55 63.5) (xy 209.55 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4086,7 +4680,7 @@
 	)
 	(rectangle
 		(start 77.47 30.48)
-		(end 256.54 88.9)
+		(end 158.242 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -4095,6 +4689,18 @@
 			(type none)
 		)
 		(uuid 87ec5351-28a9-4e96-8247-4e6ae0cfc70b)
+	)
+	(rectangle
+		(start 162.052 30.734)
+		(end 243.586 89.154)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9f46a473-15ed-43de-88af-a03e65da6b42)
 	)
 	(rectangle
 		(start 77.47 163.83)
@@ -4119,6 +4725,18 @@
 			(type none)
 		)
 		(uuid bdde3746-cd6b-4c38-893b-a8b75fa53b94)
+	)
+	(rectangle
+		(start 262.128 30.734)
+		(end 346.202 89.154)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ce15eb35-127c-4798-b781-200b55c9e1c0)
 	)
 	(image
 		(at 216.408 184.658)
@@ -4393,9 +5011,63 @@
 		)
 		(uuid "0586807f-be0c-4795-8c64-db066b59cb82")
 	)
-	(text "USB input & 3v3 LDO"
+	(text "3v3 LDO"
 		(exclude_from_sim no)
-		(at 132.842 29.718 0)
+		(at 176.276 36.322 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 3.048 3.048)
+				(thickness 0.254)
+				(bold yes)
+				(color 29 232 255 1)
+			)
+		)
+		(uuid "09fdb59f-f5a3-4e89-9ede-3d6bbd5c7c77")
+	)
+	(text "3v3 powered by Vbat ONLY"
+		(exclude_from_sim no)
+		(at 182.626 40.894 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.524 1.524)
+				(italic yes)
+				(color 29 232 255 1)
+			)
+		)
+		(uuid "207f0db4-f2da-4f5d-bcf7-b7cd72e9f297")
+	)
+	(text "Boost enable/disable"
+		(exclude_from_sim no)
+		(at 293.624 37.084 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 3.048 3.048)
+				(thickness 0.254)
+				(bold yes)
+				(color 29 232 255 1)
+			)
+		)
+		(uuid "22775c7e-2149-43ed-b71c-1415644d956a")
+	)
+	(text "MCU_BOOST_EN state controlled by VBUS through PMOS"
+		(exclude_from_sim no)
+		(at 301.498 41.656 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.524 1.524)
+				(italic yes)
+				(color 29 232 255 1)
+			)
+		)
+		(uuid "25042a8c-c6bb-4505-bdc9-b7cd1e12221b")
+	)
+	(text "USB input"
+		(exclude_from_sim no)
+		(at 94.234 37.084 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -4442,6 +5114,17 @@
 		)
 		(uuid "1fbe3fd5-6587-47b5-bfdc-055dfeb1f94c")
 	)
+	(label "Vbat"
+		(at 180.34 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ae29b0b-4f47-430f-8acf-ca1cbe914f4c")
+	)
 	(label "BOOST_VOUT"
 		(at 240.03 214.63 0)
 		(fields_autoplaced yes)
@@ -4475,6 +5158,17 @@
 		)
 		(uuid "81f9dcdc-81fe-4e9c-9eb6-c97f805df087")
 	)
+	(label "BOOST_ENABLE"
+		(at 320.04 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "858e6e7e-a29e-4ae8-8385-05de5dd3d1da")
+	)
 	(label "BOOST_VIN"
 		(at 87.63 214.63 0)
 		(fields_autoplaced yes)
@@ -4487,7 +5181,7 @@
 		(uuid "8e122324-2d0c-4c79-b7e6-cd6232af38ce")
 	)
 	(label "Vbat"
-		(at 153.67 125.73 180)
+		(at 170.18 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4519,6 +5213,17 @@
 		)
 		(uuid "aadf63b9-fd5e-454f-9e51-6fbaba3298da")
 	)
+	(label "MCU_BOOST_EN"
+		(at 285.75 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d336cb46-e071-4caa-843c-f28a831fc6e5")
+	)
 	(symbol
 		(lib_id "Regulator_Switching:MIC2253")
 		(at 167.64 237.49 0)
@@ -4529,7 +5234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06272694-3f48-4f40-b6e5-8a418a11b846")
-		(property "Reference" "U3"
+		(property "Reference" "U7"
 			(at 174.9141 222.25 0)
 			(effects
 				(font
@@ -4616,7 +5321,83 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "U3")
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS83P")
+		(at 300.99 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "083a3017-d40d-46f3-a46f-8191ae381d25")
+		(property "Reference" "Q1"
+			(at 307.34 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS83P"
+			(at 307.34 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 306.07 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.farnell.com/datasheets/1835997.pdf"
+			(at 306.07 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-0.33A Id, -60V Vds, P-Channel MOSFET, SOT-23"
+			(at 300.99 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "271325bf-d5b4-43ef-9ec6-6365fc473fe6")
+		)
+		(pin "3"
+			(uuid "17364302-948f-4c97-9f77-ef073a11f986")
+		)
+		(pin "1"
+			(uuid "cd92dea1-7449-41ff-ac62-6628ea6262cd")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4713,7 +5494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17e69cd8-4212-447f-8e0d-d58c610d8342")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR020"
 			(at 115.57 234.95 0)
 			(effects
 				(font
@@ -4763,7 +5544,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR09")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4778,7 +5559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1812e353-a244-4033-b3a9-e2aec540945c")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR018"
 			(at 102.87 143.51 0)
 			(effects
 				(font
@@ -4828,7 +5609,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR033")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -4836,15 +5617,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 140.97 0)
+		(at 163.83 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1a1286f9-7320-47e2-b218-9443e8aee29e")
-		(property "Reference" "#PWR037"
-			(at 149.86 147.32 0)
+		(property "Reference" "#PWR028"
+			(at 163.83 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4853,7 +5634,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 142.24 0)
+			(at 160.02 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4861,7 +5642,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 140.97 0)
+			(at 163.83 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4870,7 +5651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 140.97 0)
+			(at 163.83 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4879,7 +5660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 140.97 0)
+			(at 163.83 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4893,7 +5674,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR037")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4984,7 +5765,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30029bca-bdb9-4b95-8df5-4223a2b1cc81")
-		(property "Reference" "R12"
+		(property "Reference" "R6"
 			(at 105.41 130.8099 0)
 			(effects
 				(font
@@ -5046,7 +5827,75 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R12")
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 153.67 118.11 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3126af5c-3721-4d33-b9f4-e1650116be49")
+		(property "Reference" "J4"
+			(at 155.956 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 152.146 114.808 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 153.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26003cba-6e4d-41db-b982-a7b3fc4e77a5")
+		)
+		(pin "2"
+			(uuid "c8694e7b-41fa-40b4-8f08-86f5b84fa0b5")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5061,7 +5910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33e83e28-06b6-4d92-a7cb-2426682e2067")
-		(property "Reference" "R1"
+		(property "Reference" "R9"
 			(at 187.96 240.284 90)
 			(effects
 				(font
@@ -5121,7 +5970,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R1")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5129,15 +5978,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 184.15 57.15 0)
+		(at 227.33 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "36529925-cc4f-424b-a761-ed3b8327887e")
-		(property "Reference" "C11"
-			(at 187.071 55.9816 0)
+		(property "Reference" "C22"
+			(at 230.251 59.7916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5146,7 +5995,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 187.071 58.293 0)
+			(at 230.251 62.103 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,7 +6004,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.1152 60.96 0)
+			(at 228.2952 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +6013,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 57.15 0)
+			(at 227.33 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,7 +6022,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 57.15 0)
+			(at 227.33 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5190,7 +6039,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C11")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -5205,7 +6054,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f604b4b-85b5-4af0-8e3b-270fdb72c1a9")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR017"
 			(at 102.87 125.73 0)
 			(effects
 				(font
@@ -5255,7 +6104,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR034")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5270,7 +6119,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44370c1e-ab08-46c9-a5c0-7df4ae2881e5")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR022"
 			(at 120.65 116.84 0)
 			(effects
 				(font
@@ -5320,7 +6169,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR035")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5335,7 +6184,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50f8ad07-2032-4a59-8ccf-d907fe0a8920")
-		(property "Reference" "R5"
+		(property "Reference" "R11"
 			(at 200.66 243.8399 0)
 			(effects
 				(font
@@ -5397,7 +6246,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R5")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -5412,7 +6261,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60b3027a-056d-4527-8aa3-ec14ec5117fb")
-		(property "Reference" "C2"
+		(property "Reference" "C23"
 			(at 185.166 250.444 0)
 			(effects
 				(font
@@ -5483,7 +6332,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C2")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -5499,7 +6348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "653b3ce5-30f5-4b59-98cc-52e4a242c6fb")
-		(property "Reference" "C4"
+		(property "Reference" "C17"
 			(at 124.46 219.7099 0)
 			(effects
 				(font
@@ -5553,7 +6402,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C4")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -5569,7 +6418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6894ca54-ade7-44ba-ad19-b7cfbbcdc7ec")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR034"
 			(at 193.04 262.89 0)
 			(effects
 				(font
@@ -5619,7 +6468,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR03")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5634,7 +6483,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fcc6fae-66be-43c8-a063-8ed54ff2a6d5")
-		(property "Reference" "C7"
+		(property "Reference" "C25"
 			(at 242.57 224.7899 0)
 			(effects
 				(font
@@ -5696,7 +6545,75 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C7")
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 173.99 53.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72ca1bbc-e943-45ce-9d2d-fdd8f87e833e")
+		(property "Reference" "J3"
+			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 172.72 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e13343f-7160-403e-a1ed-d68c6d2e4116")
+		)
+		(pin "2"
+			(uuid "1c5eed95-1057-4c6a-adeb-0c82e77b469b")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5711,7 +6628,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83db94c8-b528-49e1-a76c-c3630143e8c8")
-		(property "Reference" "U7"
+		(property "Reference" "U5"
 			(at 123.952 132.842 0)
 			(effects
 				(font
@@ -5847,7 +6764,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "U7")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -5862,7 +6779,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8651447c-8a3a-4d80-a385-fb3aa90b0f0e")
-		(property "Reference" "C25"
+		(property "Reference" "C19"
 			(at 140.081 129.6416 0)
 			(effects
 				(font
@@ -5916,7 +6833,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C25")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -5931,7 +6848,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "879fd097-9ca7-4d0a-bd6c-7838641625f5")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 185.42 211.582 0)
 			(effects
 				(font
@@ -5992,7 +6909,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -6008,7 +6925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c1165ea-4075-4e42-82d8-9038f73460ac")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR037"
 			(at 238.76 238.76 0)
 			(effects
 				(font
@@ -6058,7 +6975,72 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR06")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 278.13 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c2cc767-d1c3-4473-8ad9-f125b5c36fb4")
+		(property "Reference" "#PWR045"
+			(at 278.13 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 278.511 54.0258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 278.13 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5a61f78-885e-4e0f-bb77-51feca8daa17")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6073,7 +7055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f79d268-b6c5-4675-b9d2-490974cc9f57")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR016"
 			(at 88.9 76.2 0)
 			(effects
 				(font
@@ -6123,7 +7105,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR010")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6139,7 +7121,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95555acb-120f-45b6-8615-190af7f2c999")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR024"
 			(at 133.35 231.14 0)
 			(effects
 				(font
@@ -6189,7 +7171,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR08")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -6204,7 +7186,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95988aad-3c74-4258-ac53-363b243695e5")
-		(property "Reference" "C5"
+		(property "Reference" "C15"
 			(at 101.346 218.694 0)
 			(effects
 				(font
@@ -6267,7 +7249,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C5")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -6283,7 +7265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "960b286d-8a60-4c4d-a75b-4c134a9e40fb")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR029"
 			(at 149.86 262.89 0)
 			(effects
 				(font
@@ -6333,7 +7315,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR02")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6349,7 +7331,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "967effbb-685b-4e4b-a4b5-8a2f2ab461aa")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR026"
 			(at 142.24 262.89 0)
 			(effects
 				(font
@@ -6399,7 +7381,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR07")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -6414,7 +7396,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b341f52-40fe-4719-a4e2-f1474ee6094f")
-		(property "Reference" "C1"
+		(property "Reference" "C21"
 			(at 153.67 251.4599 0)
 			(effects
 				(font
@@ -6476,7 +7458,72 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C1")
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 147.32 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b5e3155-1f53-4dad-9ec4-23794ce907b2")
+		(property "Reference" "#PWR019"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 147.701 43.8658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "365942da-a18e-41f9-ba17-f0abfaa94704")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6492,7 +7539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f2844f-220d-4d2c-87b8-f93e4bf56444")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR031"
 			(at 167.64 262.89 0)
 			(effects
 				(font
@@ -6542,7 +7589,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR01")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -6558,7 +7605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a37294e5-5145-4e1c-b9f5-254e5d524ab5")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR035"
 			(at 198.12 262.89 0)
 			(effects
 				(font
@@ -6608,7 +7655,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR04")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -6624,7 +7671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a952ffec-a5cd-41b5-b47e-3af81cb12677")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR036"
 			(at 210.82 262.89 0)
 			(effects
 				(font
@@ -6674,7 +7721,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR05")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -6689,7 +7736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af6d4f22-331f-48d3-8c26-8cae23710318")
-		(property "Reference" "C24"
+		(property "Reference" "C16"
 			(at 109.728 112.522 90)
 			(effects
 				(font
@@ -6743,7 +7790,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C24")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -6759,7 +7806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2137a97-ad57-48be-8d5c-e1f59b037666")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 129.8575 107.95 0)
 			(effects
 				(font
@@ -6811,7 +7858,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6827,7 +7874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b39ad7fe-c188-48eb-8f22-2d91d377c0f4")
-		(property "Reference" "C3"
+		(property "Reference" "C18"
 			(at 137.16 219.7099 0)
 			(effects
 				(font
@@ -6881,7 +7928,74 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C3")
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 288.29 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3e0e4eb-776a-4316-b907-c58714c6d898")
+		(property "Reference" "R14"
+			(at 288.036 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 288.544 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 288.29 64.008 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 288.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 288.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1e16839-2614-4ee7-aa2c-048ca1e80530")
+		)
+		(pin "2"
+			(uuid "957a861d-e9b5-46e7-9348-8faa6831009c")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -6896,7 +8010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3fdd11b-1d9d-444b-989d-a192906fc1ed")
-		(property "Reference" "R4"
+		(property "Reference" "R10"
 			(at 200.66 224.7899 0)
 			(effects
 				(font
@@ -6958,7 +8072,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R4")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6973,7 +8087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf456941-6353-4ed8-9214-3d858557551c")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR021"
 			(at 116.84 71.12 0)
 			(effects
 				(font
@@ -7023,7 +8137,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR031")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7031,15 +8145,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 62.23 0)
+		(at 227.33 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c01ed9f6-9f97-4679-8b29-b984d98d45fe")
-		(property "Reference" "#PWR018"
-			(at 184.15 68.58 0)
+		(property "Reference" "#PWR033"
+			(at 227.33 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7048,7 +8162,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 63.5 0)
+			(at 223.52 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +8170,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 62.23 0)
+			(at 227.33 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7065,7 +8179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 62.23 0)
+			(at 227.33 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7074,7 +8188,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 62.23 0)
+			(at 227.33 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7088,7 +8202,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR018")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -7103,7 +8217,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4ad5dee-5647-4052-9e10-f2e87e369279")
-		(property "Reference" "U8"
+		(property "Reference" "U4"
 			(at 119.126 64.516 0)
 			(effects
 				(font
@@ -7172,7 +8286,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "U8")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7187,7 +8301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd9c2c8c-9244-41dc-80b1-14d6e31550c8")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 144.78 237.4899 0)
 			(effects
 				(font
@@ -7249,7 +8363,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7257,15 +8371,15 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
-		(at 166.37 52.07 0)
+		(at 209.55 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d7dfc983-d2c3-42fd-a060-77c5e0422c20")
-		(property "Reference" "U2"
-			(at 166.37 45.9232 0)
+		(property "Reference" "U6"
+			(at 209.55 49.7332 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7273,7 +8387,7 @@
 			)
 		)
 		(property "Value" "NCP1117-3.3_SOT223"
-			(at 166.37 48.2346 0)
+			(at 209.55 52.0446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7281,7 +8395,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 166.37 46.99 0)
+			(at 209.55 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7290,7 +8404,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-			(at 168.91 58.42 0)
+			(at 212.09 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7299,7 +8413,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 166.37 52.07 0)
+			(at 209.55 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7319,7 +8433,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "U2")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -7327,15 +8441,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 148.59 57.15 0)
+		(at 191.77 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d8ddb0d9-1a51-474f-a2e2-712c7d5bd6f0")
-		(property "Reference" "C10"
-			(at 151.511 55.9816 0)
+		(property "Reference" "C20"
+			(at 194.691 59.7916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7344,7 +8458,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 151.511 58.293 0)
+			(at 194.691 62.103 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7353,7 +8467,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 149.5552 60.96 0)
+			(at 192.7352 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7362,7 +8476,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 57.15 0)
+			(at 191.77 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7371,7 +8485,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 57.15 0)
+			(at 191.77 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7388,7 +8502,140 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C10")
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 294.64 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbb1b651-8a29-49b2-b2ed-7af0c45b14f1")
+		(property "Reference" "#PWR041"
+			(at 294.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 290.83 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 294.64 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "836938d8-ee89-4770-8851-448e655b54bd")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 138.43 44.45 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc154f54-7431-441f-b4b6-6f77c205e376")
+		(property "Reference" "J5"
+			(at 140.716 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 136.906 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 138.43 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d4c9989-e59d-4c02-8dbe-5342488bd6b0")
+		)
+		(pin "2"
+			(uuid "2fdde9ec-0f59-4d49-9f81-a28aa9b8a560")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -7396,7 +8643,7 @@
 	)
 	(symbol
 		(lib_id "1043P:1043P")
-		(at 149.86 133.35 270)
+		(at 163.83 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7405,7 +8652,7 @@
 		(fields_autoplaced yes)
 		(uuid "df8bfbe9-74fc-46de-9ffb-22f029a3c52e")
 		(property "Reference" "BT1"
-			(at 153.67 131.4449 90)
+			(at 167.64 131.4449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7414,7 +8661,7 @@
 			)
 		)
 		(property "Value" "1043P"
-			(at 153.67 133.9849 90)
+			(at 167.64 133.9849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7423,7 +8670,7 @@
 			)
 		)
 		(property "Footprint" "Keystone:BAT_1043P"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7433,7 +8680,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7442,7 +8689,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7451,7 +8698,7 @@
 			)
 		)
 		(property "MF" "Keystone Electronics"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7461,7 +8708,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7471,7 +8718,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7481,7 +8728,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7491,7 +8738,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/1043P/Keystone+Electronics/view-part/?ref=eda"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7501,7 +8748,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,7 +8758,7 @@
 			)
 		)
 		(property "PARTREV" "D"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7521,7 +8768,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1043P/Keystone+Electronics/view-part/?ref=snap"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +8778,7 @@
 			)
 		)
 		(property "MP" "1043P"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7541,7 +8788,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=888208&manufacturer=Keystone Electronics&part_name=1043P&search_term=1043p"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,7 +8798,7 @@
 			)
 		)
 		(property "Description_1" "\nBattery Holder; Polarized; THM; For Cell 18650 | Keystone Electronics 1043P\n"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7561,7 +8808,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Keystone"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7571,7 +8818,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7581,7 +8828,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "1043P"
-			(at 149.86 133.35 0)
+			(at 163.83 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7607,15 +8854,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 62.23 0)
+		(at 209.55 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e6c53e89-25f8-4412-a9e3-bedc236a9fea")
-		(property "Reference" "#PWR016"
-			(at 166.37 68.58 0)
+		(property "Reference" "#PWR030"
+			(at 209.55 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7624,7 +8871,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.56 63.5 0)
+			(at 205.74 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7632,7 +8879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 62.23 0)
+			(at 209.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,7 +8888,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 62.23 0)
+			(at 209.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7650,7 +8897,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 166.37 62.23 0)
+			(at 209.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7664,7 +8911,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR016")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -7672,15 +8919,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 184.15 50.8 0)
+		(at 227.33 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e8c6cc50-0e47-4b44-955a-e49efcfb9f31")
-		(property "Reference" "#PWR017"
-			(at 184.15 54.61 0)
+		(property "Reference" "#PWR032"
+			(at 227.33 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7689,7 +8936,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 184.531 46.4058 0)
+			(at 227.711 50.2158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,7 +8944,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 50.8 0)
+			(at 227.33 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7706,7 +8953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 50.8 0)
+			(at 227.33 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7715,7 +8962,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 50.8 0)
+			(at 227.33 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7729,7 +8976,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR017")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7737,15 +8984,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 62.23 0)
+		(at 191.77 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e964bd54-3b09-4361-8f8b-62724720fafd")
-		(property "Reference" "#PWR013"
-			(at 148.59 68.58 0)
+		(property "Reference" "#PWR027"
+			(at 191.77 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7754,7 +9001,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 63.5 0)
+			(at 187.96 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7762,7 +9009,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 62.23 0)
+			(at 191.77 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7771,7 +9018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 62.23 0)
+			(at 191.77 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7780,7 +9027,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 62.23 0)
+			(at 191.77 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7794,7 +9041,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR013")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -7809,7 +9056,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec3bc56e-6020-4213-84ae-0a85af4a1a92")
-		(property "Reference" "R13"
+		(property "Reference" "R7"
 			(at 138.43 118.1099 0)
 			(effects
 				(font
@@ -7871,7 +9118,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R13")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7886,7 +9133,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed1281c3-c47e-4bae-bc59-145b74009fd5")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR023"
 			(at 120.65 143.51 0)
 			(effects
 				(font
@@ -7936,7 +9183,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR032")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7951,7 +9198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eeacbdec-2449-4492-b9f9-d0ebb2b2fafb")
-		(property "Reference" "R2"
+		(property "Reference" "R13"
 			(at 213.36 243.8399 0)
 			(effects
 				(font
@@ -8013,7 +9260,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R2")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -8028,7 +9275,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef17b210-f36f-4399-91aa-098bc0f61c75")
-		(property "Reference" "C6"
+		(property "Reference" "C24"
 			(at 227.33 224.7899 0)
 			(effects
 				(font
@@ -8090,7 +9337,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "C6")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -8105,7 +9352,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f11b7b9a-86a3-41e2-8d71-2d5d1d08395c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR025"
 			(at 137.16 143.51 0)
 			(effects
 				(font
@@ -8155,7 +9402,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR036")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8170,7 +9417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb6cef63-c43b-4135-938c-741dc1071c7b")
-		(property "Reference" "R3"
+		(property "Reference" "R12"
 			(at 213.36 224.7899 0)
 			(effects
 				(font
@@ -8232,23 +9479,39 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R3")
+					(reference "R12")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 106.68 50.8 0)
+		(lib_id "Device:R")
+		(at 294.64 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fc3f6f2d-c37b-4e04-8301-54ad143dfbc4")
-		(property "Reference" "#PWR012"
-			(at 106.68 54.61 0)
+		(uuid "fd84b34e-d991-475d-8f1c-f4ab21bc3582")
+		(property "Reference" "R15"
+			(at 292.1 68.834 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100kR"
+			(at 297.18 68.326 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 296.418 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8256,16 +9519,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 107.061 46.4058 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 50.8 0)
+		(property "Datasheet" "~"
+			(at 294.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8273,17 +9528,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 106.68 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 50.8 0)
+		(property "Description" "Resistor"
+			(at 294.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8292,12 +9538,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4bc7427f-4f0c-4a17-a8dd-8aac143d6d71")
+			(uuid "8231b669-3438-4240-9918-54e89fddd697")
+		)
+		(pin "2"
+			(uuid "9ac79537-4cef-497d-b650-f541111a5f65")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR012")
+					(reference "R15")
 					(unit 1)
 				)
 			)
