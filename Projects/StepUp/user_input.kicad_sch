@@ -1014,6 +1014,75 @@
 		)
 		(uuid "bac7c287-d65a-443b-8757-5f061905a96b")
 	)
+	(global_label "JOYSTSICK_AXIS_H"
+		(shape input)
+		(at 160.02 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 194 1)
+			)
+			(justify right)
+		)
+		(uuid "54bec1cb-ff7a-4dfd-bcfe-a8dea485e630")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7386 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "JOYSTSICK_AXIS_V"
+		(shape input)
+		(at 160.02 124.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 194 1)
+			)
+			(justify right)
+		)
+		(uuid "af831b72-e795-4464-a6b8-6cf4171adb43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.9805 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "JOYSTSICK_BUTTON"
+		(shape input)
+		(at 160.02 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 194 1)
+			)
+			(justify right)
+		)
+		(uuid "fe1ab5d9-1453-4eb3-b260-d58da2ef6bb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.9524 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 190.5 115.57 90)
@@ -1077,15 +1146,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "9879e3ff-0fc1-4f0a-b67b-605654db36f9")
+			(uuid "2daddea1-2499-4944-9b51-d12eb05ffdc3")
 		)
 		(pin "1"
-			(uuid "73caa465-b13a-4d6b-ae6c-4fa6fdf9877f")
+			(uuid "0280a5db-1a04-44e2-8b24-ffe4d722613e")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
 					(reference "C26")
+					(unit 1)
+				)
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -1278,45 +1351,49 @@
 			)
 		)
 		(pin "H3"
-			(uuid "8da787f7-0eab-477d-856d-f2e1cf1a2d82")
+			(uuid "90b5b81d-c233-4641-a535-84303f17138d")
 		)
 		(pin "V3"
-			(uuid "6af41e3f-6df8-49b6-9309-a470b4eac280")
+			(uuid "631f56ed-a524-447c-a75a-f6e212cd5bad")
 		)
 		(pin "S2"
-			(uuid "50c8c7ca-3bea-4e8b-8e6c-e278874033bf")
+			(uuid "8fc0ca62-9fc1-4ef0-bae5-8cc324dbdcb1")
 		)
 		(pin "V2"
-			(uuid "1d00acae-6d90-4db9-b9d8-70258a0a2580")
+			(uuid "0e64f317-1c9b-4aee-8450-40abde54f4d8")
 		)
 		(pin "B1A"
-			(uuid "a612e4c7-578a-4f1d-802b-61049a2a4c6e")
+			(uuid "1cf7759d-f36b-457c-8e14-fbfd142c37a0")
 		)
 		(pin "H1"
-			(uuid "c2fdf8c8-58da-4e56-add6-3aebf1e6aa2f")
+			(uuid "797beae9-710e-4632-8fa6-8c048049f58c")
 		)
 		(pin "S1"
-			(uuid "a136c46c-a996-4a25-8c54-ebb465423ca6")
+			(uuid "ee811b53-2688-44c6-980b-ccab7fbd5b06")
 		)
 		(pin "S3"
-			(uuid "944888d9-7f5d-491e-84e0-e005117dab1e")
+			(uuid "bb52d29e-d796-432b-a1a3-c10e15e73319")
 		)
 		(pin "H2"
-			(uuid "6db2bd5d-253d-4e40-9366-3d78309a31a6")
+			(uuid "1b1736ac-8926-4691-9806-4d2a3d53b511")
 		)
 		(pin "V1"
-			(uuid "4ebc3f6e-187a-4a1f-8243-50f42bfd50ad")
+			(uuid "807eb9e6-103a-4cba-b3c0-b51be81afe79")
 		)
 		(pin "B2A"
-			(uuid "ec992e29-da5c-4f5a-801f-e75b66bfc69b")
+			(uuid "f5a0dd32-ef42-4219-b1c5-9d0f51c68b7a")
 		)
 		(pin "S4"
-			(uuid "31bd7b91-5c7b-4446-bd5a-8ff81ab749ca")
+			(uuid "7a655e22-bb8a-46e2-a6e5-3794817b7ee3")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
 					(reference "U8")
+					(unit 1)
+				)
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -1376,12 +1453,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "efb4b40f-1b7c-4141-a36a-cfb44fdaffa0")
+			(uuid "b66cf027-8924-4319-8c9b-cd97b45b7a3a")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
 					(reference "#PWR038")
+					(unit 1)
+				)
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -1443,12 +1524,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "85ff89d2-f401-41b3-8561-0d977e45b432")
+			(uuid "13333adb-b90d-45a7-a258-c5af27132cd3")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
 					(reference "#PWR040")
+					(unit 1)
+				)
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -1509,12 +1594,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "e966f09d-e257-4a35-9c67-4a29dc6941f0")
+			(uuid "dac20b26-2c34-4304-8a41-64370cc6d4a4")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
 					(reference "#PWR039")
+					(unit 1)
+				)
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
