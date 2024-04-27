@@ -1092,7 +1092,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b95b568-d3b9-4f5c-9bb1-035f5396f99b")
-		(property "Reference" "C26"
+		(property "Reference" "C33"
 			(at 187.96 113.792 90)
 			(effects
 				(font
@@ -1154,11 +1154,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "C26")
-					(unit 1)
-				)
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "C28")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -1392,10 +1388,6 @@
 					(reference "U8")
 					(unit 1)
 				)
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "U9")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -1408,7 +1400,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cc13a32-4e5b-4abe-96b5-e20e06bc3ea8")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR073"
 			(at 181.61 116.84 0)
 			(effects
 				(font
@@ -1458,11 +1450,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR038")
-					(unit 1)
-				)
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "#PWR056")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -1478,7 +1466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93636336-cae6-452e-b29b-b6ae58e3ad96")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR075"
 			(at 204.47 115.57 0)
 			(effects
 				(font
@@ -1529,11 +1517,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR040")
-					(unit 1)
-				)
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "#PWR058")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -1549,7 +1533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acf024ba-f20d-4686-8688-6547a43b72be")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR074"
 			(at 184.15 162.56 0)
 			(effects
 				(font
@@ -1599,11 +1583,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR039")
-					(unit 1)
-				)
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "#PWR057")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
