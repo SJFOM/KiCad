@@ -5,4 +5,28 @@ D 2.2 H Shielded Molded Inductor 5.5 A 35mOhm Max Nonstandard
 K
 F https://abracon.com/Magnetics/power/ASPI-0530HI.pdf
 $ENDCMP
+#
+$CMP PESD12VS5UD,115
+D PESD12VS5UD - Fivefold ESD protection diode arrays
+K
+F https://assets.nexperia.com/documents/data-sheet/PESDXS5UD_SER.pdf
+$ENDCMP
+#
+$CMP LTST-C171GKT
+D Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package
+K
+F https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C171GKT.pdf
+$ENDCMP
+#
+$CMP THB001P
+D THUMBSTICK, 0.05A, 12VDC, 2 AXIS, PCB; No. of Axes:2; Track Resistance:10kohm; Supply Voltage Max:-; No. of Switch Positions:-; Contact Current AC Max:-; Contact Voltage AC Max:50V; Rotation Electrical Angle:36
+K
+F https://www.ckswitches.com/media/2873/thb.pdf
+$ENDCMP
+#
+$CMP SKHUAME010
+D Switch Tactile N.O. SPST Round Button J-Bend 0.05A 12VDC 2.55N SMD T/R
+K
+F https://tech.alpsalpine.com/prod/e/html/tact/surfacemount/skhu/skhuame010.html?_gl=1*exvdmo*_ga*MTYyMDk0NjQ3NS4xNjM0NzEyNjk0*_ga_D35WK8GQ9N*MTYzNDcxMjY5My4xLjEuMTYzNDcxMjcwNy4w
+$ENDCMP
 #End Doc Library

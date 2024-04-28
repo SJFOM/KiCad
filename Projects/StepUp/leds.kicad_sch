@@ -477,19 +477,251 @@
 				)
 			)
 		)
+		(symbol "dk_Alarms-Buzzers-and-Sirens:PKMCS0909E4000-R1"
+			(pin_names
+				(offset 0.0254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BZ"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PKMCS0909E4000-R1"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "AUDIO PIEZO TRANSDUCER 12.5V SMD"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "PKMCS0909E4000-R1"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Category" "Audio Products"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Alarms, Buzzers, and Sirens"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Datasheet_Link" "https://www.murata.com/~{/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx}"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "AUDIO PIEZO TRANSDUCER 12.5V SMD"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Murata Electronics North America"
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "490-9647-1-ND PK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PKMCS0909E4000-R1_0_1"
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 5.08 3.81) (xy 5.08 -1.27) (xy 2.54 0) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 0 3.81)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start 6.35 -1.27)
+					(mid 7.9198 1.27)
+					(end 6.35 3.81)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.35 0)
+					(mid 6.8761 1.27)
+					(end 6.35 2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PKMCS0909E4000-R1_1_1"
+				(pin input line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "LED:CLX6F-FKC")
-		(at 208.28 147.32 0)
+		(at 208.28 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fead52f3-600b-421c-9c1d-7d30716efba9")
-		(property "Reference" "D6"
-			(at 208.28 137.16 0)
+		(uuid "3aee762e-93ba-400d-92a5-399d1f434bec")
+		(property "Reference" "D16"
+			(at 208.28 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -497,7 +729,7 @@
 			)
 		)
 		(property "Value" "CLX6F-FKC"
-			(at 208.28 139.7 0)
+			(at 208.28 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -505,7 +737,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_RGB_PLCC-6"
-			(at 203.2 155.448 0)
+			(at 203.2 189.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -515,7 +747,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.cree-led.com/a/ds/h/HB-CLX6F-FKC.pdf"
-			(at 212.09 147.32 0)
+			(at 212.09 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -525,7 +757,314 @@
 			)
 		)
 		(property "Description" "RGB LED, PLCC-6 "
-			(at 208.28 147.32 0)
+			(at 208.28 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "22d01f12-04c4-4715-992a-7610d999bc2b")
+		)
+		(pin "4"
+			(uuid "fb87b788-acca-41b9-97cb-fcb1a5dd005e")
+		)
+		(pin "6"
+			(uuid "488f05c2-6829-4d8e-8608-9758caca1bc9")
+		)
+		(pin "5"
+			(uuid "37816506-05fb-4a5d-940d-e16c6c5f474a")
+		)
+		(pin "2"
+			(uuid "6a1221e2-916b-40fb-8deb-662e696f3a18")
+		)
+		(pin "1"
+			(uuid "edd2fce2-7c69-49ed-9761-4c191d06e97b")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Alarms-Buzzers-and-Sirens:PKMCS0909E4000-R1")
+		(at 236.22 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dc265ea-a927-42ad-b493-3f7f0b3fba5e")
+		(property "Reference" "BZ1"
+			(at 245.11 113.0299 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PKMCS0909E4000-R1"
+			(at 245.11 115.5699 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:Piezo_9x9mm_PKMCS0909E4000-R1"
+			(at 241.3 110.49 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx"
+			(at 241.3 107.95 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "AUDIO PIEZO TRANSDUCER 12.5V SMD"
+			(at 241.3 90.17 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PKMCS0909E4000-R1"
+			(at 241.3 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Audio Products"
+			(at 241.3 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Alarms, Buzzers, and Sirens"
+			(at 241.3 97.79 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.murata.com/~{/media/webrenewal/products/sound/sounder/vppt-buzj083-d.ashx}"
+			(at 241.3 95.25 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-1-ND/4878401"
+			(at 241.3 92.71 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics North America"
+			(at 241.3 87.63 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 241.3 85.09 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b281cf2-5d1a-4c9c-aa88-50718a94d180")
+		)
+		(pin "2"
+			(uuid "f1a5b74f-01c3-4e17-9ba7-08c80cda448c")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "BZ1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:CLX6F-FKC")
+		(at 208.28 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea00df16-9c50-43ea-8ca1-7cd63ac655d3")
+		(property "Reference" "D15"
+			(at 208.28 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CLX6F-FKC"
+			(at 208.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_RGB_PLCC-6"
+			(at 203.2 171.958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.cree-led.com/a/ds/h/HB-CLX6F-FKC.pdf"
+			(at 212.09 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED, PLCC-6 "
+			(at 208.28 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "357b86f8-2dab-428b-8579-df9c441ae2ee")
+		)
+		(pin "4"
+			(uuid "fe5f5c84-a4b6-4d93-9543-ac7a297d77fd")
+		)
+		(pin "6"
+			(uuid "a0291e9e-22db-4d3c-bf60-efd28387c523")
+		)
+		(pin "5"
+			(uuid "003e5450-74c1-4f2a-b7df-c072723f5dff")
+		)
+		(pin "2"
+			(uuid "6a67bc61-799d-41ce-9ebb-29b8c58e83d4")
+		)
+		(pin "1"
+			(uuid "451fa59f-f170-4a5b-a706-15b1f11d4413")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:CLX6F-FKC")
+		(at 208.28 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fead52f3-600b-421c-9c1d-7d30716efba9")
+		(property "Reference" "D14"
+			(at 208.28 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CLX6F-FKC"
+			(at 208.28 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_RGB_PLCC-6"
+			(at 203.2 154.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.cree-led.com/a/ds/h/HB-CLX6F-FKC.pdf"
+			(at 212.09 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED, PLCC-6 "
+			(at 208.28 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -554,7 +1093,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/b287fd2a-b2a9-45b4-81d1-0975d80d8cfc"
-					(reference "D6")
+					(reference "D14")
 					(unit 1)
 				)
 			)

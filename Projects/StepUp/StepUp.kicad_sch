@@ -3,10 +3,11 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "e0cca1c7-c263-49eb-8c40-74000ebe5285")
-	(paper "A3")
+	(paper "A4")
 	(title_block
 		(title "System diagram")
-		(rev "v0.1")
+		(date "2024-04-28")
+		(rev "v1.0")
 		(company "Samio")
 	)
 	(lib_symbols
@@ -95,141 +96,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 55.88 262.89 0)
+		(at 29.21 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "41337ec8-327b-4426-a010-58bf2567e70b")
-		(property "Reference" "H4"
-			(at 58.42 261.7216 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 58.42 264.033 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 55.88 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 55.88 252.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "748ad891-4915-4148-a88b-fac0c4e3e164")
-		(property "Reference" "H2"
-			(at 58.42 251.5616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 58.42 253.873 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 55.88 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 55.88 257.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "88f00bc7-64bb-4f35-b921-05d6d671f3b9")
+		(fields_autoplaced yes)
+		(uuid "104a7395-5b46-49b7-8e33-9749a93637a8")
 		(property "Reference" "H3"
-			(at 58.42 256.6416 0)
+			(at 31.75 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -238,7 +114,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 58.42 258.953 0)
+			(at 31.75 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -246,8 +122,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 55.88 257.81 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 29.21 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -256,7 +132,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 257.81 0)
+			(at 29.21 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -264,8 +140,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 55.88 257.81 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -284,15 +160,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 55.88 247.65 0)
+		(at 29.21 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a6b9bb53-9597-4457-93e0-1a28e5996efb")
-		(property "Reference" "H1"
-			(at 58.42 246.4816 0)
+		(fields_autoplaced yes)
+		(uuid "7e97f9a9-0208-4b1b-b1cc-3881f94a2db3")
+		(property "Reference" "H4"
+			(at 31.75 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,7 +178,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 58.42 248.793 0)
+			(at 31.75 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -309,8 +186,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 55.88 247.65 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 29.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -319,7 +196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 247.65 0)
+			(at 29.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -327,8 +204,72 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 55.88 247.65 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 29.21 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d64f6eca-7b9f-4b73-8f5e-df8950485130")
+		(property "Reference" "H1"
+			(at 31.75 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 31.75 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 29.21 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -345,8 +286,72 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 29.21 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "def36250-6626-415c-8fc9-3d16025ec016")
+		(property "Reference" "H2"
+			(at 31.75 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 31.75 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 29.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 190.5 123.19)
+		(at 130.81 77.47)
 		(size 39.37 58.42)
 		(fields_autoplaced yes)
 		(stroke
@@ -358,7 +363,7 @@
 		)
 		(uuid "3af138f5-65b6-4464-96c0-d1b764f3b0d1")
 		(property "Sheetname" "MCU"
-			(at 190.5 121.8434 0)
+			(at 130.81 76.1234 0)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -367,7 +372,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 190.5 182.1946 0)
+			(at 130.81 136.4746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -384,7 +389,7 @@
 		)
 	)
 	(sheet
-		(at 115.57 157.48)
+		(at 55.88 111.76)
 		(size 33.02 19.05)
 		(fields_autoplaced yes)
 		(stroke
@@ -396,7 +401,7 @@
 		)
 		(uuid "62dd6998-8b69-42c0-9c2f-b18953d44bc4")
 		(property "Sheetname" "User Input"
-			(at 115.57 156.1334 0)
+			(at 55.88 110.4134 0)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -405,7 +410,7 @@
 			)
 		)
 		(property "Sheetfile" "user_input.kicad_sch"
-			(at 115.57 177.1146 0)
+			(at 55.88 131.3946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -422,45 +427,7 @@
 		)
 	)
 	(sheet
-		(at 264.16 158.75)
-		(size 33.02 19.05)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "b287fd2a-b2a9-45b4-81d1-0975d80d8cfc")
-		(property "Sheetname" "LEDs"
-			(at 264.16 157.4034 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "leds.kicad_sch"
-			(at 264.16 178.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 115.57 128.27)
+		(at 55.88 82.55)
 		(size 33.02 17.78)
 		(fields_autoplaced yes)
 		(stroke
@@ -472,7 +439,7 @@
 		)
 		(uuid "e827d0b4-d448-43f9-95b8-3deddd7cd4ee")
 		(property "Sheetname" "Power"
-			(at 115.57 126.9234 0)
+			(at 55.88 81.2034 0)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -481,7 +448,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 115.57 146.6346 0)
+			(at 55.88 100.9146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -498,7 +465,7 @@
 		)
 	)
 	(sheet
-		(at 264.16 125.73)
+		(at 204.47 80.01)
 		(size 39.37 17.78)
 		(fields_autoplaced yes)
 		(stroke
@@ -510,7 +477,7 @@
 		)
 		(uuid "f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7")
 		(property "Sheetname" "Motor Driver"
-			(at 264.16 124.3834 0)
+			(at 204.47 78.6634 0)
 			(effects
 				(font
 					(size 2.54 2.54)
@@ -519,7 +486,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_driver.kicad_sch"
-			(at 264.16 144.0946 0)
+			(at 204.47 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
