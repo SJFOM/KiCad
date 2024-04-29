@@ -771,9 +771,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -871,8 +871,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1240,7 +1240,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 118.11) (xy 130.81 118.11)
+			(xy 102.87 118.11) (xy 130.81 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1270,7 +1270,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 125.73) (xy 130.81 125.73)
+			(xy 102.87 125.73) (xy 130.81 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1816,8 +1816,8 @@
 		)
 		(uuid "fb883907-2aa4-4e5e-8972-eb26f11d118c")
 	)
-	(label "JOYSTICK_AXIS_H"
-		(at 97.79 125.73 0)
+	(label "JOYSTICK_AXIS_V"
+		(at 106.68 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1825,7 +1825,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "060bc04f-2952-48dd-8510-c9d5c61b3d84")
+		(uuid "759c8bab-bd8b-4c06-8267-2623ca8cb160")
 	)
 	(label "JOYSTICK_BUTTON"
 		(at 180.34 115.57 180)
@@ -1837,17 +1837,6 @@
 			(justify right bottom)
 		)
 		(uuid "7a627695-780a-42fe-a748-b005766ce0e4")
-	)
-	(label "JOYSTICK_AXIS_V"
-		(at 97.79 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9f49bacf-fd4d-40d9-a319-490946da2251")
 	)
 	(label "JOYSTICK_AXIS_H"
 		(at 71.12 68.58 0)
@@ -1871,6 +1860,17 @@
 		)
 		(uuid "a61638ce-e13a-4058-9f65-65ad4d2be0af")
 	)
+	(label "JOYSTICK_AXIS_H"
+		(at 106.68 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8ccec78-82ca-4e46-822c-c8e6ff8c5871")
+	)
 	(label "JOYSTICK_BUTTON"
 		(at 71.12 71.12 0)
 		(fields_autoplaced yes)
@@ -1881,6 +1881,29 @@
 			(justify left bottom)
 		)
 		(uuid "fff18985-060e-416b-ac81-9f7f74d48264")
+	)
+	(global_label "JOYSTSICK_AXIS_H"
+		(shape output)
+		(at 102.87 118.11 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 194 1)
+			)
+			(justify right)
+		)
+		(uuid "37e59c43-08ce-445a-9a85-7b0969910197")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.5886 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "JOYSTSICK_BUTTON"
 		(shape output)
@@ -1905,32 +1928,9 @@
 			)
 		)
 	)
-	(global_label "JOYSTSICK_AXIS_H"
-		(shape output)
-		(at 90.17 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 255 194 1)
-			)
-			(justify right)
-		)
-		(uuid "8f24ac60-00a9-44a3-b29d-181330cf0b9a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.8886 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "JOYSTSICK_AXIS_V"
 		(shape output)
-		(at 90.17 118.11 180)
+		(at 102.87 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1939,9 +1939,9 @@
 			)
 			(justify right)
 		)
-		(uuid "d11ef5f1-731e-4b14-8ada-6fa0d0bbe500")
+		(uuid "fa796581-f3fd-44ca-9a1c-38ecc0c20cb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.1305 118.11 0)
+			(at 82.8305 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,7 +2112,7 @@
 			)
 		)
 		(property "Value" "THB001P"
-			(at 146.812 135.636 0)
+			(at 145.796 135.636 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2572,7 +2572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 109.22 63.5 0)
 			(effects
 				(font
@@ -2637,7 +2637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 128.27 101.6 0)
 			(effects
 				(font

@@ -1878,7 +1878,7 @@
 				)
 			)
 			(property "Description" "MOSFET N-CH 60V 115MA SOT-23"
-				(at 5.08 25.4 0)
+				(at 5.08 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1929,6 +1929,16 @@
 			)
 			(property "DK_Detail_Page" "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664"
 				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "MOSFET N-CH 60V 115MA SOT-23"
+				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2270,7 +2280,7 @@
 				)
 			)
 			(property "Description" "MOSFET P-CH 50V 130MA SOT-23"
-				(at 5.08 25.4 0)
+				(at 5.08 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2321,6 +2331,16 @@
 			)
 			(property "DK_Detail_Page" "/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297"
 				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "MOSFET P-CH 50V 130MA SOT-23"
+				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -2619,9 +2639,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2719,8 +2739,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2835,9 +2855,9 @@
 		)
 		(symbol "power:VBUS"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2851,7 +2871,7 @@
 				)
 			)
 			(property "Value" "VBUS"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2935,8 +2955,8 @@
 			(symbol "VBUS_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "VBUS"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4709,17 +4729,6 @@
 		)
 		(uuid "72209f0a-e546-4533-9049-2074a4c3250a")
 	)
-	(label "TMC_MODE"
-		(at 124.46 177.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75aa7de6-da65-41e6-a983-69bb309efc6f")
-	)
 	(label "OB1_OUT"
 		(at 307.34 160.02 0)
 		(fields_autoplaced yes)
@@ -4815,6 +4824,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4837,6 +4847,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4859,6 +4870,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4881,6 +4893,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4903,6 +4916,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4925,6 +4939,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -4947,6 +4962,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 194 0 194 1)
 			)
 			(justify right)
 		)
@@ -5006,7 +5022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 132.08 142.24 0)
 			(effects
 				(font
@@ -5146,7 +5162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 76.2 86.36 0)
 			(effects
 				(font
@@ -5211,7 +5227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 114.3 203.2 0)
 			(effects
 				(font
@@ -5425,7 +5441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 86.36 0)
 			(effects
 				(font
@@ -5792,7 +5808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 190.5 0)
 			(effects
 				(font
@@ -5857,7 +5873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 119.38 142.24 0)
 			(effects
 				(font
@@ -5999,7 +6015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 264.16 154.94 0)
 			(effects
 				(font
@@ -6211,7 +6227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 104.14 203.2 0)
 			(effects
 				(font
@@ -6276,7 +6292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 269.24 185.42 0)
 			(effects
 				(font
@@ -6718,7 +6734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 358.14 182.88 0)
 			(effects
 				(font
@@ -6857,6 +6873,16 @@
 		)
 		(property "Status" "Active"
 			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "MOSFET P-CH 50V 130MA SOT-23"
+			(at 35.56 40.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7314,7 +7340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 203.2 0)
 			(effects
 				(font
@@ -7379,7 +7405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 330.2 182.88 0)
 			(effects
 				(font
@@ -7516,7 +7542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 58.42 190.5 0)
 			(effects
 				(font
@@ -7581,7 +7607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 88.9 124.46 0)
 			(effects
 				(font
@@ -7646,7 +7672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 347.98 182.88 0)
 			(effects
 				(font
@@ -7711,7 +7737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 228.6 154.94 0)
 			(effects
 				(font
@@ -7776,7 +7802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.24 203.2 0)
 			(effects
 				(font
@@ -8018,7 +8044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 340.36 129.54 0)
 			(effects
 				(font
@@ -8437,7 +8463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 38.1 44.45 0)
 			(effects
 				(font
@@ -8502,7 +8528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 269.24 127 0)
 			(effects
 				(font
@@ -8567,7 +8593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 228.6 170.18 0)
 			(effects
 				(font
@@ -8704,7 +8730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 358.14 129.54 0)
 			(effects
 				(font
@@ -8923,7 +8949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 106.68 142.24 0)
 			(effects
 				(font
@@ -9063,7 +9089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 340.36 182.88 0)
 			(effects
 				(font
@@ -9128,7 +9154,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 347.98 129.54 0)
 			(effects
 				(font
@@ -9268,7 +9294,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 210.82 203.2 0)
 			(effects
 				(font
@@ -9333,7 +9359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 53.34 190.5 0)
 			(effects
 				(font
@@ -9620,7 +9646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 50.8 86.36 0)
 			(effects
 				(font
@@ -9768,6 +9794,16 @@
 				(hide yes)
 			)
 		)
+		(property "Description" "MOSFET N-CH 60V 115MA SOT-23"
+			(at 68.58 40.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "646a8ad8-3e1c-4951-af82-abea11b59947")
 		)
@@ -9905,7 +9941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
 			(at 330.2 129.54 0)
 			(effects
 				(font
