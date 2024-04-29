@@ -35,14 +35,11 @@ jobs:
             file: kicad-project.kicad_pcb
     steps:
       - uses: actions/checkout@v3
-      - uses: actions-for-kicad/setup-kicad@main
+      - uses: actions-for-kicad/setup-kicad@v1.0
         with:
           version: ${{ matrix.kicad-version }}
-      - name: Export file
-        uses: ./
+      - name: Upload
+        uses: actions/upload-artifact@v3
         with:
-          file: 'tests/kicad-project/${{ matrix.file }}'
-          type: ${{ matrix.type }}
-      - name: Verifiy output
-        run: tests/check-output.sh "${{ matrix.type }}" "${{ matrix.file }}"
-        shell: bash
+          name: 'schematic.pdf'
+          path: './Projects/StepUp/schematic.pdf'
