@@ -5046,7 +5046,7 @@
 				)
 			)
 			(property "Description" "DIODE GEN PURP 100V 150MA SOD123"
-				(at 5.08 10.16 0)
+				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -5097,16 +5097,6 @@
 			)
 			(property "DK_Detail_Page" "/product-detail/en/micro-commercial-co/1N4148W-TP/1N4148WTPMSCT-ND/717311"
 				(at 5.08 22.86 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "DIODE GEN PURP 100V 150MA SOD123"
-				(at 5.08 25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -13194,7 +13184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73b1af75-fe65-4d8a-a7de-0c774b1fbecd")
-		(property "Reference" "JP2"
+		(property "Reference" "JP1"
 			(at 208.28 41.91 0)
 			(effects
 				(font
@@ -13248,7 +13238,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "JP2")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -13851,7 +13841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90bfca1d-3902-47ce-8033-9c3cffe31796")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG01"
 			(at 116.84 215.265 0)
 			(effects
 				(font
@@ -13901,7 +13891,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#FLG05")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -15368,16 +15358,6 @@
 		)
 		(property "Status" "Active"
 			(at 60.96 99.06 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "DIODE GEN PURP 100V 150MA SOD123"
-			(at 60.96 93.98 0)
 			(effects
 				(font
 					(size 1.524 1.524)
