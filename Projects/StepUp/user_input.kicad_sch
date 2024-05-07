@@ -11,7 +11,7 @@
 		(company "Samio")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_02x03_Counter_Clockwise"
+		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -25,7 +25,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x03_Counter_Clockwise"
+			(property "Value" "Conn_02x03_Odd_Even"
 				(at 1.27 -5.08 0)
 				(effects
 					(font
@@ -51,7 +51,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x03, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -78,7 +78,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x03_Counter_Clockwise_1_1"
+			(symbol "Conn_02x03_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
@@ -175,7 +175,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -193,7 +193,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -211,7 +211,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -229,7 +229,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -247,7 +247,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -1811,7 +1811,7 @@
 				(face "KiCad Font")
 				(size 1.524 1.524)
 				(italic yes)
-				(color 29 232 255 1)
+				(color 132 132 132 1)
 			)
 		)
 		(uuid "fb883907-2aa4-4e5e-8972-eb26f11d118c")
@@ -1952,6 +1952,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+		(at 96.52 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15dbda12-1c08-4d61-920c-026370c3df0e")
+		(property "Reference" "J15"
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x03_Odd_Even"
+			(at 97.79 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1fda27f9-d93d-46d5-b5d9-1b0579cdb403")
+		)
+		(pin "3"
+			(uuid "95e30bcc-27f7-4942-8b25-bbcb368b4a58")
+		)
+		(pin "2"
+			(uuid "9ac390b7-9a6f-4b1a-ad34-d990425f9b9c")
+		)
+		(pin "1"
+			(uuid "717536c0-3158-4220-8bed-f7d5c60a4cab")
+		)
+		(pin "5"
+			(uuid "fb2d27d4-edb8-4199-ba7a-45fa74963a3b")
+		)
+		(pin "6"
+			(uuid "7257e99b-1e21-4f67-9a92-f16aaacc6997")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 73.66 0)
 		(unit 1)
@@ -1961,7 +2042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a428a31-a31e-4dc2-bc36-d205878d009e")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR0101"
 			(at 109.22 80.01 0)
 			(effects
 				(font
@@ -2006,12 +2087,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "79e70220-9aae-4b5e-9bbe-ac0165fde2d5")
+			(uuid "f0cffbcf-0c84-4d9b-ae1b-31e4c4c6f96b")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR096")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -2080,10 +2161,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "cbec1243-ebd5-4c0e-bebe-c10664efe357")
+			(uuid "81851700-2f43-4684-91cb-534198b0dca3")
 		)
 		(pin "1"
-			(uuid "eb65dc41-ac02-4241-8f78-e3b1ae2d0128")
+			(uuid "5a2be29b-daa3-4dcd-a7ad-669db52a5a81")
 		)
 		(instances
 			(project "StepUp"
@@ -2199,46 +2280,46 @@
 			)
 		)
 		(pin "12"
-			(uuid "73ce2a5e-7815-44fd-98be-633f4b213051")
+			(uuid "04771e35-e9ad-4c3a-9455-b68f9270b4a8")
 		)
 		(pin "B1"
-			(uuid "480bb62c-63df-476a-9865-2929c346f0ad")
+			(uuid "cea2d68c-b795-4520-901f-3a97ad86ce41")
 		)
 		(pin "11"
-			(uuid "dd5751a3-8d65-43fe-a2e0-527c698b14d6")
+			(uuid "c29ddde4-9c11-4152-9b24-de726856458b")
 		)
 		(pin "MH3"
-			(uuid "e755401b-c2d9-46ae-9b87-0fbcdb3ad1b1")
+			(uuid "da70948f-5049-4b02-afd7-6fb45587e7e1")
 		)
 		(pin "C1"
-			(uuid "08a518f1-19dc-46b6-8d6c-fafdb2e672b9")
+			(uuid "aa5218b6-4634-4c91-aef6-80102a22ce8a")
 		)
 		(pin "MH4"
-			(uuid "fb251811-8e42-461d-a94f-ca9fb77173be")
+			(uuid "11b9bdd6-0fb2-4c76-a695-f21958761c98")
 		)
 		(pin "MH1"
-			(uuid "881d2af4-7a01-4e30-9071-5fe360deae34")
+			(uuid "600a035e-f1ad-4ff0-9ced-285a7af03981")
 		)
 		(pin "13"
-			(uuid "49a8e6e8-6b5f-49f3-a63c-5ae1ca54ad77")
+			(uuid "96c3a438-78b0-407b-9449-5d03c0a477fd")
 		)
 		(pin "1"
-			(uuid "3ceb503a-2e34-4d83-82cc-0ca895b3e850")
+			(uuid "f17e13d1-3a86-4854-ba7f-6cd24eb891ee")
 		)
 		(pin "3"
-			(uuid "79cf9800-28ba-4920-8a40-646d64fa242f")
+			(uuid "e5461ae2-01c4-47ca-b98c-82e1fb272e31")
 		)
 		(pin "MH2"
-			(uuid "f540bde0-005a-47c1-9820-141561651404")
+			(uuid "8c19a067-51c8-4371-92a8-5868086e385b")
 		)
 		(pin "2"
-			(uuid "31a1af12-00a6-49e1-8b5a-8fb248717fe9")
+			(uuid "91b62ef6-3d2b-44fa-b7ce-9a821baaaac2")
 		)
 		(pin "D1"
-			(uuid "394735fb-626d-474b-8a32-20aff05a79e8")
+			(uuid "99957c03-ba23-423a-9895-28d00b17fa7b")
 		)
 		(pin "A1"
-			(uuid "9f7d5daf-3c0f-4130-af3f-2aaa4be8563a")
+			(uuid "d7fc59f5-912a-4c45-8aaf-0d4b882d22b6")
 		)
 		(instances
 			(project "StepUp"
@@ -2259,7 +2340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c049ccdb-b18c-434b-9613-2abd341a73b2")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR0105"
 			(at 167.64 140.97 0)
 			(effects
 				(font
@@ -2304,12 +2385,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "26807f45-820b-461f-9b7b-45d7ea405447")
+			(uuid "fefe37dc-1105-4713-ba6c-1c3da722155a")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0100")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -2325,7 +2406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7db95d7-bb9b-4731-9de9-4f0b44f37ba3")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR0104"
 			(at 149.86 104.14 0)
 			(effects
 				(font
@@ -2371,12 +2452,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd23f049-ebc0-43fa-b14b-d60b32750525")
+			(uuid "06a5fd89-f848-40a5-a695-d4a3e836a12b")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR099")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -2392,7 +2473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3e6997d-c923-49b6-9cee-1fd100bd450c")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR0102"
 			(at 125.73 140.97 0)
 			(effects
 				(font
@@ -2437,92 +2518,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7863b7de-5410-4ff9-bc1e-7b6837334779")
+			(uuid "f0ed8f51-22a0-4347-9ee8-71fa436e8acc")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x03_Counter_Clockwise")
-		(at 96.52 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e8ff23ee-2797-4c04-9fce-9153e3c33642")
-		(property "Reference" "J15"
-			(at 97.536 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x03_Counter_Clockwise"
-			(at 98.044 75.184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
-			(at 96.52 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x03, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 96.52 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "64a029fc-498d-4541-b913-a9d24acf20e8")
-		)
-		(pin "2"
-			(uuid "d90b6c73-eb0f-4859-a514-fd22b0da472a")
-		)
-		(pin "6"
-			(uuid "112e9efa-c440-4317-91da-24bc9d8957c9")
-		)
-		(pin "1"
-			(uuid "ade42dc5-78fe-419b-a798-a2dce9b1f0fc")
-		)
-		(pin "4"
-			(uuid "29522b19-4897-474a-82f7-538aee8673de")
-		)
-		(pin "3"
-			(uuid "e0c05d60-d85c-44b3-b45f-70ea2f528947")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "J15")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -2537,7 +2538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9706a47-ade1-4938-8c95-de46cafa4846")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR0100"
 			(at 109.22 67.31 0)
 			(effects
 				(font
@@ -2582,12 +2583,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8282976f-c2f9-4173-8299-f4de102cb545")
+			(uuid "4bc82461-5246-454b-8acb-27a0365be9e6")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR095")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -2602,7 +2603,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc690f11-477b-42de-b160-c5e3ffddb196")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR0103"
 			(at 128.27 105.41 0)
 			(effects
 				(font
@@ -2647,12 +2648,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "401fd746-a6ff-4ec2-9d08-0fd7ceecd9bf")
+			(uuid "944e2345-9537-4f67-bcb7-131f25684ee2")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR098")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)

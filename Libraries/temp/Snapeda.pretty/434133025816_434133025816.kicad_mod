@@ -1,0 +1,196 @@
+(footprint "434133025816_434133025816"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<B>WS-TASV</B><BR> J-Bend SMT Tact Switch 4.2x3.2 mm")
+	(property "Reference" "REF**"
+		(at -0.1 -2.8064 0)
+		(layer "F.SilkS")
+		(uuid "34763e88-545a-4a0b-be04-f7f2fbc77d58")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "434133025816"
+		(at 2.7768 2.7936 0)
+		(layer "F.Fab")
+		(uuid "191c7409-62e0-4ff9-a368-c9149af8d185")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "434133025816_434133025816"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44c47029-22a0-4ca8-b130-aed4abaa96c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a0a2bb8-8607-46fe-9889-bf40ea020c77")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cfe565c2-3d56-4e38-8b8d-be67b2c83e3b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.1 -0.4)
+		(end -2.1 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "edbe65c8-3ad7-441e-b22f-1e1584f6cb87")
+	)
+	(fp_line
+		(start -1.1 -1.7)
+		(end 1.4 -1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "647cb910-434b-43c6-9dd7-821a2e8a7019")
+	)
+	(fp_line
+		(start -1.1 1.7)
+		(end 1.3 1.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e3e0158c-a9cb-40fc-b03f-c40c44c309e3")
+	)
+	(fp_line
+		(start 2.3 -0.4)
+		(end 2.3 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a9d96ea2-e324-4a78-a545-fd3aef480297")
+	)
+	(fp_circle
+		(center -1 -1.2)
+		(end -0.9 -1.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "2e8f550f-2902-4e83-b9d2-9bfa03736d3d")
+	)
+	(fp_line
+		(start -2 -1.6)
+		(end 2.2 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1449105c-8d23-4f52-a108-5ac8c4427803")
+	)
+	(fp_line
+		(start -2 1.6)
+		(end -2 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bec24242-5979-4bfe-93a7-ad59743f10ec")
+	)
+	(fp_line
+		(start 2.2 -1.6)
+		(end 2.2 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f2180eb-7124-44ea-ab80-ec87b7db5885")
+	)
+	(fp_line
+		(start 2.2 1.6)
+		(end -2 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "684bcd9d-72b4-4f29-bab2-9a25cc34fe38")
+	)
+	(pad "1" smd rect
+		(at -2.075 -1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "b823631e-bc7f-49c6-91b0-46de37a4f679")
+	)
+	(pad "2" smd rect
+		(at 2.075 -1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "8114d19c-150b-4c8c-ba52-0ef152847d16")
+	)
+	(pad "3" smd rect
+		(at -2.075 1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "d3e2bb89-ae86-400c-a615-d5e331cfd98d")
+	)
+	(pad "4" smd rect
+		(at 2.075 1.075)
+		(size 1.05 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "bf8aea62-7431-4347-8a04-641034267773")
+	)
+	(model "${KICAD_3RD_PARTY}/Snapeda.3dshapes/434133025816.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

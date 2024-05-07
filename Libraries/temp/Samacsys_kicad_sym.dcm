@@ -29,4 +29,16 @@ D Switch Tactile N.O. SPST Round Button J-Bend 0.05A 12VDC 2.55N SMD T/R
 K
 F https://tech.alpsalpine.com/prod/e/html/tact/surfacemount/skhu/skhuame010.html?_gl=1*exvdmo*_ga*MTYyMDk0NjQ3NS4xNjM0NzEyNjk0*_ga_D35WK8GQ9N*MTYzNDcxMjY5My4xLjEuMTYzNDcxMjcwNy4w
 $ENDCMP
+#
+$CMP PMF170XP,115
+D Trench MOSFET P-channel 20V 1A SOT323
+K
+F https://assets.nexperia.com/documents/data-sheet/PMF170XP.pdf
+$ENDCMP
+#
+$CMP PTS_647_SK70_SMTR2_LFS
+D TACT 4.5 X 4.5, 7.0 MM H, 2.5N,
+K
+F https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1yorH47j2AhXeR_EDHTgEBoEQFnoECAMQAQ&url=https%3A%2F%2Fwww.ckswitches.com%2Fmedia%2F2567%2Fpts647.pdf&usg=AOvVaw0HXNmuIaM8iAqTX1ZFU1-t
+$ENDCMP
 #End Doc Library

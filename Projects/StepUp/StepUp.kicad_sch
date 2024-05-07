@@ -427,6 +427,44 @@
 		)
 	)
 	(sheet
+		(at 204.47 114.3)
+		(size 33.02 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "9dda156e-3fdf-45bb-95f8-ac79c3ca0e44")
+		(property "Sheetname" "Indicators"
+			(at 204.47 112.9534 0)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "indicators.kicad_sch"
+			(at 204.47 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 55.88 82.55)
 		(size 33.02 17.78)
 		(fields_autoplaced yes)
