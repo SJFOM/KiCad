@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -496,10 +496,10 @@
         "line_style": 0,
         "microvia_diameter": 0.4572,
         "microvia_drill": 0.254,
-        "name": "Power_1",
+        "name": "HIGH_POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3048,
+        "schematic_color": "rgb(255, 0, 0)",
+        "track_width": 2.0,
         "via_diameter": 0.4572,
         "via_drill": 0.254,
         "wire_width": 6
@@ -513,10 +513,10 @@
         "line_style": 0,
         "microvia_diameter": 0.4572,
         "microvia_drill": 0.254,
-        "name": "Power_2",
+        "name": "MOTOR_OUTPUTS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.508,
+        "schematic_color": "rgb(255, 0, 255)",
+        "track_width": 1.0,
         "via_diameter": 0.4572,
         "via_drill": 0.254,
         "wire_width": 6
@@ -548,6 +548,22 @@
       {
         "netclass": "USB_DIFF_PAIR",
         "pattern": "USB_D*"
+      },
+      {
+        "netclass": "HIGH_POWER",
+        "pattern": "BOOST*"
+      },
+      {
+        "netclass": "HIGH_POWER",
+        "pattern": "Vbat"
+      },
+      {
+        "netclass": "MOTOR_OUTPUTS",
+        "pattern": "OA*"
+      },
+      {
+        "netclass": "MOTOR_OUTPUTS",
+        "pattern": "OB*"
       }
     ]
   },

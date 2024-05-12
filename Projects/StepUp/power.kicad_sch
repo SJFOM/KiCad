@@ -3998,6 +3998,12 @@
 		(uuid "e616d8ac-6f65-4e50-9a54-a4e24ad6c34f")
 	)
 	(junction
+		(at 327.66 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6e7b851-e9b2-41f5-9af2-30733e7ca807")
+	)
+	(junction
 		(at 129.54 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4008,12 +4014,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fefeb733-b85c-4dbd-80e5-b2538b828a9b")
-	)
-	(junction
-		(at 327.66 205.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fff4095a-f955-4d22-8cfb-25933f0d8c92")
 	)
 	(wire
 		(pts
@@ -4044,6 +4044,16 @@
 			(type default)
 		)
 		(uuid "039dc2c2-0304-4655-aa23-5f655bcf8a7a")
+	)
+	(wire
+		(pts
+			(xy 210.82 210.82) (xy 213.36 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "045f2557-9367-4e08-af3d-a37bb64c7140")
 	)
 	(wire
 		(pts
@@ -4527,6 +4537,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 215.9) (xy 210.82 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60372209-7fe0-4621-a8f5-3055811f33ca")
+	)
+	(wire
+		(pts
 			(xy 309.88 71.12) (xy 309.88 76.2)
 		)
 		(stroke
@@ -4664,6 +4684,16 @@
 			(type default)
 		)
 		(uuid "7c967308-32da-4e7f-96f8-6160284024c4")
+	)
+	(wire
+		(pts
+			(xy 327.66 205.74) (xy 327.66 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0c3de9-156d-46ae-8b0d-16ac5c65eb57")
 	)
 	(wire
 		(pts
@@ -4844,6 +4874,16 @@
 			(type default)
 		)
 		(uuid "a1343db3-c5ef-4ba6-afa6-834ded74d5a1")
+	)
+	(wire
+		(pts
+			(xy 119.38 212.09) (xy 116.84 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1e33ab8-36fc-42e8-b80f-5163519a361d")
 	)
 	(wire
 		(pts
@@ -5187,16 +5227,6 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 205.74) (xy 327.66 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d54ea794-f8eb-4889-a978-b896beb4c940")
-	)
-	(wire
-		(pts
 			(xy 170.18 226.06) (xy 170.18 220.98)
 		)
 		(stroke
@@ -5224,6 +5254,16 @@
 			(type default)
 		)
 		(uuid "d648f789-44fc-4e16-8795-fec368391392")
+	)
+	(wire
+		(pts
+			(xy 116.84 212.09) (xy 116.84 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d66f7618-a2cf-45b0-9495-51caf3077233")
 	)
 	(wire
 		(pts
@@ -5304,6 +5344,16 @@
 			(type default)
 		)
 		(uuid "e0c3b9a7-1306-478e-958d-a54f98db88ab")
+	)
+	(wire
+		(pts
+			(xy 327.66 205.74) (xy 330.2 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0fcfbde-9b51-4522-9248-89ae6148b9af")
 	)
 	(wire
 		(pts
@@ -6338,6 +6388,52 @@
 			)
 		)
 	)
+	(global_label "BOOST_VOUT"
+		(shape output)
+		(at 213.36 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "6a231107-4c43-48df-ade0-e60dff62ca86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.1381 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BOOST_VIN"
+		(shape output)
+		(at 119.38 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "8096c5d8-fc8c-4a02-b69f-c960945b9582")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.4648 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VMOTOR_MONITOR"
 		(shape output)
 		(at 350.52 101.6 0)
@@ -6361,6 +6457,29 @@
 			)
 		)
 	)
+	(global_label "Vbat"
+		(shape output)
+		(at 330.2 205.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "c79bdbb2-721b-440a-8a4f-ce293e675858")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 337.2975 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:VBUS")
 		(at 177.8 127 0)
@@ -6370,7 +6489,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00183845-ea74-4dac-8b3a-9b589d70cdbc")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR075"
 			(at 177.8 130.81 0)
 			(effects
 				(font
@@ -6420,7 +6539,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR076")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -6681,7 +6800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0acff3ca-8498-4aaa-9012-b297424d5aa6")
-		(property "Reference" "J10"
+		(property "Reference" "J9"
 			(at 84.074 50.292 0)
 			(effects
 				(font
@@ -6733,7 +6852,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "J10")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -6825,7 +6944,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1060b6d9-da73-4568-b3c8-d9e9621df322")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR057"
 			(at 88.9 50.8 0)
 			(effects
 				(font
@@ -6875,7 +6994,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR058")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7172,7 +7291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "129806e9-f992-4681-8111-e75be170772b")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR086"
 			(at 309.88 139.7 0)
 			(effects
 				(font
@@ -7222,7 +7341,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR087")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -7238,7 +7357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12f39dc8-18cf-4d7c-bc79-57c0f5f7d438")
-		(property "Reference" "J13"
+		(property "Reference" "J12"
 			(at 257.048 210.566 90)
 			(effects
 				(font
@@ -7290,7 +7409,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "J13")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -7443,7 +7562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17e69cd8-4212-447f-8e0d-d58c610d8342")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR063"
 			(at 111.76 234.95 0)
 			(effects
 				(font
@@ -7493,7 +7612,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR064")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -7508,7 +7627,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1812e353-a244-4033-b3a9-e2aec540945c")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR062"
 			(at 111.76 151.13 0)
 			(effects
 				(font
@@ -7558,7 +7677,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR063")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -7707,7 +7826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20fac0de-95ba-4fc1-a63a-a0301eeaf4f2")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR088"
 			(at 312.42 240.03 0)
 			(effects
 				(font
@@ -7757,7 +7876,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR089")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -7969,7 +8088,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c86f22f-8d9a-43f1-99e3-f89aba22cae8")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR059"
 			(at 106.68 50.8 0)
 			(effects
 				(font
@@ -8019,7 +8138,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR060")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -8112,7 +8231,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3126af5c-3721-4d33-b9f4-e1650116be49")
-		(property "Reference" "J12"
+		(property "Reference" "J11"
 			(at 164.846 124.46 90)
 			(effects
 				(font
@@ -8164,7 +8283,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "J12")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -8467,7 +8586,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38784f1f-1ac1-4fe1-90c9-171210071aa6")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR092"
 			(at 327.66 207.01 0)
 			(effects
 				(font
@@ -8517,7 +8636,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR093")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -8532,7 +8651,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f604b4b-85b5-4af0-8e3b-270fdb72c1a9")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR061"
 			(at 111.76 128.27 0)
 			(effects
 				(font
@@ -8582,7 +8701,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR062")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -8597,7 +8716,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4247e13c-fe62-4193-8193-9a43bc417224")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR081"
 			(at 264.16 217.17 0)
 			(effects
 				(font
@@ -8647,7 +8766,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR082")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -8662,7 +8781,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44370c1e-ab08-46c9-a5c0-7df4ae2881e5")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR065"
 			(at 129.54 120.65 0)
 			(effects
 				(font
@@ -8712,7 +8831,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR066")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -8938,73 +9057,6 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
 					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 327.66 205.74 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59d56703-eac9-4716-9b19-117a47dd84d8")
-		(property "Reference" "#FLG06"
-			(at 329.565 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 331.47 205.7399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 327.66 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 327.66 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 327.66 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b69633f4-0c08-45b9-9250-6b524c72f540")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -9309,7 +9361,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66272753-8e96-49bf-8edf-4ca2660ec51d")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR089"
 			(at 322.58 82.55 0)
 			(effects
 				(font
@@ -9359,7 +9411,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR090")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -9524,7 +9576,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6894ca54-ade7-44ba-ad19-b7cfbbcdc7ec")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR077"
 			(at 190.5 262.89 0)
 			(effects
 				(font
@@ -9574,7 +9626,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR078")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -9589,7 +9641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ec390fe-4761-4acf-aa0f-3e8f98931dbf")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR082"
 			(at 309.88 49.53 0)
 			(effects
 				(font
@@ -9639,7 +9691,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR083")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -9874,7 +9926,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "739515c7-dd48-473a-8370-1dcfba6d7bc9")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR093"
 			(at 327.66 240.03 0)
 			(effects
 				(font
@@ -9924,7 +9976,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR094")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -9939,7 +9991,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74a4d648-2d19-4bf2-b0cf-ef9bde36e79a")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR084"
 			(at 309.88 93.98 0)
 			(effects
 				(font
@@ -9989,7 +10041,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR085")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -10004,7 +10056,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78f4bfe0-534a-4652-b81d-e2646234c05b")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR094"
 			(at 342.9 240.03 0)
 			(effects
 				(font
@@ -10054,7 +10106,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR095")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -10365,7 +10417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c1165ea-4075-4e42-82d8-9038f73460ac")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR080"
 			(at 238.76 240.03 0)
 			(effects
 				(font
@@ -10415,7 +10467,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR081")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -10430,7 +10482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c2cc767-d1c3-4473-8ad9-f125b5c36fb4")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR074"
 			(at 172.72 55.88 0)
 			(effects
 				(font
@@ -10480,7 +10532,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR075")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -10495,7 +10547,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9249d1cf-22fe-4562-bd03-e915796ee38f")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR083"
 			(at 309.88 82.55 0)
 			(effects
 				(font
@@ -10545,7 +10597,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR084")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -10561,7 +10613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95555acb-120f-45b6-8615-190af7f2c999")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR067"
 			(at 129.54 232.41 0)
 			(effects
 				(font
@@ -10611,7 +10663,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR068")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -10705,7 +10757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "960b286d-8a60-4c4d-a75b-4c134a9e40fb")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR072"
 			(at 147.32 262.89 0)
 			(effects
 				(font
@@ -10755,7 +10807,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR073")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -10838,7 +10890,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "967effbb-685b-4e4b-a4b5-8a2f2ab461aa")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR068"
 			(at 139.7 262.89 0)
 			(effects
 				(font
@@ -10888,7 +10940,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR069")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -10981,7 +11033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f2844f-220d-4d2c-87b8-f93e4bf56444")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR073"
 			(at 165.1 262.89 0)
 			(effects
 				(font
@@ -11031,7 +11083,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR074")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -11047,7 +11099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a37294e5-5145-4e1c-b9f5-254e5d524ab5")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR078"
 			(at 195.58 262.89 0)
 			(effects
 				(font
@@ -11097,7 +11149,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR079")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -11113,7 +11165,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a952ffec-a5cd-41b5-b47e-3af81cb12677")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR079"
 			(at 210.82 262.89 0)
 			(effects
 				(font
@@ -11163,7 +11215,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR080")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -11231,6 +11283,73 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
 					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 327.66 205.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac84d253-2f86-47f1-9bc3-129a350d6adb")
+		(property "Reference" "#FLG06"
+			(at 325.755 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 323.85 205.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 327.66 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 327.66 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57dbe4ef-93d8-4b48-a807-2b258e800be2")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -11878,7 +11997,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c01ed9f6-9f97-4679-8b29-b984d98d45fe")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR070"
 			(at 142.24 85.09 0)
 			(effects
 				(font
@@ -11928,7 +12047,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR071")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -11943,7 +12062,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c823c09e-2625-4346-8b74-118f5b34cea6")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR087"
 			(at 309.88 172.72 0)
 			(effects
 				(font
@@ -11993,7 +12112,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR088")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -12086,7 +12205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3807451-ad24-4721-a8d3-90fa2fa29cf0")
-		(property "Reference" "J11"
+		(property "Reference" "J10"
 			(at 83.566 210.312 0)
 			(effects
 				(font
@@ -12138,7 +12257,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "J11")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12154,7 +12273,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7629de4-63a1-4b78-8226-656568d5e909")
-		(property "Reference" "J14"
+		(property "Reference" "J13"
 			(at 302.514 207.772 0)
 			(effects
 				(font
@@ -12206,7 +12325,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "J14")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -12221,7 +12340,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7b6216d-e2dd-4dfe-8995-f0bdd0ea4da4")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR058"
 			(at 88.9 85.09 0)
 			(effects
 				(font
@@ -12271,7 +12390,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR059")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -12500,7 +12619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dbb1b651-8a29-49b2-b2ed-7af0c45b14f1")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR076"
 			(at 186.69 76.2 0)
 			(effects
 				(font
@@ -12550,7 +12669,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR077")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -12784,7 +12903,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e472a759-db7e-4dd7-b1e6-17c9f944bcff")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR090"
 			(at 322.58 127 0)
 			(effects
 				(font
@@ -12834,7 +12953,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR091")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -12849,7 +12968,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e699e98b-e37d-4bef-89cc-08e368476c38")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR091"
 			(at 322.58 172.72 0)
 			(effects
 				(font
@@ -12899,7 +13018,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR092")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -12914,7 +13033,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6c53e89-25f8-4412-a9e3-bedc236a9fea")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR064"
 			(at 124.46 85.09 0)
 			(effects
 				(font
@@ -12964,7 +13083,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR065")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -12979,7 +13098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8c6cc50-0e47-4b44-955a-e49efcfb9f31")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR069"
 			(at 142.24 69.85 0)
 			(effects
 				(font
@@ -13029,7 +13148,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -13044,7 +13163,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e964bd54-3b09-4361-8f8b-62724720fafd")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR060"
 			(at 106.68 85.09 0)
 			(effects
 				(font
@@ -13094,7 +13213,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR061")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -13186,7 +13305,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed1281c3-c47e-4bae-bc59-145b74009fd5")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR066"
 			(at 129.54 151.13 0)
 			(effects
 				(font
@@ -13236,7 +13355,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR067")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -13405,7 +13524,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f11b7b9a-86a3-41e2-8d71-2d5d1d08395c")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR071"
 			(at 147.32 151.13 0)
 			(effects
 				(font
@@ -13455,7 +13574,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR072")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -13615,7 +13734,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6c022b7-9b51-4c53-9b7a-9c87198e274a")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR085"
 			(at 309.88 127 0)
 			(effects
 				(font
@@ -13665,7 +13784,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR086")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)

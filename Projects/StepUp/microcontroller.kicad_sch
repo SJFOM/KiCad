@@ -3993,53 +3993,51 @@
 				)
 			)
 		)
-		(symbol "Snapeda_kicad_2:434133025816"
+		(symbol "Snapeda_kicad_2:FSM8JSMASTR"
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW?"
-				(at 6.35 0.254 0)
+				(at 20.32 3.302 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify bottom)
 				)
 			)
-			(property "Value" "434133025816"
-				(at 15.24 25.146 0)
+			(property "Value" "FSM8JSMASTR"
+				(at 20.574 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify bottom)
-					(hide yes)
 				)
 			)
-			(property "Footprint" "Snapeda:434133025816_434133025816"
-				(at -3.81 22.352 0)
+			(property "Footprint" "Snapeda:SW4_FSM8JSMASTR_TEC"
+				(at 20.32 -12.954 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/434133025816.pdf"
-				(at 5.08 -2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-				(at 5.08 -2.54 90)
+			(property "Datasheet" "FSM8JSMASTR"
+				(at 20.066 -9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4047,150 +4045,36 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Wurth Electronics"
-				(at -2.54 25.146 0)
+			(property "ki_locked" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
-					(hide yes)
 				)
 			)
-			(property "Description_1" "\nTactile Switch, 0.05A, 16Vdc, 160Gf, Smd Rohs Compliant: Yes |Wurth Elektronik 434133025816\n"
-				(at 0.254 -8.636 0)
+			(property "ki_keywords" "FSM8JSMASTR"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "None"
-				(at 24.638 -2.794 0)
+			(property "ki_fp_filters" "SW4_FSM8JSMASTR_TEC SW4_FSM8JSMASTR_TEC-M SW4_FSM8JSMASTR_TEC-L"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at -13.208 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "QTY" "2900"
-				(at 23.622 -5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=snap"
-				(at 0.508 12.446 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/434133025816?ae"
-				(at 0.508 -15.748 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "434133025816"
-				(at 27.432 23.876 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768651&manufacturer=Wurth Electronics&part_name=434133025816&search_term=434133025816"
-				(at 6.858 -21.082 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PART-NUMBER" "434133025816"
-				(at 23.876 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "OPERATION-FORCE" "160g"
-				(at 29.21 -4.826 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "HEIGHT" "2.5mm"
-				(at 21.59 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at -11.684 -4.318 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=eda"
-				(at -3.048 17.272 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "434133025816_0_0"
+			(symbol "FSM8JSMASTR_0_0"
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 -3.81)
+						(xy 16.51 -5.08) (xy 16.51 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -4202,7 +4086,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -1.27) (xy 2.54 -2.54)
+						(xy 16.51 -3.81) (xy 16.51 -5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -4214,7 +4098,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.545 -2.54) (xy 2.54 -2.54)
+						(xy 18.515 -5.08) (xy 16.51 -5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -4226,7 +4110,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.88 -2.07) (xy 7.69 -1.5)
+						(xy 18.85 -4.61) (xy 21.66 -4.04)
 					)
 					(stroke
 						(width 0.254)
@@ -4238,7 +4122,7 @@
 				)
 				(polyline
 					(pts
-						(xy 8.155 -2.54) (xy 10.16 -2.54)
+						(xy 22.125 -5.08) (xy 24.13 -5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -4250,7 +4134,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -2.54) (xy 10.16 -3.81)
+						(xy 24.13 -5.08) (xy 24.13 -6.35)
 					)
 					(stroke
 						(width 0.254)
@@ -4262,7 +4146,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 -1.27) (xy 10.16 -2.54)
+						(xy 24.13 -3.81) (xy 24.13 -5.08)
 					)
 					(stroke
 						(width 0.254)
@@ -4273,7 +4157,7 @@
 					)
 				)
 				(circle
-					(center 5.08 -2.54)
+					(center 19.05 -5.08)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -4284,7 +4168,7 @@
 					)
 				)
 				(circle
-					(center 7.62 -2.54)
+					(center 21.59 -5.08)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -4295,7 +4179,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -1.27 180)
+					(at 26.67 -3.81 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -4313,7 +4197,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -3.81 180)
+					(at 26.67 -6.35 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -4331,7 +4215,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -1.27 0)
+					(at 13.97 -3.81 0)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -4349,7 +4233,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 0)
+					(at 13.97 -6.35 0)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -5198,6 +5082,12 @@
 		(uuid "1fab616b-c934-4bbd-931e-68ccce8545d0")
 	)
 	(junction
+		(at 66.04 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22230786-1edd-4336-a831-7b82aa4588bf")
+	)
+	(junction
 		(at 231.14 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5246,16 +5136,16 @@
 		(uuid "4480c67c-f8b3-498b-9fbb-6c1dd269a013")
 	)
 	(junction
+		(at 100.33 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4751895a-829b-460d-8a28-24e04017cfc9")
+	)
+	(junction
 		(at 106.68 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b38d365-c7a2-4092-a2b0-ea9640bf81d6")
-	)
-	(junction
-		(at 96.52 213.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4cfee347-235c-460a-abb9-939f9bdb90fe")
 	)
 	(junction
 		(at 66.04 228.6)
@@ -5340,6 +5230,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac55c697-a967-4a6f-a82e-2abc106c003e")
+	)
+	(junction
+		(at 66.04 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aef37c5d-967b-4c65-aad4-c3ac29893a99")
 	)
 	(junction
 		(at 63.5 165.1)
@@ -5609,7 +5505,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 213.36) (xy 96.52 213.36)
+			(xy 63.5 213.36) (xy 100.33 213.36)
 		)
 		(stroke
 			(width 0)
@@ -5819,16 +5715,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 213.36) (xy 106.68 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aa75cb6-28f0-4703-ac7c-81b3e219a0ef")
-	)
-	(wire
-		(pts
 			(xy 246.38 147.32) (xy 261.62 147.32)
 		)
 		(stroke
@@ -5859,7 +5745,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 213.36) (xy 96.52 223.52)
+			(xy 100.33 213.36) (xy 100.33 223.52)
 		)
 		(stroke
 			(width 0)
@@ -5999,7 +5885,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 236.22) (xy 96.52 238.76)
+			(xy 100.33 236.22) (xy 100.33 238.76)
 		)
 		(stroke
 			(width 0)
@@ -6159,6 +6045,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 213.36) (xy 106.68 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c504f95-e420-4c4e-82db-893e1a0182f6")
+	)
+	(wire
+		(pts
 			(xy 71.12 114.3) (xy 96.52 114.3)
 		)
 		(stroke
@@ -6189,7 +6085,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 231.14) (xy 91.44 231.14)
+			(xy 66.04 231.14) (xy 95.25 231.14)
 		)
 		(stroke
 			(width 0)
@@ -6389,7 +6285,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 228.6) (xy 91.44 228.6)
+			(xy 66.04 228.6) (xy 95.25 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6589,16 +6485,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 228.6) (xy 114.3 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "854550bf-f99c-4477-b5c1-dd4e6a5f3b42")
-	)
-	(wire
-		(pts
 			(xy 62.23 66.04) (xy 62.23 68.58)
 		)
 		(stroke
@@ -6646,6 +6532,16 @@
 			(type default)
 		)
 		(uuid "8a054691-45d2-4a16-9094-4470394e8842")
+	)
+	(wire
+		(pts
+			(xy 105.41 228.6) (xy 118.11 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a237a4b-ae4b-48f3-b6e1-057df9296970")
 	)
 	(wire
 		(pts
@@ -6796,6 +6692,16 @@
 			(type default)
 		)
 		(uuid "9c1cdf18-d015-4c67-b1ef-5146e8d5e885")
+	)
+	(wire
+		(pts
+			(xy 105.41 231.14) (xy 118.11 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c35a219-2def-4c95-ae06-a09931e567a3")
 	)
 	(wire
 		(pts
@@ -7379,6 +7285,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 226.06) (xy 82.55 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1275e96-b62b-4066-a515-979dc681cb85")
+	)
+	(wire
+		(pts
 			(xy 238.76 88.9) (xy 238.76 91.44)
 		)
 		(stroke
@@ -7559,6 +7475,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 233.68) (xy 82.55 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b69be0-339b-4f77-b9af-d395279a34dd")
+	)
+	(wire
+		(pts
 			(xy 246.38 121.92) (xy 251.46 121.92)
 		)
 		(stroke
@@ -7566,16 +7492,6 @@
 			(type default)
 		)
 		(uuid "f80744ee-77d6-476c-a1d7-944cc284460e")
-	)
-	(wire
-		(pts
-			(xy 101.6 231.14) (xy 114.3 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f96e8516-b6fc-4c01-9f79-ae0d13dae38d")
 	)
 	(wire
 		(pts
@@ -10254,7 +10170,7 @@
 		(uuid "75a8b5ff-55ad-4dce-828c-e09d9c7ae88e")
 	)
 	(label "USB_D-"
-		(at 111.76 228.6 180)
+		(at 115.57 228.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10320,7 +10236,7 @@
 		(uuid "8e613f20-9d06-43dd-bd44-fe1abe060206")
 	)
 	(label "USB_D+"
-		(at 111.76 231.14 180)
+		(at 115.57 231.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10484,6 +10400,29 @@
 		)
 		(uuid "f9fc94a7-51f1-4936-8a07-b7f04d19f9f4")
 	)
+	(global_label "USB_D-"
+		(shape output)
+		(at 118.11 228.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 0 1)
+			)
+			(justify left)
+		)
+		(uuid "0d069b24-6d79-4015-ab9b-3d6842c380cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.7152 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MCU_BOOST_EN"
 		(shape output)
 		(at 264.16 180.34 0)
@@ -10567,6 +10506,29 @@
 		(uuid "3786ca47-223d-414b-be93-5fbd8188911a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 275.2489 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_D+_IN"
+		(shape output)
+		(at 82.55 233.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 0 1)
+			)
+			(justify left)
+		)
+		(uuid "417b8495-3e5b-4575-afa1-9fb58d463015")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.0581 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10728,6 +10690,29 @@
 		(uuid "b7576d4f-16a1-4573-91e2-b5e4e7b01331")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 276.0352 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_D-_IN"
+		(shape output)
+		(at 82.55 226.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 0 1)
+			)
+			(justify left)
+		)
+		(uuid "cddfbb52-8e98-4345-b7e9-4ac7e0739a48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.0581 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10912,6 +10897,29 @@
 		(uuid "f6772e71-11a9-45ef-b49e-0f930428a34d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 280.8129 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USB_D+"
+		(shape output)
+		(at 118.11 231.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 255 0 1)
+			)
+			(justify left)
+		)
+		(uuid "f9d1110a-bbfa-4079-acc1-4b028cba322c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.7152 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11524,7 +11532,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 96.52 238.76 0)
+		(at 100.33 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11532,7 +11540,7 @@
 		(dnp no)
 		(uuid "2f8c946c-9a40-4806-a7e5-9c2fc6fe9605")
 		(property "Reference" "#PWR09"
-			(at 96.52 245.11 0)
+			(at 100.33 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11541,7 +11549,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 240.03 0)
+			(at 96.52 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11549,7 +11557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 96.52 238.76 0)
+			(at 100.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11558,7 +11566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 238.76 0)
+			(at 100.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11567,7 +11575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 238.76 0)
+			(at 100.33 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11651,6 +11659,156 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Snapeda_kicad_2:FSM8JSMASTR")
+		(at 34.29 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a5fbfde-ae79-47ef-9c1c-5c2a12966ad7")
+		(property "Reference" "SW2"
+			(at 54.864 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "FSM8JSMASTR"
+			(at 55.372 70.866 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Snapeda:SW4_FSM8JSMASTR_TEC"
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "FSM8JSMASTR"
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "74bdd3cb-272e-45c3-88f7-8c5d5146d6e9")
+		)
+		(pin "3"
+			(uuid "3328cc3b-d2b5-41b8-af49-784ebd290cd9")
+		)
+		(pin "4"
+			(uuid "3eae817e-ee06-4ecb-b27e-69d040ebeb94")
+		)
+		(pin "1"
+			(uuid "bd9a5b15-4f65-4102-b16b-965b7bbcfb68")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Snapeda_kicad_2:FSM8JSMASTR")
+		(at 175.26 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e926879-92ef-4bb2-88de-7a5630e6c48c")
+		(property "Reference" "SW3"
+			(at 196.088 40.386 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "FSM8JSMASTR"
+			(at 197.104 48.006 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Snapeda:SW4_FSM8JSMASTR_TEC"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "FSM8JSMASTR"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "da9b33b6-83aa-4c02-9af6-74c18acb5b05")
+		)
+		(pin "3"
+			(uuid "d493376b-38c4-40c0-8ce6-c625c8d9ec51")
+		)
+		(pin "4"
+			(uuid "6a1e8a9c-ef5c-4cf6-90c8-3396c6f74c95")
+		)
+		(pin "1"
+			(uuid "3438329d-deec-4aa2-bc3d-f93897c22a99")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -12975,223 +13133,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Snapeda_kicad_2:434133025816")
-		(at 48.26 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d8fe321-4600-419f-a669-2d3748c3b113")
-		(property "Reference" "SW1"
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "434133025816"
-			(at 63.5 24.384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Snapeda:434133025816_434133025816"
-			(at 44.45 27.178 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/434133025816.pdf"
-			(at 53.34 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 53.34 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Wurth Electronics"
-			(at 45.72 24.384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nTactile Switch, 0.05A, 16Vdc, 160Gf, Smd Rohs Compliant: Yes |Wurth Elektronik 434133025816\n"
-			(at 48.514 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 72.898 52.324 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 35.052 51.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "QTY" "2900"
-			(at 71.882 54.864 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=snap"
-			(at 48.768 37.084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/434133025816?ae"
-			(at 48.768 65.278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "434133025816"
-			(at 75.692 25.654 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768651&manufacturer=Wurth Electronics&part_name=434133025816&search_term=434133025816"
-			(at 55.118 70.612 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PART-NUMBER" "434133025816"
-			(at 72.136 44.196 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OPERATION-FORCE" "160g"
-			(at 77.47 54.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" "2.5mm"
-			(at 69.85 48.514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 36.576 53.848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=eda"
-			(at 45.212 32.258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f91704d9-dcd5-4db2-81f9-72e4dcf4ff93")
-		)
-		(pin "4"
-			(uuid "df6c09e2-3729-4221-ad53-bd4f1deb4978")
-		)
-		(pin "2"
-			(uuid "78772f4b-bb71-4e44-bf95-40faccb4b044")
-		)
-		(pin "3"
-			(uuid "5e95c679-21ef-450a-a40f-75e6db2431ce")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 116.84 213.36 180)
 		(unit 1)
@@ -13826,223 +13767,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Snapeda_kicad_2:434133025816")
-		(at 48.26 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c18c9fbc-60a4-42f7-97ae-196693bf9282")
-		(property "Reference" "SW2"
-			(at 54.61 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "434133025816"
-			(at 63.5 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Snapeda:434133025816_434133025816"
-			(at 44.45 42.418 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/434133025816.pdf"
-			(at 53.34 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 53.34 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Wurth Electronics"
-			(at 45.72 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nTactile Switch, 0.05A, 16Vdc, 160Gf, Smd Rohs Compliant: Yes |Wurth Elektronik 434133025816\n"
-			(at 48.514 73.406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 72.898 67.564 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 35.052 66.802 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "QTY" "2900"
-			(at 71.882 70.104 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=snap"
-			(at 48.768 52.324 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/434133025816?ae"
-			(at 48.768 80.518 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "434133025816"
-			(at 75.692 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768651&manufacturer=Wurth Electronics&part_name=434133025816&search_term=434133025816"
-			(at 55.118 85.852 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PART-NUMBER" "434133025816"
-			(at 72.136 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OPERATION-FORCE" "160g"
-			(at 77.47 69.596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" "2.5mm"
-			(at 69.85 63.754 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 36.576 69.088 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=eda"
-			(at 45.212 47.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df2c71b2-b5bb-464b-9cad-73cf9dd9c4a6")
-		)
-		(pin "4"
-			(uuid "3a412df7-1f54-469f-8dcb-95eb303ff1f1")
-		)
-		(pin "2"
-			(uuid "6f52e371-46d2-4568-9c3e-e3a78c10cb6f")
-		)
-		(pin "3"
-			(uuid "b281b56e-4918-44e6-934f-15739d4ff68f")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 83.82 220.98 90)
 		(unit 1)
@@ -14455,7 +14179,7 @@
 			)
 		)
 		(property "Value" "1N4148W-TP"
-			(at 70.358 72.39 0)
+			(at 73.66 72.39 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14647,223 +14371,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Snapeda_kicad_2:434133025816")
-		(at 189.23 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d204dfc8-e39b-4e16-996e-5eeee1e0801c")
-		(property "Reference" "SW3"
-			(at 195.58 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "434133025816"
-			(at 204.47 16.764 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Snapeda:434133025816_434133025816"
-			(at 185.42 19.558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/434133025816.pdf"
-			(at 194.31 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 194.31 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Wurth Electronics"
-			(at 186.69 16.764 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nTactile Switch, 0.05A, 16Vdc, 160Gf, Smd Rohs Compliant: Yes |Wurth Elektronik 434133025816\n"
-			(at 189.484 50.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 213.868 44.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 176.022 43.942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "QTY" "2900"
-			(at 212.852 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=snap"
-			(at 189.738 29.464 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/434133025816?ae"
-			(at 189.738 57.658 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "434133025816"
-			(at 216.662 18.034 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=13768651&manufacturer=Wurth Electronics&part_name=434133025816&search_term=434133025816"
-			(at 196.088 62.992 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PART-NUMBER" "434133025816"
-			(at 213.106 36.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "OPERATION-FORCE" "160g"
-			(at 218.44 46.736 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "HEIGHT" "2.5mm"
-			(at 210.82 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 177.546 46.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/434133025816/Wurth+Elektronik/view-part/?ref=eda"
-			(at 186.182 24.638 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d859119a-803d-4f20-b6eb-89d6cde5f932")
-		)
-		(pin "4"
-			(uuid "aa27c85e-69d6-40bd-8d70-341eea7e6b04")
-		)
-		(pin "2"
-			(uuid "6db092a6-a868-4981-a5e0-106507dbb2aa")
-		)
-		(pin "3"
-			(uuid "288c5fea-5f53-43bf-9388-ef4b3c9d4cd9")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 149.86 48.26 0)
 		(unit 1)
@@ -14946,7 +14453,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
-		(at 96.52 228.6 0)
+		(at 100.33 228.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14954,7 +14461,7 @@
 		(dnp no)
 		(uuid "d935cccd-1eb4-4890-9a85-9e76a4badacc")
 		(property "Reference" "U1"
-			(at 98.806 235.966 0)
+			(at 102.616 235.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14963,7 +14470,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 99.06 237.998 0)
+			(at 102.87 237.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14972,7 +14479,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 97.79 234.95 0)
+			(at 101.6 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14983,7 +14490,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
-			(at 97.79 236.855 0)
+			(at 101.6 236.855 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14993,7 +14500,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
-			(at 96.52 228.6 0)
+			(at 100.33 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15023,6 +14530,81 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Snapeda_kicad_2:FSM8JSMASTR")
+		(at 34.29 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2000033-d4c9-47c1-8981-bc1099621227")
+		(property "Reference" "SW1"
+			(at 55.118 48.006 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "FSM8JSMASTR"
+			(at 56.134 55.626 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Snapeda:SW4_FSM8JSMASTR_TEC"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "FSM8JSMASTR"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e45ca851-a3ee-4f3e-a633-0d3bd0a1a148")
+		)
+		(pin "3"
+			(uuid "79f26137-342b-408e-a58e-8757d33c94e3")
+		)
+		(pin "4"
+			(uuid "be60189c-4966-4e5e-85f5-928669c12754")
+		)
+		(pin "1"
+			(uuid "d21b4e75-434c-4701-93b0-ef2647be80d8")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
