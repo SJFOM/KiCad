@@ -11140,7 +11140,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 0 1)
+				(color 0 194 0 1)
 			)
 			(justify left)
 		)
@@ -11232,7 +11232,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 0 1)
+				(color 0 194 0 1)
 			)
 			(justify left)
 		)
@@ -11347,7 +11347,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 194 1)
+				(color 194 0 0 1)
 			)
 			(justify left)
 		)
@@ -11462,7 +11462,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 194 1)
+				(color 194 0 0 1)
 			)
 			(justify left)
 		)
@@ -11531,7 +11531,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 0 1)
+				(color 0 194 0 1)
 			)
 			(justify left)
 		)
@@ -11554,7 +11554,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 194 1)
+				(color 194 0 0 1)
 			)
 			(justify left)
 		)
@@ -11623,7 +11623,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 0 1)
+				(color 0 194 0 1)
 			)
 			(justify left)
 		)

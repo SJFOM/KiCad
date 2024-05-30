@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|105592000|97305000|6167e7f3-61e1-47b9-909a-2544dd391fa9|6b354031-faee-42f2-b322-4d927e26698f",
+        "hole_clearance|105592000|97305000|813080ad-461f-4dff-a079-ad1524a1f3a3|6b354031-faee-42f2-b322-4d927e26698f",
+        "hole_clearance|111692000|97305000|2bfed739-587d-4b0b-9e97-cc683d620329|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db",
+        "hole_clearance|111692000|97305000|6a59458c-2dde-4cc4-a1db-cb8a2edc6b66|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db"
+      ],
       "meta": {
         "version": 2
       },
@@ -522,7 +527,7 @@
         "microvia_drill": 0.254,
         "name": "USB_DIFF_PAIR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(255, 255, 0)",
+        "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.1524,
         "via_diameter": 0.4572,
         "via_drill": 0.254,
@@ -565,7 +570,7 @@
       "plot": "Gerber & Drill files/",
       "pos_files": "Fabrication data/Centroid files/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "3D files/StepUp_v0.1.step",
       "svg": "",
       "vrml": ""
     },
@@ -887,7 +892,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "Schematic pdfs/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,

@@ -8891,7 +8891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Ultra_librarian_footprints:QFN20_3x3_TRI"
+		(property "Footprint" "Ultra_librarian_footprints:QFN20_3x3_TRI-M"
 			(at 144.78 148.59 0)
 			(effects
 				(font

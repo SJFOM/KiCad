@@ -2321,7 +2321,7 @@
 		)
 		(uuid "a0c4c975-a745-4f52-b96f-d3ae830650ef")
 	)
-	(text "To indicate device states, operates at 4kHz"
+	(text "To indicate device states, f = 4kHz"
 		(exclude_from_sim no)
 		(at 152.654 68.326 0)
 		(effects
