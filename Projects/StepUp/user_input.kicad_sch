@@ -7,8 +7,8 @@
 	(title_block
 		(title "User Input")
 		(date "2024-04-28")
-		(rev "v1.0")
-		(company "Samio")
+		(rev "v0.1")
+		(company "SJFOM")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
@@ -2413,7 +2413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07cb4a5d-6018-44c0-ad3b-db2791a7d23a")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR0113"
 			(at 106.68 104.14 0)
 			(effects
 				(font
@@ -2464,7 +2464,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0111")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -2477,7 +2477,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "15dbda12-1c08-4d61-920c-026370c3df0e")
 		(property "Reference" "J12"
@@ -2524,6 +2524,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 113.03 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "1fda27f9-d93d-46d5-b5d9-1b0579cdb403")
 		)
@@ -2561,7 +2570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a428a31-a31e-4dc2-bc36-d205878d009e")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0115"
 			(at 125.73 80.01 0)
 			(effects
 				(font
@@ -2611,7 +2620,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0113")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -2624,7 +2633,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4cce0c2c-20cf-4b2e-b67d-9576fe660613")
 		(property "Reference" "JP10"
 			(at 104.648 64.77 0)
@@ -2663,6 +2672,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 99.06 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 99.06 66.04 0)
 			(effects
 				(font
@@ -2748,6 +2766,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 137.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81851700-2f43-4684-91cb-534198b0dca3")
 		)
@@ -2770,7 +2806,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6b3ff2ca-e983-497f-90ae-6e0c55a63678")
 		(property "Reference" "JP9"
 			(at 101.854 124.206 0)
@@ -2816,6 +2852,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 96.52 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecc56fca-71c7-449e-95f0-c407374aa0f5")
 		)
@@ -2838,7 +2883,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8db17e43-6aa7-4a04-a4b8-636e20b6d7a5")
 		(property "Reference" "JP12"
 			(at 104.648 69.85 0)
@@ -2885,6 +2930,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 99.06 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bd8c156f-28b1-421d-b6b5-241bcea34a23")
 		)
@@ -2907,7 +2961,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9369b86e-d42b-476a-89e9-61ddd71b799e")
 		(property "Reference" "JP11"
 			(at 104.648 67.31 0)
@@ -2946,6 +3000,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 99.06 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 99.06 68.58 0)
 			(effects
 				(font
@@ -3073,6 +3136,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "THB001P"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "thru-hole"
+			(at 130.81 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "04771e35-e9ad-4c3a-9455-b68f9270b4a8")
 		)
@@ -3134,7 +3224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c049ccdb-b18c-434b-9613-2abd341a73b2")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0119"
 			(at 167.64 140.97 0)
 			(effects
 				(font
@@ -3184,7 +3274,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0117")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -3200,7 +3290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7db95d7-bb9b-4731-9de9-4f0b44f37ba3")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0118"
 			(at 149.86 104.14 0)
 			(effects
 				(font
@@ -3251,7 +3341,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0116")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -3264,7 +3354,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c9ae0153-47fd-4b19-a0dd-2f40bb6c46ac")
 		(property "Reference" "JP8"
 			(at 101.854 116.586 0)
@@ -3302,6 +3392,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 96.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 96.52 118.11 0)
 			(effects
 				(font
@@ -3387,6 +3486,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 119.38 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dfcb0d5f-4701-4a3f-a1ff-c8a083781720")
 		)
@@ -3412,7 +3529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3e6997d-c923-49b6-9cee-1fd100bd450c")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0116"
 			(at 125.73 140.97 0)
 			(effects
 				(font
@@ -3462,7 +3579,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0114")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -3477,7 +3594,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9706a47-ade1-4938-8c95-de46cafa4846")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0114"
 			(at 125.73 67.31 0)
 			(effects
 				(font
@@ -3527,7 +3644,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0112")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -3540,7 +3657,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f9573d74-ca00-461c-903a-2e70c22ce551")
 		(property "Reference" "JP13"
 			(at 193.294 114.046 0)
@@ -3586,6 +3703,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 187.96 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8570910b-36ea-4ebe-97da-ea5153665bbb")
 		)
@@ -3610,7 +3736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc690f11-477b-42de-b160-c5e3ffddb196")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0117"
 			(at 128.27 105.41 0)
 			(effects
 				(font
@@ -3660,7 +3786,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0115")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)

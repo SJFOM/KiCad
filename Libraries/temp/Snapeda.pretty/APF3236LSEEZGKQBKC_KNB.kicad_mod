@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "APF3236LSEEZGKQBKC ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0.5 -3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "ae65286e-9e62-4941-8a8d-532d80fe13ba")
@@ -28,7 +28,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "APF3236LSEEZGKQBKC_KNB"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -382,21 +382,9 @@
 		(uuid "9f86f7fc-2fd2-472e-a3b4-d4926bd73a98")
 	)
 	(fp_text user "*"
-		(at -2.2352 -2.2987 0)
+		(at -2.5 -2 0)
 		(layer "F.SilkS")
 		(uuid "319c3d67-a306-46c4-8302-b2f8e2c62bb5")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "*"
-		(at -2.2352 -2.2987 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "3cbcd17c-6a6c-48e6-9121-1040107f4d1e")
 		(effects
 			(font
 				(size 1 1)

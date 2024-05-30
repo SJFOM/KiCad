@@ -25,7 +25,7 @@
 			)
 		)
 	)
-	(property "Footprint" ""
+	(property "Footprint" "BAT_1043P"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -283,13 +283,13 @@
 	)
 	(model "${KICAD_3RD_PARTY}/Snapeda.3dshapes/1043P.step"
 		(offset
-			(xyz -2.7 8.4 10.3)
+			(xyz 3 -8.4 10.3)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 90)
+			(xyz -90 0 -90)
 		)
 	)
 )

@@ -7,8 +7,8 @@
 	(title_block
 		(title "Power")
 		(date "2024-04-28")
-		(rev "v1.0")
-		(company "Samio")
+		(rev "v0.1")
+		(company "SJFOM")
 	)
 	(lib_symbols
 		(symbol "1043P:1043P"
@@ -6850,7 +6850,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00183845-ea74-4dac-8b3a-9b589d70cdbc")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR083"
 			(at 137.16 130.81 0)
 			(effects
 				(font
@@ -6900,7 +6900,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR081")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -7028,6 +7028,42 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "Microchip"
+			(at 124.46 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MIC2253-06YML-TR"
+			(at 124.46 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 124.46 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 124.46 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "10"
 			(uuid "f524b468-e000-4a5a-95a7-4d997f67d45c")
 		)
@@ -7133,6 +7169,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BSS83PH6327XTSA1"
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "271325bf-d5b4-43ef-9ec6-6365fc473fe6")
 		)
@@ -7160,7 +7223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a24a6b0-3d48-4ba0-a61f-6ab824cfd04a")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR092"
 			(at 228.6 52.07 0)
 			(effects
 				(font
@@ -7210,7 +7273,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR090")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -7224,7 +7287,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0acff3ca-8498-4aaa-9012-b297424d5aa6")
 		(property "Reference" "J6"
 			(at 43.434 50.292 0)
@@ -7261,6 +7324,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 43.18 53.34 0)
 			(effects
 				(font
@@ -7346,6 +7418,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ac602415-aec3-4955-894a-fd782ac142f5")
 		)
@@ -7370,7 +7460,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1060b6d9-da73-4568-b3c8-d9e9621df322")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR065"
 			(at 48.26 50.8 0)
 			(effects
 				(font
@@ -7420,7 +7510,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR063")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -7435,7 +7525,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11459710-e5ab-41b4-8bcf-c8d422cb5f60")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 45.72 74.676 90)
 			(effects
 				(font
@@ -7478,6 +7568,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "729b9f51-6b88-4aff-b1f3-0b2bc274c27f")
 		)
@@ -7487,7 +7604,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -7502,7 +7619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "114b4bf2-b6d5-44c3-9b5a-51fc220257c7")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR094"
 			(at 247.65 52.07 0)
 			(effects
 				(font
@@ -7552,7 +7669,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR092")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -7692,6 +7809,15 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ad49721f-3d59-45d1-b80c-4ba4e3058081")
 		)
@@ -7782,7 +7908,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "129806e9-f992-4681-8111-e75be170772b")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR0100"
 			(at 309.88 139.7 0)
 			(effects
 				(font
@@ -7832,7 +7958,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR098")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -7846,7 +7972,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "12f39dc8-18cf-4d7c-bc79-57c0f5f7d438")
 		(property "Reference" "J9"
 			(at 216.408 210.566 90)
@@ -7891,6 +8017,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 213.36 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d1ba2d1-c137-4f52-996e-b0cf0e2cf377")
 		)
@@ -7913,7 +8048,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1373994d-574c-4b93-82da-6122afdc1827")
 		(property "Reference" "JP6"
@@ -7961,6 +8096,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 337.82 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b792270a-eb28-4b99-bc8c-dd3dbfc3ffda")
 		)
@@ -7985,7 +8129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1517a998-74ea-47be-abbb-6ee2f1a2cac5")
-		(property "Reference" "R38"
+		(property "Reference" "R40"
 			(at 307.34 145.034 90)
 			(effects
 				(font
@@ -8028,6 +8172,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c27f6775-2f5b-484b-a3a9-3b3080ca7086")
 		)
@@ -8037,7 +8208,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R38")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -8053,7 +8224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17e69cd8-4212-447f-8e0d-d58c610d8342")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR071"
 			(at 71.12 234.95 0)
 			(effects
 				(font
@@ -8103,7 +8274,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR069")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -8118,7 +8289,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1812e353-a244-4033-b3a9-e2aec540945c")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR070"
 			(at 71.12 151.13 0)
 			(effects
 				(font
@@ -8168,7 +8339,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR068")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -8250,7 +8421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f62809c-84ab-430b-860b-6d46363cfd48")
-		(property "Reference" "R39"
+		(property "Reference" "R41"
 			(at 307.34 157.734 90)
 			(effects
 				(font
@@ -8293,6 +8464,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6310729b-b6b1-4422-94e5-bbfaf0b28fa6")
 		)
@@ -8302,7 +8500,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R39")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -8317,7 +8515,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20fac0de-95ba-4fc1-a63a-a0301eeaf4f2")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR0102"
 			(at 312.42 240.03 0)
 			(effects
 				(font
@@ -8367,7 +8565,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0100")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -8478,6 +8676,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "ASPI-0530HI-2R2M-T2"
+			(at 114.3 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Abracon LLC"
+			(at 114.3 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 114.3 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d941f5e4-3c90-489f-9c5c-d771e7b2c28c")
 		)
@@ -8503,7 +8728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2a80c29b-8a6c-4da1-934e-f57729713efa")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR091"
 			(at 227.33 44.45 0)
 			(effects
 				(font
@@ -8553,7 +8778,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR089")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -8568,7 +8793,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b309850-c301-48cf-8985-d1a996641aee")
-		(property "Reference" "R31"
+		(property "Reference" "R33"
 			(at 172.72 226.0599 0)
 			(effects
 				(font
@@ -8621,6 +8846,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 170.18 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 170.18 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c3ccc11-c154-403a-b5a4-593b799221e8")
 		)
@@ -8630,7 +8873,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R31")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -8645,7 +8888,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c86f22f-8d9a-43f1-99e3-f89aba22cae8")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR067"
 			(at 66.04 50.8 0)
 			(effects
 				(font
@@ -8695,7 +8938,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR065")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -8710,7 +8953,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30029bca-bdb9-4b95-8df5-4223a2b1cc81")
-		(property "Reference" "R23"
+		(property "Reference" "R25"
 			(at 73.66 134.6199 0)
 			(effects
 				(font
@@ -8763,6 +9006,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3e4ceffe-24df-4b2b-a6ef-518afb5d30f5")
 		)
@@ -8772,7 +9033,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R23")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -8786,7 +9047,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3126af5c-3721-4d33-b9f4-e1650116be49")
 		(property "Reference" "J8"
 			(at 124.206 124.46 90)
@@ -8831,6 +9092,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 121.92 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "26003cba-6e4d-41db-b982-a7b3fc4e77a5")
 		)
@@ -8855,7 +9125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32b9390e-061b-4c7d-8593-47469b0d5682")
-		(property "Reference" "R22"
+		(property "Reference" "R24"
 			(at 54.356 55.88 90)
 			(effects
 				(font
@@ -8898,6 +9168,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7f54093-943c-496b-9eca-79ae3e736b10")
 		)
@@ -8907,7 +9204,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R22")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8922,7 +9219,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33a0a3dc-df8f-4143-bf48-bff8f4ccdac5")
-		(property "Reference" "R29"
+		(property "Reference" "R31"
 			(at 157.48 226.0599 0)
 			(effects
 				(font
@@ -8975,6 +9272,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 154.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 154.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65d9067a-e336-4cbb-bd6e-fea8ebf79442")
 		)
@@ -8984,7 +9299,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R29")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -8999,7 +9314,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "33e83e28-06b6-4d92-a7cb-2426682e2067")
-		(property "Reference" "R27"
+		(property "Reference" "R29"
 			(at 143.51 241.554 90)
 			(effects
 				(font
@@ -9050,6 +9365,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 143.51 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 143.51 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b2af4693-3ebc-4ee5-bda5-313260cbb60f")
 		)
@@ -9059,7 +9392,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R27")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -9119,6 +9452,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12167985-7f71-4707-82fc-5450164b0a30")
 		)
@@ -9143,7 +9503,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38784f1f-1ac1-4fe1-90c9-171210071aa6")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0106"
 			(at 327.66 207.01 0)
 			(effects
 				(font
@@ -9193,7 +9553,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0104")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -9208,7 +9568,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f604b4b-85b5-4af0-8e3b-270fdb72c1a9")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR069"
 			(at 71.12 128.27 0)
 			(effects
 				(font
@@ -9258,7 +9618,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR067")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -9273,7 +9633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4247e13c-fe62-4193-8193-9a43bc417224")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR090"
 			(at 223.52 217.17 0)
 			(effects
 				(font
@@ -9323,7 +9683,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR088")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -9338,7 +9698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44370c1e-ab08-46c9-a5c0-7df4ae2881e5")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR073"
 			(at 88.9 120.65 0)
 			(effects
 				(font
@@ -9388,7 +9748,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR071")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -9404,7 +9764,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4af9feb3-f3c8-4f64-a9d1-8189210bbc02")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR093"
 			(at 247.65 44.45 0)
 			(effects
 				(font
@@ -9454,7 +9814,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR091")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -9522,6 +9882,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9cba790-91f4-4e53-9427-9f262adbe548")
 		)
@@ -9544,7 +9922,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4f7f096e-653a-4b9c-a172-b6aa25cdebb7")
 		(property "Reference" "JP3"
@@ -9593,6 +9971,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 161.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "28ff92fd-4145-453e-ad92-ddf4e0cb0193")
 		)
@@ -9617,7 +10004,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50f8ad07-2032-4a59-8ccf-d907fe0a8920")
-		(property "Reference" "R30"
+		(property "Reference" "R32"
 			(at 157.48 243.8399 0)
 			(effects
 				(font
@@ -9670,6 +10057,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 154.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 154.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8e49482d-74f4-45e0-a064-1a5af2d21842")
 		)
@@ -9679,7 +10084,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R30")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -9761,7 +10166,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6060dd83-5f50-4cdb-abf8-01b4a60e603f")
-		(property "Reference" "R34"
+		(property "Reference" "R36"
 			(at 307.34 67.564 90)
 			(effects
 				(font
@@ -9804,6 +10209,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c4e47a46-20d7-4cf5-94a8-39f6d3107742")
 		)
@@ -9813,7 +10245,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R34")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -9873,7 +10305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "100V"
+		(property "Voltage" "25V"
 			(at 144.526 255.016 0)
 			(effects
 				(font
@@ -9882,6 +10314,24 @@
 			)
 		)
 		(property "Dielectric" "X7R"
+			(at 149.86 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 149.86 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
 			(at 149.86 250.19 0)
 			(effects
 				(font
@@ -9960,6 +10410,24 @@
 				(hide yes)
 			)
 		)
+		(property "Package" "0603"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6b906a02-47a6-4f58-ad53-0e519140d2bf")
 		)
@@ -9984,7 +10452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66272753-8e96-49bf-8edf-4ca2660ec51d")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR0103"
 			(at 322.58 82.55 0)
 			(effects
 				(font
@@ -10034,7 +10502,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0101")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -10175,6 +10643,33 @@
 				)
 			)
 		)
+		(property "MPN" "LTST-C171GKT"
+			(at 342.9 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On Inc."
+			(at 342.9 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 342.9 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a843884-df0b-4092-b3fb-2e1be03cd35b")
 		)
@@ -10199,7 +10694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6894ca54-ade7-44ba-ad19-b7cfbbcdc7ec")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR085"
 			(at 149.86 262.89 0)
 			(effects
 				(font
@@ -10249,7 +10744,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR083")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -10264,7 +10759,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ec390fe-4761-4acf-aa0f-3e8f98931dbf")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR096"
 			(at 309.88 49.53 0)
 			(effects
 				(font
@@ -10314,7 +10809,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR094")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -10382,6 +10877,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "712f71c8-63ef-40e1-bda7-05c68040b214")
 		)
@@ -10406,7 +10919,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71506a31-7dd7-4bfb-82c9-c7b8267b0105")
-		(property "Reference" "R35"
+		(property "Reference" "R37"
 			(at 307.34 96.774 90)
 			(effects
 				(font
@@ -10449,6 +10962,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6669db69-f44f-499a-ab6a-f978e9a17c17")
 		)
@@ -10458,7 +10998,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R35")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -10525,6 +11065,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 312.42 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 312.42 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f38a7f9d-4bf2-4a51-ac7f-7f5472755cd3")
 		)
@@ -10549,7 +11107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "739515c7-dd48-473a-8370-1dcfba6d7bc9")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR0107"
 			(at 327.66 240.03 0)
 			(effects
 				(font
@@ -10599,7 +11157,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0105")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -10614,7 +11172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74a4d648-2d19-4bf2-b0cf-ef9bde36e79a")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR098"
 			(at 309.88 93.98 0)
 			(effects
 				(font
@@ -10664,7 +11222,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR096")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -10679,7 +11237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78f4bfe0-534a-4652-b81d-e2646234c05b")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR0108"
 			(at 342.9 240.03 0)
 			(effects
 				(font
@@ -10729,7 +11287,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0106")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -10862,6 +11420,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 88.9 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dbd971be-2b10-4de6-9b30-9f306b954672")
 		)
@@ -10904,7 +11471,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7uF"
 			(at 109.601 134.493 0)
 			(effects
 				(font
@@ -10940,6 +11507,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "807f8b07-752a-4b05-9bb8-6357eedbfeed")
 		)
@@ -10962,7 +11556,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "86b7c5d4-5456-4cae-a297-4d5a847bbf8e")
 		(property "Reference" "J10"
@@ -11001,6 +11595,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 236.22 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 236.22 43.18 0)
 			(effects
 				(font
@@ -11097,6 +11700,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 146.05 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 146.05 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91f92d02-e6bc-4f43-aac5-7415efea4d44")
 		)
@@ -11121,7 +11742,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c1165ea-4075-4e42-82d8-9038f73460ac")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR088"
 			(at 198.12 240.03 0)
 			(effects
 				(font
@@ -11171,7 +11792,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR086")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -11186,7 +11807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c2cc767-d1c3-4473-8ad9-f125b5c36fb4")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR082"
 			(at 132.08 55.88 0)
 			(effects
 				(font
@@ -11236,7 +11857,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR080")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -11251,7 +11872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9249d1cf-22fe-4562-bd03-e915796ee38f")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR097"
 			(at 309.88 82.55 0)
 			(effects
 				(font
@@ -11301,7 +11922,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR095")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -11317,7 +11938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95555acb-120f-45b6-8615-190af7f2c999")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR075"
 			(at 88.9 232.41 0)
 			(effects
 				(font
@@ -11367,7 +11988,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR073")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -11427,13 +12048,58 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "Voltage" "10V"
 			(at 56.896 224.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Type" "SMD"
+			(at 66.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "T491B107M010AT"
+			(at 66.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 66.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "1411 (3528 Metric)"
+			(at 66.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 66.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11461,7 +12127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "960b286d-8a60-4c4d-a75b-4c134a9e40fb")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR080"
 			(at 106.68 262.89 0)
 			(effects
 				(font
@@ -11511,7 +12177,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR078")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -11526,7 +12192,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96727281-186a-448c-8c94-990b321240bd")
-		(property "Reference" "R33"
+		(property "Reference" "R35"
 			(at 307.34 54.864 90)
 			(effects
 				(font
@@ -11569,6 +12235,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7ac19025-c756-46c1-801f-68acecf18dd1")
 		)
@@ -11578,7 +12271,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R33")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -11594,7 +12287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "967effbb-685b-4e4b-a4b5-8a2f2ab461aa")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR076"
 			(at 99.06 262.89 0)
 			(effects
 				(font
@@ -11644,7 +12337,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR074")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -11712,6 +12405,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ecb85c64-8ab3-4eb0-a5a9-badddad5c133")
 		)
@@ -11737,7 +12448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f2844f-220d-4d2c-87b8-f93e4bf56444")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR081"
 			(at 124.46 262.89 0)
 			(effects
 				(font
@@ -11787,7 +12498,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR079")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -11803,7 +12514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a37294e5-5145-4e1c-b9f5-254e5d524ab5")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR086"
 			(at 154.94 262.89 0)
 			(effects
 				(font
@@ -11853,7 +12564,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR084")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -11869,7 +12580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a952ffec-a5cd-41b5-b47e-3af81cb12677")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR087"
 			(at 170.18 262.89 0)
 			(effects
 				(font
@@ -11919,7 +12630,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR085")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -11969,6 +12680,33 @@
 			)
 		)
 		(property "Description" "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 57.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PMEG2020EH"
+			(at 57.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Generic, none specified"
+			(at 57.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 57.15 68.58 0)
 			(effects
 				(font
@@ -12068,7 +12806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af07676b-6019-412b-871a-6e45d9b08b01")
-		(property "Reference" "R40"
+		(property "Reference" "R42"
 			(at 333.756 208.534 90)
 			(effects
 				(font
@@ -12121,6 +12859,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 336.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 336.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65499a05-8d8d-4134-8b13-53e292d8323c")
 		)
@@ -12130,7 +12886,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R40")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -12154,7 +12910,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7uF"
 			(at 85.598 116.586 90)
 			(effects
 				(font
@@ -12182,6 +12938,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
 			(at 80.01 119.38 0)
 			(effects
 				(font
@@ -12260,6 +13034,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6be99a6-6788-4b38-93f7-f1bd59d0d99a")
 		)
@@ -12284,7 +13085,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3e0e4eb-776a-4316-b907-c58714c6d898")
-		(property "Reference" "R26"
+		(property "Reference" "R28"
 			(at 139.446 54.61 90)
 			(effects
 				(font
@@ -12327,6 +13128,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e1e16839-2614-4ee7-aa2c-048ca1e80530")
 		)
@@ -12336,7 +13164,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -12349,7 +13177,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b411daa3-1643-4917-9850-2ba5da4c5d9c")
 		(property "Reference" "JP4"
@@ -12397,6 +13225,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 337.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1d934d22-b549-4f20-8d7d-d5b2731bc0f7")
 		)
@@ -12419,7 +13256,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b787d17e-80e1-46a8-9b36-631cc6971050")
 		(property "Reference" "JP5"
@@ -12459,6 +13296,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 337.82 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 337.82 101.6 0)
 			(effects
 				(font
@@ -12677,6 +13523,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1043P"
+			(at 327.66 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 327.66 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
+			(at 327.66 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "N"
 			(uuid "90291983-b014-40f1-93d0-ebe737f20065")
 		)
@@ -12701,7 +13574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c01ed9f6-9f97-4679-8b29-b984d98d45fe")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR078"
 			(at 101.6 85.09 0)
 			(effects
 				(font
@@ -12751,7 +13624,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR076")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -12766,7 +13639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c603b005-de02-4919-b58f-122b199c4040")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR095"
 			(at 257.81 44.45 0)
 			(effects
 				(font
@@ -12816,7 +13689,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR093")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -12831,7 +13704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c823c09e-2625-4346-8b74-118f5b34cea6")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR0101"
 			(at 309.88 172.72 0)
 			(effects
 				(font
@@ -12881,7 +13754,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR099")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -12896,7 +13769,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd9c2c8c-9244-41dc-80b1-14d6e31550c8")
-		(property "Reference" "R24"
+		(property "Reference" "R26"
 			(at 101.6 238.7599 0)
 			(effects
 				(font
@@ -12949,6 +13822,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 99.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 99.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "828fb31d-0860-4332-8f22-db10b1d9829d")
 		)
@@ -12958,7 +13849,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R24")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -12973,7 +13864,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d03ea7a0-9ae6-4be7-9223-7712272cd067")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR089"
 			(at 218.44 44.45 0)
 			(effects
 				(font
@@ -13023,7 +13914,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR087")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -13037,7 +13928,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d3807451-ad24-4721-a8d3-90fa2fa29cf0")
 		(property "Reference" "J7"
 			(at 42.926 210.312 0)
@@ -13082,6 +13973,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 43.18 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "decee27c-18a5-4bad-8670-38f27253b339")
 		)
@@ -13105,7 +14005,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7629de4-63a1-4b78-8226-656568d5e909")
 		(property "Reference" "J11"
 			(at 302.514 207.772 0)
@@ -13150,6 +14050,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 302.26 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a6db9303-0ae2-49ab-8183-5eb558985de3")
 		)
@@ -13174,7 +14083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7b6216d-e2dd-4dfe-8995-f0bdd0ea4da4")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR066"
 			(at 48.26 85.09 0)
 			(effects
 				(font
@@ -13224,7 +14133,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR064")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -13247,7 +14156,7 @@
 				)
 			)
 		)
-		(property "Value" "NCP1117-3.3_SOT223"
+		(property "Value" "LDL1117S33R"
 			(at 83.82 64.7446 0)
 			(effects
 				(font
@@ -13274,6 +14183,33 @@
 			)
 		)
 		(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LDL1117S33R"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 83.82 68.58 0)
 			(effects
 				(font
@@ -13318,7 +14254,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "1uF"
 			(at 68.961 73.533 0)
 			(effects
 				(font
@@ -13354,6 +14290,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06dc525a-2b66-4637-9284-404c4716e608")
 		)
@@ -13378,7 +14341,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9c7a270-a08c-4afd-86ad-120695930404")
-		(property "Reference" "R37"
+		(property "Reference" "R39"
 			(at 307.34 115.824 90)
 			(effects
 				(font
@@ -13429,6 +14392,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 309.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 309.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "26f36f20-8a05-42fd-bdc9-232ac7aaf0d6")
 		)
@@ -13438,7 +14419,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R37")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -13453,7 +14434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dbb1b651-8a29-49b2-b2ed-7af0c45b14f1")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR084"
 			(at 146.05 76.2 0)
 			(effects
 				(font
@@ -13503,7 +14484,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR082")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -13638,6 +14619,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a9b9415e-da8e-4607-998e-4dc8edc41117")
 		)
@@ -13662,7 +14661,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3af87ec-72ef-426f-9aec-c32e2fe970b4")
-		(property "Reference" "R36"
+		(property "Reference" "R38"
 			(at 307.34 106.68 90)
 			(effects
 				(font
@@ -13713,6 +14712,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 309.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 309.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8bfa5436-313d-4d5e-83a2-f676bdb51bf4")
 		)
@@ -13722,7 +14739,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R36")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -13737,7 +14754,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e472a759-db7e-4dd7-b1e6-17c9f944bcff")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR0104"
 			(at 322.58 127 0)
 			(effects
 				(font
@@ -13787,7 +14804,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0102")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -13802,7 +14819,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e699e98b-e37d-4bef-89cc-08e368476c38")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0105"
 			(at 322.58 172.72 0)
 			(effects
 				(font
@@ -13852,7 +14869,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR0103")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -13867,7 +14884,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6c53e89-25f8-4412-a9e3-bedc236a9fea")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR072"
 			(at 83.82 85.09 0)
 			(effects
 				(font
@@ -13917,7 +14934,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR070")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -13932,7 +14949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8c6cc50-0e47-4b44-955a-e49efcfb9f31")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR077"
 			(at 101.6 69.85 0)
 			(effects
 				(font
@@ -13982,7 +14999,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR075")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -13997,7 +15014,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e964bd54-3b09-4361-8f8b-62724720fafd")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR068"
 			(at 66.04 85.09 0)
 			(effects
 				(font
@@ -14047,7 +15064,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR066")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -14062,7 +15079,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec3bc56e-6020-4213-84ae-0a85af4a1a92")
-		(property "Reference" "R25"
+		(property "Reference" "R27"
 			(at 106.68 121.9199 0)
 			(effects
 				(font
@@ -14115,6 +15132,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0cad51f5-478f-4d67-bbf4-3e999d1b3b6a")
 		)
@@ -14124,7 +15159,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R25")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -14139,7 +15174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed1281c3-c47e-4bae-bc59-145b74009fd5")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR074"
 			(at 88.9 151.13 0)
 			(effects
 				(font
@@ -14189,7 +15224,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR072")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -14204,7 +15239,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eeacbdec-2449-4492-b9f9-d0ebb2b2fafb")
-		(property "Reference" "R32"
+		(property "Reference" "R34"
 			(at 172.72 243.8399 0)
 			(effects
 				(font
@@ -14257,6 +15292,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 170.18 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 170.18 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f123293e-a654-4719-a83f-9c96d0796352")
 		)
@@ -14266,7 +15319,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R32")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -14334,6 +15387,24 @@
 				)
 			)
 		)
+		(property "Type" "SMD"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d3c1417-1382-4cf6-8584-1ddb01e0aa26")
 		)
@@ -14358,7 +15429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f11b7b9a-86a3-41e2-8d71-2d5d1d08395c")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR079"
 			(at 106.68 151.13 0)
 			(effects
 				(font
@@ -14408,7 +15479,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR077")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -14541,6 +15612,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "PMF170XP,115"
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "5303a746-56bf-4ca0-88a6-3becefb1edf0")
 		)
@@ -14568,7 +15666,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6c022b7-9b51-4c53-9b7a-9c87198e274a")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR099"
 			(at 309.88 127 0)
 			(effects
 				(font
@@ -14618,7 +15716,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR097")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -14633,7 +15731,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd84b34e-d991-475d-8f1c-f4ab21bc3582")
-		(property "Reference" "R28"
+		(property "Reference" "R30"
 			(at 143.51 63.754 90)
 			(effects
 				(font
@@ -14676,6 +15774,33 @@
 				(hide yes)
 			)
 		)
+		(property "Tolerance" "1%"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8231b669-3438-4240-9918-54e89fddd697")
 		)
@@ -14685,7 +15810,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 			)

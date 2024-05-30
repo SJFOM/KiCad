@@ -7,8 +7,8 @@
 	(title_block
 		(title "Microcontroller")
 		(date "2024-04-28")
-		(rev "v1.0")
-		(company "Samio")
+		(rev "v0.1")
+		(company "SJFOM")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
@@ -5480,7 +5480,7 @@
 		(uuid "002b414a-7d96-42c1-bfd2-d08583ea59c2")
 	)
 	(junction
-		(at 336.55 36.83)
+		(at 295.91 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01d0fc01-ef77-421b-b670-b6799bc1064e")
@@ -5795,6 +5795,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 33.02) (xy 326.39 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01b1fd75-82b3-40af-a25d-e036a6d93edc")
+	)
+	(wire
+		(pts
 			(xy 246.38 172.72) (xy 264.16 172.72)
 		)
 		(stroke
@@ -6045,6 +6055,16 @@
 	)
 	(wire
 		(pts
+			(xy 336.55 33.02) (xy 336.55 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e438001-0dd3-4247-88c4-ea7c3d5b69bc")
+	)
+	(wire
+		(pts
 			(xy 116.84 213.36) (xy 116.84 210.82)
 		)
 		(stroke
@@ -6175,6 +6195,16 @@
 	)
 	(wire
 		(pts
+			(xy 326.39 41.91) (xy 326.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "290ceb0d-2ef6-484d-83f4-8574e5ffae54")
+	)
+	(wire
+		(pts
 			(xy 246.38 147.32) (xy 261.62 147.32)
 		)
 		(stroke
@@ -6245,7 +6275,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 45.72) (xy 346.71 45.72)
+			(xy 306.07 45.72) (xy 336.55 45.72)
 		)
 		(stroke
 			(width 0)
@@ -6825,7 +6855,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 41.91) (xy 370.84 45.72)
+			(xy 350.52 41.91) (xy 350.52 45.72)
 		)
 		(stroke
 			(width 0)
@@ -7145,7 +7175,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 33.02) (xy 336.55 36.83)
+			(xy 295.91 33.02) (xy 295.91 36.83)
 		)
 		(stroke
 			(width 0)
@@ -7205,7 +7235,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.84 55.88) (xy 370.84 57.15)
+			(xy 350.52 55.88) (xy 350.52 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7235,7 +7265,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 48.26) (xy 346.71 48.26)
+			(xy 306.07 48.26) (xy 326.39 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7345,7 +7375,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 55.88) (xy 336.55 57.15)
+			(xy 295.91 55.88) (xy 295.91 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7475,7 +7505,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 36.83) (xy 336.55 40.64)
+			(xy 295.91 36.83) (xy 295.91 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7665,7 +7695,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 36.83) (xy 336.55 36.83)
+			(xy 299.72 36.83) (xy 295.91 36.83)
 		)
 		(stroke
 			(width 0)
@@ -7875,7 +7905,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 50.8) (xy 367.03 50.8)
+			(xy 306.07 50.8) (xy 346.71 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7922,6 +7952,16 @@
 			(type default)
 		)
 		(uuid "e7cd2862-60d6-4f04-9cb8-71512b8f33c8")
+	)
+	(wire
+		(pts
+			(xy 336.55 41.91) (xy 336.55 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8279f96-707a-47e5-9204-bc92b72d61ca")
 	)
 	(wire
 		(pts
@@ -8198,8 +8238,8 @@
 		(uuid 2814b248-b33f-4bbd-8074-e0365ccfb5d8)
 	)
 	(rectangle
-		(start 307.34 17.78)
-		(end 386.08 66.04)
+		(start 269.494 16.256)
+		(end 381 64.516)
 		(stroke
 			(width 0)
 			(type default)
@@ -10305,7 +10345,7 @@
 	)
 	(text "WP is active high, pulled down internally (write enabled)"
 		(exclude_from_sim no)
-		(at 309.626 26.924 0)
+		(at 271.78 25.4 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -10465,7 +10505,7 @@
 	)
 	(text "EEPROM"
 		(exclude_from_sim no)
-		(at 318.77 22.352 0)
+		(at 280.924 20.828 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -10819,7 +10859,7 @@
 		(uuid "6c1422aa-fa06-4a05-8c27-a8b935596b3d")
 	)
 	(label "EEPROM_SDA"
-		(at 363.22 45.72 180)
+		(at 322.58 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11061,7 +11101,7 @@
 		(uuid "f2db2f3b-f542-454b-8468-b4dfecf1a663")
 	)
 	(label "EEPROM_SCL"
-		(at 363.22 48.26 180)
+		(at 322.58 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11738,7 +11778,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12af7588-8af2-4cfd-ba6f-2b515fadba70")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR034"
 			(at 363.22 111.76 0)
 			(effects
 				(font
@@ -11788,7 +11828,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR030")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11796,7 +11836,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 370.84 41.91 0)
+		(at 350.52 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11804,7 +11844,7 @@
 		(dnp no)
 		(uuid "165d81bb-0fbd-4dff-8788-6b459553c481")
 		(property "Reference" "#PWR032"
-			(at 370.84 45.72 0)
+			(at 350.52 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11813,7 +11853,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 371.221 37.5158 0)
+			(at 350.901 37.5158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11821,7 +11861,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 41.91 0)
+			(at 350.52 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11830,7 +11870,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 41.91 0)
+			(at 350.52 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11839,7 +11879,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 370.84 41.91 0)
+			(at 350.52 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11877,7 +11917,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15pF"
 			(at 45.847 168.021 0)
 			(effects
 				(font
@@ -11913,6 +11953,24 @@
 				(hide yes)
 			)
 		)
+		(property "Package" "0402"
+			(at 46.99 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 46.99 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "678dce42-e01a-41d9-95ae-0114f5053bfa")
 		)
@@ -11937,7 +11995,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2240db7d-9dee-4ae8-a786-6e61a49d0b29")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR027"
 			(at 307.34 100.33 0)
 			(effects
 				(font
@@ -11987,7 +12045,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR024")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12011,7 +12069,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 264.541 86.233 0)
 			(effects
 				(font
@@ -12039,6 +12097,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 261.62 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 261.62 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 261.62 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 261.62 85.09 0)
 			(effects
 				(font
@@ -12080,7 +12165,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 277.241 86.233 0)
 			(effects
 				(font
@@ -12116,6 +12201,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 274.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 274.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 274.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c4b3fffc-1116-4962-8154-c63ec3773621")
 		)
@@ -12133,16 +12245,16 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 370.84 50.8 270)
+		(at 350.52 50.8 270)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "273b5c8b-647c-41ee-9857-20cb0a983e37")
 		(property "Reference" "JP2"
-			(at 373.38 49.5299 90)
+			(at 353.06 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12151,7 +12263,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 373.38 52.0699 90)
+			(at 353.06 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12161,7 +12273,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 370.84 50.8 0)
+			(at 350.52 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12170,7 +12282,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 370.84 50.8 0)
+			(at 350.52 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12179,7 +12291,16 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 3-pole, open"
-			(at 370.84 50.8 0)
+			(at 350.52 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
+			(at 350.52 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12279,7 +12400,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2db3f76e-b3d7-4d90-a339-3fcf48c88cd9")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR030"
 			(at 342.9 128.27 0)
 			(effects
 				(font
@@ -12329,7 +12450,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR027")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -12353,7 +12474,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 241.681 101.473 0)
 			(effects
 				(font
@@ -12381,6 +12502,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 238.76 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 238.76 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 238.76 100.33 0)
 			(effects
 				(font
@@ -12487,7 +12626,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 114.681 105.283 0)
 			(effects
 				(font
@@ -12523,6 +12662,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e23691c1-1035-4655-a49a-33306084a185")
 		)
@@ -12540,7 +12706,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 370.84 57.15 0)
+		(at 350.52 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12548,7 +12714,7 @@
 		(dnp no)
 		(uuid "30a22fd5-b6f6-4500-9fa6-a7dd95ee8a98")
 		(property "Reference" "#PWR033"
-			(at 370.84 63.5 0)
+			(at 350.52 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12557,7 +12723,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 370.84 62.484 0)
+			(at 350.52 62.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12565,7 +12731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 57.15 0)
+			(at 350.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12574,7 +12740,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 57.15 0)
+			(at 350.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12583,7 +12749,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 370.84 57.15 0)
+			(at 350.52 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12605,14 +12771,79 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 336.55 33.02 0)
+		(at 295.91 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "30c74f0d-758c-4c3d-8489-290886b82700")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
+			(at 295.91 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 296.291 28.6258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 295.91 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 295.91 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 295.91 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73dc882f-7e19-462b-9c48-364091007f17")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 336.55 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3593847d-16b4-4322-a260-942771b76798")
+		(property "Reference" "#PWR029"
 			(at 336.55 36.83 0)
 			(effects
 				(font
@@ -12657,12 +12888,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "73dc882f-7e19-462b-9c48-364091007f17")
+			(uuid "e0359a17-3bd2-43b0-829c-66bdc2a530bb")
 		)
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR025")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -12714,6 +12945,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSM8JSMASTR"
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity ALCOSWITCH Switches"
+			(at 34.29 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "thru-hole"
 			(at 34.29 62.23 0)
 			(effects
 				(font
@@ -12789,6 +13047,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FSM8JSMASTR"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity ALCOSWITCH Switches"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "thru-hole"
 			(at 175.26 39.37 0)
 			(effects
 				(font
@@ -12935,6 +13220,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 260.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 260.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 260.35 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "675e9542-f682-48f3-8e28-a35b2f414b6d")
 		)
@@ -12959,7 +13271,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49391de2-f428-4d91-ba99-9f4e074ee453")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR031"
 			(at 340.36 111.76 0)
 			(effects
 				(font
@@ -13009,7 +13321,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR028")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -13033,7 +13345,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 254.381 86.233 0)
 			(effects
 				(font
@@ -13069,6 +13381,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 251.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 251.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 251.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "98b1a0a1-046c-463d-b61b-cec47c1e86a3")
 		)
@@ -13079,6 +13418,101 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 336.55 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5106ca75-58c2-44c0-a8af-13c0aeb949e5")
+		(property "Reference" "R9"
+			(at 339.09 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kR"
+			(at 339.09 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 338.328 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 336.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 340.614 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "SMD"
+			(at 336.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 336.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "735f5afe-1cfe-49ad-923c-ed91b0f67121")
+		)
+		(pin "1"
+			(uuid "7597849c-2b08-4bfd-b5a6-d0cdef494723")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -13151,7 +13585,7 @@
 	)
 	(symbol
 		(lib_id "Memory_NVRAM:FM24CL16B")
-		(at 336.55 48.26 0)
+		(at 295.91 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13160,7 +13594,7 @@
 		(fields_autoplaced yes)
 		(uuid "56f03fcf-1b16-4b41-a56a-aa31057e2d3b")
 		(property "Reference" "U4"
-			(at 327.66 46.9899 0)
+			(at 287.02 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13169,7 +13603,7 @@
 			)
 		)
 		(property "Value" "FM24CL16B"
-			(at 327.66 49.5299 0)
+			(at 287.02 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13178,7 +13612,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 336.55 36.83 0)
+			(at 295.91 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13187,7 +13621,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-FM24CL16B_16-Kbit_(2_K_8)_Serial_(I2C)_F-RAM-DataSheet-v13_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0ec99cb241e9"
-			(at 331.47 39.37 0)
+			(at 290.83 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13196,7 +13630,34 @@
 			)
 		)
 		(property "Description" "16Kb serial FRAM nonvolatile Memory, SOIC-8"
-			(at 336.55 48.26 0)
+			(at 295.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FM24CL16B-G"
+			(at 295.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 295.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 295.91 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13239,15 +13700,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 347.98 36.83 90)
+		(at 307.34 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5acf1525-4b7e-4833-83bb-5b64c4173b63")
-		(property "Reference" "#PWR029"
-			(at 354.33 36.83 0)
+		(property "Reference" "#PWR026"
+			(at 313.69 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13256,7 +13717,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.314 36.83 90)
+			(at 312.674 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13264,7 +13725,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 347.98 36.83 0)
+			(at 307.34 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13273,7 +13734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 347.98 36.83 0)
+			(at 307.34 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13282,7 +13743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 347.98 36.83 0)
+			(at 307.34 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13296,7 +13757,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR029")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -13549,6 +14010,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 72.39 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 72.39 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 72.39 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "295353ac-291c-4b8f-9643-039351687883")
 		)
@@ -13648,7 +14136,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 175.641 86.233 0)
 			(effects
 				(font
@@ -13684,6 +14172,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 172.72 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 172.72 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 172.72 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "674c3b4c-cf39-4680-a521-423c3ac3edad")
 		)
@@ -13701,15 +14216,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 344.17 36.83 90)
+		(at 303.53 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "707c3bd2-4c39-4f90-b70f-99a2f63524e5")
-		(property "Reference" "C15"
-			(at 343.154 33.528 90)
+		(property "Reference" "C14"
+			(at 302.514 33.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13717,8 +14232,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 351.028 39.37 90)
+		(property "Value" "100nF"
+			(at 310.388 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13727,7 +14242,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 347.98 35.8648 0)
+			(at 307.34 35.8648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13736,7 +14251,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 344.17 36.83 0)
+			(at 303.53 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13745,7 +14260,34 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 344.17 36.83 0)
+			(at 303.53 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 303.53 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 303.53 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 303.53 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13762,7 +14304,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "C15")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -13840,7 +14382,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "73b1af75-fe65-4d8a-a7de-0c774b1fbecd")
 		(property "Reference" "JP1"
@@ -13880,6 +14422,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 212.09 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 212.09 45.72 0)
 			(effects
 				(font
@@ -13947,6 +14498,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 260.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 260.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 260.35 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
 			(at 260.35 121.92 0)
 			(effects
 				(font
@@ -14024,6 +14602,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "ABM8-272-T3"
+			(at 63.5 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Abracon LLC"
+			(at 63.5 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 63.5 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5a202c0b-f315-457a-9db4-ab898ae63263")
 		)
@@ -14053,7 +14658,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "816b8587-6756-466e-b05f-43aa40ad5aae")
 		(property "Reference" "J2"
 			(at 111.506 208.28 90)
@@ -14090,6 +14695,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 109.22 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 109.22 205.74 0)
 			(effects
 				(font
@@ -14158,6 +14772,33 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 48.26 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 48.26 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 48.26 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD/thru-hole"
 			(at 48.26 228.6 0)
 			(effects
 				(font
@@ -14343,6 +14984,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 80.01 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 80.01 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 80.01 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a17dd04-8262-4b60-b065-0419e25cac5d")
 		)
@@ -14496,7 +15164,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "980df578-8ce7-44a3-bebd-a48b8d859107")
 		(property "Reference" "R2"
 			(at 72.898 106.7816 0)
@@ -14543,6 +15211,15 @@
 				(hide yes)
 			)
 		)
+		(property "Type" ""
+			(at 71.12 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "51f29f69-bc57-4d9a-9e0b-8633bcd7aa70")
 		)
@@ -14567,7 +15244,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98a773e5-2d3e-4daa-8281-508588717e8d")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR035"
 			(at 360.68 128.27 0)
 			(effects
 				(font
@@ -14617,7 +15294,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR031")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14625,15 +15302,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 336.55 57.15 0)
+		(at 295.91 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "af50b656-40cd-4cf0-b31e-3d61ce992fa3")
-		(property "Reference" "#PWR026"
-			(at 336.55 63.5 0)
+		(property "Reference" "#PWR025"
+			(at 295.91 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14642,7 +15319,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 336.677 61.5442 0)
+			(at 296.037 61.5442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14650,7 +15327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 336.55 57.15 0)
+			(at 295.91 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14659,7 +15336,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 336.55 57.15 0)
+			(at 295.91 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14668,7 +15345,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 336.55 57.15 0)
+			(at 295.91 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14682,7 +15359,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -14706,7 +15383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 241.681 86.233 0)
 			(effects
 				(font
@@ -14734,6 +15411,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 238.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 238.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 238.76 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 238.76 85.09 0)
 			(effects
 				(font
@@ -14801,6 +15505,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 214.63 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RP2040"
+			(at 214.63 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 214.63 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 214.63 165.1 0)
 			(effects
 				(font
@@ -15033,6 +15764,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
 			(at 64.77 114.3 0)
 			(effects
 				(font
@@ -15336,7 +16094,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15pF"
 			(at 45.847 178.181 0)
 			(effects
 				(font
@@ -15372,6 +16130,24 @@
 				(hide yes)
 			)
 		)
+		(property "Package" "0402"
+			(at 46.99 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 46.99 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "10be6e00-b241-4027-8081-58996c15a457")
 		)
@@ -15382,6 +16158,71 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 326.39 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccb7d49c-310e-4d1b-9bca-fc00ac5081a6")
+		(property "Reference" "#PWR028"
+			(at 326.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 326.771 28.6258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 326.39 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 326.39 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 326.39 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fb2f16b-6942-4d23-aa38-02d8649b204d")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -15642,6 +16483,24 @@
 				(hide yes)
 			)
 		)
+		(property "MF" "Micro Commercial Co"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "K"
 			(uuid "72c4812b-db87-46e7-be93-dbc5b38c67fc")
 		)
@@ -15666,7 +16525,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1876b65-9af2-4359-a0ca-9b9fd2282463")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 310.261 83.9216 0)
 			(effects
 				(font
@@ -15675,7 +16534,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 310.261 86.233 0)
 			(effects
 				(font
@@ -15711,6 +16570,33 @@
 				(hide yes)
 			)
 		)
+		(property "Voltage" "25V"
+			(at 307.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 307.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 307.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2cdf4dd4-ee98-4c5c-a93d-fac8d09a7ab1")
 		)
@@ -15720,7 +16606,102 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
-					(reference "C14")
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 326.39 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d75cad71-941e-4a9a-9e6f-1d6b4b66e3ed")
+		(property "Reference" "R8"
+			(at 328.93 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kR"
+			(at 328.93 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 328.168 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 326.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 326.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 330.454 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "SMD"
+			(at 326.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 326.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24e35c31-ad8d-47f2-aa3f-2930b72eba63")
+		)
+		(pin "1"
+			(uuid "c7addf66-2c9a-48d8-b32c-99a4b4db07f6")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -15733,7 +16714,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d9139701-170d-49aa-90f9-bc36a1560117")
 		(property "Reference" "J3"
@@ -15772,6 +16753,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 149.86 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 149.86 48.26 0)
 			(effects
 				(font
@@ -15864,6 +16854,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 100.33 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 100.33 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 100.33 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "aefff504-63d7-4eda-8138-ccdec0b22a56")
 		)
@@ -15945,6 +16962,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "FSM8JSMASTR"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity ALCOSWITCH Switches"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "thru-hole"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e45ca851-a3ee-4f3e-a633-0d3bd0a1a148")
 		)
@@ -15984,7 +17028,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 188.341 101.473 0)
 			(effects
 				(font
@@ -16020,6 +17064,24 @@
 				(hide yes)
 			)
 		)
+		(property "Package" "0402 "
+			(at 185.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
+			(at 185.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a3a5f5af-354f-4253-987a-b8dcb9546c8b")
 		)
@@ -16042,7 +17104,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e4ed9520-3295-4736-a92e-f096cca67f86")
 		(property "Reference" "J4"
 			(at 351.79 103.378 0)
@@ -16080,6 +17142,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 350.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 350.52 111.76 0)
 			(effects
 				(font
@@ -16185,6 +17256,33 @@
 				(hide yes)
 			)
 		)
+		(property "Type" "SMD"
+			(at 72.39 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603 "
+			(at 72.39 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 72.39 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "491ecb06-938a-48fa-9dbd-c8cdc4ec1e56")
 		)
@@ -16244,6 +17342,33 @@
 			)
 		)
 		(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+			(at 106.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "W25Q128JVSIQ"
+			(at 106.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Winbond Electronics"
+			(at 106.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 106.68 121.92 0)
 			(effects
 				(font
@@ -16368,7 +17493,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 300.101 86.233 0)
 			(effects
 				(font
@@ -16396,6 +17521,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 297.18 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 297.18 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 297.18 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 297.18 85.09 0)
 			(effects
 				(font
@@ -16502,7 +17654,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 287.401 86.233 0)
 			(effects
 				(font
@@ -16530,6 +17682,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 284.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 284.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 284.48 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 284.48 85.09 0)
 			(effects
 				(font
@@ -16636,7 +17815,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 187.198 87.884 0)
 			(effects
 				(font
@@ -16664,6 +17843,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 185.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 185.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402 "
+			(at 185.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "SMD"
 			(at 185.42 85.09 0)
 			(effects
 				(font
