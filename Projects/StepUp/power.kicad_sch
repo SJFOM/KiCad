@@ -9479,6 +9479,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GRM21BR61E106KA73K"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12167985-7f71-4707-82fc-5450164b0a30")
 		)
@@ -12688,7 +12706,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "PMEG2020EH"
+		(property "MPN" "PMEG2020EH,115"
 			(at 57.15 68.58 0)
 			(effects
 				(font
@@ -12697,7 +12715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Generic, none specified"
+		(property "Manufacturer" "Nexperia"
 			(at 57.15 68.58 0)
 			(effects
 				(font
@@ -14309,6 +14327,24 @@
 			)
 		)
 		(property "Type" "SMD"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KAFNNNE"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 66.04 72.39 0)
 			(effects
 				(font

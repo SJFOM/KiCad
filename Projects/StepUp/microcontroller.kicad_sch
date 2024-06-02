@@ -12528,6 +12528,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GRM155R61E105MA12D"
+			(at 238.76 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 238.76 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5319b652-3d48-4f56-8cdd-daa82688c639")
 		)
@@ -17074,6 +17092,24 @@
 			)
 		)
 		(property "Type" "SMD"
+			(at 185.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM155R61E105MA12D"
+			(at 185.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
 			(at 185.42 100.33 0)
 			(effects
 				(font

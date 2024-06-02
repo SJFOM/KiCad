@@ -9739,6 +9739,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "GRM188R61E106KA73D"
+			(at 106.68 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 106.68 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5b85fad3-3f13-4569-8693-3e5b0d276d06")
 		)

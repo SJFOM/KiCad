@@ -3007,6 +3007,32 @@
 				)
 			)
 		)
+		(property "MPN" "GRM155R61E105MA12D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00fe08fa-7018-4a7e-a712-11396da263d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a08a26cb-faa7-4b66-965a-c69769d5db2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/2f49a88a-63c8-48df-9865-71643c208992")
 		(sheetname "MCU")
@@ -12384,6 +12410,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "df9432fc-c8aa-4c92-97b6-b14fd87a139a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM155R61E105MA12D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67178763-061f-44f4-950e-80c7c37b04b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "476871ec-8b20-4f0c-bfed-948f10261fa0")
 			(effects
 				(font
 					(size 1 1)
@@ -24979,6 +25031,32 @@
 				)
 			)
 		)
+		(property "MPN" "CL21B105KAFNNNE"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbb607e1-7f72-4a4a-a169-fe5814320274")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b8baae6-b31e-4672-b0b6-704c4ef079d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/d8ddb0d9-1a51-474f-a2e2-712c7d5bd6f0")
 		(sheetname "Power")
@@ -35492,6 +35570,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e469f3d6-f861-40e1-82cb-dcc2d6a04bcc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "GRM21BR61E106KA73K"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d864f256-7392-45a6-a3df-98d0750f0fe1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90ac003f-c4a7-4d80-b7ad-c866b3ea0bcc")
 			(effects
 				(font
 					(size 1 1)
@@ -46283,6 +46387,32 @@
 				)
 			)
 		)
+		(property "MPN" "GRM188R61E106KA73D"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f18e0884-0832-4769-99cf-6e4c89b6de8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9d4f5a7-4dc0-4de0-92d1-2c419358b266")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/d23a19b3-e74f-4435-8fdf-10e6e633c85b")
 		(sheetname "Motor Driver")
@@ -47255,7 +47385,7 @@
 				)
 			)
 		)
-		(property "MPN" "PMEG2020EH"
+		(property "MPN" "PMEG2020EH,115"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47268,7 +47398,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Generic, none specified"
+		(property "Manufacturer" "Nexperia"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
