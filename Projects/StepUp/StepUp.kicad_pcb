@@ -815,7 +815,7 @@
 				)
 			)
 		)
-		(property "Power" "0.5W"
+		(property "Power" "0.5W, 1/2W"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2273,6 +2273,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c5adc2d-dd14-47ef-9039-2c2748275a8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d82fe7fe-cfc8-4c41-aa52-aecb0cf82212")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41f4a1bd-8569-4535-8e19-812ee08d1ee4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "daf8423b-ab17-4079-acb5-f00d5e7629cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/24ea5aa4-e1be-41c5-bb6d-17d7c0d8a5f3")
 		(sheetname "MCU")
@@ -2522,6 +2574,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0362989-4bbd-4115-b824-376c32711e94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df489124-7c39-4982-a264-46a84fe39079")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "138364bb-3692-4a58-b636-c7e664b09197")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be97fc5b-78e1-4f2e-9096-5c1ef6d999bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/f95b2071-4213-48f5-b2a0-2935927635d3")
 		(sheetname "MCU")
@@ -2764,6 +2868,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ab32b764-d4f0-4ca1-8ea4-b8fb9cb77792")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0727RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e929503-39e0-4ddd-bdff-8198f18f0f3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a8fd1e3-dc85-4f97-afda-876630a0eb5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebc120ca-7f8a-49c2-941a-bac09fc7968a")
 			(effects
 				(font
 					(size 1 1)
@@ -3026,6 +3169,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a08a26cb-faa7-4b66-965a-c69769d5db2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3911ea3-a80a-483b-8d7e-fa5498738aca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4c4336f-0f36-482b-80f6-357143feed7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ddd4528f-1c1b-4c28-a281-f5c4f8826343")
 			(effects
 				(font
 					(size 1 1)
@@ -3698,6 +3880,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7484bbf6-c2d6-41c2-9523-864156db45bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc06c77f-d350-485e-8736-ef175ad62d47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "271dca3d-eaa3-410f-bc4a-776c4f3203de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bed2f67-0f75-4446-b611-6d20f6ece67d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/3ffcf104-f28b-43ec-9bd2-067dcc3c9147")
 		(sheetname "Motor Driver")
@@ -3908,7 +4142,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3940,6 +4174,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eea85f9c-350b-4c4d-88d9-306a53224c45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d8daa57-c385-4cd2-93d0-da6ec46f3bd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fed8616-e5ba-4e82-ae32-a21780174215")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2aa4a05-02f6-4095-9497-c76f0b0dd4ab")
 			(effects
 				(font
 					(size 1 1)
@@ -4196,6 +4469,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6433cbf9-d67a-40d5-8b4d-82249580d0f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38607b79-cb88-403e-99ec-4fd486470b55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc517960-253b-4c69-9a5e-6a5af6f0bce1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61f246e1-539e-4823-88ec-1fe061c8b078")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/15d2eec5-46bf-4000-8cdc-c81b2bd119a8")
 		(sheetname "Motor Driver")
@@ -4445,6 +4770,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c6d812c-c5c7-482e-9b4d-6c7b92b6e391")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1b718e9-75d9-4685-afe2-759cc935c6f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0dfa5362-a58c-42ab-9964-fe4e6c1b8ecf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8a764fe-72da-42cf-b724-b5007df08b4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62dd6998-8b69-42c0-9c2f-b18953d44bc4/679783e6-5cb1-44d7-84aa-e2afe814ab08")
 		(sheetname "User Input")
@@ -4687,6 +5064,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4635d3c1-bc9a-45e5-9f90-009029c7f83a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15092938-788a-48fe-95a5-8cdf39e0b3f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b632f165-f3ed-43a0-843c-468410eb7a45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b3c2e5e-3bd1-4420-b9ba-e213bfd1846f")
 			(effects
 				(font
 					(size 1 1)
@@ -5166,6 +5582,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-079K09L"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5eecfff-649c-4bb0-b19d-d6cff73e939d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36d98812-52ac-40d1-acb7-9f822cee2a87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fa50f0f-daa0-463f-a2ef-aa0669310325")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/33a0a3dc-df8f-4143-bf48-bff8f4ccdac5")
 		(sheetname "Power")
@@ -5415,6 +5870,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0402FR-071KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b835b571-45c6-4886-b5de-0f164b1e0432")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a9abaf5-867c-4608-846a-e184ee9900f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f5e8457-3f90-43b3-8cbf-75c61e2ac4b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/89f124cc-0965-4940-99eb-d93ebb33af59")
 		(sheetname "MCU")
@@ -5657,6 +6151,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d6d30b3f-ac90-46dd-8394-cc9cdace4514")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0402FR-0727RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60e7ab30-0dfb-4b8c-9f01-91e6ecef0108")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a857444-4d96-41c0-8fda-324eb8c04c70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d3448cb-085e-4e45-a893-d89c8b4665c8")
 			(effects
 				(font
 					(size 1 1)
@@ -6896,6 +7429,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da2eef24-678f-40ce-b572-c9703769d557")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fdfcd982-f8b3-4f28-a75d-36a954ced0cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4bcd43d-3e21-4af9-bddc-11f137e5b0f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "971b350d-6394-4390-be6a-8bdd42c70646")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/4d970d04-22cf-407d-9ef6-0a9ebcd42af6")
 		(sheetname "Power")
@@ -7125,6 +7710,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2a5017c4-76b0-44ae-9e8e-e9d50924fda9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603JR-07330RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1482a253-aca5-4c2c-9377-625f40fed09f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1054473-61be-4251-85b8-7777b856a24f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a12e4599-6ffd-4c5c-b999-d309077893d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2e0ad30-5533-4e10-99c0-7848621168f7")
 			(effects
 				(font
 					(size 1 1)
@@ -7374,6 +8011,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d7bfa041-9e78-49c4-825c-fca27ab4c502")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dbf57f89-8bc1-4032-870e-2da50634626f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3a626e3-0149-4649-8923-7fec6be4525a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c637cf55-5bdf-4394-8fbf-6a04dab564c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "752385d3-3a1e-4af7-8233-9b8c0f786649")
 			(effects
 				(font
 					(size 1 1)
@@ -8122,6 +8811,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07750RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5ba21f0-8d12-4ec0-9871-e33b2905008d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e251413-f99c-49fc-9712-bd72918cb839")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "350f299d-7120-4b88-ae43-9b68a00a1f30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44/695b296c-2063-4db6-96a9-cac9dd8c030e")
 		(sheetname "Indicators")
@@ -8364,6 +9092,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9b50cca5-de1a-42c0-af13-22138d9c47e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acf6041b-5f54-4e55-bb5c-ac50d56918db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "927a93db-250d-4f37-ac65-b6df68235350")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb6a2ac3-9954-4f2d-8a94-97e81bb1779c")
 			(effects
 				(font
 					(size 1 1)
@@ -8620,6 +9387,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b89794a1-0260-4fca-a9d6-379c8d49de3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01417878-a67c-404c-9e4b-1a89c0a8ce91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7cb8bf5-bc6a-4ae1-83fa-4bc9c72d8cfc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/eeacbdec-2449-4492-b9f9-d0ebb2b2fafb")
 		(sheetname "Power")
@@ -8869,6 +9675,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-075K1L"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33d91427-4074-4da1-8335-288e30d176bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a31b7f33-f14b-45d6-a62e-e3ccd3b59149")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b247e8d7-870b-4637-aefd-1643fa9d2ad2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/651034f4-4868-4c8e-b7fe-9b0dc75d7103")
 		(sheetname "MCU")
@@ -9111,6 +9956,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "91f3da39-ea84-42f1-a344-53c62906d6a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d0caaa4-4649-4efe-b830-6a1a541b47ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603JRX7R8BB103"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6eaa773c-91ce-4766-89ec-85a3b6f0e47f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd5d122c-28d9-4135-86df-34d73e02a7a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fdbf1e8-6831-4cd7-8ca3-8511c14774e1")
 			(effects
 				(font
 					(size 1 1)
@@ -10743,6 +11640,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-075K1L"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f88decbd-4d00-4785-89bc-914da9a0c6e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca996f72-cb21-47c5-9015-b708d37da599")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a80c3121-05f0-44c7-b2d4-70f522f823e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/e813f282-d3b6-4bae-ac4c-d1c217b4ae25")
 		(sheetname "MCU")
@@ -10992,6 +11928,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e99aef2f-11de-48d4-900b-b34b57a2b26a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d3fa0d8-3040-451f-8c1b-97b9ad017683")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9017c03f-9c37-4a40-8f2a-17dee54f4d91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fe820b4-f309-44e3-94c8-fa5c0562e70e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/b3c0585d-742d-4c5b-9bd9-1dc0efd85160")
 		(sheetname "MCU")
@@ -11234,6 +12222,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "27f82c94-217d-4e80-b2e9-fef66e0fc2bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-072KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac0508c7-d353-40c1-aae9-35574cd2d5a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8959fa29-76df-492c-a84d-a26c443adde2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27baaadc-6255-4a1e-8a3a-bd13ba586199")
 			(effects
 				(font
 					(size 1 1)
@@ -12443,6 +13470,45 @@
 				)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8a9560d-6f85-4562-88d6-3280ae00a097")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ae918b7-99a4-4832-bb58-260a6c0344c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f388a4d-1c67-4f17-aa8c-f3941f3c7a54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/e37094ee-6953-451a-a485-b2652262924a")
 		(sheetname "MCU")
@@ -13212,7 +14278,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13244,6 +14310,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "abf063f8-18dd-413d-8354-689d1f635d57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "369154e2-dda4-458d-b70c-a6645de891bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ffdd227-9052-4a76-a3af-a43ade8146dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa71a5b5-8cbb-4c95-be8e-e41e940f3268")
 			(effects
 				(font
 					(size 1 1)
@@ -13493,6 +14598,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8bf4a09e-aff9-4816-ad6f-3ba26eb1dac8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0771K5L"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d165e5da-291f-4bab-96c1-f83b30892d8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a992e3fa-dc65-4c3c-96bf-2566d60a290b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a099563d-40bd-4bc4-ac3b-d0fbf45b8b36")
 			(effects
 				(font
 					(size 1 1)
@@ -14154,6 +15298,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b655373-961b-4ae8-9e07-5bb5ad84ce47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3672a27-180f-414e-b1af-d9d15f3d3f9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0761f21-3a99-4854-8455-46d74681d65c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/33e83e28-06b6-4d92-a7cb-2426682e2067")
 		(sheetname "Power")
@@ -14786,6 +15969,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97f00270-3dad-4822-a559-92a214ba7588")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d292dd7e-0762-4b77-88e8-24b03876b365")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88ae78e7-f8fa-4dcc-9b42-abedf7d026e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "900879fa-8832-498b-b92e-70882b348678")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/f092d2ed-f37a-4155-b32b-43c07951ce14")
 		(sheetname "MCU")
@@ -14996,7 +16231,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15028,6 +16263,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "873f703c-b9c2-45fd-b2d0-63ce68e54365")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c37f163-6b99-46a1-85e2-f0c98f53d433")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e0dc9ef-75bb-4c76-bc25-c3a2afae2775")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e433e50-5106-45f1-aa45-5909dcab0c4c")
 			(effects
 				(font
 					(size 1 1)
@@ -16604,6 +17878,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f698a218-0cc5-4599-9e7d-beaaf32735c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c3d4ace-eaf9-46ac-b01e-6228d5389b4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a657e6b-99b3-4e2f-aa90-6d57b3164964")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "938a0907-2532-4aed-abe5-0554e8525740")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/2f931cd7-2e47-4675-b77e-deba2977ec24")
 		(sheetname "MCU")
@@ -17117,7 +18443,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17149,6 +18475,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "909f52a0-2003-4c4d-b8a9-86fc49d85aed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "633e5fe6-14d1-4ff9-979a-a6ccafdbf475")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d9724b2-b94f-47ad-8783-0fc672e7c73e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b85e2aa9-dced-46c5-9a3c-ff72bd06ddc2")
 			(effects
 				(font
 					(size 1 1)
@@ -17786,6 +19151,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f31b8b03-b04c-4f48-8f35-0205838c7bae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f700e80f-a1ca-4d22-bae2-9bd9d3a60bd6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db5ef9fc-e3a2-4889-a5f6-5ba5f884e235")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/5106ca75-58c2-44c0-a8af-13c0aeb949e5")
 		(sheetname "MCU")
@@ -18028,6 +19432,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ee649ba-037a-4186-968a-bdd0e72e7be4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a04f1fa0-cca7-4841-a6fa-db058293398d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b00df477-e03f-46d9-8f1b-703ec2812c70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82204062-1a31-4660-9aeb-ef25f9b2089c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "193ddc3a-ec85-492d-b1eb-f7c9e07e1c44")
 			(effects
 				(font
 					(size 1 1)
@@ -18843,6 +20299,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccfd3269-12c3-4a15-9cf2-b1dab60a9c83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44003708-5dc2-4d46-ba5e-ce566aa3e344")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78053ff7-455b-44bf-8ca5-0fdb29159ead")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/dd7acf1c-e11f-4942-8608-754adb0ca659")
 		(sheetname "Motor Driver")
@@ -19468,6 +20963,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "688f2238-2d78-457d-905f-11129813a5ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2cd97f3f-8484-42dc-a682-18e379846b27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5577676c-341d-458a-bb0f-1b64c24c946c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff24484e-8eaa-40ba-bab8-df603dd83640")
 			(effects
 				(font
 					(size 1 1)
@@ -20410,6 +21944,45 @@
 				)
 			)
 		)
+		(property "MPN" "CC0603JRX7R8BB103"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d1b772c-648e-4763-9f46-d411493dd9e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e284b9a7-5b76-49fc-87b6-88d51f66765a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "217469d3-3ce5-4cb8-b08d-dd8a43df609d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/60b3027a-056d-4527-8aa3-ec14ec5117fb")
 		(sheetname "Power")
@@ -20959,6 +22532,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "883f57ef-2c19-4ff5-bcd5-fff3accb2fbd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "149ff2a4-63bd-4f92-aac6-4c7ea5f92b26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3b4fa26-19b9-4ebb-831d-132bef7eb828")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/4aff95d2-5b1d-458e-bdb5-1dc04736a90a")
 		(sheetname "Motor Driver")
@@ -21208,6 +22820,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "754315d7-0ce3-4161-8688-30a2c1640cbc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R0BB471"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "773e6edc-8cd2-497c-9240-926994f9d8bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f39eedb2-8521-4e03-ae12-f385b8e2a81a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9991cdfc-5d5e-417e-9e91-1c6d7dc22cb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/d5427c1b-c424-4b72-86f0-f4b7a0db0698")
 		(sheetname "Motor Driver")
@@ -21450,6 +23114,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "341a9b9b-76b5-4c7c-b0fd-d6797a46d6ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b74dbcc-ba39-415d-bf30-acbdec8b5ecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72c35500-532d-4d0a-acca-e170f00883e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25eeecb7-58e8-48bb-a45f-9681fccc81c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4193aa0-9498-4585-abdc-6c654200ed10")
 			(effects
 				(font
 					(size 1 1)
@@ -22393,6 +24109,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b27e4e20-5f8f-42a8-a881-4c4be9c48b7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8ed2d2d-fedf-4d83-8877-32829189cc64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ace1ea01-f8b1-43a4-aa15-41b41be7b53e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d433629-9b24-48d9-ad3e-cc04a3bbe154")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/0e33dcb7-7927-442c-8f0c-22b80cc4f85f")
 		(sheetname "Power")
@@ -23067,6 +24835,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f0ac9e5-ee98-4581-9e60-b3da3c819f4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b594320-dd03-4f2e-a1f9-cd605e25393e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00cc8afc-a7b6-4013-83c7-ebc1a4c8280e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/b3e0e4eb-776a-4316-b907-c58714c6d898")
 		(sheetname "Power")
@@ -23630,6 +25437,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d7ebd40f-4d20-4c0a-b4fc-7b9860db2fde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64ad2450-ebcd-463b-83d3-a9d6ff0d0f8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae4ad667-2ef7-4666-88dd-f3cae542ec8d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92efa5ad-dcde-460b-bd2e-282a4eebc1af")
 			(effects
 				(font
 					(size 1 1)
@@ -24216,6 +26062,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9a03060b-b1b0-4c27-b30c-80146da7b486")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "C0G, NP0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c336aff-398f-4a02-8662-7847bc020230")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402FRNPO9BN150"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28c5eac1-c904-4559-a21c-542494af3b1f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f73fe188-93cc-4bca-918b-61f2ac2a5c39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad0bc9c0-2840-484b-8522-7b2ec387d38f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19dfa612-a0ed-49b4-abb5-e20f48b436a2")
 			(effects
 				(font
 					(size 1 1)
@@ -25057,6 +26968,32 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05fe80e3-cccc-4cfc-9cd7-cab391455bfd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "694cc3d9-fc68-4fc3-997f-4def8ea9afaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/d8ddb0d9-1a51-474f-a2e2-712c7d5bd6f0")
 		(sheetname "Power")
@@ -25711,6 +27648,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cbdff30-5b81-4195-8845-fd99be7a7076")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6397a4d6-3bd2-478e-96b9-6cdeb9613726")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8788d16-cf62-4335-8403-f2b366fac21d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b07addb-cbff-447f-9bc1-1a80eb915776")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/9b341f52-40fe-4719-a4e2-f1474ee6094f")
 		(sheetname "Power")
@@ -25940,6 +27929,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4bd0835f-f58d-493d-9391-5fa974b43255")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "C0G, NP0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "074069b2-956f-4f54-aef8-56935b17ec7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402FRNPO9BN150"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cac892e6-c8d3-4dd4-8da2-3eb7f3ac209a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db25a1cb-f60f-410b-b9fe-869ba0f18670")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90dbff3c-d7ad-4461-b455-9e23bf2ec2ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0e0e6b3-87fc-414e-86a7-70941937250c")
 			(effects
 				(font
 					(size 1 1)
@@ -27118,6 +29172,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d044cdd-2596-4064-91e7-2773c69986ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f30294c8-8b0e-417b-877b-b6e3fe0781ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44496f1b-ae51-42d8-8d1f-be33aba83ff9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/f7f26e06-8497-45e7-b7c1-1e63f87332cd")
 		(sheetname "Motor Driver")
@@ -27360,6 +29453,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "35b56c47-db9a-42f0-b1e3-23b8c76826c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a3e4483-906d-4904-881a-4cfbc73ff2b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79efee00-4cfd-4756-a84b-374da27f866b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10b25a9b-845a-468c-8711-57fc34d4aba0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03270c1b-331c-4fb3-8391-038bc0e85a03")
 			(effects
 				(font
 					(size 1 1)
@@ -27616,6 +29761,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95685db1-74b5-4ef2-ab79-344306d40bf6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8496f060-56a8-4c40-b9c8-347162c76d3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cd2f590-ded3-424c-ab68-ec02c910bf8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cc3ded9-147f-4ca1-947a-7658aa2e7b14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/707c3bd2-4c39-4f90-b70f-99a2f63524e5")
 		(sheetname "MCU")
@@ -27865,6 +30062,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46e97db8-ea2a-420f-8333-72708728618c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0805MKX5R8BB226"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4436524-c4f2-4546-97ab-e9d1dc60fd36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d301230-ca27-4b15-ba0d-e03713489f12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fffbb450-aa58-4b7f-9306-7f6d49b11649")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/6fcc6fae-66be-43c8-a063-8ed54ff2a6d5")
 		(sheetname "Power")
@@ -28107,6 +30356,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e88f42b7-063c-4fea-a0b8-1ae89df84ee8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f22e5b7-3dd4-4eca-97cb-8c2ab67d6616")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ea316d9-cb32-40a2-84b5-fdb9207ae0d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76e6827a-fac9-4739-b0ae-212d1709c5b0")
 			(effects
 				(font
 					(size 1 1)
@@ -28731,6 +31019,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "597f555a-e56c-4083-b58e-6fe9b45ceaf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R0BB471"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24cf4b49-4685-40e5-8eae-d2c793718e99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a78445c4-14ce-4f06-b5e7-aa3b3a295cbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f38ba6a-1c05-454e-97a0-ddaa06620c5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/d0122852-5c9a-4838-8937-782371224150")
 		(sheetname "Motor Driver")
@@ -29257,6 +31597,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f27d6cd9-cb47-403c-92c2-a23e03fad536")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "500fb927-0e02-4d79-9850-1804115cdd5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80d1b18b-14c3-4179-8cb6-99c4c27c7921")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/d9787d41-6cd3-4099-b8b1-084918f1087b")
 		(sheetname "Motor Driver")
@@ -29467,7 +31846,7 @@
 				)
 			)
 		)
-		(property "Power" "0.5W"
+		(property "Power" "0.5W, 1/2W"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29787,6 +32166,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d57bf3bb-6fd9-4738-987f-99b1ae9d2074")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55524ab6-2eab-4849-8247-deb98e5e0337")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R0BB471"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c6db206-1daa-4bcf-ac03-c295e4ddd710")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6b9b0ff-ef70-4cee-847d-facb198e84b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fcabe1b6-c9b9-43bc-aa15-10d4edc0ede8")
 			(effects
 				(font
 					(size 1 1)
@@ -30356,6 +32787,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0402FR-071KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a07fc4ed-0725-48dc-9a3c-82cd1e012f88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4a51a4e-3ca5-43c1-8ebe-ce175c112aab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.063W, 1/16W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa4cfc57-aa05-4fd4-8afc-bcd64742925c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/bd0b39bf-e987-4215-ad17-73af3fa242c4")
 		(sheetname "MCU")
@@ -30598,6 +33068,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5fae9cb7-669f-4633-a1c7-83a4cfc527e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4c4bf4b-efde-46ea-acf3-250724cf8a1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6190eae-422d-452f-90f1-69c3bc1cfda7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2ad86de-bf1a-4cce-ae1a-8fb08afb09aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c7535d1-547b-46f2-8d72-e09a5adc3f9e")
 			(effects
 				(font
 					(size 1 1)
@@ -31188,6 +33710,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "292d077c-d4c4-42db-8f18-c76b062bfacc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d65a46f-cc61-4a61-85b6-73991d0dfe66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e36313ad-5937-4dbd-ad80-48d2051a771f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11edbd42-099a-47dc-961d-d0c87b605c19")
 			(effects
 				(font
 					(size 1 1)
@@ -33006,6 +35567,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21fd93e2-390f-4000-acb9-9465d9c13a92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e112273-21f2-4c09-874d-b5f312472479")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff654673-4284-4a71-a7f4-a3cb18493960")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/e9a42aa7-524c-4cdc-9d5e-7a0f8830e344")
 		(sheetname "Motor Driver")
@@ -33255,6 +35855,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "131a83a7-ca76-46cb-b0e8-3c8e04ef4987")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc01a1e5-b87e-4258-842a-298de5a5a5fd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b54c018-a935-42d1-a0a0-23b4c9baa42f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/ec3bc56e-6020-4213-84ae-0a85af4a1a92")
 		(sheetname "Power")
@@ -33465,7 +36104,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33497,6 +36136,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "117cbd62-a27c-4944-9e83-82e8687254f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29c6cae8-dfb7-4823-8824-72ef7f00f4da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7912982-02b9-4fa0-aab9-e51854e5f0b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e554bd31-221b-44eb-9bd1-af35802ea92e")
 			(effects
 				(font
 					(size 1 1)
@@ -34004,7 +36682,7 @@
 				)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "Voltage" "10V"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34023,6 +36701,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5dc78627-950d-48f2-a130-59af105f738e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d67f832b-f300-4585-b1b8-17179f16c2a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0805MKX5R6BB475"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6373ddb2-995f-49a0-8d51-1c7841bea66e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1728358-7d9d-4edf-a813-11bd78b28193")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7324864-952c-4cd6-bc5d-1799dd7f9d9e")
 			(effects
 				(font
 					(size 1 1)
@@ -34580,6 +37310,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "13c8d0e1-9e9a-4b3b-8a4a-c792b66c1fe5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f30b60f-cf33-4a3a-b1c9-61fa1b78651d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f08be35b-90d2-4f9a-951c-a32e52e2812e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cda370de-abbb-4b96-b1a5-7abb68061560")
 			(effects
 				(font
 					(size 1 1)
@@ -35328,6 +38097,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "613633d5-ba57-48f3-90ce-7aa6ac6293df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85b25ffc-5612-4d44-84c7-f6a67fa7565d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "894eb06b-2557-4ba1-b0e3-f1b9205f1512")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02730f40-6ecb-4c40-bf60-beef507a5dc3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/e0ae4190-4c6f-4cb3-823f-2dd07df84f91")
 		(sheetname "Power")
@@ -35603,6 +38424,32 @@
 				)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33d6fe23-6909-4f44-b34a-4f35d43b200b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "464d06cf-8bd5-423b-8050-e040d4bba428")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/36529925-cc4f-424b-a761-ed3b8327887e")
 		(sheetname "Power")
@@ -35845,6 +38692,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b67e252-3896-486d-bece-17df341f295a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b451daa5-6959-40a7-ab0e-ae8efe0bba04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "578a139e-858a-4493-b58a-4c25380e4fc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3349c8ad-24c9-4a23-a2c5-8d24b709b6c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd449d5d-5acf-4c9e-9f05-83ca22dc1b90")
 			(effects
 				(font
 					(size 1 1)
@@ -37229,6 +40128,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "C0G, NP0"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa9f5337-0b4f-4989-9ff5-24742446c3f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603JRNPO9BN101"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "149e794f-8402-4409-a5e1-06ad92f42fe2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dee818e1-9562-4854-97a5-cf9153cc114f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c15ee821-b300-4a0b-a8e0-cb6f292b50b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/ef17b210-f36f-4399-91aa-098bc0f61c75")
 		(sheetname "Power")
@@ -37439,7 +40390,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37471,6 +40422,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "47e9dd94-31c0-4d7e-a775-29c09adce5a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f0efc2e-0851-4ebf-8b03-96aa54f5afd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3af86105-5769-4346-9dae-ab2f85fafda7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cc8e6ae-604b-42e0-942c-1a3e8be36c31")
 			(effects
 				(font
 					(size 1 1)
@@ -37727,6 +40717,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d22e0db5-0d0f-45a6-b427-09148e251464")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R8BB104"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62c8c68d-a04b-410c-adc3-a062e31a9936")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd392447-3ff9-49c3-921c-fc4d6dce8be5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15886690-6538-46c9-b840-99f70dd9af3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3af138f5-65b6-4464-96c0-d1b764f3b0d1/26b6ad53-7e2e-4c1a-b31b-190bd9abadb1")
 		(sheetname "MCU")
@@ -37976,6 +41018,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c369cd62-2401-4db0-8235-c6138be68024")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5a0a117-22da-4094-933d-05b3e69d7c8a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc745bd3-d468-4ca9-a31b-98c4567fefbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/c63bb737-4cfa-4fc8-9e8b-fcf9216f654d")
 		(sheetname "Motor Driver")
@@ -38186,7 +41267,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38218,6 +41299,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1dcbe002-50ad-47b1-b75d-59ffa2a02723")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4efb2fb8-837d-477c-ac62-a92268887533")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dcdf8a5b-eb5b-4f4e-8ed5-05d6f232d67c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "154eca59-0d7b-4d09-88e1-7bd5609d84a0")
 			(effects
 				(font
 					(size 1 1)
@@ -38474,6 +41594,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbb96387-975b-46df-ab5f-3ae4684cb3c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b565241d-e291-4f7b-820b-7dff50558404")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "278cac96-20c6-4116-9b8b-13c321814495")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/af07676b-6019-412b-871a-6e45d9b08b01")
 		(sheetname "Power")
@@ -38703,6 +41862,71 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b2ae972e-2b99-4575-8387-d2231217c20e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93985321-e8f9-4a9f-822a-6fc73537ead2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0805MKX5R6BB475"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2422b79d-7619-4d2c-8400-5ce2e4dbe1f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e92e58d-1d96-4be3-a1db-1342c556cc70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f79a300-f6e1-4652-8c95-0a78af0309a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59b4855a-53dc-478f-ac61-d56486b2595d")
 			(effects
 				(font
 					(size 1 1)
@@ -39342,7 +42566,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39374,6 +42598,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "db41f5d6-42ef-4dcc-b17c-c0313fc5d62c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cffac2a3-05f6-4f85-aaae-8fcf2e8b8412")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27ed7df9-4c65-46cf-92d0-b45958b710fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e652f748-2283-43e6-a3a1-6be549eeee7e")
 			(effects
 				(font
 					(size 1 1)
@@ -40488,6 +43751,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0e78b0e6-52e1-4b65-a7d6-735a76219673")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0eb43716-7efa-4d17-8c78-3f096f19c3bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c1c2a47-1f30-4012-8768-a94c34ff143f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12049485-3507-426d-9b86-227234200cc9")
 			(effects
 				(font
 					(size 1 1)
@@ -41761,6 +45063,71 @@
 				)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc98f052-0691-41fe-905c-c02d72ef4615")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603MRX5R5BB225"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e2c2e77-e0b1-410e-b5e1-0db3588643cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "888817e8-b9d1-4ea8-adfb-1b508080a261")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9129194-67fc-433c-ba46-c3d1e53e709e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Voltage" "6.3V"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2832ecd9-f9c3-4cb4-aa40-179fd3d60566")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e827d0b4-d448-43f9-95b8-3deddd7cd4ee/653b3ce5-30f5-4b59-98cc-52e4a242c6fb")
 		(sheetname "Power")
@@ -41971,7 +45338,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42003,6 +45370,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1cff8ec9-4ebc-4bb8-ae64-f456e1312c5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04c212a3-09f1-4585-a4ea-2823220e1001")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6926303-7820-42ff-8620-be50e121369d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75a34eaa-f1bd-4572-b82f-907e0b076c03")
 			(effects
 				(font
 					(size 1 1)
@@ -42252,6 +45658,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e6446d4e-47a2-479a-9328-a64144a51a90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fac74055-8b24-47ce-8d5d-a822e1e5f96c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0402KRX7R0BB471"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbcaa35b-2970-4d77-96ac-ee7558a9ccef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a14e85cf-046e-494c-8a95-0b192eb7898f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2043c9a8-20ce-47d4-88ac-ebb8fc9efff6")
 			(effects
 				(font
 					(size 1 1)
@@ -43168,6 +46626,58 @@
 				)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28a509e5-9ced-4da7-baf6-4c66628fab03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64c7cc3b-3bec-4428-be49-220aaaf26165")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9672198e-64e6-489d-b3b7-a9e4c70c0069")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e27bdc57-49f7-415f-903c-437bea50e33e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/62dd6998-8b69-42c0-9c2f-b18953d44bc4/df9cb010-8ba6-4ecb-ab92-139e88032dab")
 		(sheetname "User Input")
@@ -43744,6 +47254,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb1b14de-df11-4cb5-9eec-53246391cbf1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8da54f2e-68f6-4335-b56d-4f08e0f6e609")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fe98a6e-93fd-474e-90c0-3823f32a004f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb72446d-6581-487c-b6b1-da22589c7b8f")
 			(effects
 				(font
 					(size 1 1)
@@ -45235,6 +48784,45 @@
 				)
 			)
 		)
+		(property "MPN" "RC0603FR-071KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74e0d179-e9e9-4979-b1ac-f6a53f3ef37d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c394ea0-6e04-4ce2-9cbe-5dd18ce3d5cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6a3c311-d5f7-4e4c-82fa-3eaa82a9d139")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44/898b2e6d-0132-41de-aac6-5872f59be075")
 		(sheetname "Indicators")
@@ -45445,7 +49033,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45477,6 +49065,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6569f519-67ea-47d6-9214-c9ce6c9cdccc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e5abaf3-3aa8-4a92-b35e-13ece693c33e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f352e87-fba5-4196-b110-d5da3a570151")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6fa930f-6d07-486b-9f1a-d75d97721168")
 			(effects
 				(font
 					(size 1 1)
@@ -46413,6 +50040,32 @@
 				)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c99bf46-8313-47fd-853d-7152e8e5090a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "109e9ddc-c365-4525-b722-e282cea21c0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7/d23a19b3-e74f-4435-8fdf-10e6e633c85b")
 		(sheetname "Motor Driver")
@@ -46642,6 +50295,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "73f2f941-1647-4de6-bd2d-72ab3a0e763a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603JR-07330RL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fcad301-e2de-48d2-8335-59210326ed63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c071034-ca1c-429c-956f-1a0484e0a077")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f071e240-ca42-4c64-b2c2-67252d8fb1ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fc2d65b-4067-4c72-8932-b5d083e5f1bb")
 			(effects
 				(font
 					(size 1 1)
@@ -47168,6 +50873,45 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "356e08c7-08a9-460b-a917-0e179544774d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b0c079c-3af1-4c1c-853e-3a463e345dce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af783a8b-0067-4132-b194-d8d07f7b9cfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b4a82f8-855d-4e8c-ac66-74610288dcff")
 			(effects
 				(font
 					(size 1 1)

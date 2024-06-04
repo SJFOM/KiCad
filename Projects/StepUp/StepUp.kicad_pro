@@ -611,7 +611,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -686,12 +686,6 @@
           "group_by": false,
           "label": "Description_1",
           "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Dielectric",
-          "name": "Dielectric",
           "show": false
         },
         {
@@ -788,7 +782,7 @@
           "group_by": false,
           "label": "Power",
           "name": "Power",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -836,6 +830,12 @@
           "group_by": false,
           "label": "Tolerance",
           "name": "Tolerance",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
           "show": true
         },
         {

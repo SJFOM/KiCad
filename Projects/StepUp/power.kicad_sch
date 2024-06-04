@@ -7436,6 +7436,42 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 322.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ac602415-aec3-4955-894a-fd782ac142f5")
 		)
@@ -7568,7 +7604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 48.26 72.39 0)
 			(effects
 				(font
@@ -7587,6 +7623,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 48.26 72.39 0)
 			(effects
 				(font
@@ -8172,7 +8235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 309.88 144.78 0)
 			(effects
 				(font
@@ -8191,6 +8254,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 144.78 0)
 			(effects
 				(font
@@ -8464,7 +8554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 309.88 157.48 0)
 			(effects
 				(font
@@ -8483,6 +8573,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 157.48 0)
 			(effects
 				(font
@@ -8864,6 +8981,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0771K5L"
+			(at 170.18 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 170.18 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 170.18 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c3ccc11-c154-403a-b5a4-593b799221e8")
 		)
@@ -9016,6 +9160,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-072KL"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 71.12 135.89 0)
 			(effects
 				(font
@@ -9195,6 +9366,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 54.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7f54093-943c-496b-9eca-79ae3e736b10")
 		)
@@ -9290,6 +9488,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-079K09L"
+			(at 154.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 154.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 154.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65d9067a-e336-4cbb-bd6e-fea8ebf79442")
 		)
@@ -9375,6 +9600,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 143.51 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 143.51 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 143.51 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 143.51 243.84 0)
 			(effects
 				(font
@@ -9489,6 +9741,24 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
 			(at 101.6 72.39 0)
 			(effects
 				(font
@@ -9918,6 +10188,42 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 322.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9cba790-91f4-4e53-9427-9f262adbe548")
 		)
@@ -10093,6 +10399,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 154.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 154.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 154.94 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8e49482d-74f4-45e0-a064-1a5af2d21842")
 		)
@@ -10227,7 +10560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 309.88 67.31 0)
 			(effects
 				(font
@@ -10246,6 +10579,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 67.31 0)
 			(effects
 				(font
@@ -10358,6 +10718,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CC0603JRX7R8BB103"
+			(at 149.86 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 149.86 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 149.86 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "da6653de-6993-4a6e-a636-27036fdb5a2d")
 		)
@@ -10438,6 +10825,51 @@
 			)
 		)
 		(property "Type" "SMD"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603MRX5R5BB225"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 76.2 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "6.3V"
 			(at 76.2 222.25 0)
 			(effects
 				(font
@@ -10913,6 +11345,42 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X5R"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0805MKX5R8BB226"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 198.12 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "712f71c8-63ef-40e1-bda7-05c68040b214")
 		)
@@ -10980,7 +11448,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 309.88 96.52 0)
 			(effects
 				(font
@@ -10999,6 +11467,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 96.52 0)
 			(effects
 				(font
@@ -11534,7 +12029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16V"
+		(property "Voltage" "10V"
 			(at 106.68 133.35 0)
 			(effects
 				(font
@@ -11544,6 +12039,42 @@
 			)
 		)
 		(property "Package" "0805"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0805MKX5R6BB475"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 106.68 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
 			(at 106.68 133.35 0)
 			(effects
 				(font
@@ -12253,7 +12784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 309.88 54.61 0)
 			(effects
 				(font
@@ -12272,6 +12803,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 54.61 0)
 			(effects
 				(font
@@ -12433,6 +12991,42 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 106.68 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
 			(at 106.68 252.73 0)
 			(effects
 				(font
@@ -12895,6 +13489,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 336.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 336.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 336.55 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "65499a05-8d8d-4134-8b13-53e292d8323c")
 		)
@@ -12974,6 +13595,51 @@
 			)
 		)
 		(property "Package" "0805"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0805MKX5R6BB475"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 80.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "10V"
 			(at 80.01 119.38 0)
 			(effects
 				(font
@@ -13079,6 +13745,42 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603JRX7R8BB103"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 88.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6be99a6-6788-4b38-93f7-f1bd59d0d99a")
 		)
@@ -13165,6 +13867,33 @@
 			)
 		)
 		(property "Tolerance" "1%"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 139.7 57.15 0)
 			(effects
 				(font
@@ -13832,7 +14561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 103.124 243.84 0)
 			(effects
 				(font
@@ -13850,6 +14579,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 99.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 99.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 99.06 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 99.06 240.03 0)
 			(effects
 				(font
@@ -14353,6 +15109,24 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06dc525a-2b66-4637-9284-404c4716e608")
 		)
@@ -14438,6 +15212,33 @@
 			)
 		)
 		(property "Package" "0603 "
+			(at 309.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 309.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 115.57 0)
 			(effects
 				(font
@@ -14673,6 +15474,42 @@
 				(hide yes)
 			)
 		)
+		(property "Dielectric" "X7R"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R8BB104"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 322.58 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a9b9415e-da8e-4607-998e-4dc8edc41117")
 		)
@@ -14758,6 +15595,33 @@
 			)
 		)
 		(property "Package" "0603 "
+			(at 309.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 309.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 309.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 309.88 106.68 0)
 			(effects
 				(font
@@ -15186,6 +16050,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-07620RL"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 104.14 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0cad51f5-478f-4d67-bbf4-3e999d1b3b6a")
 		)
@@ -15346,6 +16237,33 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 170.18 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 170.18 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
+			(at 170.18 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f123293e-a654-4719-a83f-9c96d0796352")
 		)
@@ -15433,6 +16351,42 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "C0G, NP0"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603JRNPO9BN101"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 182.88 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5%"
 			(at 182.88 227.33 0)
 			(effects
 				(font
@@ -15810,7 +16764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "0.5%"
 			(at 146.05 63.5 0)
 			(effects
 				(font
@@ -15829,6 +16783,33 @@
 			)
 		)
 		(property "Package" "0603"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RT0603DRE10100KL"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 146.05 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.1W, 1/10W"
 			(at 146.05 63.5 0)
 			(effects
 				(font
