@@ -22134,9 +22134,9 @@
 		(uuid "5b81e676-635e-4610-8629-6e77707fc8b4")
 		(at 66.112 93.42 -90)
 		(property "Reference" "D12"
-			(at -0.19 -1.728 90)
+			(at 0 -1.84 -90)
 			(layer "F.SilkS")
-			(uuid "b30bbba6-7de7-472c-8eef-841d4cb9286a")
+			(uuid "a46f3bb6-43ba-4233-a2ea-d5b7a55c9856")
 			(effects
 				(font
 					(size 1 1)
@@ -22145,9 +22145,9 @@
 			)
 		)
 		(property "Value" "LTST-C170KFKT"
-			(at 0 1.95 90)
+			(at 0 1.95 -90)
 			(layer "F.Fab")
-			(uuid "f379cb5b-1431-40de-9d2f-2a2b2638d0b4")
+			(uuid "015ce51b-70bf-4c2e-82c5-182d08ae477e")
 			(effects
 				(font
 					(size 1 1)
@@ -22160,7 +22160,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d28c8759-d441-49e7-b1f6-cd7ddecdec22")
+			(uuid "dbc5d8a1-e27e-4626-941b-3789b8e0da28")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22172,7 +22172,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3be40c58-beb7-49e4-ae35-9d6b8d5694f3")
+			(uuid "82e16d6d-432a-4323-a42f-aa91db53c834")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22184,7 +22184,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "10db7d2d-04bb-4fd7-a986-68d8230e5753")
+			(uuid "68fa0f9d-eee7-4c97-93dd-0f3d1b93c6a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22314,23 +22314,33 @@
 		(attr smd)
 		(fp_line
 			(start -0.32 0.8)
-			(end 0.28 0.8)
+			(end 2 0.8)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c49ecfcf-7435-462f-8a28-2aa80e716974")
+			(uuid "2ecc42de-f566-4bd5-95f2-be820d5de5b0")
 		)
 		(fp_line
 			(start -0.3 -0.8)
-			(end 0.3 -0.8)
+			(end 2 -0.8)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "668790cf-2e26-44df-879a-50d4ea81149e")
+			(uuid "438a18ce-cdf0-40e0-967f-00ffc040ea7c")
+		)
+		(fp_line
+			(start 2 -0.8)
+			(end 2 0.8)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "27ef616d-989b-4c5f-b7d6-0ba20f5d8241")
 		)
 		(fp_line
 			(start -1.9 0.93)
@@ -22340,7 +22350,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "63311c60-cd4b-42d4-b97a-f710f53a03ee")
+			(uuid "3db0b5bd-d5da-4560-bec4-53ab82a408a4")
 		)
 		(fp_line
 			(start -1.9 0.93)
@@ -22350,7 +22360,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "4d186eb7-d316-4aa0-9ac2-bc60c412df2b")
+			(uuid "359a0abd-53b7-4629-96c4-bfffe87ab131")
 		)
 		(fp_line
 			(start 1.9 0.93)
@@ -22360,7 +22370,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "4783b132-e798-4910-b6ed-14b93a0be047")
+			(uuid "bfe1f784-6e73-418b-9c33-a3a74ee18370")
 		)
 		(fp_line
 			(start -1.9 -0.93)
@@ -22370,7 +22380,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "28f7bf71-d1f8-4468-b6c2-cd93479a6abb")
+			(uuid "c9eefdd8-5c2a-4ada-a46f-8f341e9f667c")
 		)
 		(fp_line
 			(start -0.95 0.68)
@@ -22380,7 +22390,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "b4eee7bc-aeaf-496a-9814-74c8f7782274")
+			(uuid "b755b1ad-bd99-4fd9-bee0-8744bbfb174d")
 		)
 		(fp_line
 			(start -0.95 -0.675)
@@ -22390,7 +22400,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "907141b9-6823-40d9-aff4-8e707b9d7abb")
+			(uuid "9b4e51ce-94be-4fd7-b907-9bb5705c90ff")
 		)
 		(fp_line
 			(start 0.95 -0.675)
@@ -22400,7 +22410,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "d54aa513-f07b-45f5-a1e9-6148c27594af")
+			(uuid "17171840-5063-46f0-977f-5d16b40029bf")
 		)
 		(fp_line
 			(start -0.95 -0.68)
@@ -22410,7 +22420,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "17b89737-24f5-42ad-bd3a-040b8fbd23aa")
+			(uuid "a20d8823-5de0-43a2-b775-3333a2544a13")
 		)
 		(pad "1" smd rect
 			(at -1.05 0 270)
@@ -22418,7 +22428,7 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 5 "V_USB")
 			(pintype "passive")
-			(uuid "c99f93ed-998a-4be5-8308-c7f512deb3ab")
+			(uuid "1782ae5b-9311-44ee-815d-9f2b0808a194")
 		)
 		(pad "2" smd rect
 			(at 1.05 0 270)
@@ -22426,7 +22436,7 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 60 "Net-(D12-Pad2)")
 			(pintype "passive")
-			(uuid "33e357d3-1168-49ed-bb7a-a47009cc4c3a")
+			(uuid "fe9ef44d-c0b9-4d3d-b4c1-3fcb7f5cf89f")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
