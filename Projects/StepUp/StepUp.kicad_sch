@@ -7,7 +7,7 @@
 	(title_block
 		(title "System diagram")
 		(date "2024-04-28")
-		(rev "v0.1")
+		(rev "v0.2")
 		(company "SJFOM")
 	)
 	(lib_symbols
@@ -99,9 +99,9 @@
 		(at 29.21 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "104a7395-5b46-49b7-8e33-9749a93637a8")
 		(property "Reference" "H3"
@@ -172,9 +172,9 @@
 		(at 29.21 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e97f9a9-0208-4b1b-b1cc-3881f94a2db3")
 		(property "Reference" "H4"
@@ -245,9 +245,9 @@
 		(at 29.21 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d64f6eca-7b9f-4b73-8f5e-df8950485130")
 		(property "Reference" "H1"
@@ -318,9 +318,9 @@
 		(at 29.21 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "def36250-6626-415c-8fc9-3d16025ec016")
 		(property "Reference" "H2"

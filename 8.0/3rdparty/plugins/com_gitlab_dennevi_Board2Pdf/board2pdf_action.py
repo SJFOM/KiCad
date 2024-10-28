@@ -1,21 +1,11 @@
-#from __future__ import absolute_import
+# from __future__ import absolute_import
 
 import os
 import shutil
 import sys
 import pcbnew
 import wx
-#import ast
-import json
 
-version = "1.3"
-
-try:
-    # python 3.x
-    from configparser import ConfigParser
-except ImportError:
-    # python 2.x
-    from ConfigParser import SafeConfigParser as ConfigParser
 
 if __name__ == "__main__":
     # Circumvent the "scripts can't do relative imports because they are not
@@ -25,149 +15,133 @@ if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(dirname))
     __import__(__package__)
 
+from . _version import __version__
 from . import plot
 from . import dialog
+from . import persistence
+
+
+_board = None
+def get_board():
+    global _board
+    if _board is None:
+        _board = pcbnew.GetBoard()
+    return _board
+
 
 def run_with_dialog():
-    board = pcbnew.GetBoard()
+    board = get_board()
     pcb_file_name = board.GetFileName()
     board2pdf_dir = os.path.dirname(os.path.abspath(__file__))
     pcb_file_dir = os.path.dirname(os.path.abspath(pcb_file_name))
-    configfile = os.path.join(pcb_file_dir, "board2pdf.config.ini")
-
+    default_configfile = os.path.join(board2pdf_dir, "default_config.ini")
+    global_configfile = os.path.join(board2pdf_dir, "board2pdf.config.ini")
+    local_configfile = os.path.join(pcb_file_dir, "board2pdf.config.ini")
 
     # Not sure it this is needed any more.
     if not pcb_file_name:
         wx.MessageBox('Please save the board file before plotting the pdf.')
         return
 
-    # If config.ini file doesn't exist, copy the default file to this file.
-    if not os.path.exists(configfile):
-        default_configfile = os.path.join(board2pdf_dir, "default_config.ini")
-        shutil.copyfile(default_configfile, configfile)
+    # If local config.ini file doesn't exist, use global. If global doesn't exist, use default.
+    if os.path.exists(local_configfile):
+        configfile = local_configfile
+        configfile_name = "local"
+    elif os.path.exists(global_configfile):
+        configfile = global_configfile
+        configfile_name = "global"
+    else:
+        configfile = default_configfile
+        configfile_name = "default"
 
-    config = ConfigParser()
-    templates = {}
-
-    def save_config(dialog_panel):
-        config.read(configfile)
-        if not config.has_section('main'):
-            config.add_section('main')
-
-        config.set('main', 'output_dest_dir', dialog_panel.outputDirPicker.Path)
-        # Create a string with strings separated with ','. Then save to config.
-        items_string = ','.join(dialog_panel.templatesSortOrderBox.GetItems())
-        config.set('main', 'enabled_templates', items_string)
-        items_string = ','.join(dialog_panel.disabledTemplatesSortOrderBox.GetItems())
-        config.set('main', 'disabled_templates', items_string)
-
-        if dialog_panel.m_checkBox_delete_temp_files.IsChecked():
-            del_temp_files_setting = "True"
-        else:
-            del_temp_files_setting = "False"
-        config.set('main', 'del_temp_files', del_temp_files_setting)
-
-        if dialog_panel.m_checkBox_create_svg.IsChecked():
-            create_svg_setting = "True"
-        else:
-            create_svg_setting = "False"
-        config.set('main', 'create_svg', create_svg_setting)
-
-        if dialog_panel.m_checkBox_delete_single_page_files.IsChecked():
-            delete_single_page_files_setting = "True"
-        else:
-            delete_single_page_files_setting = "False"
-        config.set('main', 'delete_single_page_files', delete_single_page_files_setting)
-
-        #config.set('main', 'settings', str(templates))
-        config.set('main', 'settings', json.dumps(templates))
-
-        with open(configfile, 'w') as f:
-            config.write(f)
-
-        print("save_config!")
+    config = persistence.Persistence(configfile)
+    config.load()
+    config.default_settings_file_path = default_configfile
+    config.global_settings_file_path = global_configfile
+    config.local_settings_file_path = local_configfile
 
     def perform_export(dialog_panel):
-        if not plot.plot_gerbers(board, dialog_panel.outputDirPicker.Path, templates, dlg.panel.templatesSortOrderBox.GetItems(),
-                     dlg.panel.m_checkBox_delete_temp_files.IsChecked(), dlg.panel.m_checkBox_create_svg.IsChecked(),
-                     dlg.panel.m_checkBox_delete_single_page_files.IsChecked(), dialog_panel):
-            dialog_panel.m_progress.SetValue(100)
-            dialog_panel.Refresh()
-            dialog_panel.Update()
+        plot.plot_pdfs(board, dialog_panel.outputDirPicker.Path, config.templates,
+                          dialog_panel.templatesSortOrderBox.GetItems(),
+                          dialog_panel.m_checkBox_delete_temp_files.IsChecked(),
+                          dialog_panel.m_checkBox_create_svg.IsChecked(),
+                          dialog_panel.m_checkBox_delete_single_page_files.IsChecked(), dialog_panel,
+                          layer_scale=config.layer_scale,
+                          assembly_file_extension=config.assembly_file_extension)
+        dialog_panel.m_progress.SetValue(100)
+        dialog_panel.Refresh()
+        dialog_panel.Update()
 
-    config_output_dest_dir = ""
-    config_enabled_templates = []
-    config_disabled_templates = []
-    config_create_svg = False
-    config_del_temp_files = False
-    delete_single_page_files_setting = False
-
-    try:
-        config.read(configfile)
-
-        if config.has_option('main', 'settings'):
-            #templates = ast.literal_eval(config.get('main', 'settings'))
-            templates = json.loads(config.get('main', 'settings'))
-
-        if config.has_option('main', 'output_dest_dir'):
-            config_output_dest_dir = config.get('main', 'output_dest_dir')
-        if config.has_option('main', 'enabled_templates'):
-            config_enabled_templates = config.get('main', 'enabled_templates').split(',')
-            config_enabled_templates[:] = [l for l in config_enabled_templates if l != '']  # removes empty entries
-        if config.has_option('main', 'disabled_templates'):
-            config_disabled_templates = config.get('main', 'disabled_templates').split(',')
-            config_disabled_templates[:] = [l for l in config_disabled_templates if l != '']  # removes empty entries
-        if config.has_option('main', 'del_temp_files'):
-            if config.get('main', 'del_temp_files') == "True":
-                config_del_temp_files = True
-        if config.has_option('main', 'create_svg'):
-            if config.get('main', 'create_svg') == "True":
-                config_create_svg = True
-        if config.has_option('main', 'delete_single_page_files'):
-            if config.get('main', 'delete_single_page_files') == "True":
-                delete_single_page_files_setting = True
-
-        icon = wx.Icon(os.path.join(os.path.dirname(__file__), 'icon.png'))
-
-
-    finally:
-        dlg = dialog.SettingsDialog(save_config, perform_export, version, templates)
-        dlg.SetIcon(icon)
-
+    def load_saved(dialog_panel, config):
         # Update dialog with data from saved config.
-        dlg.panel.outputDirPicker.Path = config_output_dest_dir
-        dlg.panel.templatesSortOrderBox.SetItems(config_enabled_templates)
-        dlg.panel.disabledTemplatesSortOrderBox.SetItems(config_disabled_templates)
-        if config_del_temp_files:
-            dlg.panel.m_checkBox_delete_temp_files.SetValue(True)
-        if config_create_svg:
-            dlg.panel.m_checkBox_create_svg.SetValue(True)
-        if delete_single_page_files_setting:
-            dlg.panel.m_checkBox_delete_single_page_files.SetValue(True)
+        dialog_panel.outputDirPicker.Path = config.output_path
+        dialog_panel.templatesSortOrderBox.SetItems(config.enabled_templates)
+        dialog_panel.disabledTemplatesSortOrderBox.SetItems(config.disabled_templates)
+        dialog_panel.m_checkBox_delete_temp_files.SetValue(config.del_temp_files)
+        dialog_panel.m_checkBox_create_svg.SetValue(config.create_svg)
+        dialog_panel.m_checkBox_delete_single_page_files.SetValue(config.del_single_page_files)
+        dialog_panel.ClearTemplateSettings()
+        dialog_panel.hide_template_settings()
 
-        # Check if able to import fitz. If it's possible then select fitz, otherwise select pypdf.
+    dlg = dialog.SettingsDialog(config, perform_export, load_saved, __version__)
+    try:
+        icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
+        icon = wx.Icon(icon_path)
+        dlg.SetIcon(icon)
+    except Exception:
+        pass
+
+    # Update dialog with data from saved config.
+    dlg.panel.outputDirPicker.Path = config.output_path
+    dlg.panel.templatesSortOrderBox.SetItems(config.enabled_templates)
+    dlg.panel.disabledTemplatesSortOrderBox.SetItems(config.disabled_templates)
+    dlg.panel.m_checkBox_delete_temp_files.SetValue(config.del_temp_files)
+    dlg.panel.m_checkBox_create_svg.SetValue(config.create_svg)
+    dlg.panel.m_checkBox_delete_single_page_files.SetValue(config.del_single_page_files)
+    dlg.panel.m_staticText_status.SetLabel(f'Status: loaded {configfile_name} settings')
+
+    # Check if able to import PyMuPDF.
+    has_pymupdf = True
+    try:
+        import pymupdf  # This imports PyMuPDF
+
+    except:
         try:
-            import fitz  # This imports PyMuPDF
-            dlg.panel.m_radio_pypdf.SetValue(False)
-            dlg.panel.m_radio_merge_pypdf.SetValue(False)
-            dlg.panel.m_radio_fitz.SetValue(True)
-            dlg.panel.m_radio_merge_fitz.SetValue(True)
+            import fitz as pymupdf  # This imports PyMuPDF using old name
+
         except:
-            pass
-            dlg.panel.m_radio_fitz.SetValue(False)
-            dlg.panel.m_radio_merge_fitz.SetValue(False)
-            dlg.panel.m_radio_pypdf.SetValue(True)
-            dlg.panel.m_radio_merge_pypdf.SetValue(True)
+            try:
+                import fitz_old as pymupdf # This imports PyMuPDF using temporary old name
 
-        dlg.ShowModal()
-        #response = dlg.ShowModal()
-        #if response == wx.ID_CANCEL:
+            except:
+                has_pymupdf = False
 
-        dlg.Destroy()
+    # after pip uninstall PyMuPDF the import still works, but not `open()`
+    # check if it's possible to call pymupdf.open()
+    if has_pymupdf:
+        try:
+            pymupdf.open()
+        except:
+            has_pymupdf = False
+
+    # If it was possible to import and open PyMuPdf, select pymupdf otherwise select pypdf.
+    if has_pymupdf:
+        dlg.panel.m_radio_pymupdf.SetValue(True)
+        dlg.panel.m_radio_merge_pymupdf.SetValue(True)
+    else:
+        dlg.panel.m_radio_pypdf.SetValue(True)
+        dlg.panel.m_radio_merge_pypdf.SetValue(True)
+
+    dlg.ShowModal()
+    # response = dlg.ShowModal()
+    # if response == wx.ID_CANCEL:
+
+    dlg.Destroy()
+
 
 class board2pdf(pcbnew.ActionPlugin):
     def defaults(self):
-        self.name = "Board2Pdf\nversion " + version
+        self.name = f"Board2Pdf\nversion {__version__}"
         self.category = "Plot"
         self.description = "Plot pcb to pdf."
         self.show_toolbar_button = True  # Optional, defaults to False
@@ -176,5 +150,10 @@ class board2pdf(pcbnew.ActionPlugin):
     def Run(self):
         run_with_dialog()
 
+
 if __name__ == "__main__":
-    run_with_dialog()
+    _board = pcbnew.LoadBoard(sys.argv[1])
+    #run_with_dialog()
+    app = wx.App()
+    p = board2pdf()
+    p.Run()

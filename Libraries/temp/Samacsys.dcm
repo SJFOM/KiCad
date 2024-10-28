@@ -1,0 +1,80 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASPI-0530HI-2R2M-T2
+D 2.2 H Shielded Molded Inductor 5.5 A 35mOhm Max Nonstandard
+K
+F https://abracon.com/Magnetics/power/ASPI-0530HI.pdf
+$ENDCMP
+#
+$CMP PESD12VS5UD,115
+D PESD12VS5UD - Fivefold ESD protection diode arrays
+K
+F https://assets.nexperia.com/documents/data-sheet/PESDXS5UD_SER.pdf
+$ENDCMP
+#
+$CMP LTST-C171GKT
+D Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package
+K
+F https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-C171GKT.pdf
+$ENDCMP
+#
+$CMP THB001P
+D THUMBSTICK, 0.05A, 12VDC, 2 AXIS, PCB; No. of Axes:2; Track Resistance:10kohm; Supply Voltage Max:-; No. of Switch Positions:-; Contact Current AC Max:-; Contact Voltage AC Max:50V; Rotation Electrical Angle:36
+K
+F https://www.ckswitches.com/media/2873/thb.pdf
+$ENDCMP
+#
+$CMP SKHUAME010
+D Switch Tactile N.O. SPST Round Button J-Bend 0.05A 12VDC 2.55N SMD T/R
+K
+F https://tech.alpsalpine.com/prod/e/html/tact/surfacemount/skhu/skhuame010.html?_gl=1*exvdmo*_ga*MTYyMDk0NjQ3NS4xNjM0NzEyNjk0*_ga_D35WK8GQ9N*MTYzNDcxMjY5My4xLjEuMTYzNDcxMjcwNy4w
+$ENDCMP
+#
+$CMP PMF170XP,115
+D Trench MOSFET P-channel 20V 1A SOT323
+K
+F https://assets.nexperia.com/documents/data-sheet/PMF170XP.pdf
+$ENDCMP
+#
+$CMP PTS_647_SK70_SMTR2_LFS
+D TACT 4.5 X 4.5, 7.0 MM H, 2.5N,
+K
+F https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1yorH47j2AhXeR_EDHTgEBoEQFnoECAMQAQ&url=https%3A%2F%2Fwww.ckswitches.com%2Fmedia%2F2567%2Fpts647.pdf&usg=AOvVaw0HXNmuIaM8iAqTX1ZFU1-t
+$ENDCMP
+#
+$CMP 54
+D Cylindrical Battery Contacts, Clips, Holders & Springs 16-19mm PC BATTERY CLIP
+K
+F http://www.keyelco.com/product-pdf.cfm?p=826
+$ENDCMP
+#
+$CMP EG2208A
+D SLIDE, 200mA, 30VDC DPDT, On-On Through Hole, Right Angle
+K
+F https://configured-product-images.s3.amazonaws.com/2D/specs/EG2208A.pdf
+$ENDCMP
+#
+$CMP IN-S63AT5UW
+D White LED Indication - Discrete 2.8V 0603 (1608 Metric)
+K
+F https://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Top%20View/IN-S63AT%20Series_V1.4.pdf
+$ENDCMP
+#
+$CMP 150060RS75000
+D WURTH ELEKTRONIK - 150060RS75000 - LED, 0603, RED, 250MCD, 625NM
+K
+F http://katalog.we-online.de/led/datasheet/150060RS75000.pdf
+$ENDCMP
+#
+$CMP 150060AS75000
+D 2.4 V Amber LED 1608 (0603)  SMD, Wurth Elektronik WL-SMCW 150060AS75000
+K
+F https://componentsearchengine.com/Datasheets/2/150060AS75000.pdf
+$ENDCMP
+#
+$CMP PS1240P02CT3
+D Piezoelectric Buzzers, Sound Pressure Level=60dB min, Freq.=4000Hz nom
+K
+F https://product.tdk.com/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo-buzzer/catalog/piezoelectronic_buzzer_ps_en.pdf
+$ENDCMP
+#End Doc Library

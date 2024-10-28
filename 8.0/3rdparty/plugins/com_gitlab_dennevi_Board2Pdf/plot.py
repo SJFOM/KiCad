@@ -1,347 +1,532 @@
-
 import os
 import shutil
+import sys
 import pcbnew
 import wx
 import re
 import traceback
-
-from .pypdf import PdfReader, PdfWriter, generic, _utils
+import tempfile
+import logging
+from pathlib import Path
 
 try:
-    import fitz  # This imports PyMuPDF
+    from .pypdf import PdfReader, PdfWriter, PageObject, Transformation, generic
+except ImportError:
+    from pypdf import PdfReader, PdfWriter, PageObject, Transformation, generic
+
+# Try to import PyMuPDF.
+has_pymupdf = True
+try:
+    import pymupdf  # This imports PyMuPDF
+
 except:
-    pass
-
-def print_exception():
-    etype, value, tb = exc_info()
-    info, error = format_exception(etype, value, tb)[-2:]
-    print(f'Exception in:\n{info}\n{error}')
-
-def hex_to_rgb(value):
-    """Return (red, green, blue) in float between 0-1 for the color given as #rrggbb."""
-    value = value.lstrip('#')
-    lv = len(value)
-    rgb = tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
-    rgb = (rgb[0]/255, rgb[1]/255, rgb[2]/255)
-    return rgb
-
-def colorize_pdf_fitz(folder, inputFile, outputFile, color):
     try:
-        with fitz.open(os.path.join(folder, inputFile)) as doc:
-            xref_number = doc[0].get_contents()
-            stream_bytes =doc.xref_stream(xref_number[0])
-            new_color = str(color[0]) + ' ' + str(color[1]) + ' ' + str(color[2]) + ' '  
-            new_color_RG = bytes(new_color + 'RG', 'ascii')
-            new_color_rg = bytes(new_color + 'rg', 'ascii')
+        import fitz as pymupdf  # This imports PyMuPDF using old name
 
-            stream_bytes = re.sub(b'0.0.0.RG', new_color_RG, stream_bytes)
-            stream_bytes = re.sub(b'0.0.0.rg', new_color_rg, stream_bytes)
-            
+    except:
+        try:
+            import fitz_old as pymupdf # This imports PyMuPDF using temporary old name
+
+        except:
+            has_pymupdf = False
+
+# after pip uninstall PyMuPDF the import still works, but not `open()`
+# check if it's possible to call pymupdf.open()
+if has_pymupdf:
+    try:
+        pymupdf.open()
+    except:
+        has_pymupdf = False
+
+
+_logger = logging.getLogger(__name__)
+
+
+def exception_msg(info: str, tb=True):
+    msg = f"{info}\n\n" + (
+        traceback.format_exc() if tb else '')
+    try:
+        wx.MessageBox(msg, 'Error', wx.OK | wx.ICON_ERROR)
+    except wx._core.PyNoAppError:
+        print(f'Error: {msg}', file=sys.stderr)
+
+
+def io_file_error_msg(function: str, input_file: str, folder: str, more: str = '', tb=True):
+    msg = f"{function} failed\nOn input file {input_file} in {folder}\n\n{more}" + (
+        traceback.format_exc() if tb else '')
+    try:
+        wx.MessageBox(msg, 'Error', wx.OK | wx.ICON_ERROR)
+    except wx._core.PyNoAppError:
+        print(f'Error: {msg}', file=sys.stderr)
+
+
+def colorize_pdf_pymupdf(folder, input_file, output_file, color):
+    try:
+        with pymupdf.open(os.path.join(folder, input_file)) as doc:
+            xref_number = doc[0].get_contents()
+            stream_bytes = doc.xref_stream(xref_number[0])
+            new_color = ''.join([f'{c:.3g} ' for c in color])
+            _logger.debug(f'{new_color=}')
+            stream_bytes = re.sub(br'(\s)0 0 0 (RG|rg)', bytes(fr'\g<1>{new_color}\g<2>', 'ascii'), stream_bytes)
+
             doc.update_stream(xref_number[0], stream_bytes)
-            doc.save(os.path.join(folder, outputFile), clean=True)
+            doc.save(os.path.join(folder, output_file), clean=True)
 
     except RuntimeError as e:
         if "invalid key in dict" in str(e):
-            wx.MessageBox("colorize_pdf_fitz failed\nOn input file " + inputFile + " in " + folder + "\n\nThis error can be due to PyMuPdf not being able to handle pdfs created by KiCad 7.0.1 due to a bug in KiCad 7.0.1. Upgrade KiCad or switch to pypdf instead.\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+            io_file_error_msg(colorize_pdf_pymupdf.__name__, input_file, folder,
+                              "This error can be due to PyMuPdf not being able to handle pdfs created by KiCad 7.0.1 due to a bug in KiCad 7.0.1. Upgrade KiCad or switch to pypdf instead.\n\n")
         return False
 
     except:
-        wx.MessageBox("colorize_pdf_fitz failed\nOn input file " + inputFile + " in " + folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+        io_file_error_msg(colorize_pdf_pymupdf.__name__, input_file, folder)
         return False
 
     return True
 
-def colorize_pdf_pypdf(folder, inputFile, outputFile, color):
+
+def colorize_pdf_pypdf(folder, input_file, output_file, color):
     try:
-        with open(os.path.join(folder, inputFile), "rb") as f:
-            import sys
-            class error_handler(object):
+        with open(os.path.join(folder, input_file), "rb") as f:
+            class ErrorHandler(object):
                 def write(self, data):
-                    if not "UserWarning" in data:
-                        wx.MessageBox("colorize_pdf_pypdf failed\nOn input file " + inputFile + " in " + folder + "\n\n" + data, 'Error', wx.OK | wx.ICON_ERROR)
+                    if "UserWarning" not in data:
+                        io_file_error_msg(colorize_pdf_pypdf.__name__, input_file, folder, data + "\n\n", tb=False)
                         return False
 
-            if (sys.stderr == None):
-                handler = error_handler()
+            if sys.stderr is None:
+                handler = ErrorHandler()
                 sys.stderr = handler
 
-            source = PdfReader(f, "rb")
+            source = PdfReader(f)
             output = PdfWriter()
 
             page = source.pages[0]
             content_object = page["/Contents"].get_object()
             content = generic.ContentStream(content_object, source)
 
-            i = 0
-            for operands, operator in content.operations:
-                if operator == _utils.b_("rg") or operator == _utils.b_("RG"):
+            for i, (operands, operator) in enumerate(content.operations):
+                if operator in (b"rg", b"RG"):
                     if operands == [0, 0, 0]:
-                        rgb = content.operations[i][0]
                         content.operations[i] = (
-                            [generic.FloatObject(color[0]), generic.FloatObject(color[1]),
-                             generic.FloatObject(color[2])], content.operations[i][1])
-                    #else:
-                    #    print(operator, operands[0], operands[1], operands[2], "The type is : ", type(rgb[0]),
-                    #          type(rgb[1]), type(rgb[2]))
-                i = i + 1
+                            [generic.FloatObject(intensity) for intensity in color], operator)
+                    # else:
+                    #    print(operator, operands[0], operands[1], operands[2], "The type is : ", type(operands[0]),
+                    #          type(operands[1]), type(operands[2]))
 
-            page.__setitem__(generic.NameObject('/Contents'), content)
+            page[generic.NameObject("/Contents")] = content
             output.add_page(page)
 
-            with open(os.path.join(folder, outputFile), "wb") as outputStream:
-                output.write(outputStream)
+            with open(os.path.join(folder, output_file), "wb") as output_stream:
+                output.write(output_stream)
 
-    except:
-        wx.MessageBox("colorize_pdf_pypdf failed\nOn input file " + inputFile + " in " + folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+    except Exception:
+        io_file_error_msg(colorize_pdf_pypdf.__name__, input_file, folder)
         return False
 
     return True
 
-def merge_pdf_fitz(input_folder, input_files, output_folder, output_file):
+def merge_pdf_pymupdf(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
+                    layer_scale: float, template_use_popups: bool, template_name: str):
+    # I haven't found a way to scale the pdf and preserve the popup-menus.
+    # For now, I'm taking the easy way out and handle the merging differently depending
+    # on if scaling is used or not. At least the popup-menus are preserved when not using scaling.
+    # https://github.com/pymupdf/PyMuPDF/discussions/2499
+    # If popups aren't used, I'm using the with_scaling method to get rid of annotations
+    if template_use_popups and layer_scale == 1.0:
+        return merge_pdf_pymupdf_without_scaling(input_folder, input_files, output_folder, output_file, frame_file, template_name)
+    else:
+        return merge_pdf_pymupdf_with_scaling(input_folder, input_files, output_folder, output_file, frame_file, template_name, layer_scale)
+
+def merge_pdf_pymupdf_without_scaling(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str, template_name: str):
     try:
-        output = fitz.open()
-        i = 0
+        output = None
+        for filename in reversed(input_files):
+            try:
+                if output is None:
+                    output = pymupdf.open(os.path.join(input_folder, filename))
+                else:
+                    # using "with" to force RAII and avoid another "for" closing files
+                    with pymupdf.open(os.path.join(input_folder, filename)) as src:
+                        output[0].show_pdf_page(src[0].rect,  # select output rect
+                                                src,  # input document
+                                                overlay=False)
+            except Exception:
+                io_file_error_msg(merge_pdf_pymupdf.__name__, filename, input_folder)
+                return False
+
+        # Set correct page name in the table of contents (pdf outline)
+
+        # toc = output.get_toc(simple=False)
+        # print("Toc: ", toc)
+        # toc[0][1] = template_name
+        # output.set_toc(toc)
+        # The above code doesn't work for the toc (outlines) of a pdf created by Kicad.
+        # It correctly sets the name of the first page, but when clicking on a footprint it no longer zooms to that footprint
+
+        # Lets do it the low-level way instead:
+        try:
+            xref = output.pdf_catalog()  # get xref of the /Catalog
+
+            # print(output.xref_object(xref))  # print object definition
+            # for key in output.xref_get_keys(xref): # iterate over all keys and print the keys and values
+            #     print("%s = %s" % (key, output.xref_get_key(xref, key)))
+
+            # The loop will output something like this:
+            # Type = ('name', '/Catalog')
+            # Pages = ('xref', '1 0 R')
+            # Version = ('name', '/1.5')
+            # PageMode = ('name', '/UseOutlines')
+            # Outlines = ('xref', '20 0 R')
+            # Names = ('xref', '4 0 R')
+            # PageLayout = ('name', '/SinglePage')
+
+            key_value = output.xref_get_key(xref, "Outlines") # Get the value of the 'Outlines' key
+            xref = int(key_value[1].split(' ')[0]) # Set xref to the xref found in the value of the 'Outlines' key
+
+            # The object now referenced by xref looks something like this:
+            # Type = ('name', '/Outlines')
+            # Count = ('int', '3')
+            # First = ('xref', '11 0 R')
+            # Last = ('xref', '11 0 R')
+
+            key_value = output.xref_get_key(xref, "First") # Get the value of the 'First' key
+            xref = int(key_value[1].split(' ')[0]) # Set xref to the xref found in the value of the 'First' key
+
+            # The object now referenced by xref looks something like this:
+            # Title = ('string', 'Page 1')
+            # Parent = ('xref', '20 0 R')
+            # Count = ('int', '-1')
+            # First = ('xref', '12 0 R')
+            # Last = ('xref', '12 0 R')
+            # A = ('xref', '10 0 R')
+
+            if output.xref_get_key(xref, "Title")[0] == 'string': # Check if the 'Title' key exists
+                page_name = "(" + template_name + ")"
+                output.xref_set_key(xref, "Title", page_name)
+
+        except Exception:
+            exception_msg("Didn't manage to set the name of the page in the Table-of-content")
+
+        output.save(os.path.join(output_folder, output_file)) # , garbage=2
+        output.close()
+
+    except Exception:
+        io_file_error_msg(merge_pdf_pymupdf.__name__, output_file, output_folder)
+        return False
+
+    return True
+
+def merge_pdf_pymupdf_with_scaling(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
+                    template_name: str, layer_scale: float):
+    try:
+        output = pymupdf.open()
+        page = None
         for filename in reversed(input_files):
             try:
                 # using "with" to force RAII and avoid another "for" closing files
-                with fitz.open(os.path.join(input_folder, filename)) as file:
+                with pymupdf.open(os.path.join(input_folder, filename)) as src:
+                    if page is None:
+                        page = output.new_page(width=src[0].rect.width * layer_scale,
+                                               height=src[0].rect.height * layer_scale)
+                        cropbox = pymupdf.Rect((page.rect.width - src[0].rect.width) / 2,
+                                            (page.rect.height - src[0].rect.height) / 2,
+                                            (page.rect.width + src[0].rect.width) / 2,
+                                            (page.rect.height + src[0].rect.height) / 2)
 
-                    if i == 0:
-                        output.insert_pdf(file)
-                    else:
-                        output[0].show_pdf_page(file[0].rect,  # select output rect
-                                                file,  # input document
-                                                0,  # input page number
-                                                overlay=False)
-                i = i + 1
-            except:
-                wx.MessageBox("merge_pdf failed\n\nOn input file " + filename + " in " + input_folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+                    pos = cropbox if frame_file == filename else page.rect
+                    page.show_pdf_page(pos,  # select output rect
+                                       src,  # input document
+                                       overlay=False)
+            except Exception:
+                io_file_error_msg(merge_pdf_pymupdf.__name__, filename, input_folder)
                 return False
+
+        page.set_cropbox(cropbox)
+
+        # Set correct page name in the table of contents (pdf outline)
+        # When scaling is used, component references will not be retained
+        toc = [[1, template_name, 1]]
+        output.set_toc(toc)
 
         output.save(os.path.join(output_folder, output_file))
 
-    except:
-        wx.MessageBox("merge_pdf failed\n\nOn output file " + output_file + " in " + output_folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+    except Exception:
+        io_file_error_msg(merge_pdf_pymupdf.__name__, output_file, output_folder)
         return False
 
     return True
 
-def merge_pdf_pypdf(input_folder, input_files, output_folder, output_file):
+def merge_pdf_pypdf(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
+                    layer_scale: float, template_use_popups: bool, template_name: str):
     try:
-        open_files = []
-        #merged_page = _page.PageObject()
+        page = None
         for filename in input_files:
             try:
-                file = open(os.path.join(input_folder, filename), 'rb')
-                open_files.append(file)
-                pdfReader = PdfReader(file, "rb")
-                pageObj = pdfReader.pages[0]
-                if 'merged_page' in locals():
-                    merged_page.merge_page(pageObj)
-                else:
-                    merged_page = pageObj
-            except:
+                filepath = os.path.join(input_folder, filename)
+                pdf_reader = PdfReader(filepath)
+                src_page: PageObject = pdf_reader.pages[0]
+
+                op = Transformation()
+                if layer_scale > 1.0:
+                    if filename == frame_file:
+                        x_offset = src_page.mediabox.width * (layer_scale - 1.0) / 2
+                        y_offset = src_page.mediabox.height * (layer_scale - 1.0) / 2
+                        op = op.translate(x_offset, y_offset)
+                    else:
+                        op = op.scale(layer_scale)
+
+                if page is None:
+                    page = PageObject.create_blank_page(width=src_page.mediabox.width * layer_scale,
+                                                        height=src_page.mediabox.height * layer_scale)
+                    page.cropbox.lower_left = ((page.mediabox.width - src_page.mediabox.width) / 2,
+                                               (page.mediabox.height - src_page.mediabox.height) / 2)
+                    page.cropbox.upper_right = ((page.mediabox.width + src_page.mediabox.width) / 2,
+                                                (page.mediabox.height + src_page.mediabox.height) / 2)
+
+                page.merge_transformed_page(src_page, op)
+
+            except Exception:
                 error_bitmap = ""
                 error_msg = traceback.format_exc()
                 if 'KeyError: 0' in error_msg:
                     error_bitmap = "This error can be caused by the presence of a bitmap image on this layer. Bitmaps are only allowed on the layer furthest down in the layer list. See Issue #11 for more information.\n\n"
-                wx.MessageBox("merge_pdf failed\n\nOn input file " + filename + " in " + input_folder + "\n\n" + error_bitmap + error_msg, 'Error', wx.OK | wx.ICON_ERROR)
+                io_file_error_msg(merge_pdf_pypdf.__name__, filename, input_folder, error_bitmap)
                 return False
 
         output = PdfWriter()
-        output.add_page(merged_page)
-        with open(os.path.join(output_folder, output_file), "wb") as outputStream:
-            output.write(outputStream)
+        output.add_page(page)
+        output.add_outline_item(title=template_name, page_number=0)
+        with open(os.path.join(output_folder, output_file), "wb") as output_stream:
+            output.write(output_stream)
 
     except:
-        wx.MessageBox("merge_pdf failed\n\nOn output file " + output_file + " in " + output_folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+        io_file_error_msg(merge_pdf_pypdf.__name__, output_file, output_folder)
         return False
-
-    # Close the input files. I don't know why, but merged_page.merge_page(pageObj) doesn't work if I close the files in the merge-loop.
-    for f in open_files:
-        f.close()
 
     return True
 
-def create_pdf_from_pages(input_folder, input_files, output_folder, output_file):
+
+def create_pdf_from_pages(input_folder, input_files, output_folder, output_file, use_popups):
     try:
         output = PdfWriter()
         for filename in input_files:
             try:
-                with open(os.path.join(input_folder, filename), "rb") as file:
-                    #file = open(os.path.join(input_folder, filename), 'rb')
-                    pdfReader = PdfReader(file, "rb")
-                    pageObj = pdfReader.pages[0]
-                    output.add_page(pageObj)
-                    #pdfReader.stream.close()
+                output.append(os.path.join(input_folder, filename))
+
             except:
-                wx.MessageBox("create_pdf_from_pages failed\n\nOn input file " + filename + " in " + input_folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+                io_file_error_msg(create_pdf_from_pages.__name__, filename, input_folder)
                 return False
+
+        # If popup menus are used, add the needed javascript. Pypdf and PyMuPdf removes this in most operations.
+        if use_popups:
+            javascript_string = "function ShM(aEntries) { var aParams = []; for (var i in aEntries) { aParams.push({ cName: aEntries[i][0], cReturn: aEntries[i][1] }) } var cChoice = app.popUpMenuEx.apply(app, aParams); if (cChoice != null && cChoice.substring(0, 1) == '#') this.pageNum = parseInt(cChoice.slice(1)); else if (cChoice != null && cChoice.substring(0, 4) == 'http') app.launchURL(cChoice); }"
+            output.add_js(javascript_string)
 
         for page in output.pages:
             # This has to be done on the writer, not the reader!
             page.compress_content_streams()  # This is CPU intensive!
 
-        with open(os.path.join(output_folder, output_file), "wb") as outputStream:
-            output.write(outputStream)
+        output.write(os.path.join(output_folder, output_file))
 
     except:
-        wx.MessageBox("create_pdf_from_pages failed\n\nOn output file " + output_file + " in " + output_folder + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+        io_file_error_msg(create_pdf_from_pages.__name__, output_file, output_folder)
         return False
 
     return True
 
-def plot_gerbers(board, output_path, templates, enabled_templates, del_temp_files, create_svg, del_single_page_files, dialog_panel):
-    def setProgress(value):
-        dialog_panel.m_progress.SetValue(value)
-        dialog_panel.Refresh()
-        dialog_panel.Update()
 
-    if dialog_panel.m_radio_fitz.GetValue() or dialog_panel.m_radio_merge_fitz.GetValue() or create_svg:
+class LayerInfo:
+    std_color = "#000000"
+
+    def __init__(self, layer_names: dict, layer_name: str, template: dict, frame_layer: str, popups: str):
+        self.name: str = layer_name
+        self.id: int = layer_names[layer_name]
+        self.color_hex: str = template["layers"].get(layer_name, self.std_color)  # color as '#rrggbb' hex string
+        self.with_frame: bool = layer_name == frame_layer
+
         try:
-            fitz.open()
-        except:
-            wx.MessageBox("PyMuPdf (fitz) wasn't loaded.\n\nIt must be installed for it to be used for coloring, for merging and for creating SVGs.\n\nMore information under Install dependencies in the Wiki at board2pdf.dennevi.com", 'Error', wx.OK | wx.ICON_ERROR)
-            progress = 100
-            setProgress(progress)
-            dialog_panel.m_staticText_status.SetLabel("Status: Failed to load PyMuPDF.")
-            return False
+            # Bool specifying if layer is negative
+            self.negative = template["layers_negative"][layer_name] == "true"
+        except KeyError:
+            self.negative = False
+
+        try:
+            # Bool specifying if footprint values shall be plotted
+            self.footprint_value = template["layers_footprint_values"][layer_name] == "true"
+        except KeyError:
+            self.footprint_value = True
+
+        try:
+            # Bool specifying if footprint references shall be plotted
+            self.reference_designator = template["layers_reference_designators"][layer_name] == "true"
+        except KeyError:
+            self.reference_designator = True
+
+        # Check the popup settings.
+        self.front_popups = True
+        self.back_popups = True
+        if popups == "Front Layer":
+            self.back_popups = False
+        elif popups == "Back Layer":
+            self.front_popups = False
+        elif popups == "None":
+            self.front_popups = False
+            self.back_popups = False
+
+    @property
+    def has_color(self) -> bool:
+        """Checks if the layer color is not the standard color (=black)."""
+        return self.color_hex != self.std_color
+
+    @property
+    def color_rgb(self) -> tuple[float, float, float]:
+        """Return (red, green, blue) in float between 0-1."""
+        value = self.color_hex.lstrip('#')
+        lv = len(value)
+        rgb = tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+        rgb = (rgb[0] / 255, rgb[1] / 255, rgb[2] / 255)
+        return rgb
+
+    def __repr__(self):
+        var_str = ', '.join(f"{key}: {value}" for key, value in vars(self).items())
+        return f'{self.__class__.__name__}:{{ {var_str} }}'
+
+
+class Template:
+    def __init__(self, name: str, template: dict, layer_names: dict):
+        self.name: str = name  # the template name
+        self.mirrored: bool = template.get("mirrored", False)  # template is mirrored or not
+        self.tented: bool = template.get("tented", False)  # template is tented or not
+
+        frame_layer: str = template.get("frame", "")  # layer name of the frame layer
+        popups: str = template.get("popups", "")  # setting saying if popups shall be taken from front, back or both
+
+        # collection the settings of the enabled layers
+        self.settings: list[LayerInfo] = []
+
+        if "enabled_layers" in template:
+            enabled_layers = template["enabled_layers"].split(',')
+            for el in enabled_layers:
+                if el:
+                    # If this is the first layer, use the popup settings.
+                    if el == enabled_layers[0]:
+                        layer_popups: str  = popups
+                    else:
+                        layer_popups: str  = "None"
+                    # Prepend to settings
+                    layer_info = LayerInfo(layer_names, el, template, frame_layer, layer_popups)
+                    self.settings.insert(0, layer_info)
+
+    @property
+    def steps(self) -> int:
+        """number of process steps for this template"""
+        return len(self.settings) + sum([layer.has_color for layer in self.settings])
+
+    def __repr__(self):
+        var_str = ', '.join(f"{key}: {value}" for key, value in vars(self).items())
+        return f'{self.__class__.__name__}:{{ {var_str} }}'
+
+
+def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, create_svg, del_single_page_files,
+                 dlg=None, **kwargs) -> bool:
+    asy_file_extension = kwargs.pop('assembly_file_extension', '__Assembly')
+    layer_scale = kwargs.pop('layer_scale', 1.0)
+    colorize_lib: str = kwargs.pop('colorize_lib', '')
+    merge_lib: str = kwargs.pop('merge_lib', '')
+
+    if dlg is None:
+        use_pymupdf = has_pymupdf or create_svg
+        pymupdf_pdf = has_pymupdf and colorize_lib != 'pypdf'
+        pymupdf_merge = has_pymupdf and merge_lib != 'pypdf'
+
+        def set_progress_status(progress: int, status: str):
+            print(f'{int(progress):3d}%: {status}')
+
+        def msg_box(text, caption, flags):
+            print(f"{caption}: {text}")
+
+    elif isinstance(dlg, wx.Panel):
+        pymupdf_pdf = dlg.m_radio_pymupdf.GetValue()
+        pymupdf_merge = dlg.m_radio_merge_pymupdf.GetValue()
+        use_pymupdf = pymupdf_pdf or pymupdf_merge or create_svg
+
+        def set_progress_status(progress: int, status: str):
+            dlg.m_staticText_status.SetLabel(f'Status: {status}')
+            dlg.m_progress.SetValue(int(progress))
+            dlg.Refresh()
+            dlg.Update()
+
+        def msg_box(text, caption, flags):
+            wx.MessageBox(text, caption, flags)
+    else:
+        print(f"Error: Unknown dialog type {type(dlg)}", file=sys.stderr)
+        return False
+
+    if use_pymupdf and not has_pymupdf:
+        msg_box(
+            "PyMuPdf wasn't loaded.\n\nIt must be installed for it to be used for coloring, for merging and for creating SVGs.\n\nMore information under Install dependencies in the Wiki at board2pdf.dennevi.com",
+            'Error', wx.OK | wx.ICON_ERROR)
+        set_progress_status(100, "Failed to load PyMuPDF.")
+        return False
+
+    colorize_pdf = colorize_pdf_pymupdf if pymupdf_pdf else colorize_pdf_pypdf
+    merge_pdf = merge_pdf_pymupdf if pymupdf_merge else merge_pdf_pypdf
 
     os.chdir(os.path.dirname(board.GetFileName()))
     output_dir = os.path.abspath(os.path.expanduser(os.path.expandvars(output_path)))
+    if del_temp_files:
+        # in case the files are deleted: use the OS temp directory
+        temp_dir = tempfile.mkdtemp()
+    else:
+        temp_dir = os.path.abspath(os.path.join(output_dir, "temp"))
 
-    temp_dir = os.path.abspath(os.path.join(output_dir, "temp"))
-
-    dialog_panel.m_staticText_status.SetLabel("Status: Started plotting...")
     progress = 5
-    setProgress(progress)
-
-    steps = 1
-    # Count number of process steps
-    for t in enabled_templates:
-        steps = steps + 1
-        if "enabled_layers" in templates[t]:
-            enabled_layers = templates[t]["enabled_layers"].split(',')
-            enabled_layers[:] = [l for l in enabled_layers if l != '']  # removes empty entries
-            if enabled_layers:
-                for el in enabled_layers:
-                    steps = steps + 1
-                    if "layers" in templates[t]:
-                        if el in templates[t]["layers"]:
-                            if templates[t]["layers"][el] != "#000000":
-                                steps = steps + 1
-    progress_step = 95//steps
+    set_progress_status(progress, "Started plotting...")
 
     plot_controller = pcbnew.PLOT_CONTROLLER(board)
     plot_options = plot_controller.GetPlotOptions()
 
     base_filename = os.path.basename(os.path.splitext(board.GetFileName())[0])
-    final_assembly_file = base_filename + "__Assembly.pdf"
+    final_assembly_file = base_filename + asy_file_extension + ".pdf"
     final_assembly_file_with_path = os.path.abspath(os.path.join(output_dir, final_assembly_file))
+
+    if "assembly_file_output" in kwargs:
+        final_assembly_file = kwargs.pop('assembly_file_output')
+        final_assembly_file_with_path = str(Path(final_assembly_file_with_path).absolute())
+
 
     # Create the directory if it doesn't exist already
     os.makedirs(output_dir, exist_ok=True)
 
     # Check if we're able to write to the output file.
     try:
-        #os.access(os.path.join(output_dir, final_assembly_file), os.W_OK)
+        # os.access(os.path.join(output_dir, final_assembly_file), os.W_OK)
         open(os.path.join(output_dir, final_assembly_file), "w")
     except:
-        wx.MessageBox("The output file is not writeable. Perhaps it's open in another " +
-                      "application?\n\n" + final_assembly_file_with_path, 'Error', wx.OK | wx.ICON_ERROR)
-        dialog_panel.m_staticText_status.SetLabel("Status: Failed to write to output file.")
+        msg_box("The output file is not writeable. Perhaps it's open in another application?\n\n"
+                + final_assembly_file_with_path, 'Error', wx.OK | wx.ICON_ERROR)
+        set_progress_status(100, "Failed to write to output file.")
         return False
 
     plot_options.SetOutputDirectory(temp_dir)
 
-    templates_list = []
+    # Build a dict to translate layer names to layerID
+    layer_names = {}
+    for i in range(pcbnew.PCBNEW_LAYER_ID_START, pcbnew.PCBNEW_LAYER_ID_START + pcbnew.PCB_LAYER_ID_COUNT):
+        layer_names[board.GetStandardLayerName(i)] = i
+
+    steps: int = 2  # number of process steps
+    templates_list: list[Template] = []
     for t in enabled_templates:
-        temp = []
-        #{  "Test-template": {"mirrored": true, "enabled_layers": "B.Fab,B.Mask,Edge.Cuts,F.Adhesive", "frame": "In4.Cu",
+        # {  "Test-template": {"mirrored": true, "enabled_layers": "B.Fab,B.Mask,Edge.Cuts,F.Adhesive", "frame": "In4.Cu",
         #          "layers": {"B.Fab": "#000012", "B.Mask": "#000045"}}  }
         if t in templates:
-            temp.append(t) # Add the template name
-
-            if "mirrored" in templates[t]:
-                temp.append(templates[t]["mirrored"]) # Add if the template is mirrored or not
-            else:
-                temp.append(False)
-                
-            if "tented" in templates[t]:
-                temp.append(templates[t]["tented"]) # Add if the template is tented or not
-            else:
-                temp.append(False)
-
-            frame_layer = "None"
-            if "frame" in templates[t]:
-                frame_layer = templates[t]["frame"] # Layer with frame
-
-            # Build a dict to translate layer names to layerID
-            layer_names = {}
-            i = pcbnew.PCBNEW_LAYER_ID_START
-            while i < pcbnew.PCBNEW_LAYER_ID_START + pcbnew.PCB_LAYER_ID_COUNT:
-                layer_names[board.GetStandardLayerName(i)] = i
-                i += 1
-
-            settings = []
-
-            if "enabled_layers" in templates[t]:
-                enabled_layers = templates[t]["enabled_layers"].split(',')
-                enabled_layers[:] = [l for l in enabled_layers if l != '']  # removes empty entries
-                if enabled_layers:
-                    for el in enabled_layers:
-                        s = []
-                        s.append(el) # Layer name string
-                        s.append(layer_names[el]) # Layer ID
-                        if el in templates[t]["layers"]:
-                            s.append(templates[t]["layers"][el]) # Layer color
-                        else:
-                            s.append("#000000") # Layer color black
-                        if el == frame_layer:
-                            s.append(True)
-                        else:
-                            s.append(False)
-
-                        if "layers_negative" in templates[t]:
-                            if el in templates[t]["layers_negative"]: # Bool specifying if layer is negative
-                                if templates[t]["layers_negative"][el] == "true":
-                                    s.append(True)
-                                else:
-                                    s.append(False)
-                            else:
-                                s.append(False)
-                        else:
-                            s.append(False)
-
-                        if "layers_footprint_values" in templates[t]:
-                            if el in templates[t]["layers_footprint_values"]: # Bool specifying if footprint values shall be plotted
-                                if templates[t]["layers_footprint_values"][el] == "false":
-                                    s.append(False)
-                                else:
-                                    s.append(True)
-                            else:
-                                s.append(True)
-                        else:
-                            s.append(True)
-
-                        if "layers_reference_designators" in templates[t]:
-                            if el in templates[t]["layers_reference_designators"]: # Bool specifying if reference designators shall be plotted
-                                if templates[t]["layers_reference_designators"][el] == "false":
-                                    s.append(False)
-                                else:
-                                    s.append(True)
-                            else:
-                                s.append(True)
-                        else:
-                            s.append(True)
-
-                        settings.insert(0, s) # Prepend to settings
-
-            temp.append(settings)
+            temp = Template(t, templates[t], layer_names)
+            _logger.debug(temp)
+            steps += 1 + temp.steps
             templates_list.append(temp)
-    #wx.MessageBox("Newly created template_list:\n" + str(templates_list))
-
+    progress_step: float = 95 / steps
 
     """
     [
@@ -362,160 +547,187 @@ def plot_gerbers(board, output_path, templates, enabled_templates, del_temp_file
         plot_options.SetAutoScale(False)
         # plot_options.SetPlotMode(PLOT_MODE)
         # plot_options.SetLineWidth(2000)
-        if (pcbnew.Version()[0:3] == "6.0"):
+        if pcbnew.Version()[0:3] == "6.0":
             # This method is only available on V6, not V6.99/V7
-            plot_options.SetExcludeEdgeLayer(True);
+            plot_options.SetExcludeEdgeLayer(True)
     except:
-        wx.MessageBox(traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-        dialog_panel.m_staticText_status.SetLabel("Status: Failed to set plot_options")
+        msg_box(traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+        set_progress_status(100, "Failed to set plot_options")
         return False
 
+    use_popups = False
     template_filelist = []
 
     # Iterate over the templates
     for template in templates_list:
-        template_name = template[0]
-        # wx.MessageBox("Now starting with template: " + template_name)
+        # msg_box("Now starting with template: " + template_name)
         # Plot layers to pdf files
-        for layer_info in template[3]:
-            dialog_panel.m_staticText_status.SetLabel("Status: Plotting " + layer_info[0] + " for template " + template_name)
-            progress = progress + progress_step
-            setProgress(progress)
+        for layer_info in template.settings:
+            progress += progress_step
+            set_progress_status(progress, f"Plotting {layer_info.name} for template {template.name}")
 
-            if (pcbnew.Version()[0:3] == "6.0"):
-                if pcbnew.IsCopperLayer(layer_info[1]): # Should probably do this on mask layers as well
-                    plot_options.SetDrillMarksType(2)  # NO_DRILL_SHAPE = 0, SMALL_DRILL_SHAPE = 1, FULL_DRILL_SHAPE  = 2
+            if pcbnew.Version()[0:3] == "6.0":
+                if pcbnew.IsCopperLayer(layer_info.id):  # Should probably do this on mask layers as well
+                    plot_options.SetDrillMarksType(
+                        2)  # NO_DRILL_SHAPE = 0, SMALL_DRILL_SHAPE = 1, FULL_DRILL_SHAPE  = 2
                 else:
-                    plot_options.SetDrillMarksType(0)  # NO_DRILL_SHAPE = 0, SMALL_DRILL_SHAPE = 1, FULL_DRILL_SHAPE  = 2
-            else: # API changed in V6.99/V7
+                    plot_options.SetDrillMarksType(
+                        0)  # NO_DRILL_SHAPE = 0, SMALL_DRILL_SHAPE = 1, FULL_DRILL_SHAPE  = 2
+            else:  # API changed in V6.99/V7
                 try:
-                    if pcbnew.IsCopperLayer(layer_info[1]):  # Should probably do this on mask layers as well
+                    if pcbnew.IsCopperLayer(layer_info.id):  # Should probably do this on mask layers as well
                         plot_options.SetDrillMarksType(pcbnew.DRILL_MARKS_FULL_DRILL_SHAPE)
                     else:
                         plot_options.SetDrillMarksType(pcbnew.DRILL_MARKS_NO_DRILL_SHAPE)
                 except:
-                    wx.MessageBox("Unable to set Drill Marks type.\n\nIf you're using a V6.99 build from before Dec 07 2022 then update to a newer build.\n\n"+traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-                    dialog_panel.m_staticText_status.SetLabel("Status: Failed to set Drill Marks type")
+                    msg_box(
+                        "Unable to set Drill Marks type.\n\nIf you're using a V6.99 build from before Dec 07 2022 then update to a newer build.\n\n" + traceback.format_exc(),
+                        'Error', wx.OK | wx.ICON_ERROR)
+                    set_progress_status(100, "Failed to set Drill Marks type")
+
                     return False
 
             try:
-                plot_options.SetPlotFrameRef(layer_info[3])
-                plot_options.SetNegative(layer_info[4])
-                plot_options.SetPlotValue(layer_info[5])
-                plot_options.SetPlotReference(layer_info[6])
-                plot_options.SetMirror(template[1])
-                plot_options.SetPlotViaOnMaskLayer(template[2])
-                plot_controller.SetLayer(layer_info[1])
-                plot_controller.OpenPlotfile(layer_info[0], pcbnew.PLOT_FORMAT_PDF, template_name)
+                plot_options.SetPlotFrameRef(layer_info.with_frame)
+                plot_options.SetNegative(layer_info.negative)
+                plot_options.SetPlotValue(layer_info.footprint_value)
+                plot_options.SetPlotReference(layer_info.reference_designator)
+                plot_options.SetMirror(template.mirrored)
+                plot_options.SetPlotViaOnMaskLayer(template.tented)
+                if int(pcbnew.Version()[0:1]) >= 8:
+                    if layer_scale == 1.0:
+                        plot_options.m_PDFFrontFPPropertyPopups = layer_info.front_popups
+                        plot_options.m_PDFBackFPPropertyPopups = layer_info.back_popups
+                    else:
+                        plot_options.m_PDFFrontFPPropertyPopups = False
+                        plot_options.m_PDFBackFPPropertyPopups = False
+
+                plot_controller.SetLayer(layer_info.id)
+                plot_controller.OpenPlotfile(layer_info.name, pcbnew.PLOT_FORMAT_PDF, template.name)
                 plot_controller.PlotLayer()
             except:
-                wx.MessageBox(traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-                dialog_panel.m_staticText_status.SetLabel("Status: Failed to set plot_options or plot_controller")
+                msg_box(traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
+                set_progress_status(100, "Failed to set plot_options or plot_controller")
                 return False
 
         plot_controller.ClosePlot()
 
+        template_use_popups = False
         filelist = []
         # Change color of pdf files
-        for layer_info in template[3]:
-            ln = layer_info[0].replace('.', '_')
-            inputFile = base_filename + "-" + ln + ".pdf"
-            if(layer_info[2] != "#000000"):
-                dialog_panel.m_staticText_status.SetLabel("Status: Coloring " + layer_info[0] + " for template " + template_name)
-                progress = progress + progress_step
-                setProgress(progress)
+        for layer_info in template.settings:
+            ln = layer_info.name.replace('.', '_')
+            input_file = f"{base_filename}-{ln}.pdf"
+            output_file = f"{base_filename}-{ln}-colored.pdf"
+            if layer_info.has_color:
+                progress += progress_step
+                set_progress_status(progress, f"Coloring {layer_info.name} for template {template.name}")
 
-                outputFile = base_filename + "-" + ln + "-colored.pdf"
+                if not colorize_pdf(temp_dir, input_file, output_file, layer_info.color_rgb):
+                    set_progress_status(100, f"Failed when coloring {layer_info.name} for template {template.name}")
+                    return False
 
-                if(dialog_panel.m_radio_fitz.GetValue()):
-                    if not colorize_pdf_fitz(temp_dir, inputFile, outputFile, hex_to_rgb(layer_info[2])):
-                        dialog_panel.m_staticText_status.SetLabel("Status: Failed when coloring " + layer_info[0] + " for template " + template_name + " using PyMuPdf")
-                        return False
-                else:
-                    if not colorize_pdf_pypdf(temp_dir, inputFile, outputFile, hex_to_rgb(layer_info[2])):
-                        dialog_panel.m_staticText_status.SetLabel("Status: Failed when coloring " + layer_info[0] + " for template " + template_name + " using pypdf")
-                        return False
-
-                filelist.append(outputFile)
+                filelist.append(output_file)
             else:
-                filelist.append(inputFile)
+                filelist.append(input_file)
+
+            if layer_info.with_frame:
+                # the frame layer is scaled by 1.0, all others by `layer_scale`
+                frame_file = filelist[-1]
+            else:
+                frame_file = 'None'
+            # Set template_use_popups to True if any layer has popups and no scaling
+            if layer_scale == 1.0:
+                template_use_popups = template_use_popups or layer_info.front_popups or layer_info.back_popups
 
         # Merge pdf files
-        dialog_panel.m_staticText_status.SetLabel("Status: Merging all layers of template " + template_name)
-        progress = progress + progress_step
-        setProgress(progress)
+        progress += progress_step
+        set_progress_status(progress, f"Merging all layers of template {template.name}")
 
-        assembly_file = base_filename + "_" + template[0] + ".pdf"
+        assembly_file = f"{base_filename}_{template.name}.pdf"
 
-        if (dialog_panel.m_radio_merge_fitz.GetValue()):
-            if not merge_pdf_fitz(temp_dir, filelist, output_dir, assembly_file):
-                dialog_panel.m_staticText_status.SetLabel("Status: Failed when merging all layers of template " + template_name + " using PyMuPdf")
-                return False
-        else:
-            if not merge_pdf_pypdf(temp_dir, filelist, output_dir, assembly_file):
-                dialog_panel.m_staticText_status.SetLabel("Status: Failed when merging all layers of template " + template_name + " using pypdf")
-                return False
+        if not merge_pdf(temp_dir, filelist, output_dir, assembly_file, frame_file, layer_scale, template_use_popups, template.name):
+            set_progress_status(100, "Failed when merging all layers of template " + template.name)
+            return False
 
         template_filelist.append(assembly_file)
+        # Set use_popups to True if any template has popups
+        use_popups = use_popups or template_use_popups
 
     # Add all generated pdfs to one file
-    dialog_panel.m_staticText_status.SetLabel("Status: Adding all templates to a single file")
-    setProgress(progress)
+    progress += progress_step
+    set_progress_status(progress, "Adding all templates to a single file")
 
-    if not create_pdf_from_pages(output_dir, template_filelist, output_dir, final_assembly_file):
-        dialog_panel.m_staticText_status.SetLabel("Status: Failed when adding all templates to a single file")
+
+    if not create_pdf_from_pages(output_dir, template_filelist, output_dir, final_assembly_file, use_popups):
+        set_progress_status(100, "Failed when adding all templates to a single file")
         return False
 
     # Create SVG(s) if settings says so
     if create_svg:
         for template_file in template_filelist:
-            template_pdf = fitz.open(os.path.join(output_dir, template_file))
+            template_pdf = pymupdf.open(os.path.join(output_dir, template_file))
             try:
                 svg_image = template_pdf[0].get_svg_image()
-                svg_filename = os.path.splitext(template_file)[0]+".svg"
-                file=open(os.path.join(output_dir, svg_filename), "w")
-                file.write(svg_image)
-                file.close()
+                svg_filename = os.path.splitext(template_file)[0] + ".svg"
+                with open(os.path.join(output_dir, svg_filename), "w") as file:
+                    file.write(svg_image)
             except:
-                wx.MessageBox("Failed to create SVG in " + output_dir + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-                dialog_panel.m_staticText_status.SetLabel("Status: Failed to create SVG(s)")
+                msg_box("Failed to create SVG in {output_dir}\n\n" + traceback.format_exc(), 'Error',
+                        wx.OK | wx.ICON_ERROR)
+                set_progress_status(100, "Failed to create SVG(s)")
                 return False
             template_pdf.close()
 
     # Delete temp files if setting says so
-    if (del_temp_files):
+    if del_temp_files:
         try:
             shutil.rmtree(temp_dir)
         except:
-            wx.MessageBox("del_temp_files failed\n\nOn dir " + temp_dir + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-            dialog_panel.m_staticText_status.SetLabel("Status: Failed to delete temp files")
+            msg_box(f"del_temp_files failed\n\nOn dir {temp_dir}\n\n" + traceback.format_exc(), 'Error',
+                    wx.OK | wx.ICON_ERROR)
+            set_progress_status(100, "Failed to delete temp files")
             return False
 
     # Delete single page files if setting says so
-    if (del_single_page_files):
+    if del_single_page_files:
         for template_file in template_filelist:
             delete_file = os.path.join(output_dir, os.path.splitext(template_file)[0] + ".pdf")
             try:
                 os.remove(delete_file)
             except:
-                wx.MessageBox("del_single_page_files failed\n\nOn file " + delete_file + "\n\n" + traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
-                dialog_panel.m_staticText_status.SetLabel("Status: Failed to delete single files")
+                msg_box(f"del_single_page_files failed\n\nOn file {delete_file}\n\n" + traceback.format_exc(), 'Error',
+                        wx.OK | wx.ICON_ERROR)
+                set_progress_status(100, "Failed to delete single files")
                 return False
 
-    dialog_panel.m_staticText_status.SetLabel("Status: All done!")
+    set_progress_status(100, "All done!")
 
-    progress = 100
-    setProgress(progress)
-
-    endmsg = "All done!\n\nAssembly pdf created: " + os.path.abspath(os.path.join(output_dir, final_assembly_file))
-    if (not del_single_page_files):
-        endmsg = endmsg + "\n\nSingle page pdf files created:"
+    endmsg = "Assembly pdf created: " + os.path.abspath(os.path.join(output_dir, final_assembly_file))
+    if not del_single_page_files:
+        endmsg += "\n\nSingle page pdf files created:"
         for template_file in template_filelist:
-            endmsg = endmsg + "\n" + os.path.abspath(os.path.join(output_dir, os.path.splitext(template_file)[0]+".pdf"))
+            endmsg += "\n" + os.path.abspath(os.path.join(output_dir, os.path.splitext(template_file)[0] + ".pdf"))
 
-    if (create_svg):
-        endmsg = endmsg + "\n\nSVG files created:"
+    if create_svg:
+        endmsg += "\n\nSVG files created:"
         for template_file in template_filelist:
-            endmsg = endmsg + "\n" + os.path.abspath(os.path.join(output_dir, os.path.splitext(template_file)[0]+".svg"))
+            endmsg += "\n" + os.path.abspath(os.path.join(output_dir, os.path.splitext(template_file)[0] + ".svg"))
 
-    wx.MessageBox(endmsg, 'All done!', wx.OK)
+    msg_box(endmsg, 'All done!', wx.OK)
+    return True
+
+
+def cli(board_filepath: str, configfile: str, **kwargs) -> bool:
+    try:
+        from . import persistence
+    except ImportError:
+        import persistence
+
+
+    board = pcbnew.LoadBoard(board_filepath)
+    config = persistence.Persistence(configfile)
+    config_vars = config.load()
+    # note: cli parameters override config.ini values
+    config_vars.update(kwargs)
+    return plot_pdfs(board, **config_vars)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version 3.10.1-0-g8feb16b3)
+## Python code generated with wxFormBuilder (version 4.1.0-0-g733bf3d)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO *NOT* EDIT THIS FILE!
@@ -183,8 +183,8 @@ class SettingsDialogPanel ( wx.Panel ):
 
         bSizer21.Add( self.m_staticText82, 0, wx.ALL, 5 )
 
-        self.m_radio_fitz = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"PyMuPdf/fitz (fast)", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
-        bSizer21.Add( self.m_radio_fitz, 0, wx.ALL, 5 )
+        self.m_radio_pymupdf = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"PyMuPdf (fast)", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
+        bSizer21.Add( self.m_radio_pymupdf, 0, wx.ALL, 5 )
 
         self.m_radio_pypdf = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"pypdf (slow)", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer21.Add( self.m_radio_pypdf, 0, wx.ALL, 5 )
@@ -199,8 +199,8 @@ class SettingsDialogPanel ( wx.Panel ):
 
         bSizer22.Add( self.m_staticText9, 0, wx.ALL, 5 )
 
-        self.m_radio_merge_fitz = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"PyMuPdf/fitz (fast)", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
-        bSizer22.Add( self.m_radio_merge_fitz, 0, wx.ALL, 5 )
+        self.m_radio_merge_pymupdf = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"PyMuPdf (fast)", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
+        bSizer22.Add( self.m_radio_merge_pymupdf, 0, wx.ALL, 5 )
 
         self.m_radio_merge_pypdf = wx.RadioButton( sbSizer6.GetStaticBox(), wx.ID_ANY, u"pypdf (slow)", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer22.Add( self.m_radio_merge_pypdf, 0, wx.ALL, 5 )
@@ -210,11 +210,16 @@ class SettingsDialogPanel ( wx.Panel ):
 
         bSizer39 = wx.BoxSizer( wx.HORIZONTAL )
 
-        self.m_button41 = wx.Button( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Save current settings", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_DEFAULT )
+        self.saveSettingsBtn = wx.Button( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Save settings", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_DEFAULT )
 
-        self.m_button41.SetBitmap( wx.ArtProvider.GetBitmap( wx.ART_FILE_SAVE, wx.ART_BUTTON ) )
-        self.m_button41.SetBitmapMargins( wx.Size( 2,-1 ) )
-        bSizer39.Add( self.m_button41, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
+        self.saveSettingsBtn.SetBitmap( wx.ArtProvider.GetBitmap( wx.ART_FILE_SAVE, wx.ART_BUTTON ) )
+        self.saveSettingsBtn.SetBitmapMargins( wx.Size( 2,-1 ) )
+        bSizer39.Add( self.saveSettingsBtn, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
+
+        self.loadSettingsBtn = wx.Button( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Load settings", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_DEFAULT )
+
+        self.loadSettingsBtn.SetBitmap( wx.ArtProvider.GetBitmap( wx.ART_FILE_OPEN, wx.ART_BUTTON ) )
+        bSizer39.Add( self.loadSettingsBtn, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 
 
         bSizer39.Add( ( 0, 0), 1, wx.EXPAND, 5 )
@@ -265,7 +270,7 @@ class SettingsDialogPanel ( wx.Panel ):
 
         sbSizer61 = wx.StaticBoxSizer( wx.StaticBox( sbSizer23.GetStaticBox(), wx.ID_ANY, u"Template Properties" ), wx.VERTICAL )
 
-        gSizer1 = wx.GridSizer( 3, 2, 0, 0 )
+        gSizer1 = wx.GridSizer( 4, 2, 0, 0 )
 
         self.m_staticText_template_name = wx.StaticText( sbSizer61.GetStaticBox(), wx.ID_ANY, u"Template name", wx.DefaultPosition, wx.DefaultSize, 0 )
         self.m_staticText_template_name.Wrap( -1 )
@@ -283,6 +288,15 @@ class SettingsDialogPanel ( wx.Panel ):
         m_comboBox_frameChoices = []
         self.m_comboBox_frame = wx.ComboBox( sbSizer61.GetStaticBox(), wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 190,-1 ), m_comboBox_frameChoices, 0 )
         gSizer1.Add( self.m_comboBox_frame, 0, wx.ALL|wx.EXPAND, 5 )
+
+        self.m_staticText_popups = wx.StaticText( sbSizer61.GetStaticBox(), wx.ID_ANY, u"Property Popups", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText_popups.Wrap( -1 )
+
+        gSizer1.Add( self.m_staticText_popups, 0, wx.ALL, 5 )
+
+        m_comboBox_popupsChoices = [ u"None", u"Front Layer", u"Back Layer", u"Both Layers", wx.EmptyString ]
+        self.m_comboBox_popups = wx.ComboBox( sbSizer61.GetStaticBox(), wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 190,-1 ), m_comboBox_popupsChoices, 0 )
+        gSizer1.Add( self.m_comboBox_popups, 0, wx.ALL|wx.EXPAND, 5 )
 
         self.m_checkBox_mirror = wx.CheckBox( sbSizer61.GetStaticBox(), wx.ID_ANY, u"Mirror all layers (bottom view)", wx.DefaultPosition, wx.DefaultSize, 0 )
         gSizer1.Add( self.m_checkBox_mirror, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
@@ -450,7 +464,8 @@ class SettingsDialogPanel ( wx.Panel ):
         self.disabledTemplatesSortOrderBox.Bind( wx.EVT_LISTBOX_DCLICK, self.OnTemplateEnable )
         self.m_button_template_enable.Bind( wx.EVT_BUTTON, self.OnTemplateEnable )
         self.m_button4.Bind( wx.EVT_BUTTON, self.OnTemplateDelete )
-        self.m_button41.Bind( wx.EVT_BUTTON, self.OnSaveSettings )
+        self.saveSettingsBtn.Bind( wx.EVT_BUTTON, self.OnSaveSettings )
+        self.loadSettingsBtn.Bind( wx.EVT_BUTTON, self.OnLoadSettings )
         self.m_button42.Bind( wx.EVT_BUTTON, self.OnPerform )
         self.m_button43.Bind( wx.EVT_BUTTON, self.OnExit )
         self.m_textCtrl_template_name.Bind( wx.EVT_TEXT, self.OnTemplateNameChange )
@@ -499,6 +514,9 @@ class SettingsDialogPanel ( wx.Panel ):
         event.Skip()
 
     def OnSaveSettings( self, event ):
+        event.Skip()
+
+    def OnLoadSettings( self, event ):
         event.Skip()
 
     def OnPerform( self, event ):

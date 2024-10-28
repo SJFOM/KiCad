@@ -7,7 +7,7 @@
 	(title_block
 		(title "Motor Driver")
 		(date "2024-04-28")
-		(rev "v0.1")
+		(rev "v0.2")
 		(company "SJFOM")
 	)
 	(lib_symbols
@@ -908,7 +908,7 @@
 				)
 			)
 		)
-		(symbol "Snapeda:TBLH10-350-04BK"
+		(symbol "Snapeda_kicad:1862068"
 			(pin_names
 				(offset 1.016)
 			)
@@ -916,7 +916,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -5.588 7.62 0)
+				(at -6.85 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -924,8 +924,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "TBLH10-350-04BK"
-				(at -5.08 -17.78 0)
+			(property "Value" "1862068"
+				(at -6.35 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -933,13 +933,13 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Snapeda:CUI_TBLH10-350-04BK"
+			(property "Footprint" "Snapeda:1862068_PHOENIX_1862068"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -949,7 +949,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
@@ -959,51 +958,218 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "CUI"
+			(property "MANUFACTURER" "PHOENIX"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TBLH10-350-04BK_0_0"
+			(symbol "1862068_0_0"
 				(rectangle
-					(start -5.08 -15.24)
-					(end 5.08 7.62)
+					(start -6.35 -15.24)
+					(end 6.35 15.24)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
+				(circle
+					(center -3.175 -11.43)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.175 -3.81)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.175 3.81)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.175 11.43)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -11.43) (xy -3.81 -11.43)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -10.16) (xy -5.08 -12.7)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy -3.81 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -5.08 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.81) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 11.43) (xy -3.81 11.43)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 12.7) (xy -5.08 10.16)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -10.16 5.08 0)
+					(at -10.16 12.7 0)
 					(length 5.08)
-					(name "1"
+					(name "1_1"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1_A"
+					(number "1_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 10.16 0)
+					(length 5.08)
+					(name "1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 5.08 0)
+					(length 5.08)
+					(name "2_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2_1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1014,32 +1180,14 @@
 				(pin passive line
 					(at -10.16 2.54 0)
 					(length 5.08)
-					(name "1__1"
+					(name "2_2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1_B"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2_A"
+					(number "2_2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1050,14 +1198,14 @@
 				(pin passive line
 					(at -10.16 -2.54 0)
 					(length 5.08)
-					(name "2__1"
+					(name "3_1"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "2_B"
+					(number "3_1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1068,32 +1216,14 @@
 				(pin passive line
 					(at -10.16 -5.08 0)
 					(length 5.08)
-					(name "3"
+					(name "3_2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "3_A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 5.08)
-					(name "3__1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3_B"
+					(number "3_2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1104,14 +1234,14 @@
 				(pin passive line
 					(at -10.16 -10.16 0)
 					(length 5.08)
-					(name "4"
+					(name "4_1"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "4_A"
+					(number "4_1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1122,14 +1252,14 @@
 				(pin passive line
 					(at -10.16 -12.7 0)
 					(length 5.08)
-					(name "4__1"
+					(name "4_2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "4_B"
+					(number "4_2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1759,7 +1889,7 @@
 				)
 			)
 		)
-		(symbol "dk_Transistors-FETs-MOSFETs-Single:2N7002"
+		(symbol "dk_Transistors-FETs-MOSFETs-Single:2N7002-7-F"
 			(pin_names
 				(offset 0)
 			)
@@ -1775,7 +1905,7 @@
 					(justify right)
 				)
 			)
-			(property "Value" "2N7002"
+			(property "Value" "2N7002-7-F"
 				(at 3.4544 0 90)
 				(effects
 					(font
@@ -1793,7 +1923,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11303.pdf"
 				(at 5.08 7.62 0)
 				(effects
 					(font
@@ -1803,8 +1933,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MOSFET N-CH 60V 115MA SOT-23"
-				(at 5.08 25.4 0)
+			(property "Description" "MOSFET N-CH 60V 115MA SOT23-3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Digi-Key_PN" "2N7002-FDICT-ND"
+				(at 5.08 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -1813,7 +1952,7 @@
 					(hide yes)
 				)
 			)
-			(property "MPN" "2N7002"
+			(property "MPN" "2N7002-7-F"
 				(at 5.08 12.7 0)
 				(effects
 					(font
@@ -1843,7 +1982,7 @@
 					(hide yes)
 				)
 			)
-			(property "DK_Datasheet_Link" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds11303.pdf"
 				(at 5.08 20.32 0)
 				(effects
 					(font
@@ -1853,7 +1992,7 @@
 					(hide yes)
 				)
 			)
-			(property "DK_Detail_Page" "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664"
+			(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/2N7002-7-F/2N7002-FDICT-ND/717800"
 				(at 5.08 22.86 0)
 				(effects
 					(font
@@ -1863,7 +2002,17 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "ON Semiconductor"
+			(property "Description_1" "MOSFET N-CH 60V 115MA SOT23-3"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Diodes Incorporated"
 				(at 5.08 27.94 0)
 				(effects
 					(font
@@ -1883,7 +2032,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "2N7002NCT-ND"
+			(property "ki_keywords" "2N7002-FDICT-ND"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1892,7 +2041,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N7002_0_1"
+			(symbol "2N7002-7-F_0_1"
 				(circle
 					(center -1.27 0)
 					(radius 3.302)
@@ -1998,7 +2147,7 @@
 					)
 				)
 			)
-			(symbol "2N7002_1_1"
+			(symbol "2N7002-7-F_1_1"
 				(polyline
 					(pts
 						(xy -2.54 -1.397) (xy -2.54 -1.905)
@@ -2905,7 +3054,7 @@
 		(uuid "30318c75-b752-4cdc-b169-09c1ac5a7345")
 	)
 	(junction
-		(at 133.35 41.91)
+		(at 135.89 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3227eb02-5d36-4e67-8487-419474a434df")
@@ -2935,7 +3084,7 @@
 		(uuid "5b25c1f0-2ac2-4dcf-b249-c8ac26980213")
 	)
 	(junction
-		(at 133.35 46.99)
+		(at 135.89 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5fe68a33-cf91-4559-97db-dac80a087033")
@@ -2983,7 +3132,7 @@
 		(uuid "9927b2f3-432d-4d87-8dbb-6efa18bd8eaa")
 	)
 	(junction
-		(at 133.35 57.15)
+		(at 135.89 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a2d675a-1bbe-4a54-b1ed-abd96ccc679b")
@@ -3001,7 +3150,7 @@
 		(uuid "c439c571-3aee-4c8a-9e60-14168d9c604a")
 	)
 	(junction
-		(at 133.35 52.07)
+		(at 135.89 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5e9fd86-101b-474a-8481-a27180a36d7b")
@@ -3474,7 +3623,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 52.07) (xy 134.62 52.07)
+			(xy 135.89 52.07) (xy 137.16 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3624,7 +3773,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 41.91) (xy 133.35 41.91)
+			(xy 120.65 36.83) (xy 135.89 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3674,7 +3823,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 44.45) (xy 133.35 44.45)
+			(xy 137.16 39.37) (xy 135.89 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3714,7 +3863,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 57.15) (xy 133.35 59.69)
+			(xy 135.89 59.69) (xy 135.89 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3884,7 +4033,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 46.99) (xy 134.62 46.99)
+			(xy 135.89 44.45) (xy 137.16 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3904,7 +4053,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 49.53) (xy 133.35 49.53)
+			(xy 137.16 46.99) (xy 135.89 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3924,7 +4073,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 41.91) (xy 134.62 41.91)
+			(xy 135.89 36.83) (xy 137.16 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3974,7 +4123,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 46.99) (xy 133.35 46.99)
+			(xy 120.65 44.45) (xy 135.89 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4094,7 +4243,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 46.99) (xy 133.35 49.53)
+			(xy 135.89 44.45) (xy 135.89 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4124,7 +4273,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 54.61) (xy 133.35 54.61)
+			(xy 137.16 54.61) (xy 135.89 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4244,7 +4393,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 52.07) (xy 133.35 52.07)
+			(xy 120.65 52.07) (xy 135.89 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4394,7 +4543,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 59.69) (xy 133.35 59.69)
+			(xy 137.16 62.23) (xy 135.89 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4424,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 54.61) (xy 133.35 52.07)
+			(xy 135.89 54.61) (xy 135.89 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4544,7 +4693,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 57.15) (xy 134.62 57.15)
+			(xy 135.89 59.69) (xy 137.16 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4574,7 +4723,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 57.15) (xy 133.35 57.15)
+			(xy 120.65 59.69) (xy 135.89 59.69)
 		)
 		(stroke
 			(width 0)
@@ -4644,7 +4793,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 41.91) (xy 133.35 44.45)
+			(xy 135.89 36.83) (xy 135.89 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4813,7 +4962,7 @@
 		(uuid "414e6e8b-248c-47ce-b042-0a9fc0a346d9")
 	)
 	(label "OB1_OUT"
-		(at 118.11 52.07 0)
+		(at 120.65 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4934,7 +5083,7 @@
 		(uuid "a3b80590-5dc0-498b-bf1c-d1a31d2ea793")
 	)
 	(label "OB2_OUT"
-		(at 118.11 57.15 0)
+		(at 120.65 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4945,7 +5094,7 @@
 		(uuid "ac059d51-22fd-48ae-99b7-2aa410336932")
 	)
 	(label "OA2_OUT"
-		(at 118.11 41.91 0)
+		(at 120.65 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4956,7 +5105,7 @@
 		(uuid "b13a9350-7922-4099-953f-99b640e79d3d")
 	)
 	(label "OA1_OUT"
-		(at 118.11 46.99 0)
+		(at 120.65 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6653,6 +6802,170 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Transistors-FETs-MOSFETs-Single:2N7002-7-F")
+		(at 63.5 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b4c35f3-21a0-4815-a325-d3121db45fba")
+		(property "Reference" "Q2"
+			(at 66.294 64.516 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002-7-F"
+			(at 43.942 63.5 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:SOT-23-3"
+			(at 68.58 60.96 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds11303.pdf"
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "MOSFET N-CH 60V 115MA SOT23-3"
+			(at 63.5 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2N7002-FDICT-ND"
+			(at 68.58 55.88 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2N7002-7-F"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Discrete Semiconductor Products"
+			(at 68.58 50.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Transistors - FETs, MOSFETs - Single"
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds11303.pdf"
+			(at 68.58 45.72 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/2N7002-7-F/2N7002-FDICT-ND/717800"
+			(at 68.58 43.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "MOSFET N-CH 60V 115MA SOT23-3"
+			(at 68.58 40.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 68.58 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e4f2ca44-e3ba-4741-83d1-8f525e662ec4")
+		)
+		(pin "1"
+			(uuid "9397f7d8-bbf3-41f2-87fd-efa973a45c8f")
+		)
+		(pin "3"
+			(uuid "86217f47-5929-4096-a167-cae531373888")
+		)
+		(instances
+			(project ""
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 210.82 199.39 0)
 		(unit 1)
@@ -7291,6 +7604,104 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Snapeda_kicad:1862068")
+		(at 147.32 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6312e4bf-75bc-45b1-a620-5aa25b77b544")
+		(property "Reference" "J5"
+			(at 154.94 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1862068"
+			(at 154.94 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Snapeda:1862068_PHOENIX_1862068"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1862068/pdf"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.138\" (3.50mm) Through Hole"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "PHOENIX"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2_1"
+			(uuid "fad3cdde-53d0-4e96-aabc-5f6a861a2db5")
+		)
+		(pin "3_1"
+			(uuid "bcfd4b3b-4988-470c-8a2d-ef78f3bae13c")
+		)
+		(pin "4_1"
+			(uuid "73d08cb7-43ae-451a-a901-08130cedb551")
+		)
+		(pin "4_2"
+			(uuid "901dfa18-384f-47a5-8492-b8dd25b83f29")
+		)
+		(pin "3_2"
+			(uuid "d6bfa99b-bb00-4517-93ed-cd6871ccf07b")
+		)
+		(pin "1_1"
+			(uuid "7331a2d5-7a6e-437e-8758-e9104c5128c2")
+		)
+		(pin "1_2"
+			(uuid "9764e35e-1811-4304-adda-226ae514d373")
+		)
+		(pin "2_2"
+			(uuid "d288cb47-46c4-4e6c-9671-e500bc27a312")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -11295,288 +11706,6 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "dk_Transistors-FETs-MOSFETs-Single:2N7002")
-		(at 63.5 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ee607aab-27ac-4fce-9d04-5ea421889dec")
-		(property "Reference" "Q2"
-			(at 55.626 62.484 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 68.072 70.358 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "digikey-footprints:SOT-23-3"
-			(at 68.58 60.96 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 68.58 58.42 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "MOSFET N-CH 60V 115MA SOT-23"
-			(at 68.58 40.64 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "MPN" "2N7002"
-			(at 68.58 53.34 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Category" "Discrete Semiconductor Products"
-			(at 68.58 50.8 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Family" "Transistors - FETs, MOSFETs - Single"
-			(at 68.58 48.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Datasheet_Link" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 68.58 45.72 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Detail_Page" "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664"
-			(at 68.58 43.18 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "ON Semiconductor"
-			(at 68.58 38.1 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Status" "Active"
-			(at 68.58 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Type" "SMD"
-			(at 63.5 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "646a8ad8-3e1c-4951-af82-abea11b59947")
-		)
-		(pin "2"
-			(uuid "ac563e7e-dd30-4039-a9a5-fc1580ebed3a")
-		)
-		(pin "3"
-			(uuid "b4b48146-69d3-4da0-804f-1520d2511165")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Snapeda:TBLH10-350-04BK")
-		(at 144.78 54.61 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f61213a1-2d12-4741-a19c-5bfe3496a481")
-		(property "Reference" "J5"
-			(at 140.208 64.516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TBLH10-350-04BK"
-			(at 137.16 36.068 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Snapeda:CUI_TBLH10-350-04BK"
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "CUI"
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TBLH10-350-04BK"
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "CUI Devices"
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "thru-hole"
-			(at 144.78 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2_B"
-			(uuid "ec0df684-c39d-474b-a3fc-4563c876d352")
-		)
-		(pin "4_A"
-			(uuid "405e4eed-11da-4bf9-bbb9-9f8321920d63")
-		)
-		(pin "2_A"
-			(uuid "7a0676e0-34f7-4f3d-91e3-703787e0a3e6")
-		)
-		(pin "1_B"
-			(uuid "afe5f695-df65-4e90-87c0-9c0dc28796b1")
-		)
-		(pin "4_B"
-			(uuid "b000b740-cdd8-4dc8-8b4f-596450269a30")
-		)
-		(pin "1_A"
-			(uuid "5017d479-5a8a-4039-b515-be8d8bca2ed6")
-		)
-		(pin "3_A"
-			(uuid "a80dff0d-3144-45cf-accf-de927ea9d5f3")
-		)
-		(pin "3_B"
-			(uuid "2faa4899-7cac-477b-8435-3fc1153b2ed0")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
-					(reference "J5")
 					(unit 1)
 				)
 			)

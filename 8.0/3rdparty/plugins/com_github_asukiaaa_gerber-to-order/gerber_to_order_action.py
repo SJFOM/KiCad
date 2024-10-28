@@ -28,6 +28,8 @@ layers = [
     [ pcbnew.B_SilkS,   'B_Silks' ],
     [ pcbnew.F_Mask,    'F_Mask' ],
     [ pcbnew.B_Mask,    'B_Mask' ],
+    [ pcbnew.F_Paste,   'F_Paste' ],
+    [ pcbnew.B_Paste,   'B_Paste' ],
     [ pcbnew.Edge_Cuts, 'Edge_Cuts' ],
     [ pcbnew.In1_Cu,    'In1_Cu' ],
     [ pcbnew.In2_Cu,    'In2_Cu' ],
@@ -108,8 +110,8 @@ pcbServices = [
         'drillExtensionRenameTo': 'TXT',
     },
     {
-        # https://support.jlcpcb.com/article/22-how-to-generate-the-gerber-files
-        # https://support.jlcpcb.com/article/149-how-to-generate-gerber-and-drill-files-in-kicad
+        # https://jlcpcb.com/help/article/suggested-naming-patterns
+        # https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8
         'name': 'JLCPCB',
         'useAuxOrigin': False,
         'gerberProtelExtensions': True,
@@ -123,6 +125,8 @@ pcbServices = [
             pcbnew.B_SilkS:   '[boardProjectName].GBO',
             pcbnew.F_Mask:    '[boardProjectName].GTS',
             pcbnew.B_Mask:    '[boardProjectName].GBS',
+            pcbnew.F_Paste:   '[boardProjectName].GTP',
+            pcbnew.B_Paste:   '[boardProjectName].GBP',
             pcbnew.Edge_Cuts: '[boardProjectName].GKO',
             pcbnew.In1_Cu:    '[boardProjectName].GL2',
             pcbnew.In2_Cu:    '[boardProjectName].GL3',
@@ -182,7 +186,7 @@ def plotLayers(
         layerRenameRules,
         boardProjectName,
 ):
-    targetLayerCount = board.GetCopperLayerCount() + 5
+    targetLayerCount = board.GetCopperLayerCount() + 7
     pc = pcbnew.PLOT_CONTROLLER(board)
     po = pc.GetPlotOptions()
 
@@ -372,7 +376,7 @@ class GerberToOrderAction(pcbnew.ActionPlugin):
         self.name = pluginName
         self.category = 'A descriptive category name'
         self.description = 'A plugin to creage zip compressed gerber files to order PCB for Elecrow, FusionPCB, PCBWay or JLCPCB.'
-        self.show_toolbar_button = False
+        self.show_toolbar_button = True
         self.icon_file_name = os.path.join(os.path.dirname(__file__), 'gerber_to_order.png')
 
     def Run(self):
