@@ -750,6 +750,12 @@
 		(uuid "610faaf5-fa93-4c18-8dd5-b5ec71fc695e")
 	)
 	(junction
+		(at 114.3 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6e7a173-66a5-4e0d-a79b-57ac40ef1af4")
+	)
+	(junction
 		(at 123.19 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -813,7 +819,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 101.6) (xy 128.27 101.6)
+			(xy 109.22 101.6) (xy 128.27 101.6)
 		)
 		(stroke
 			(width 0)
@@ -833,7 +839,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 91.44) (xy 186.69 91.44)
+			(xy 158.75 91.44) (xy 168.91 91.44)
 		)
 		(stroke
 			(width 0)
@@ -903,13 +909,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 106.68) (xy 128.27 106.68)
+			(xy 168.91 91.44) (xy 168.91 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8743c7ff-b6ef-480c-b42b-ab656fa62512")
+		(uuid "90204801-9028-46a2-b434-76206b42a6a3")
 	)
 	(wire
 		(pts
@@ -930,6 +936,36 @@
 			(type default)
 		)
 		(uuid "b198fea6-8b37-4cfa-b2aa-a5dcad904f1f")
+	)
+	(wire
+		(pts
+			(xy 109.22 106.68) (xy 114.3 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc39a031-fdda-40f2-951f-bb3fd05b1b7d")
+	)
+	(wire
+		(pts
+			(xy 114.3 118.11) (xy 168.91 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc35d834-f024-4bf9-a7b5-ae020a245f8f")
+	)
+	(wire
+		(pts
+			(xy 114.3 106.68) (xy 114.3 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce2cc1ed-b15c-4697-bb53-77c606104188")
 	)
 	(wire
 		(pts
@@ -963,7 +999,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 93.98) (xy 128.27 93.98)
+			(xy 109.22 93.98) (xy 128.27 93.98)
 		)
 		(stroke
 			(width 0)
@@ -980,6 +1016,16 @@
 			(type default)
 		)
 		(uuid "e3a74755-c25a-405f-89bc-6feb47857035")
+	)
+	(wire
+		(pts
+			(xy 114.3 106.68) (xy 128.27 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d71fc3-5981-4a39-bfbd-13737f42e91f")
 	)
 	(wire
 		(pts
@@ -1430,31 +1476,9 @@
 		)
 		(uuid "f0f94bd6-1db5-49d0-9277-f72194c5e2c9")
 	)
-	(label "JOYSTICK_BUTTON"
-		(at 177.8 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7a627695-780a-42fe-a748-b005766ce0e4")
-	)
-	(label "JOYSTICK_BUTTON"
-		(at 102.87 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "82ad2d5c-4562-4529-b444-2f1ea916507e")
-	)
 	(global_label "JOY_AXIS_MCU_V"
 		(shape output)
-		(at 92.71 101.6 180)
+		(at 109.22 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1465,7 +1489,7 @@
 		)
 		(uuid "333a438c-aea3-4fbe-bd35-8c32388e5ce5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.1824 101.6 0)
+			(at 90.6924 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1501,7 @@
 	)
 	(global_label "JOY_AXIS_MCU_H"
 		(shape output)
-		(at 92.71 93.98 180)
+		(at 109.22 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1488,7 +1512,7 @@
 		)
 		(uuid "5bdc3842-b0c9-4f4a-94b4-590f5929e610")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.9405 93.98 0)
+			(at 90.4505 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,23 +1524,23 @@
 	)
 	(global_label "JOY_MCU_BTN"
 		(shape output)
-		(at 186.69 91.44 0)
+		(at 109.22 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(color 194 0 0 1)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "67e6885e-f966-4d53-a8c7-334986e02308")
+		(uuid "7df95faf-c4f9-4d00-ac5b-c22ec21fe4e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.6171 91.44 0)
+			(at 93.2929 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1531,7 +1555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07cb4a5d-6018-44c0-ad3b-db2791a7d23a")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR097"
 			(at 104.14 80.01 0)
 			(effects
 				(font
@@ -1582,7 +1606,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0113")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -1597,7 +1621,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "679783e6-5cb1-44d7-84aa-e2afe814ab08")
-		(property "Reference" "C40"
+		(property "Reference" "C41"
 			(at 132.08 78.232 90)
 			(effects
 				(font
@@ -1704,6 +1728,105 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Colour" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "81851700-2f43-4684-91cb-534198b0dca3")
 		)
@@ -1713,7 +1836,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "C40")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -1850,6 +1973,105 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Colour" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "04771e35-e9ad-4c3a-9455-b68f9270b4a8")
 		)
@@ -1911,7 +2133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c049ccdb-b18c-434b-9613-2abd341a73b2")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0101"
 			(at 165.1 116.84 0)
 			(effects
 				(font
@@ -1961,7 +2183,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0119")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1977,7 +2199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7db95d7-bb9b-4731-9de9-4f0b44f37ba3")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0100"
 			(at 147.32 80.01 0)
 			(effects
 				(font
@@ -2028,7 +2250,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0118")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -2043,7 +2265,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df9cb010-8ba6-4ecb-ab92-139e88032dab")
-		(property "Reference" "C39"
+		(property "Reference" "C40"
 			(at 119.38 81.788 90)
 			(effects
 				(font
@@ -2150,6 +2372,105 @@
 				(hide yes)
 			)
 		)
+		(property "Availability" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Colour" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dfcb0d5f-4701-4a3f-a1ff-c8a083781720")
 		)
@@ -2159,7 +2480,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "C39")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -2175,7 +2496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3e6997d-c923-49b6-9cee-1fd100bd450c")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR098"
 			(at 123.19 116.84 0)
 			(effects
 				(font
@@ -2225,7 +2546,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0116")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -2240,7 +2561,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc690f11-477b-42de-b160-c5e3ffddb196")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR099"
 			(at 125.73 81.28 0)
 			(effects
 				(font
@@ -2290,7 +2611,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0117")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)

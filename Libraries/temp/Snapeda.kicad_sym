@@ -1908,7 +1908,7 @@
 			)
 		)
 		(property "Value" "PTS636SL43SMTRLFS"
-			(at 0 0 0)
+			(at 6.35 -6.604 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -1916,7 +1916,7 @@
 			)
 		)
 		(property "Footprint" "Snapeda:SW_PTS636S-J_CNK"
-			(at 0 0 0)
+			(at 6.35 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1926,7 +1926,7 @@
 			)
 		)
 		(property "Datasheet" "PTS636SL43SMTRLFS"
-			(at 0 0 0)
+			(at 6.35 -6.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,10 +2029,12 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "PTS636SL43SMTRLFS_1_1"
 			(pin unspecified line
 				(at 0 0 0)
 				(length 2.54)
-				(name "1"
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2050,7 +2052,7 @@
 			(pin unspecified line
 				(at 15.24 0 180)
 				(length 2.54)
-				(name "2"
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)

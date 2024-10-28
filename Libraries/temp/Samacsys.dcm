@@ -77,4 +77,22 @@ D Piezoelectric Buzzers, Sound Pressure Level=60dB min, Freq.=4000Hz nom
 K
 F https://product.tdk.com/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo-buzzer/catalog/piezoelectronic_buzzer_ps_en.pdf
 $ENDCMP
+#
+$CMP 1825027-8
+D Body Features: Case Color Black | Actuator Color Blue | Case Material Nylon | Actuator Profile Extended | Actuator Material PBT | Actuator Force 160 G | Actuator Force 5.64 OZ | Product Orientation Right Angle | Configuration Features: ESD Grounding Terminal Without | Ganged With | Support Bracket With | Configuration (Pole-Throw) Single Pole - Single Throw | Number of Actuators Single | Switch Feedback Type Tactile | Operating Function NO | Contact Features: Contact Current Rating 50 MAMP | Contact Base Ma
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1308111-1_SWITCHES_CORE_PROGRAM_CATALOG&DocType=Catalog%20Section&DocLang=English&PartCntxt=1825027-8&DocFormat=pdf
+$ENDCMP
+#
+$CMP IN-S63AS5UW
+D Standard LEDs - SMD White LED
+K
+F https://inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Side%20View/IN-S63AS%20Series_V1.2.pdf
+$ENDCMP
+#
+$CMP IN-S63ASR
+D Standard LEDs - SMD Red LED
+K
+F http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Side%20View/IN-S63AS%20Series_V1.0.pdf
+$ENDCMP
 #End Doc Library
