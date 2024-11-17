@@ -4,17 +4,29 @@ import os
 import wx
 import wx.grid
 import pcbnew
+import logging
 
 from . import dialog_base
+
+_log = logging.getLogger("board2pdf")
+
+def sanitize_template_name(item: str) -> str:
+    '''
+    remove any special characters and none ascii from the template names
+    '''
+    value = re.sub(b'[^A-Za-z0-9\-\+\ \_]+', b'', item.encode('ascii', errors='ignore'))
+
+    "Characters except for A-Z, a-z, 0-9, -, +, _ and ' ' will be ignored.",
+    return value.decode("ascii", errors="ignore")
 
 
 def pop_error(msg):
     wx.MessageBox(msg, 'Error', wx.OK | wx.ICON_ERROR)
 
 class SettingsDialog(dialog_base.SettingsDialogBase):
-    def __init__(self, config, perform_export_func, load_saved_func, version):
+    def __init__(self, config, perform_export_func, load_saved_func, version, board):
         dialog_base.SettingsDialogBase.__init__(self, None)
-        self.panel = SettingsDialogPanel(self, config, perform_export_func, load_saved_func)
+        self.panel = SettingsDialogPanel(self, config, perform_export_func, load_saved_func, board=board)
         best_size = self.panel.BestSize
         # hack for some gtk themes that incorrectly calculate best size
         best_size.IncBy(dx=0, dy=30)
@@ -26,6 +38,7 @@ class SettingsDialog(dialog_base.SettingsDialogBase):
             self.panel.m_comboBox_popups.Delete(pos)
             pos = self.panel.m_comboBox_popups.FindString("Back Layer")
             self.panel.m_comboBox_popups.Delete(pos)
+
 
     # hack for new wxFormBuilder generating code incompatible with old wxPython
     # noinspection PyMethodOverriding
@@ -39,7 +52,8 @@ class SettingsDialog(dialog_base.SettingsDialogBase):
 
 # Implementing settings_dialog
 class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
-    def __init__(self, parent, config, perform_export_func, load_saved_func):
+    def __init__(self, parent, config, perform_export_func, load_saved_func, board: pcbnew.BOARD):
+        self.board = board
         self.config = config
         self.perform_export_func = perform_export_func
         self.load_saved_func = load_saved_func
@@ -52,6 +66,12 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.m_color_shower.SetLabel("")
         self.hide_template_settings()
         self.hide_layer_settings()
+
+        self.layersColorDict = {}
+        self.layersTransparencyDict = {}
+        self.layersNegativeDict = {}
+        self.layersFootprintValuesDict = {}
+        self.layersReferenceDesignatorsDict = {}
 
         self.save_menu = wx.Menu()
         self.save_globally = self.save_menu.Append(
@@ -88,18 +108,21 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.config._configfile = self.config.default_settings_file_path
         self.config.load()
         self.load_saved_func(self, self.config)
+        self.templates: dict = self.config.templates
         self.m_staticText_status.SetLabel('Status: default settings loaded')
 
     def OnLoadGlobal(self, event):
         self.config._configfile = self.config.global_settings_file_path
         self.config.load()
         self.load_saved_func(self, self.config)
+        self.templates: dict = self.config.templates
         self.m_staticText_status.SetLabel('Status: global settings loaded')
 
     def OnLoadLocal(self, event):
         self.config._configfile = self.config.local_settings_file_path
         self.config.load()
         self.load_saved_func(self, self.config)
+        self.templates: dict = self.config.templates
         self.m_staticText_status.SetLabel('Status: local settings loaded')
 
     def OnSaveSettings(self, event):
@@ -116,6 +139,8 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.config.create_svg = self.m_checkBox_create_svg.IsChecked()
         self.config.del_temp_files = self.m_checkBox_delete_temp_files.IsChecked()
         self.config.del_single_page_files = self.m_checkBox_delete_single_page_files.IsChecked()
+        self.config.page_info = self.m_textCtrl_page_info.GetValue()
+        self.config.info_variable = str(self.m_comboBox_info_variable.GetCurrentSelection())
         self.config.save(self.config.global_settings_file_path)
 
         self.m_staticText_status.SetLabel('Status: settings saved globally')
@@ -129,6 +154,8 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.config.create_svg = self.m_checkBox_create_svg.IsChecked()
         self.config.del_temp_files = self.m_checkBox_delete_temp_files.IsChecked()
         self.config.del_single_page_files = self.m_checkBox_delete_single_page_files.IsChecked()
+        self.config.page_info = self.m_textCtrl_page_info.GetValue()
+        self.config.info_variable = str(self.m_comboBox_info_variable.GetCurrentSelection())
         self.config.save(self.config.local_settings_file_path)
 
         self.m_staticText_status.SetLabel('Status: settings saved locally')
@@ -150,15 +177,22 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.disabledLayersSortOrderBox.Disable()
         self.m_button_layer_enable.Disable()
         self.m_staticText_layer_info.Disable()
+        
+        self.m_comboBox_scaling.SetSelection(0)
+        self.m_comboBox_scaling.Disable()
+        self.m_simplebook_scaling.ChangeSelection(0)
 
     def hide_layer_settings(self):
         self.m_textCtrl_color.Disable()
+        self.m_textCtrl_transparency.Disable()
         self.m_button_pick_color.Disable()
         self.m_checkBox_negative.Disable()
         self.m_checkBox_reference_designators.Disable()
         self.m_checkBox_footprint_values.Disable()
         self.m_staticText_layer_color.Disable()
         self.m_textCtrl_color.ChangeValue("")
+        self.m_staticText_layer_transparency.Disable()
+        self.m_textCtrl_transparency.ChangeValue("")
         self.m_color_shower.SetBackgroundColour(wx.NullColour)
         self.m_color_shower.SetForegroundColour(wx.NullColour)
         self.m_color_shower.SetLabel("")
@@ -183,17 +217,22 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.disabledLayersSortOrderBox.Enable()
         self.m_button_layer_enable.Enable()
         self.m_staticText_layer_info.Enable()
+        self.m_comboBox_scaling.Enable()
 
     def show_layer_settings(self):
         self.m_textCtrl_color.Enable()
+        self.m_textCtrl_transparency.Enable()
         self.m_button_pick_color.Enable()
         self.m_checkBox_negative.Enable()
         self.m_checkBox_reference_designators.Enable()
         self.m_checkBox_footprint_values.Enable()
         self.m_staticText_layer_color.Enable()
+        self.m_staticText_layer_transparency.Enable()
 
     def OnExit(self, event):
-        self.GetParent().EndModal(wx.ID_CANCEL)
+        event.Skip()
+        # self.GetParent().EndModal(wx.ID_CANCEL)
+        #self.Destroy()
 
     def OnPerform(self, event):
         self.SaveTemplate()
@@ -225,7 +264,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         item = wx.GetTextFromUser(
             "Characters except for A-Z, a-z, 0-9, -, +, _ and ' ' will be ignored.",
             "Add new template")
-        item = re.sub('[^A-Za-z0-9\-\+ _]', '', item)
+        item = sanitize_template_name(item)
         if item == '':
             return
 
@@ -348,6 +387,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             self.layersSortOrderBox.Delete(selection)
             self.layersSortOrderBox.Insert(item, selection - 1)
             self.layersSortOrderBox.SetSelection(selection - 1)
+            self.SaveTemplate()
 
     def OnLayerSortOrderDown(self, event):
         selection = self.layersSortOrderBox.Selection
@@ -357,6 +397,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             self.layersSortOrderBox.Delete(selection)
             self.layersSortOrderBox.Insert(item, selection + 1)
             self.layersSortOrderBox.SetSelection(selection + 1)
+            self.SaveTemplate()
 
     def OnLayerDisable(self, event):
         selection = self.layersSortOrderBox.Selection
@@ -384,6 +425,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             self.SaveTemplate()
 
     def OnTemplateEdit(self, event):
+        _log.debug("OnTemplateEdit")
         self.OnSaveLayer(self)
         self.SaveTemplate()
 
@@ -396,13 +438,12 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             self.m_textCtrl_template_name.ChangeValue(item)
             self.current_template = item
 
-            board = pcbnew.GetBoard()
             layers = []
             layers_dict = dict()
             i = pcbnew.PCBNEW_LAYER_ID_START
             while i < pcbnew.PCBNEW_LAYER_ID_START + pcbnew.PCB_LAYER_ID_COUNT:
                 layer_std_name = pcbnew.BOARD.GetStandardLayerName(i)
-                layer_name = pcbnew.BOARD.GetLayerName(board, i)
+                layer_name = pcbnew.BOARD.GetLayerName(self.board, i)
                 layers_dict[layer_std_name] = layer_name
                 if layer_std_name == layer_name:
                     layers.append(layer_name)
@@ -433,11 +474,13 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             # Create dictionary with all layers and their settings
             if item in self.templates:
                 self.layersColorDict = self.templates[item].get("layers", {})
+                self.layersTransparencyDict = self.templates[item].get("layers_transparency", {})
                 self.layersNegativeDict = self.templates[item].get("layers_negative", {})
                 self.layersFootprintValuesDict = self.templates[item].get("layers_footprint_values", {})
                 self.layersReferenceDesignatorsDict = self.templates[item].get("layers_reference_designators", {})
             else:
                 self.layersColorDict = {}
+                self.layersTransparencyDict = {}
                 self.layersNegativeDict = {}
                 self.layersFootprintValuesDict = {}
                 self.layersReferenceDesignatorsDict = {}
@@ -477,7 +520,33 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                 tented = self.templates[item]["tented"]
                 self.m_checkBox_tent.SetValue(bool(tented))
 
+            # Update the comboBox where users selects cropping or scaling
+            if item in self.templates and "scaling_method" in self.templates[item]:
+                #scaling_method = self.templates[item]["scaling_method"]
+                #scaling_method_pos = self.m_comboBox_scaling.FindString(scaling_method)
+                scaling_method_pos = int(self.templates[item]["scaling_method"])
+                if scaling_method_pos != wx.NOT_FOUND:
+                    self.m_comboBox_scaling.SetSelection(scaling_method_pos)
+                    self.m_simplebook_scaling.ChangeSelection(scaling_method_pos)
+
+            # Set the cropping and scaling settings to saved settings
+            if item in self.templates and "crop_whitespace" in self.templates[item]:
+                self.m_textCtrl_crop_whitespace.ChangeValue(self.templates[item]["crop_whitespace"])
+            else:
+                self.m_textCtrl_crop_whitespace.ChangeValue("10")
+
+            if item in self.templates and "scale_whitespace" in self.templates[item]:
+                self.m_textCtrl_scale_whitespace.ChangeValue(self.templates[item]["scale_whitespace"])
+            else:
+                self.m_textCtrl_scale_whitespace.ChangeValue("30")
+
+            if item in self.templates and "scaling_factor" in self.templates[item]:
+                self.m_textCtrl_scaling_factor.ChangeValue(self.templates[item]["scaling_factor"])
+            else:
+                self.m_textCtrl_scaling_factor.ChangeValue("3.0")
+
     def OnLayerEdit(self, event):
+        _log.debug("OnLayerEdit")
         self.OnSaveLayer(self)
         selection = self.layersSortOrderBox.Selection
         if selection != wx.NOT_FOUND:
@@ -495,6 +564,9 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
             self.m_color_shower.SetForegroundColour(rgb_color)
             self.m_color_shower.SetLabel(str(rgb_color))
 
+            transparency = self.layersTransparencyDict.get(item, "0")
+            self.m_textCtrl_transparency.ChangeValue(transparency+'%')
+
             self.m_checkBox_negative.SetValue(self.layersNegativeDict.get(item, "false") == "true")
             self.m_checkBox_footprint_values.SetValue(self.layersFootprintValuesDict.get(item, "true") == "true")
             self.m_checkBox_reference_designators.SetValue(
@@ -502,7 +574,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
 
     def OnTemplateNameChange(self, event):
         template_name = self.m_textCtrl_template_name.GetValue()
-        item = re.sub('[^A-Za-z0-9\-\+ _]', '', template_name)
+        item = sanitize_template_name(template_name)
         if item != template_name:
             self.m_textCtrl_template_name.SetValue(item)
             return
@@ -514,6 +586,20 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
 
         self.SaveTemplate()
 
+    def OnTransparencyLostFocus(self, event):
+        transparency = re.sub('[^0-9]', '', self.m_textCtrl_transparency.GetValue())
+        if not transparency:
+            transparency = "0"
+        if int(transparency) > 100:
+            transparency = "100"
+        self.m_textCtrl_transparency.ChangeValue(str(int(transparency)) + "%")
+        event.Skip()
+
+    def OnScalingChoiceChanged(self, event):
+        selected_item = self.m_comboBox_scaling.GetCurrentSelection()
+        self.m_simplebook_scaling.ChangeSelection(selected_item)
+        self.SaveTemplate()
+
     def OnSaveLayer(self, event):
         if self.current_layer:
             def bool_str(value: bool):
@@ -521,6 +607,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
 
             cl = self.current_layer
             self.layersColorDict[cl] = self.m_textCtrl_color.GetValue()
+            self.layersTransparencyDict[cl] = re.sub('[^0-9]', '', self.m_textCtrl_transparency.GetValue())
             self.layersNegativeDict[cl] = bool_str(self.m_checkBox_negative.IsChecked())
             self.layersFootprintValuesDict[cl] = self.m_checkBox_footprint_values.GetValue()
             self.layersFootprintValuesDict[cl] = bool_str(self.m_checkBox_footprint_values.IsChecked())
@@ -536,7 +623,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.Layout()
         self.templatesSortOrderBox.SetItems(tmp)
 
-    def SaveTemplate(self):
+    def SaveTemplate(self, event=None):
         template_name = self.m_textCtrl_template_name.GetValue()
         if template_name:
             # Check if selected frame layer is enabled. Otherwise, add it to the bottom of the enabled list.
@@ -559,7 +646,12 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                              "enabled_layers": enabled_layers,
                              "frame": frame_layer.split(' (')[0],  # Remove parenthesis if there is one
                              "popups": self.m_comboBox_popups.GetValue(),
+                             "scaling_method": str(self.m_comboBox_scaling.GetCurrentSelection()),
+                             "crop_whitespace": self.m_textCtrl_crop_whitespace.GetValue(),
+                             "scale_whitespace": self.m_textCtrl_scale_whitespace.GetValue(),
+                             "scaling_factor": self.m_textCtrl_scaling_factor.GetValue(),
                              "layers": self.layersColorDict,
+                             "layers_transparency": self.layersTransparencyDict,
                              "layers_negative": self.layersNegativeDict,
                              "layers_footprint_values": self.layersFootprintValuesDict,
                              "layers_reference_designators": self.layersReferenceDesignatorsDict}
@@ -582,12 +674,16 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.m_checkBox_tent.SetValue(False)
         self.m_comboBox_frame.Clear()
         self.m_textCtrl_color.ChangeValue("")
+        self.m_textCtrl_transparency.ChangeValue("")
         self.m_color_shower.SetBackgroundColour(wx.NullColour)
         self.m_color_shower.SetForegroundColour(wx.NullColour)
         self.m_color_shower.SetLabel("")
         self.m_checkBox_negative.SetValue(False)
         self.m_checkBox_footprint_values.SetValue(True)
         self.m_checkBox_reference_designators.SetValue(True)
+        self.m_textCtrl_crop_whitespace.SetValue("")
+        self.m_textCtrl_scale_whitespace.SetValue("")
+        self.m_textCtrl_scaling_factor.SetValue("")
         self.layersSortOrderBox.Clear()
         self.disabledLayersSortOrderBox.Clear()
         self.hide_layer_settings()

@@ -138,7 +138,7 @@
         "min_via_diameter": 0.4,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -246,10 +246,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_not_driven|1828800|1854200|69edb9d5-e177-44c9-8d74-c250456f285b|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1|/e0cca1c7-c263-49eb-8c40-74000ebe5285/3af138f5-65b6-4464-96c0-d1b764f3b0d1|",
-      "power_pin_not_driven|3276600|2120900|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -574,7 +571,7 @@
       "plot": "Gerber & Drill files/",
       "pos_files": "Fabrication data/Centroid files/",
       "specctra_dsn": "",
-      "step": "3D files/StepUp_v0.1.step",
+      "step": "3D files/StepUp_v0.2.step",
       "svg": "",
       "vrml": ""
     },

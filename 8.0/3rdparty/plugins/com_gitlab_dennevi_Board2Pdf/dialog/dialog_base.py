@@ -208,6 +208,23 @@ class SettingsDialogPanel ( wx.Panel ):
 
         sbSizer6.Add( bSizer22, 1, wx.EXPAND, 5 )
 
+        bSizer23 = wx.BoxSizer( wx.HORIZONTAL )
+
+        self.m_staticText22 = wx.StaticText( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Add page info:", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText22.Wrap( -1 )
+
+        bSizer23.Add( self.m_staticText22, 0, wx.ALL, 5 )
+
+        self.m_textCtrl_page_info = wx.TextCtrl( sbSizer6.GetStaticBox(), wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 250,-1 ), 0 )
+        bSizer23.Add( self.m_textCtrl_page_info, 0, wx.ALL, 5 )
+
+        m_comboBox_info_variableChoices = [ u"Nowhere", u"In Comment 1", u"In Comment 2", u"In Comment 3", u"In Comment 4", u"In Comment 5", u"In Comment 6", u"In Comment 7", u"In Comment 8", u"In Comment 9" ]
+        self.m_comboBox_info_variable = wx.ComboBox( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Nowhere", wx.DefaultPosition, wx.DefaultSize, m_comboBox_info_variableChoices, 0 )
+        bSizer23.Add( self.m_comboBox_info_variable, 0, wx.ALL, 5 )
+
+
+        sbSizer6.Add( bSizer23, 1, wx.EXPAND, 5 )
+
         bSizer39 = wx.BoxSizer( wx.HORIZONTAL )
 
         self.saveSettingsBtn = wx.Button( sbSizer6.GetStaticBox(), wx.ID_ANY, u"Save settings", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_DEFAULT )
@@ -337,15 +354,38 @@ class SettingsDialogPanel ( wx.Panel ):
 
         sbSizer611.Add( gSizer2, 1, wx.EXPAND, 5 )
 
+        gSizer4 = wx.GridSizer( 0, 2, 0, 0 )
+
+        self.m_staticText_layer_transparency = wx.StaticText( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Transparency (needs PyMuPdf)", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText_layer_transparency.Wrap( -1 )
+
+        gSizer4.Add( self.m_staticText_layer_transparency, 0, wx.ALL, 5 )
+
+        gSizer5 = wx.GridSizer( 0, 2, 0, 0 )
+
+        self.m_textCtrl_transparency = wx.TextCtrl( sbSizer611.GetStaticBox(), wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 80,-1 ), 0 )
+        gSizer5.Add( self.m_textCtrl_transparency, 0, wx.ALL, 5 )
+
+        self.m_staticText14 = wx.StaticText( sbSizer611.GetStaticBox(), wx.ID_ANY, u"0% – 100%", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText14.Wrap( -1 )
+
+        gSizer5.Add( self.m_staticText14, 0, wx.ALL, 5 )
+
+
+        gSizer4.Add( gSizer5, 1, wx.EXPAND, 5 )
+
+
+        sbSizer611.Add( gSizer4, 1, wx.EXPAND, 5 )
+
         gSizer3 = wx.GridSizer( 0, 3, 0, 0 )
 
         self.m_checkBox_negative = wx.CheckBox( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Negative plot", wx.DefaultPosition, wx.DefaultSize, 0 )
         gSizer3.Add( self.m_checkBox_negative, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 
-        self.m_checkBox_reference_designators = wx.CheckBox( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Plot ref. designators", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_checkBox_reference_designators = wx.CheckBox( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Plot references", wx.DefaultPosition, wx.DefaultSize, 0 )
         gSizer3.Add( self.m_checkBox_reference_designators, 0, wx.ALL, 5 )
 
-        self.m_checkBox_footprint_values = wx.CheckBox( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Plot footprint values", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_checkBox_footprint_values = wx.CheckBox( sbSizer611.GetStaticBox(), wx.ID_ANY, u"Plot fp values", wx.DefaultPosition, wx.DefaultSize, 0 )
         gSizer3.Add( self.m_checkBox_footprint_values, 0, wx.ALL, 5 )
 
 
@@ -440,6 +480,115 @@ class SettingsDialogPanel ( wx.Panel ):
 
         m_sizer_template.Add( layersSizer1, 1, wx.ALL|wx.EXPAND, 5 )
 
+        scaleSizer = wx.StaticBoxSizer( wx.StaticBox( sbSizer23.GetStaticBox(), wx.ID_ANY, u"Scale and Crop" ), wx.VERTICAL )
+
+        m_comboBox_scalingChoices = [ u"No Scaling or Cropping", u"Crop with pdfCropMargins", u"Scale To Fit with pdfCropMargins", u"Scale by factor" ]
+        self.m_comboBox_scaling = wx.ComboBox( scaleSizer.GetStaticBox(), wx.ID_ANY, u"No Scaling or Cropping", wx.DefaultPosition, wx.Size( 350,-1 ), m_comboBox_scalingChoices, 0 )
+        scaleSizer.Add( self.m_comboBox_scaling, 0, wx.ALL, 5 )
+
+        self.m_simplebook_scaling = wx.Simplebook( scaleSizer.GetStaticBox(), wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_panel_no_scaling = wx.Panel( self.m_simplebook_scaling, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        self.m_simplebook_scaling.AddPage( self.m_panel_no_scaling, u"a page", False )
+        self.m_panel_crop = wx.Panel( self.m_simplebook_scaling, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        gSizer6 = wx.GridSizer( 2, 1, 0, 0 )
+
+        fgSizer2 = wx.FlexGridSizer( 0, 2, 0, 0 )
+        fgSizer2.SetFlexibleDirection( wx.BOTH )
+        fgSizer2.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+        self.m_staticText17 = wx.StaticText( self.m_panel_crop, wx.ID_ANY, u"Keep whitespace around board (in BP units)", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText17.Wrap( -1 )
+
+        fgSizer2.Add( self.m_staticText17, 0, wx.ALL, 5 )
+
+        self.m_textCtrl_crop_whitespace = wx.TextCtrl( self.m_panel_crop, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
+        fgSizer2.Add( self.m_textCtrl_crop_whitespace, 0, wx.ALL, 5 )
+
+
+        gSizer6.Add( fgSizer2, 1, wx.EXPAND, 5 )
+
+        self.m_staticText171 = wx.StaticText( self.m_panel_crop, wx.ID_ANY, u"* Set 'Draw frame on layer' to 'None', or nothing will be cropped.", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText171.Wrap( -1 )
+
+        gSizer6.Add( self.m_staticText171, 0, wx.ALL, 5 )
+
+
+        self.m_panel_crop.SetSizer( gSizer6 )
+        self.m_panel_crop.Layout()
+        gSizer6.Fit( self.m_panel_crop )
+        self.m_simplebook_scaling.AddPage( self.m_panel_crop, u"a page", False )
+        self.m_panel_scale_to_fit = wx.Panel( self.m_simplebook_scaling, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        gSizer8 = wx.GridSizer( 2, 1, 0, 0 )
+
+        fgSizer3 = wx.FlexGridSizer( 0, 2, 0, 0 )
+        fgSizer3.SetFlexibleDirection( wx.BOTH )
+        fgSizer3.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+        self.m_staticText16 = wx.StaticText( self.m_panel_scale_to_fit, wx.ID_ANY, u"Keep whitespace around board (in BP units)", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText16.Wrap( -1 )
+
+        fgSizer3.Add( self.m_staticText16, 0, wx.ALL, 5 )
+
+        self.m_textCtrl_scale_whitespace = wx.TextCtrl( self.m_panel_scale_to_fit, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
+        fgSizer3.Add( self.m_textCtrl_scale_whitespace, 0, wx.ALL, 5 )
+
+
+        gSizer8.Add( fgSizer3, 1, wx.EXPAND, 5 )
+
+        self.m_staticText18 = wx.StaticText( self.m_panel_scale_to_fit, wx.ID_ANY, u"* If a frame layer is selected, that layer will not be scaled.", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText18.Wrap( -1 )
+
+        gSizer8.Add( self.m_staticText18, 0, wx.ALL, 5 )
+
+
+        self.m_panel_scale_to_fit.SetSizer( gSizer8 )
+        self.m_panel_scale_to_fit.Layout()
+        gSizer8.Fit( self.m_panel_scale_to_fit )
+        self.m_simplebook_scaling.AddPage( self.m_panel_scale_to_fit, u"a page", False )
+        self.m_panel_scale_by_factor = wx.Panel( self.m_simplebook_scaling, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        gSizer81 = wx.GridSizer( 3, 1, 0, 0 )
+
+        fgSizer4 = wx.FlexGridSizer( 0, 2, 0, 0 )
+        fgSizer4.SetFlexibleDirection( wx.BOTH )
+        fgSizer4.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+        self.m_staticText19 = wx.StaticText( self.m_panel_scale_by_factor, wx.ID_ANY, u"Scaling Factor", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText19.Wrap( -1 )
+
+        fgSizer4.Add( self.m_staticText19, 0, wx.ALL, 5 )
+
+        self.m_textCtrl_scaling_factor = wx.TextCtrl( self.m_panel_scale_by_factor, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
+        fgSizer4.Add( self.m_textCtrl_scaling_factor, 0, wx.ALL, 5 )
+
+
+        gSizer81.Add( fgSizer4, 1, wx.EXPAND, 5 )
+
+        self.m_staticText20 = wx.StaticText( self.m_panel_scale_by_factor, wx.ID_ANY, u"* If a frame layer is selected, that layer will not be scaled.", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText20.Wrap( -1 )
+
+        gSizer81.Add( self.m_staticText20, 0, wx.ALL, 5 )
+
+        self.m_staticText21 = wx.StaticText( self.m_panel_scale_by_factor, wx.ID_ANY, u"* For best result, place the bord in the center", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText21.Wrap( -1 )
+
+        gSizer81.Add( self.m_staticText21, 0, wx.ALL, 5 )
+
+
+        self.m_panel_scale_by_factor.SetSizer( gSizer81 )
+        self.m_panel_scale_by_factor.Layout()
+        gSizer81.Fit( self.m_panel_scale_by_factor )
+        self.m_simplebook_scaling.AddPage( self.m_panel_scale_by_factor, u"a page", False )
+
+        scaleSizer.Add( self.m_simplebook_scaling, 1, wx.EXPAND |wx.ALL, 5 )
+
+        self.m_staticText_pdfCropMargins = wx.StaticText( scaleSizer.GetStaticBox(), wx.ID_ANY, u"pdfCropMargins Status:", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_staticText_pdfCropMargins.Wrap( -1 )
+
+        scaleSizer.Add( self.m_staticText_pdfCropMargins, 0, wx.ALL, 5 )
+
+
+        m_sizer_template.Add( scaleSizer, 1, wx.EXPAND, 5 )
+
 
         sbSizer23.Add( m_sizer_template, 1, wx.EXPAND, 5 )
 
@@ -469,8 +618,14 @@ class SettingsDialogPanel ( wx.Panel ):
         self.m_button42.Bind( wx.EVT_BUTTON, self.OnPerform )
         self.m_button43.Bind( wx.EVT_BUTTON, self.OnExit )
         self.m_textCtrl_template_name.Bind( wx.EVT_TEXT, self.OnTemplateNameChange )
+        self.m_comboBox_frame.Bind( wx.EVT_COMBOBOX, self.SaveTemplate )
+        self.m_comboBox_popups.Bind( wx.EVT_COMBOBOX, self.SaveTemplate )
+        self.m_checkBox_mirror.Bind( wx.EVT_CHECKBOX, self.SaveTemplate )
+        self.m_checkBox_tent.Bind( wx.EVT_CHECKBOX, self.SaveTemplate )
         self.m_textCtrl_color.Bind( wx.EVT_TEXT, self.OnSaveLayer )
         self.m_button_pick_color.Bind( wx.EVT_BUTTON, self.OnPickColor )
+        self.m_textCtrl_transparency.Bind( wx.EVT_KILL_FOCUS, self.OnTransparencyLostFocus )
+        self.m_textCtrl_transparency.Bind( wx.EVT_TEXT, self.OnSaveLayer )
         self.m_checkBox_negative.Bind( wx.EVT_CHECKBOX, self.OnSaveLayer )
         self.m_checkBox_reference_designators.Bind( wx.EVT_CHECKBOX, self.OnSaveLayer )
         self.m_checkBox_footprint_values.Bind( wx.EVT_CHECKBOX, self.OnSaveLayer )
@@ -481,6 +636,7 @@ class SettingsDialogPanel ( wx.Panel ):
         self.m_button_layer_disable.Bind( wx.EVT_BUTTON, self.OnLayerDisable )
         self.disabledLayersSortOrderBox.Bind( wx.EVT_LISTBOX_DCLICK, self.OnLayerEnable )
         self.m_button_layer_enable.Bind( wx.EVT_BUTTON, self.OnLayerEnable )
+        self.m_comboBox_scaling.Bind( wx.EVT_COMBOBOX, self.OnScalingChoiceChanged )
 
     def __del__( self ):
         pass
@@ -528,11 +684,21 @@ class SettingsDialogPanel ( wx.Panel ):
     def OnTemplateNameChange( self, event ):
         event.Skip()
 
+    def SaveTemplate( self, event ):
+        event.Skip()
+
+
+
+
     def OnSaveLayer( self, event ):
         event.Skip()
 
     def OnPickColor( self, event ):
         event.Skip()
+
+    def OnTransparencyLostFocus( self, event ):
+        event.Skip()
+
 
 
 
@@ -553,5 +719,8 @@ class SettingsDialogPanel ( wx.Panel ):
     def OnLayerEnable( self, event ):
         event.Skip()
 
+
+    def OnScalingChoiceChanged( self, event ):
+        event.Skip()
 
 

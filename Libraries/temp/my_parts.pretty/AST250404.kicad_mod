@@ -1,0 +1,136 @@
+(footprint "AST250404"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -8.5 1.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "979a5488-27c6-4ec1-a140-8c7d61a8dcc2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "AST250404"
+		(at -8.5 3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "af9fd50b-df09-43ed-ba83-e5ca7a64820b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -8.5 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21448572-92ae-4fbf-be88-e4e10b0cf47e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -8.5 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7e0da13-937e-4ec0-b38f-a431ed9664e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -8.5 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03dbec98-9c0f-4a28-b1c9-406f4d1e3c18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.5 -5.5)
+		(end 17.5 5.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "0c991734-991c-49cd-882d-5b403eb365b7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -8.5 4.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3f9baceb-ea9d-4b6f-97fa-bb39402929f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "722edda7-609e-4348-8508-0b7fc86b5555")
+	)
+	(pad "2" thru_hole circle
+		(at 5 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3d14d74f-47ff-4c3a-a489-23cf12cdd3f7")
+	)
+	(pad "3" thru_hole circle
+		(at 10 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6df516ff-c86f-4f54-869f-5629082bfb2e")
+	)
+	(pad "4" thru_hole circle
+		(at 15 0)
+		(size 2.4 2.4)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c6fd3e66-cc7f-4cf4-85c1-6e787d49da50")
+	)
+	(model "${KICAD_3RD_PARTY}/my_parts.3dshapes/3D_AST0250404.igs"
+		(offset
+			(xyz 2 -1.6 14.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)

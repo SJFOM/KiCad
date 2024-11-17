@@ -42,6 +42,21 @@ def num_range(arg_type, min_val, max_val):
     return range_check
 
 
+def cli(board_filepath: str, configfile: str, **kwargs) -> bool:
+    import pcbnew
+    try:
+        from . import persistence
+    except ImportError:
+        import persistence
+
+    board = pcbnew.LoadBoard(board_filepath)
+    config = persistence.Persistence(configfile)
+    config_vars = config.load()
+    # note: cli parameters override config.ini values
+    config_vars.update(kwargs)
+    return plot.plot_pdfs(board, **config_vars)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Board2Pdf CLI.')
     parser.add_argument('kicad_pcb', type=shell_path(), help='.kicad_pcb file')
@@ -49,8 +64,6 @@ def parse_args():
                         help=f'Path to `board2pdf.config.ini` to use')
     parser.add_argument('--log', default='NOTSET', choices=_log_levels.keys(), required=False,
                         help='Enables logging with given log-level')
-    parser.add_argument('--scale', default=None, type=num_range(float, 1.0, 10.0), required=False,
-                        help='Scale non-frame layers')
     parser.add_argument('--merge', default=None, choices=_pdf_libs, required=False,
                         help='PDF merge processor library')
     parser.add_argument('--colorize', default=None, choices=_pdf_libs, required=False,
@@ -101,8 +114,6 @@ def main():
     _logger.info(f'{ini_path=}')
 
     optional = {}
-    if args.scale:
-        optional['layer_scale'] = args.scale
     if args.colorize:
         optional['colorize_lib'] = args.colorize
     if args.merge:
@@ -113,7 +124,7 @@ def main():
         optional['assembly_file_output'] = args.output
     _logger.info(f'{optional=}')
 
-    sys.exit(0 if plot.cli(pcb_path, ini_path, **optional) else 1)
+    sys.exit(0 if cli(pcb_path, ini_path, **optional) else 1)
 
 
 if __name__ == "__main__":

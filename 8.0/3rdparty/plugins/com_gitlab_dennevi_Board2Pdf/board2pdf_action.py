@@ -5,27 +5,40 @@ import shutil
 import sys
 import pcbnew
 import wx
+import pathlib
+import logging
 
+_log=logging.getLogger("board2pdf")
 
-if __name__ == "__main__":
-    # Circumvent the "scripts can't do relative imports because they are not
-    # packages" restriction by asserting dominance and making it a package!
-    dirname = os.path.dirname(os.path.abspath(__file__))
-    __package__ = os.path.basename(dirname)
-    sys.path.insert(0, os.path.dirname(dirname))
+dirname = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+_package = os.path.basename(dirname)
+
+try:
+    from . _version import __version__
+except ImportError:
+    # sys.path.insert(0, os.path.dirname(dirname))
+    sys.path.append(os.path.dirname(dirname))
+    # Pretend we are part of a module
+    # Avoids: ImportError: attempted relative import with no known parent package
+    __package__ = _package
     __import__(__package__)
+    _log.debug("Package: %s\tDir: %s", __package__, dirname)
 
 from . _version import __version__
 from . import plot
 from . import dialog
 from . import persistence
-
+_log.debug("File: %s\tVersion: %s", __file__, __version__)
 
 _board = None
-def get_board():
+def set_board(board: pcbnew.BOARD):
     global _board
+    assert isinstance(board, pcbnew.BOARD)
+    _board = board
+
+def get_board() -> pcbnew.BOARD:
     if _board is None:
-        _board = pcbnew.GetBoard()
+        set_board(pcbnew.GetBoard())
     return _board
 
 
@@ -66,8 +79,9 @@ def run_with_dialog():
                           dialog_panel.m_checkBox_delete_temp_files.IsChecked(),
                           dialog_panel.m_checkBox_create_svg.IsChecked(),
                           dialog_panel.m_checkBox_delete_single_page_files.IsChecked(), dialog_panel,
-                          layer_scale=config.layer_scale,
-                          assembly_file_extension=config.assembly_file_extension)
+                          assembly_file_extension=config.assembly_file_extension,
+                          page_info=dialog_panel.m_textCtrl_page_info.GetValue(),
+                          info_variable=str(dialog_panel.m_comboBox_info_variable.GetCurrentSelection()))
         dialog_panel.m_progress.SetValue(100)
         dialog_panel.Refresh()
         dialog_panel.Update()
@@ -80,10 +94,16 @@ def run_with_dialog():
         dialog_panel.m_checkBox_delete_temp_files.SetValue(config.del_temp_files)
         dialog_panel.m_checkBox_create_svg.SetValue(config.create_svg)
         dialog_panel.m_checkBox_delete_single_page_files.SetValue(config.del_single_page_files)
+        dialog_panel.m_textCtrl_page_info.SetValue(config.page_info)
+        if not config.info_variable:
+            info_variable_int = 0
+        else:
+            info_variable_int = int(config.info_variable)
+        dlg.panel.m_comboBox_info_variable.SetSelection(info_variable_int)
         dialog_panel.ClearTemplateSettings()
         dialog_panel.hide_template_settings()
 
-    dlg = dialog.SettingsDialog(config, perform_export, load_saved, __version__)
+    dlg = dialog.SettingsDialog(config, perform_export, load_saved, version=__version__, board=get_board())
     try:
         icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
         icon = wx.Icon(icon_path)
@@ -98,6 +118,12 @@ def run_with_dialog():
     dlg.panel.m_checkBox_delete_temp_files.SetValue(config.del_temp_files)
     dlg.panel.m_checkBox_create_svg.SetValue(config.create_svg)
     dlg.panel.m_checkBox_delete_single_page_files.SetValue(config.del_single_page_files)
+    dlg.panel.m_textCtrl_page_info.SetValue(config.page_info)
+    if not config.info_variable:
+        info_variable_int = 0
+    else:
+        info_variable_int = int(config.info_variable)
+    dlg.panel.m_comboBox_info_variable.SetSelection(info_variable_int)
     dlg.panel.m_staticText_status.SetLabel(f'Status: loaded {configfile_name} settings')
 
     # Check if able to import PyMuPDF.
@@ -105,15 +131,19 @@ def run_with_dialog():
     try:
         import pymupdf  # This imports PyMuPDF
 
-    except:
+    except ImportError:
         try:
             import fitz as pymupdf  # This imports PyMuPDF using old name
+            _log.info("pymupdf old version found")
 
-        except:
+        except ImportError:
             try:
                 import fitz_old as pymupdf # This imports PyMuPDF using temporary old name
+                _log.info("pymupdf found")
 
-            except:
+
+            except ImportError:
+                _log.info("pymupdf not found, using pypdf")
                 has_pymupdf = False
 
     # after pip uninstall PyMuPDF the import still works, but not `open()`
@@ -121,7 +151,8 @@ def run_with_dialog():
     if has_pymupdf:
         try:
             pymupdf.open()
-        except:
+        except Exception as e:
+            _log.error("pymupdf partially initialized, falling back on pypdf. Error: %s", str(e))
             has_pymupdf = False
 
     # If it was possible to import and open PyMuPdf, select pymupdf otherwise select pypdf.
@@ -132,10 +163,19 @@ def run_with_dialog():
         dlg.panel.m_radio_pypdf.SetValue(True)
         dlg.panel.m_radio_merge_pypdf.SetValue(True)
 
-    dlg.ShowModal()
-    # response = dlg.ShowModal()
-    # if response == wx.ID_CANCEL:
+    # Check if able to import pdfCropMargins.
+    has_pdfcropmargins = True
+    try:
+        from pdfCropMargins import crop  # This imports pdfCropMargins
+    except:
+        has_pdfcropmargins = False
 
+    if has_pdfcropmargins:
+        dlg.panel.m_staticText_pdfCropMargins.SetLabel(f'pdfCropMargins Status: Installed')
+    else:
+        dlg.panel.m_staticText_pdfCropMargins.SetLabel(f'pdfCropMargins Status: NOT Installed')
+
+    dlg.ShowModal()
     dlg.Destroy()
 
 
@@ -151,9 +191,27 @@ class board2pdf(pcbnew.ActionPlugin):
         run_with_dialog()
 
 
+def main():
+    if not wx.App.Get():
+        _log.debug("No existing app found, creating App")
+        app = wx.App()
+    run_with_dialog()
+
+
 if __name__ == "__main__":
-    _board = pcbnew.LoadBoard(sys.argv[1])
-    #run_with_dialog()
-    app = wx.App()
-    p = board2pdf()
-    p.Run()
+    logging.basicConfig()
+    _log.setLevel(logging.DEBUG)
+    board = None
+    try:
+        board_path = pathlib.Path(sys.argv[1]).absolute()
+        assert board_path.exists()
+        board = pcbnew.LoadBoard(str(board_path))
+    except IndexError:
+        _log.info("No board path passed as argument, trying kicad environment")
+        board = pcbnew.GetBoard()
+
+    if board is not None:
+        set_board(board)
+        main()
+    else:
+        _log.error("No board path passed or found in environment")

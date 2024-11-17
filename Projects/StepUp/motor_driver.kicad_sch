@@ -908,367 +908,6 @@
 				)
 			)
 		)
-		(symbol "Snapeda_kicad:1862068"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -6.85 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "1862068"
-				(at -6.35 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "Snapeda:1862068_PHOENIX_1862068"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "PHOENIX"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "1862068_0_0"
-				(rectangle
-					(start -6.35 -15.24)
-					(end 6.35 15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -3.175 -11.43)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.175 -3.81)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.175 3.81)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.175 11.43)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -11.43) (xy -3.81 -11.43)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -10.16) (xy -5.08 -12.7)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -3.81) (xy -3.81 -3.81)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -2.54) (xy -5.08 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 3.81) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 11.43) (xy -3.81 11.43)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 12.7) (xy -5.08 10.16)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -10.16 12.7 0)
-					(length 5.08)
-					(name "1_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 5.08)
-					(name "1_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 5.08)
-					(name "2_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 2.54 0)
-					(length 5.08)
-					(name "2_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -2.54 0)
-					(length 5.08)
-					(name "3_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 5.08)
-					(name "3_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -10.16 0)
-					(length 5.08)
-					(name "4_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -12.7 0)
-					(length 5.08)
-					(name "4_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Snapeda_kicad_2:B5819W-TP"
 			(pin_names
 				(offset 0.254)
@@ -2711,6 +2350,159 @@
 				)
 			)
 		)
+		(symbol "my_parts:AST250404"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 5.08 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AST250404"
+				(at 5.588 -10.922 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "my_parts:AST250404"
+				(at 28.194 -23.876 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
+				(at 5.334 -14.986 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
+				(at 3.81 -19.812 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "METZ-CONNECTOR"
+				(at -6.604 -23.876 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "AST250404"
+				(at 9.652 -23.876 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AST250404_0_1"
+				(rectangle
+					(start 2.54 1.905)
+					(end 8.255 -9.525)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AST250404_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers hide)
@@ -3073,12 +2865,6 @@
 		(uuid "30318c75-b752-4cdc-b169-09c1ac5a7345")
 	)
 	(junction
-		(at 135.89 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3227eb02-5d36-4e67-8487-419474a434df")
-	)
-	(junction
 		(at 76.2 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3101,12 +2887,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b25c1f0-2ac2-4dcf-b249-c8ac26980213")
-	)
-	(junction
-		(at 135.89 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5fe68a33-cf91-4559-97db-dac80a087033")
 	)
 	(junction
 		(at 241.3 161.29)
@@ -3151,12 +2931,6 @@
 		(uuid "9927b2f3-432d-4d87-8dbb-6efa18bd8eaa")
 	)
 	(junction
-		(at 135.89 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9a2d675a-1bbe-4a54-b1ed-abd96ccc679b")
-	)
-	(junction
 		(at 313.69 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3167,12 +2941,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c439c571-3aee-4c8a-9e60-14168d9c604a")
-	)
-	(junction
-		(at 135.89 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5e9fd86-101b-474a-8481-a27180a36d7b")
 	)
 	(junction
 		(at 269.24 172.72)
@@ -3642,16 +3410,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 52.07) (xy 137.16 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3993b6ca-3d4c-43a4-a19e-e3396f243571")
-	)
-	(wire
-		(pts
 			(xy 242.57 184.15) (xy 238.76 184.15)
 		)
 		(stroke
@@ -3792,16 +3550,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 36.83) (xy 135.89 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "572d0c75-4049-46ed-82cc-8be1f78d2b09")
-	)
-	(wire
-		(pts
 			(xy 238.76 137.16) (xy 248.92 137.16)
 		)
 		(stroke
@@ -3842,16 +3590,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 39.37) (xy 135.89 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fd42f92-3f1b-4cc2-8f61-84585116cde2")
-	)
-	(wire
-		(pts
 			(xy 219.71 140.97) (xy 219.71 149.86)
 		)
 		(stroke
@@ -3879,16 +3617,6 @@
 			(type default)
 		)
 		(uuid "65cd0364-d9e7-43c3-b1b7-80b3ae6f0148")
-	)
-	(wire
-		(pts
-			(xy 135.89 59.69) (xy 135.89 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6606c422-7ae0-482a-b180-7197e85c0985")
 	)
 	(wire
 		(pts
@@ -4052,16 +3780,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 44.45) (xy 137.16 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec8ac84-1133-4857-9525-0123b7e085a3")
-	)
-	(wire
-		(pts
 			(xy 242.57 181.61) (xy 241.3 181.61)
 		)
 		(stroke
@@ -4072,13 +3790,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 46.99) (xy 135.89 46.99)
+			(xy 127 44.45) (xy 142.24 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83b5a54a-396e-4b5a-8734-8ce917a06045")
+		(uuid "83b6b2ee-5b1e-4e99-af38-c4e0581d2fe3")
 	)
 	(wire
 		(pts
@@ -4089,16 +3807,6 @@
 			(type default)
 		)
 		(uuid "83c6cea1-e9ec-4829-bbdf-2b747b79e942")
-	)
-	(wire
-		(pts
-			(xy 135.89 36.83) (xy 137.16 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83fe7dc2-d137-4212-a7c8-31ac63654d92")
 	)
 	(wire
 		(pts
@@ -4142,13 +3850,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 44.45) (xy 135.89 44.45)
+			(xy 127 49.53) (xy 142.24 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b10b10e-a604-4060-bc4f-3654077f0f10")
+		(uuid "8beace7c-51a0-439c-b9e2-c87a5b6a0348")
 	)
 	(wire
 		(pts
@@ -4262,16 +3970,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 44.45) (xy 135.89 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c9d4345-93c6-4201-bce2-993e7de4852c")
-	)
-	(wire
-		(pts
 			(xy 243.84 149.86) (xy 219.71 149.86)
 		)
 		(stroke
@@ -4289,16 +3987,6 @@
 			(type default)
 		)
 		(uuid "9ebff187-13aa-4132-99eb-a2edcc1ca8b3")
-	)
-	(wire
-		(pts
-			(xy 137.16 54.61) (xy 135.89 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0e05199-d514-493c-baa7-670785818427")
 	)
 	(wire
 		(pts
@@ -4412,16 +4100,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 52.07) (xy 135.89 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2b090a5-8b59-48a5-a51d-294a097843de")
-	)
-	(wire
-		(pts
 			(xy 45.72 58.42) (xy 48.26 58.42)
 		)
 		(stroke
@@ -4459,6 +4137,16 @@
 			(type default)
 		)
 		(uuid "bb26559b-6777-402b-baf3-fa13dea9a858")
+	)
+	(wire
+		(pts
+			(xy 127 52.07) (xy 142.24 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb451037-752e-415e-bee3-c232ad40f9da")
 	)
 	(wire
 		(pts
@@ -4562,16 +4250,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 62.23) (xy 135.89 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca167ae1-183f-46ad-bed0-86ecf26b0e6e")
-	)
-	(wire
-		(pts
 			(xy 119.38 124.46) (xy 132.08 124.46)
 		)
 		(stroke
@@ -4589,16 +4267,6 @@
 			(type default)
 		)
 		(uuid "cb4f9edd-e823-451d-b858-df5f3c36b948")
-	)
-	(wire
-		(pts
-			(xy 135.89 54.61) (xy 135.89 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbd6b8db-3436-48b5-91dd-34bd021545c7")
 	)
 	(wire
 		(pts
@@ -4712,16 +4380,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 59.69) (xy 137.16 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e03ee594-43f9-4feb-9353-12035d95586c")
-	)
-	(wire
-		(pts
 			(xy 76.2 137.16) (xy 83.82 137.16)
 		)
 		(stroke
@@ -4742,16 +4400,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 59.69) (xy 135.89 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2fbab07-f681-4dbf-94d7-3fff2c130d8f")
-	)
-	(wire
-		(pts
 			(xy 49.53 68.58) (xy 50.8 68.58)
 		)
 		(stroke
@@ -4769,6 +4417,16 @@
 			(type default)
 		)
 		(uuid "e536c5b9-73a2-4f25-a807-1df67d1ea82b")
+	)
+	(wire
+		(pts
+			(xy 127 46.99) (xy 142.24 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7a8a1ca-16d5-4174-829e-a379cab6a4f7")
 	)
 	(wire
 		(pts
@@ -4809,16 +4467,6 @@
 			(type default)
 		)
 		(uuid "f1579c42-ae67-4c8c-b573-8af8e5287e8b")
-	)
-	(wire
-		(pts
-			(xy 135.89 36.83) (xy 135.89 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1c816a2-f06b-45f2-b948-c4e93ce46161")
 	)
 	(wire
 		(pts
@@ -4980,17 +4628,6 @@
 		)
 		(uuid "414e6e8b-248c-47ce-b042-0a9fc0a346d9")
 	)
-	(label "OB1_OUT"
-		(at 120.65 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4260faa2-5b3f-4c3e-ab80-4228f2195a17")
-	)
 	(label "TMC_MS2{slash}AD1"
 		(at 124.46 171.45 0)
 		(fields_autoplaced yes)
@@ -5001,6 +4638,17 @@
 			(justify left bottom)
 		)
 		(uuid "499032b5-d4b7-4747-bbe3-24ed9296da30")
+	)
+	(label "OA2_OUT"
+		(at 127 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6341db1f-5c49-4592-b9f4-0494be76cd83")
 	)
 	(label "OA2_OUT"
 		(at 358.14 154.94 180)
@@ -5045,6 +4693,17 @@
 			(justify left bottom)
 		)
 		(uuid "7cdb43fc-064c-411e-96c2-1e35985e3e8b")
+	)
+	(label "OB1_OUT"
+		(at 127 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fd24ecf-bc39-4114-aed0-683ce2e6e486")
 	)
 	(label "TMC_VCC_IO"
 		(at 78.74 45.72 0)
@@ -5101,39 +4760,6 @@
 		)
 		(uuid "a3b80590-5dc0-498b-bf1c-d1a31d2ea793")
 	)
-	(label "OB2_OUT"
-		(at 120.65 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac059d51-22fd-48ae-99b7-2aa410336932")
-	)
-	(label "OA2_OUT"
-		(at 120.65 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b13a9350-7922-4099-953f-99b640e79d3d")
-	)
-	(label "OA1_OUT"
-		(at 120.65 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c362d0bb-9398-47c5-98e9-19db248084e5")
-	)
 	(label "OB1_OUT"
 		(at 358.14 160.02 180)
 		(fields_autoplaced yes)
@@ -5155,6 +4781,28 @@
 			(justify left bottom)
 		)
 		(uuid "dc8697e7-8d79-4f0c-aedf-32c6a96ef2d8")
+	)
+	(label "OB2_OUT"
+		(at 127 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3e5ce9d-a4fd-44fe-beb9-d418bfa5d595")
+	)
+	(label "OA1_OUT"
+		(at 127 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea8afbff-516b-4fec-9b8f-2c7b827fdc25")
 	)
 	(label "TMC_MS1{slash}AD0"
 		(at 124.46 168.91 0)
@@ -8916,203 +8564,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Snapeda_kicad:1862068")
-		(at 147.32 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6312e4bf-75bc-45b1-a620-5aa25b77b544")
-		(property "Reference" "J3"
-			(at 154.94 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1862068"
-			(at 154.94 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Snapeda:1862068_PHOENIX_1862068"
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1862068/pdf"
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.138\" (3.50mm) Through Hole"
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "PHOENIX"
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Colour" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 147.32 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2_1"
-			(uuid "fad3cdde-53d0-4e96-aabc-5f6a861a2db5")
-		)
-		(pin "3_1"
-			(uuid "bcfd4b3b-4988-470c-8a2d-ef78f3bae13c")
-		)
-		(pin "4_1"
-			(uuid "73d08cb7-43ae-451a-a901-08130cedb551")
-		)
-		(pin "4_2"
-			(uuid "901dfa18-384f-47a5-8492-b8dd25b83f29")
-		)
-		(pin "3_2"
-			(uuid "d6bfa99b-bb00-4517-93ed-cd6871ccf07b")
-		)
-		(pin "1_1"
-			(uuid "7331a2d5-7a6e-437e-8758-e9104c5128c2")
-		)
-		(pin "1_2"
-			(uuid "9764e35e-1811-4304-adda-226ae514d373")
-		)
-		(pin "2_2"
-			(uuid "d288cb47-46c4-4e6c-9671-e500bc27a312")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Snapeda_kicad_2:HI1206T500R-10")
 		(at 248.92 172.72 0)
 		(unit 1)
@@ -10136,6 +9587,100 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "my_parts:AST250404")
+		(at 142.24 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7877e12c-1479-45ca-8629-107c911f6bed")
+		(property "Reference" "J4"
+			(at 151.13 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AST250404"
+			(at 151.13 49.53 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "my_parts:AST250404"
+			(at 170.434 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
+			(at 147.574 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
+			(at 146.05 64.262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "METZ-CONNECTOR"
+			(at 135.636 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AST250404"
+			(at 151.892 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "e8f9bd95-cfe5-496b-bcce-47e75f1846e7")
+		)
+		(pin ""
+			(uuid "c21bc97a-e1b7-4322-bc36-5b33a467bcd7")
+		)
+		(pin ""
+			(uuid "1ab833c7-a0cf-4036-8ea7-99e78f5044c0")
+		)
+		(pin ""
+			(uuid "d5092483-eb57-4c1f-ae1a-a9998f4d9f00")
+		)
+		(instances
+			(project ""
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
+					(reference "J4")
 					(unit 1)
 				)
 			)

@@ -38,6 +38,12 @@ if has_pymupdf:
     except:
         has_pymupdf = False
 
+# Try to import pdfCropMargins.
+has_pdfcropmargins = True
+try:
+    from pdfCropMargins import crop  # This imports pdfCropMargins
+except:
+    has_pdfcropmargins = False
 
 _logger = logging.getLogger(__name__)
 
@@ -51,8 +57,11 @@ def exception_msg(info: str, tb=True):
         print(f'Error: {msg}', file=sys.stderr)
 
 
-def io_file_error_msg(function: str, input_file: str, folder: str, more: str = '', tb=True):
-    msg = f"{function} failed\nOn input file {input_file} in {folder}\n\n{more}" + (
+def io_file_error_msg(function: str, input_file: str, folder: str = '', more: str = '', tb=True):
+    if(folder != ''):
+        input_file = input_file + " in " + folder
+        
+    msg = f"{function} failed\nOn input file {input_file}\n\n{more}" + (
         traceback.format_exc() if tb else '')
     try:
         wx.MessageBox(msg, 'Error', wx.OK | wx.ICON_ERROR)
@@ -60,7 +69,11 @@ def io_file_error_msg(function: str, input_file: str, folder: str, more: str = '
         print(f'Error: {msg}', file=sys.stderr)
 
 
-def colorize_pdf_pymupdf(folder, input_file, output_file, color):
+def colorize_pdf_pymupdf(folder, input_file, output_file, color, transparency):
+    # If transparency is non zero, run colorize_pdf_pymupdf_with_transparency instead.
+    if not transparency == 0:
+        return colorize_pdf_pymupdf_with_transparency(folder, input_file, output_file, color, transparency)
+
     try:
         with pymupdf.open(os.path.join(folder, input_file)) as doc:
             xref_number = doc[0].get_contents()
@@ -85,7 +98,114 @@ def colorize_pdf_pymupdf(folder, input_file, output_file, color):
     return True
 
 
-def colorize_pdf_pypdf(folder, input_file, output_file, color):
+def colorize_pdf_pymupdf_with_transparency(folder, input_file, output_file, color, transparency):
+    opacity = 1-float(transparency / 100)
+
+    doc = pymupdf.open(os.path.join(folder, input_file))
+    page = doc[0]
+    paths = page.get_drawings()  # extract existing drawings
+    # this is a list of "paths", which can directly be drawn again using Shape
+    # -------------------------------------------------------------------------
+    #
+    # define some output page with the same dimensions
+    outpdf = pymupdf.open()
+    outpage = outpdf.new_page(width=page.rect.width, height=page.rect.height)
+    shape = outpage.new_shape()  # make a drawing canvas for the output page
+    # --------------------------------------
+    # loop through the paths and draw them
+    # --------------------------------------
+    for path in paths:
+        #print("Object:")
+        #print("fill_opacity:", type(path["fill_opacity"]))
+        #print("stroke_opacity:", type(path["stroke_opacity"]))
+        if(path["color"] == None):
+            new_color = None
+        else:
+            new_color = color #tuple((float(0.0), float(1.0), float(1.0)))
+
+        if(path["fill"] == None):
+            new_fill = None
+        else:
+            new_fill = color #tuple((float(1.0), float(0.0), float(1.0)))
+
+        if(path["fill_opacity"] == None):
+            new_fill_opacity = None
+        else:
+            new_fill_opacity = opacity #float(0.5)
+
+        if(path["stroke_opacity"] == None):
+            new_stroke_opacity = None
+        else:
+            new_stroke_opacity = opacity #float(0.5)
+
+        #pprint.pp(path)
+
+        # ------------------------------------
+        # draw each entry of the 'items' list
+        # ------------------------------------
+        for item in path["items"]:  # these are the draw commands
+            if item[0] == "l":  # line
+                shape.draw_line(item[1], item[2])
+            elif item[0] == "re":  # rectangle
+                shape.draw_rect(item[1])
+            elif item[0] == "qu":  # quad
+                shape.draw_quad(item[1])
+            elif item[0] == "c":  # curve
+                shape.draw_bezier(item[1], item[2], item[3], item[4])
+            else:
+                raise ValueError("unhandled drawing", item)
+        # ------------------------------------------------------
+        # all items are drawn, now apply the common properties
+        # to finish the path
+        # ------------------------------------------------------
+        if new_fill_opacity:
+            shape.finish(
+                fill=new_fill,  # fill color
+                color=new_color,  # line color
+                dashes=path["dashes"],  # line dashing
+                even_odd=path.get("even_odd", True),  # control color of overlaps
+                closePath=path["closePath"],  # whether to connect last and first point
+                #lineJoin=path["lineJoin"],  # how line joins should look like
+                #lineCap=max(path["lineCap"]),  # how line ends should look like
+                width=path["width"],  # line width
+                #stroke_opacity=new_stroke_opacity,  # same value for both
+                fill_opacity=new_fill_opacity,  # opacity parameters
+                )
+
+        if new_stroke_opacity:
+            shape.finish(
+                fill=new_fill,  # fill color
+                color=new_color,  # line color
+                dashes=path["dashes"],  # line dashing
+                even_odd=path.get("even_odd", True),  # control color of overlaps
+                closePath=path["closePath"],  # whether to connect last and first point
+                #lineJoin=path["lineJoin"],  # how line joins should look like
+                #lineCap=max(path["lineCap"]),  # how line ends should look like
+                lineJoin=2,
+                lineCap=1,
+                width=path["width"],  # line width
+                stroke_opacity=new_stroke_opacity,  # same value for both
+                #fill_opacity=new_fill_opacity,  # opacity parameters
+                )
+
+
+    # all paths processed - commit the shape to its page
+    shape.commit()
+
+    print("New page")
+    page = outpdf[0]
+    paths = page.get_drawings()  # extract existing drawings
+
+    #for path in paths:
+    #    print("Object:")
+    #    pprint.pp(path)
+
+    outpdf.save(os.path.join(folder, output_file), clean=True)
+
+    return True
+
+
+def colorize_pdf_pypdf(folder, input_file, output_file, color, transparency):
     try:
         with open(os.path.join(folder, input_file), "rb") as f:
             class ErrorHandler(object):
@@ -126,19 +246,125 @@ def colorize_pdf_pypdf(folder, input_file, output_file, color):
 
     return True
 
-def merge_pdf_pymupdf(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
-                    layer_scale: float, template_use_popups: bool, template_name: str):
+def create_blank_page(input_file_path: str, output_file_path: str):
+    try:
+        # Open input file and create a page with the same size
+        pdf_reader = PdfReader(input_file_path)
+        src_page: PageObject = pdf_reader.pages[0]
+        page = PageObject.create_blank_page(width=src_page.mediabox.width, height=src_page.mediabox.height)
+
+        # Create the output file with the page in it
+        output = PdfWriter()
+        output.add_page(page)
+        with open(output_file_path, "wb") as output_stream:
+            output.write(output_stream)
+
+    except:
+        io_file_error_msg(create_blank_page.__name__, input_file_path, output_file_path)
+        return False
+
+    return True
+
+def get_page_size(file_path: str):
+    try:
+        # Open the file and check what size it is
+        pdf_reader = PdfReader(file_path)
+        src_page: PageObject = pdf_reader.pages[0]
+        print("File:", str(file_path))
+        page_width = src_page.mediabox.width
+        print("Width:", str(page_width))
+        page_height = src_page.mediabox.height
+        print("Height:", str(page_height))
+
+    except:
+        io_file_error_msg(get_page_size.__name__, file_path)
+        return False, float(0), float(0)
+
+    return True, page_width, page_height
+
+def merge_and_scale_pdf(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
+                    scale_or_crop: dict, template_name: str, pymupdf_merge: bool):
     # I haven't found a way to scale the pdf and preserve the popup-menus.
     # For now, I'm taking the easy way out and handle the merging differently depending
     # on if scaling is used or not. At least the popup-menus are preserved when not using scaling.
     # https://github.com/pymupdf/PyMuPDF/discussions/2499
     # If popups aren't used, I'm using the with_scaling method to get rid of annotations
-    if template_use_popups and layer_scale == 1.0:
-        return merge_pdf_pymupdf_without_scaling(input_folder, input_files, output_folder, output_file, frame_file, template_name)
-    else:
-        return merge_pdf_pymupdf_with_scaling(input_folder, input_files, output_folder, output_file, frame_file, template_name, layer_scale)
+    if(scale_or_crop['scaling_method'] == '3'):
+        # If scaling_method = 3, use a different method when using pymupdf
+        output_file_path = os.path.join(output_folder, output_file)
+        scaling_factor = float(scale_or_crop['scaling_factor'])
+        if(pymupdf_merge):
+            return merge_pdf_pymupdf_with_scaling(input_folder, input_files, output_file_path, frame_file, template_name, scaling_factor)
+        else:
+            return merge_pdf_pypdf(input_folder, input_files, output_file_path, frame_file, template_name, scaling_factor)
 
-def merge_pdf_pymupdf_without_scaling(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str, template_name: str):
+    # If scaling_method is 1 or 2 the merged file is not the final file.
+    if(scale_or_crop['scaling_method'] == '1' or scale_or_crop['scaling_method'] == '2'):
+        merged_file_path = os.path.join(input_folder, "merged_" + output_file)
+    else:
+        merged_file_path = os.path.join(output_folder, output_file)
+
+    if(scale_or_crop['scaling_method'] == '2' and frame_file != 'None'):
+        # The frame layer should not be scaled, so don't merge this with the others.
+        input_files.remove(frame_file)
+
+    # Merge input_files to output_file
+    if(pymupdf_merge):
+        return_value = merge_pdf_pymupdf(input_folder, input_files, merged_file_path, frame_file, template_name)
+    else:
+        return_value = merge_pdf_pypdf(input_folder, input_files, merged_file_path, frame_file, template_name, 1.0)
+    if not return_value:
+        return False
+
+    # If scaling_method is 1 or 2, the merged file shall be cropped
+    if(scale_or_crop['scaling_method'] == '1'):
+        whitespace = scale_or_crop['crop_whitespace']
+        cropped_file_path = os.path.join(output_folder, output_file)
+    elif(scale_or_crop['scaling_method'] == '2'):
+        whitespace = scale_or_crop['scale_whitespace']
+        cropped_file = "cropped_" + output_file
+        cropped_file_path = os.path.join(input_folder, cropped_file)
+
+    if(scale_or_crop['scaling_method'] == '1' or scale_or_crop['scaling_method'] == '2'):
+        # Crop the file
+        output_doc_pathname, exit_code, stdout_str, stderr_str = crop(
+                             ["-p", "0", "-a", "-" + whitespace, "-t", "250", "-A", "-o", cropped_file_path, merged_file_path],
+                             string_io=True, quiet=False)
+
+        if(exit_code):
+            exception_msg("Failed to crop file.\npdfCropMargins exitcode was: " + str(exit_code) + "\n\nstdout_str: " + str(stdout_str) + "\n\nstderr_str: " + str(stderr_str))
+            return False
+
+    if(scale_or_crop['scaling_method'] == '2'):
+        # If no frame layer is selected, create a blank file with same size as the first original file
+        if(frame_file == 'None'):
+            first_file = input_files[0]
+            frame_file = "blank_file.pdf"
+            if not create_blank_page(os.path.join(input_folder, first_file), os.path.join(input_folder, frame_file)):
+                return False
+
+        # Scale the cropped file.
+        scaled_file_path = os.path.join(output_folder, output_file)
+
+        if(pymupdf_merge):
+            new_file_list = [cropped_file, frame_file]
+            return merge_pdf_pymupdf_with_scaling(input_folder, new_file_list, scaled_file_path, frame_file, template_name, 1.0)
+        else:
+            return_value, frame_file_width, frame_file_height = get_page_size(os.path.join(input_folder, frame_file))
+            if not return_value:
+                return False
+            
+            resized_cropped_file = "resized_" + cropped_file
+            resized_cropped_file_path = os.path.join(input_folder, resized_cropped_file)
+            
+            resize_page_pypdf(cropped_file_path, resized_cropped_file_path, frame_file_width, frame_file_height)
+            
+            new_file_list = [frame_file, resized_cropped_file]
+            return merge_pdf_pypdf(input_folder, new_file_list, scaled_file_path, frame_file, template_name, 1.0)
+            
+    return True
+
+def merge_pdf_pymupdf(input_folder: str, input_files: list, output_file_path: str, frame_file: str, template_name: str):
     try:
         output = None
         for filename in reversed(input_files):
@@ -206,18 +432,22 @@ def merge_pdf_pymupdf_without_scaling(input_folder: str, input_files: list, outp
                 output.xref_set_key(xref, "Title", page_name)
 
         except Exception:
-            exception_msg("Didn't manage to set the name of the page in the Table-of-content")
+            # If the first page was colored using colorize_pdf_pymupdf_with_transparency, then the table of
+            # contents (pdf outline) has been lost.
+            # Lets create a new toc with the correct page name.
+            toc = [[1, template_name, 1]]
+            output.set_toc(toc)
 
-        output.save(os.path.join(output_folder, output_file)) # , garbage=2
+        output.save(output_file_path) # , garbage=2
         output.close()
 
     except Exception:
-        io_file_error_msg(merge_pdf_pymupdf.__name__, output_file, output_folder)
+        io_file_error_msg(merge_pdf_pymupdf.__name__, output_file_path)
         return False
 
     return True
 
-def merge_pdf_pymupdf_with_scaling(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
+def merge_pdf_pymupdf_with_scaling(input_folder: str, input_files: list, output_file_path: str, frame_file: str,
                     template_name: str, layer_scale: float):
     try:
         output = pymupdf.open()
@@ -235,11 +465,16 @@ def merge_pdf_pymupdf_with_scaling(input_folder: str, input_files: list, output_
                                             (page.rect.height + src[0].rect.height) / 2)
 
                     pos = cropbox if frame_file == filename else page.rect
-                    page.show_pdf_page(pos,  # select output rect
-                                       src,  # input document
-                                       overlay=False)
+                    try:
+                        page.show_pdf_page(pos,  # select output rect
+                                           src,  # input document
+                                           overlay=False)
+                    except ValueError:
+                        # This happens if the page is blank. Which it is if we've created a blank frame file.
+                        pass
+
             except Exception:
-                io_file_error_msg(merge_pdf_pymupdf.__name__, filename, input_folder)
+                io_file_error_msg(merge_pdf_pymupdf_with_scaling.__name__, filename, input_folder)
                 return False
 
         page.set_cropbox(cropbox)
@@ -249,16 +484,16 @@ def merge_pdf_pymupdf_with_scaling(input_folder: str, input_files: list, output_
         toc = [[1, template_name, 1]]
         output.set_toc(toc)
 
-        output.save(os.path.join(output_folder, output_file))
+        output.save(output_file_path)
 
     except Exception:
-        io_file_error_msg(merge_pdf_pymupdf.__name__, output_file, output_folder)
+        io_file_error_msg(merge_pdf_pymupdf_with_scaling.__name__, output_file_path)
         return False
 
     return True
 
-def merge_pdf_pypdf(input_folder: str, input_files: list, output_folder: str, output_file: str, frame_file: str,
-                    layer_scale: float, template_use_popups: bool, template_name: str):
+def merge_pdf_pypdf(input_folder: str, input_files: list, output_file_path: str, frame_file: str,
+                    template_name: str, layer_scale: float):
     try:
         page = None
         for filename in input_files:
@@ -297,15 +532,41 @@ def merge_pdf_pypdf(input_folder: str, input_files: list, output_folder: str, ou
         output = PdfWriter()
         output.add_page(page)
         output.add_outline_item(title=template_name, page_number=0)
-        with open(os.path.join(output_folder, output_file), "wb") as output_stream:
+        with open(output_file_path, "wb") as output_stream:
             output.write(output_stream)
 
     except:
-        io_file_error_msg(merge_pdf_pypdf.__name__, output_file, output_folder)
+        io_file_error_msg(merge_pdf_pypdf.__name__, output_file_path)
         return False
 
     return True
 
+def resize_page_pypdf(input_file_path: str, output_file_path: str, page_width: float, page_height: float):
+    reader = PdfReader(input_file_path)
+    page = reader.pages[0]
+    writer = PdfWriter()
+
+    w = float(page.mediabox.width)
+    h = float(page.mediabox.height)
+    scale_factor = min(page_height/h, page_width/w)
+
+    # Calculate the final amount of blank space in width and height
+    space_w = page_width - w*scale_factor
+    space_h = page_height - h*scale_factor
+
+    # Calculate offsets to center the scaled result
+    x_offset = -page.cropbox.left*scale_factor + space_w/2
+    y_offset = -page.cropbox.bottom*scale_factor + space_h/2
+
+    transform = Transformation().scale(scale_factor).translate(x_offset, y_offset)
+
+    page.add_transformation(transform)
+
+    page.cropbox = generic.RectangleObject((0, 0, page_width, page_height))
+    page.mediabox = generic.RectangleObject((0, 0, page_width, page_height))
+
+    writer.add_page(page)
+    writer.write(output_file_path)
 
 def create_pdf_from_pages(input_folder, input_files, output_folder, output_file, use_popups):
     try:
@@ -338,12 +599,18 @@ def create_pdf_from_pages(input_folder, input_files, output_folder, output_file,
 
 class LayerInfo:
     std_color = "#000000"
+    std_transparency = 0
 
     def __init__(self, layer_names: dict, layer_name: str, template: dict, frame_layer: str, popups: str):
         self.name: str = layer_name
         self.id: int = layer_names[layer_name]
         self.color_hex: str = template["layers"].get(layer_name, self.std_color)  # color as '#rrggbb' hex string
         self.with_frame: bool = layer_name == frame_layer
+
+        try:
+            self.transparency_value = int(template["layers_transparency"][layer_name])  # transparency as '0'-'100' string
+        except KeyError:
+            self.transparency_value = 0
 
         try:
             # Bool specifying if layer is negative
@@ -380,6 +647,11 @@ class LayerInfo:
         return self.color_hex != self.std_color
 
     @property
+    def has_transparency(self) -> bool:
+        """Checks if the layer transparency is not the standard value (=0%)."""
+        return self.transparency_value != self.std_transparency
+
+    @property
     def color_rgb(self) -> tuple[float, float, float]:
         """Return (red, green, blue) in float between 0-1."""
         value = self.color_hex.lstrip('#')
@@ -387,6 +659,12 @@ class LayerInfo:
         rgb = tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
         rgb = (rgb[0] / 255, rgb[1] / 255, rgb[2] / 255)
         return rgb
+
+    @property
+    def transparency(self) -> int:
+        """Return 0-100 in str."""
+        value = self.transparency_value
+        return value
 
     def __repr__(self):
         var_str = ', '.join(f"{key}: {value}" for key, value in vars(self).items())
@@ -398,6 +676,10 @@ class Template:
         self.name: str = name  # the template name
         self.mirrored: bool = template.get("mirrored", False)  # template is mirrored or not
         self.tented: bool = template.get("tented", False)  # template is tented or not
+        self.scale_or_crop: dict = { "scaling_method": template.get("scaling_method", "0"),
+                                     "crop_whitespace": template.get("crop_whitespace", "10"),
+                                     "scale_whitespace": template.get("scale_whitespace", "30"),
+                                     "scaling_factor": template.get("scaling_factor", "3.0") }
 
         frame_layer: str = template.get("frame", "")  # layer name of the frame layer
         popups: str = template.get("popups", "")  # setting saying if popups shall be taken from front, back or both
@@ -431,9 +713,10 @@ class Template:
 def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, create_svg, del_single_page_files,
                  dlg=None, **kwargs) -> bool:
     asy_file_extension = kwargs.pop('assembly_file_extension', '__Assembly')
-    layer_scale = kwargs.pop('layer_scale', 1.0)
     colorize_lib: str = kwargs.pop('colorize_lib', '')
     merge_lib: str = kwargs.pop('merge_lib', '')
+    page_info: str = kwargs.pop('page_info', '')
+    info_variable: str = kwargs.pop('info_variable', '')
 
     if dlg is None:
         use_pymupdf = has_pymupdf or create_svg
@@ -470,8 +753,22 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
         set_progress_status(100, "Failed to load PyMuPDF.")
         return False
 
+    if not has_pdfcropmargins:
+        # Check if any of the enabled templates uses pdfCropMargins
+        use_pdfcropmargins = False
+        for t in enabled_templates:
+            if t in templates:
+                if "scaling_method" in templates[t]:
+                    if templates[t]["scaling_method"] == "1" or templates[t]["scaling_method"] == "2":
+                        use_pdfcropmargins = True
+        if use_pdfcropmargins:
+            msg_box(
+                "pdfCropMargins wasn't loaded.\n\nSome of the Scale and Crop settings requires pdfCropMargins to be installed.\n\nMore information under Install dependencies in the Wiki at board2pdf.dennevi.com",
+                'Error', wx.OK | wx.ICON_ERROR)
+            set_progress_status(100, "Failed to load pdfCropMargins.")
+            return False
+
     colorize_pdf = colorize_pdf_pymupdf if pymupdf_pdf else colorize_pdf_pypdf
-    merge_pdf = merge_pdf_pymupdf if pymupdf_merge else merge_pdf_pypdf
 
     os.chdir(os.path.dirname(board.GetFileName()))
     output_dir = os.path.abspath(os.path.expanduser(os.path.expandvars(output_path)))
@@ -558,8 +855,21 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
     use_popups = False
     template_filelist = []
 
+    title_block = board.GetTitleBlock()
+    info_variable_int = int(info_variable)
+    if(info_variable_int>=1 and info_variable_int<=9):
+        previous_comment = title_block.GetComment(info_variable_int-1)
+    
     # Iterate over the templates
-    for template in templates_list:
+    for page_count, template in enumerate(templates_list):
+        #page_info = f"board2pdf: {template.name} -- {page_count + 1}/{len(templates_list)}"
+        #page_info = "Board2Pdf: ${template_name} -- ${page_nr}/${total_pages}"
+        page_info_tmp = page_info.replace("${template_name}", template.name)
+        page_info_tmp = page_info_tmp.replace("${page_nr}", str(page_count + 1))
+        page_info_tmp = page_info_tmp.replace("${total_pages}", str(len(templates_list)))
+        if(info_variable_int>=1 and info_variable_int<=9):
+            title_block.SetComment(info_variable_int-1, page_info_tmp)
+        board.SetTitleBlock(title_block)
         # msg_box("Now starting with template: " + template_name)
         # Plot layers to pdf files
         for layer_info in template.settings:
@@ -594,16 +904,15 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
                 plot_options.SetPlotReference(layer_info.reference_designator)
                 plot_options.SetMirror(template.mirrored)
                 plot_options.SetPlotViaOnMaskLayer(template.tented)
-                if int(pcbnew.Version()[0:1]) >= 8:
-                    if layer_scale == 1.0:
-                        plot_options.m_PDFFrontFPPropertyPopups = layer_info.front_popups
-                        plot_options.m_PDFBackFPPropertyPopups = layer_info.back_popups
-                    else:
-                        plot_options.m_PDFFrontFPPropertyPopups = False
-                        plot_options.m_PDFBackFPPropertyPopups = False
+                if int(pcbnew.Version()[0:1]) >= 8:                    
+                    plot_options.m_PDFFrontFPPropertyPopups = layer_info.front_popups
+                    plot_options.m_PDFBackFPPropertyPopups = layer_info.back_popups
 
                 plot_controller.SetLayer(layer_info.id)
-                plot_controller.OpenPlotfile(layer_info.name, pcbnew.PLOT_FORMAT_PDF, template.name)
+                if pcbnew.Version()[0:3] == "6.0":
+                    plot_controller.OpenPlotfile(layer_info.name, pcbnew.PLOT_FORMAT_PDF, template.name)
+                else:
+                    plot_controller.OpenPlotfile(layer_info.name, pcbnew.PLOT_FORMAT_PDF, "", template.name)
                 plot_controller.PlotLayer()
             except:
                 msg_box(traceback.format_exc(), 'Error', wx.OK | wx.ICON_ERROR)
@@ -613,17 +922,18 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
         plot_controller.ClosePlot()
 
         template_use_popups = False
+        frame_file = 'None'
         filelist = []
         # Change color of pdf files
         for layer_info in template.settings:
             ln = layer_info.name.replace('.', '_')
             input_file = f"{base_filename}-{ln}.pdf"
             output_file = f"{base_filename}-{ln}-colored.pdf"
-            if layer_info.has_color:
+            if layer_info.has_color or layer_info.has_transparency:
                 progress += progress_step
                 set_progress_status(progress, f"Coloring {layer_info.name} for template {template.name}")
 
-                if not colorize_pdf(temp_dir, input_file, output_file, layer_info.color_rgb):
+                if not colorize_pdf(temp_dir, input_file, output_file, layer_info.color_rgb, layer_info.transparency):
                     set_progress_status(100, f"Failed when coloring {layer_info.name} for template {template.name}")
                     return False
 
@@ -633,26 +943,31 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
 
             if layer_info.with_frame:
                 # the frame layer is scaled by 1.0, all others by `layer_scale`
+                
+                
+                #### Seems wrong to set frame_file to this!! We should be able to check which layer is chosen.
                 frame_file = filelist[-1]
-            else:
-                frame_file = 'None'
-            # Set template_use_popups to True if any layer has popups and no scaling
-            if layer_scale == 1.0:
-                template_use_popups = template_use_popups or layer_info.front_popups or layer_info.back_popups
+
+            # Set template_use_popups to True if any layer has popups
+            template_use_popups = template_use_popups or layer_info.front_popups or layer_info.back_popups
 
         # Merge pdf files
         progress += progress_step
         set_progress_status(progress, f"Merging all layers of template {template.name}")
 
         assembly_file = f"{base_filename}_{template.name}.pdf"
+        assembly_file = assembly_file.replace(' ', '_')
 
-        if not merge_pdf(temp_dir, filelist, output_dir, assembly_file, frame_file, layer_scale, template_use_popups, template.name):
+        if not merge_and_scale_pdf(temp_dir, filelist, output_dir, assembly_file, frame_file, template.scale_or_crop, template.name, pymupdf_merge):
             set_progress_status(100, "Failed when merging all layers of template " + template.name)
             return False
 
         template_filelist.append(assembly_file)
         # Set use_popups to True if any template has popups
         use_popups = use_popups or template_use_popups
+
+    if(info_variable_int>=1 and info_variable_int<=9):
+        title_block.SetComment(info_variable_int-1, previous_comment)
 
     # Add all generated pdfs to one file
     progress += progress_step
@@ -717,17 +1032,3 @@ def plot_pdfs(board, output_path, templates, enabled_templates, del_temp_files, 
     msg_box(endmsg, 'All done!', wx.OK)
     return True
 
-
-def cli(board_filepath: str, configfile: str, **kwargs) -> bool:
-    try:
-        from . import persistence
-    except ImportError:
-        import persistence
-
-
-    board = pcbnew.LoadBoard(board_filepath)
-    config = persistence.Persistence(configfile)
-    config_vars = config.load()
-    # note: cli parameters override config.ini values
-    config_vars.update(kwargs)
-    return plot_pdfs(board, **config_vars)
