@@ -2439,7 +2439,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2457,7 +2457,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2475,7 +2475,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2493,7 +2493,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3110,7 +3110,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 165.1) (xy 360.68 165.1)
+			(xy 340.36 165.1) (xy 369.57 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3267,6 +3267,16 @@
 			(type default)
 		)
 		(uuid "1ccc150a-0fc9-441a-a9b4-10e3ba6cc799")
+	)
+	(wire
+		(pts
+			(xy 369.57 165.1) (xy 369.57 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20e3cb3e-7fea-4050-a358-c56bc4a68cd7")
 	)
 	(wire
 		(pts
@@ -3460,7 +3470,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 160.02) (xy 360.68 160.02)
+			(xy 331.47 160.02) (xy 367.03 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3560,7 +3570,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 154.94) (xy 360.68 154.94)
+			(xy 322.58 154.94) (xy 367.03 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3590,6 +3600,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 158.75) (xy 372.11 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d760be2-3212-4152-8039-7e4fa7378e5d")
+	)
+	(wire
+		(pts
 			(xy 219.71 140.97) (xy 219.71 149.86)
 		)
 		(stroke
@@ -3600,7 +3620,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 149.86) (xy 360.68 149.86)
+			(xy 313.69 149.86) (xy 369.57 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3740,6 +3760,16 @@
 	)
 	(wire
 		(pts
+			(xy 369.57 149.86) (xy 369.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3b622e-8806-4ca9-821f-d206486404d2")
+	)
+	(wire
+		(pts
 			(xy 243.84 161.29) (xy 241.3 161.29)
 		)
 		(stroke
@@ -3790,16 +3820,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 44.45) (xy 142.24 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83b6b2ee-5b1e-4e99-af38-c4e0581d2fe3")
-	)
-	(wire
-		(pts
 			(xy 53.34 154.94) (xy 144.78 154.94)
 		)
 		(stroke
@@ -3847,16 +3867,6 @@
 			(type default)
 		)
 		(uuid "8946c186-f083-41e5-8fe7-2a3017a600bb")
-	)
-	(wire
-		(pts
-			(xy 127 49.53) (xy 142.24 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8beace7c-51a0-439c-b9e2-c87a5b6a0348")
 	)
 	(wire
 		(pts
@@ -4090,6 +4100,16 @@
 	)
 	(wire
 		(pts
+			(xy 369.57 153.67) (xy 372.11 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad26492a-8be6-49ec-aad9-897884e83967")
+	)
+	(wire
+		(pts
 			(xy 63.5 58.42) (xy 63.5 60.96)
 		)
 		(stroke
@@ -4107,6 +4127,16 @@
 			(type default)
 		)
 		(uuid "b3740397-05aa-42ae-9682-209b1cfbd470")
+	)
+	(wire
+		(pts
+			(xy 369.57 161.29) (xy 372.11 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b52c8ee8-6638-482c-9ef2-aed581b6294e")
 	)
 	(wire
 		(pts
@@ -4137,16 +4167,6 @@
 			(type default)
 		)
 		(uuid "bb26559b-6777-402b-baf3-fa13dea9a858")
-	)
-	(wire
-		(pts
-			(xy 127 52.07) (xy 142.24 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb451037-752e-415e-bee3-c232ad40f9da")
 	)
 	(wire
 		(pts
@@ -4320,6 +4340,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 156.21) (xy 372.11 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca9e5fa-76e5-48a8-8b98-52729ac74a23")
+	)
+	(wire
+		(pts
 			(xy 76.2 137.16) (xy 76.2 139.7)
 		)
 		(stroke
@@ -4420,16 +4450,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 46.99) (xy 142.24 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7a8a1ca-16d5-4174-829e-a379cab6a4f7")
-	)
-	(wire
-		(pts
 			(xy 243.84 144.78) (xy 243.84 149.86)
 		)
 		(stroke
@@ -4437,6 +4457,16 @@
 			(type default)
 		)
 		(uuid "e7d37d8b-fe8e-4b49-b0a6-ebb31ac1fe9e")
+	)
+	(wire
+		(pts
+			(xy 367.03 160.02) (xy 367.03 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9dae964-24a7-4e29-ab59-f8353307d5aa")
 	)
 	(wire
 		(pts
@@ -4457,6 +4487,16 @@
 			(type default)
 		)
 		(uuid "ed9b8c30-e149-4f26-917c-7cd128dacee8")
+	)
+	(wire
+		(pts
+			(xy 367.03 154.94) (xy 367.03 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff22a93-a155-423d-a73e-ddd1b227e3df")
 	)
 	(wire
 		(pts
@@ -4519,32 +4559,6 @@
 			(type none)
 		)
 		(uuid 1f5ed5fc-f24f-4c54-9db3-8341490915ec)
-	)
-	(rectangle
-		(start 109.22 24.13)
-		(end 170.18 68.58)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid fff36be9-3d48-426b-99e7-1a4b0cf29a2a)
-	)
-	(text "Motor connector"
-		(exclude_from_sim no)
-		(at 131.064 28.956 0)
-		(effects
-			(font
-				(face "KiCad Font")
-				(size 3.048 3.048)
-				(thickness 0.254)
-				(bold yes)
-				(color 29 232 255 1)
-			)
-		)
-		(uuid "3193968d-4301-4849-b242-311c8b8638f7")
 	)
 	(text "TMC_STDY controls VCC_IO power state"
 		(exclude_from_sim no)
@@ -4640,17 +4654,6 @@
 		(uuid "499032b5-d4b7-4747-bbe3-24ed9296da30")
 	)
 	(label "OA2_OUT"
-		(at 127 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6341db1f-5c49-4592-b9f4-0494be76cd83")
-	)
-	(label "OA2_OUT"
 		(at 358.14 154.94 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4693,17 +4696,6 @@
 			(justify left bottom)
 		)
 		(uuid "7cdb43fc-064c-411e-96c2-1e35985e3e8b")
-	)
-	(label "OB1_OUT"
-		(at 127 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8fd24ecf-bc39-4114-aed0-683ce2e6e486")
 	)
 	(label "TMC_VCC_IO"
 		(at 78.74 45.72 0)
@@ -4782,28 +4774,6 @@
 		)
 		(uuid "dc8697e7-8d79-4f0c-aedf-32c6a96ef2d8")
 	)
-	(label "OB2_OUT"
-		(at 127 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e3e5ce9d-a4fd-44fe-beb9-d418bfa5d595")
-	)
-	(label "OA1_OUT"
-		(at 127 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ea8afbff-516b-4fec-9b8f-2c7b827fdc25")
-	)
 	(label "TMC_MS1{slash}AD0"
 		(at 124.46 168.91 0)
 		(fields_autoplaced yes)
@@ -4861,29 +4831,6 @@
 			)
 		)
 	)
-	(global_label "OA2_OUT"
-		(shape output)
-		(at 360.68 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 132 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "59940823-0995-4c73-94e6-e94b5ef1fd52")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.89 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "TMC_DIAG"
 		(shape output)
 		(at 139.7 182.88 180)
@@ -4907,29 +4854,6 @@
 			)
 		)
 	)
-	(global_label "OB2_OUT"
-		(shape output)
-		(at 360.68 165.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 132 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "75c2fd63-d00b-4643-8f83-73dbebc17556")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 372.0714 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "OB2"
 		(shape output)
 		(at 242.57 184.15 0)
@@ -4944,29 +4868,6 @@
 		(uuid "80c981ec-85f2-4abd-936c-e00073665c87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 249.3652 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "OA1_OUT"
-		(shape output)
-		(at 360.68 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 132 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "87a9d722-c3b2-42b6-8b4e-7233dfa82c83")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 371.89 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5059,29 +4960,6 @@
 		(uuid "c82e2b69-e678-43e8-843e-bf93f1045f72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 227.5938 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "OB1_OUT"
-		(shape output)
-		(at 360.68 160.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 132 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "dc9c00c8-3ae0-4ef7-97a1-6b82f03b298a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 372.0714 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9594,7 +9472,7 @@
 	)
 	(symbol
 		(lib_id "my_parts:AST250404")
-		(at 142.24 44.45 0)
+		(at 372.11 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9603,7 +9481,7 @@
 		(fields_autoplaced yes)
 		(uuid "7877e12c-1479-45ca-8629-107c911f6bed")
 		(property "Reference" "J4"
-			(at 151.13 47.6249 0)
+			(at 381 156.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9612,7 +9490,7 @@
 			)
 		)
 		(property "Value" "AST250404"
-			(at 151.13 49.53 0)
+			(at 381 158.75 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -9621,7 +9499,7 @@
 			)
 		)
 		(property "Footprint" "my_parts:AST250404"
-			(at 170.434 68.326 0)
+			(at 400.304 177.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9630,7 +9508,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
-			(at 147.574 59.436 0)
+			(at 377.444 168.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9639,7 +9517,7 @@
 			)
 		)
 		(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
-			(at 146.05 64.262 0)
+			(at 375.92 173.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9648,7 +9526,7 @@
 			)
 		)
 		(property "Manufacturer" "METZ-CONNECTOR"
-			(at 135.636 68.326 0)
+			(at 365.506 177.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9657,7 +9535,7 @@
 			)
 		)
 		(property "MPN" "AST250404"
-			(at 151.892 68.326 0)
+			(at 381.762 177.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9665,16 +9543,16 @@
 				(hide yes)
 			)
 		)
-		(pin ""
+		(pin "3"
 			(uuid "e8f9bd95-cfe5-496b-bcce-47e75f1846e7")
 		)
-		(pin ""
+		(pin "4"
 			(uuid "c21bc97a-e1b7-4322-bc36-5b33a467bcd7")
 		)
-		(pin ""
+		(pin "1"
 			(uuid "1ab833c7-a0cf-4036-8ea7-99e78f5044c0")
 		)
-		(pin ""
+		(pin "2"
 			(uuid "d5092483-eb57-4c1f-ae1a-a9998f4d9f00")
 		)
 		(instances

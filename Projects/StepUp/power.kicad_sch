@@ -15882,7 +15882,7 @@
 		(at 156.21 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "660b43ae-9c14-4347-8fa5-80704cc23b4c")
@@ -17555,7 +17555,7 @@
 				)
 			)
 		)
-		(property "Value" "BQ297xy"
+		(property "Value" "BQ2970"
 			(at 332.74 214.122 0)
 			(effects
 				(font
@@ -17590,7 +17590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" ""
+		(property "MPN" "BQ2970"
 			(at 327.66 204.47 0)
 			(effects
 				(font
@@ -17599,88 +17599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Colour" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 327.66 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
+		(property "Manufacturer" "Ti"
 			(at 327.66 204.47 0)
 			(effects
 				(font
@@ -19471,7 +19390,7 @@
 		(at 251.46 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -21135,7 +21054,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 54.61 214.122 90)
 			(effects
 				(font
@@ -21335,7 +21254,7 @@
 		(at 156.21 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "c6050525-014f-4bc1-a3c5-21c04dda5671")
