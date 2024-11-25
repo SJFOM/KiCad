@@ -744,22 +744,22 @@
 		(uuid "44cf1fef-ee61-49e4-a050-bdd30431cf02")
 	)
 	(junction
+		(at 123.19 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66b30b37-6505-42e0-85b3-78f5062d73e1")
+	)
+	(junction
 		(at 125.73 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "610faaf5-fa93-4c18-8dd5-b5ec71fc695e")
+		(uuid "d9bbbda1-ae93-434c-87a5-3669b77ae623")
 	)
 	(junction
 		(at 114.3 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6e7a173-66a5-4e0d-a79b-57ac40ef1af4")
-	)
-	(junction
-		(at 123.19 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e939f31b-0ac1-46bb-b142-66ceb9b1e916")
 	)
 	(no_connect
 		(at 158.75 104.14)
@@ -809,6 +809,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 104.14) (xy 128.27 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2912808a-1bc0-4e23-859b-d6a5b9a2005f")
+	)
+	(wire
+		(pts
 			(xy 138.43 80.01) (xy 140.97 80.01)
 		)
 		(stroke
@@ -829,7 +839,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 96.52) (xy 123.19 99.06)
+			(xy 123.19 96.52) (xy 123.19 104.14)
 		)
 		(stroke
 			(width 0)
@@ -849,16 +859,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 91.44) (xy 125.73 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63ba3719-bc38-447b-bba8-e27c12c0de8d")
-	)
-	(wire
-		(pts
 			(xy 125.73 80.01) (xy 125.73 77.47)
 		)
 		(stroke
@@ -866,6 +866,16 @@
 			(type default)
 		)
 		(uuid "64b09186-1a47-40c9-8d59-7c8a44dce7c6")
+	)
+	(wire
+		(pts
+			(xy 125.73 99.06) (xy 128.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d6bbfc-4b70-41a8-bf05-9698ec4b814c")
 	)
 	(wire
 		(pts
@@ -899,16 +909,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 128.27 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74c44a13-52ca-49f9-802a-1817bbea410c")
-	)
-	(wire
-		(pts
 			(xy 168.91 91.44) (xy 168.91 118.11)
 		)
 		(stroke
@@ -926,6 +926,16 @@
 			(type default)
 		)
 		(uuid "971f6658-4eef-47dd-8d5d-39161a8f7314")
+	)
+	(wire
+		(pts
+			(xy 125.73 91.44) (xy 125.73 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a709080b-eaa5-4351-8d2b-f2a6ab095237")
 	)
 	(wire
 		(pts
@@ -969,23 +979,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 123.19 110.49)
+			(xy 123.19 104.14) (xy 123.19 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1a36e61-a8e9-427b-8101-539eaee48d81")
-	)
-	(wire
-		(pts
-			(xy 125.73 104.14) (xy 128.27 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db6bf79a-e8c7-4c18-a117-d616e0e0c365")
+		(uuid "cf9147cb-bb98-41f7-b62d-f4a5aa2e9606")
 	)
 	(wire
 		(pts
@@ -1048,6 +1048,18 @@
 			(type none)
 		)
 		(uuid 0533614f-f487-48be-8a94-94f8fb448a1f)
+	)
+	(rectangle
+		(start 156.845 69.85)
+		(end 233.045 83.82)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid aff61454-009c-4e8d-8b9d-0391e5e99830)
 	)
 	(image
 		(at 205.74 110.49)
@@ -1461,6 +1473,29 @@
 			"RERERAwMiIiIiIiIgQEREREREdkxMCAiIiIiIgYGRERERETEwICIiIiIiOwYGBAREREREQMDIiIi"
 			"IiJiYEBERERERHYMDIiIiIiIiIEBERERERExMCAiIiIiIhH5P6/Y9CjKHXtVAAAAAElFTkSuQmCC"
 		)
+	)
+	(text "Wiper value"
+		(exclude_from_sim no)
+		(at 163.576 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 255 1)
+			)
+		)
+		(uuid "6195da2e-d530-4756-8011-5f655d8ceaf9")
+	)
+	(text "Pins 1&2, resistance goes down as wiper moved in that direction\nE.g.: If joystick has pin 1 = 3v3 and pin 3 = GND, pin 2 voltage\nincreases as josytick moved to pin 1, decreases as moved to pin 3"
+		(exclude_from_sim no)
+		(at 159.385 77.724 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "792cc78b-0c2a-4e6e-b213-b3b77d69ebea")
 	)
 	(text "Joystick"
 		(exclude_from_sim no)

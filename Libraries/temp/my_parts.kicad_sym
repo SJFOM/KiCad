@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "AST250404"
-			(at 5.588 -10.922 0)
+			(at 6.604 -18.796 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "my_parts:AST250404"
-			(at 28.194 -23.876 0)
+			(at 27.94 -37.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
-			(at 5.334 -14.986 0)
+			(at 5.08 -28.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
-			(at 3.81 -19.812 0)
+			(at 3.556 -33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,7 +50,7 @@
 			)
 		)
 		(property "Manufacturer" "METZ-CONNECTOR"
-			(at -6.604 -23.876 0)
+			(at -6.858 -37.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59,7 +59,7 @@
 			)
 		)
 		(property "MPN" "AST250404"
-			(at 9.652 -23.876 0)
+			(at 9.398 -37.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70,7 +70,7 @@
 		(symbol "AST250404_0_1"
 			(rectangle
 				(start 2.54 1.905)
-				(end 8.255 -9.525)
+				(end 10.795 -17.145)
 				(stroke
 					(width 0)
 					(type default)
@@ -100,7 +100,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -2.54 0)
+				(at 0 -5.08 0)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -118,7 +118,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -5.08 0)
+				(at 0 -10.16 0)
 				(length 2.54)
 				(name "3"
 					(effects
@@ -136,7 +136,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -7.62 0)
+				(at 0 -15.24 0)
 				(length 2.54)
 				(name "4"
 					(effects

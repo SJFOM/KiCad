@@ -2363,7 +2363,7 @@
 				)
 			)
 			(property "Value" "AST250404"
-				(at 5.588 -10.922 0)
+				(at 6.604 -18.796 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -2371,7 +2371,7 @@
 				)
 			)
 			(property "Footprint" "my_parts:AST250404"
-				(at 28.194 -23.876 0)
+				(at 27.94 -37.338 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2380,7 +2380,7 @@
 				)
 			)
 			(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
-				(at 5.334 -14.986 0)
+				(at 5.08 -28.448 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2389,7 +2389,7 @@
 				)
 			)
 			(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
-				(at 3.81 -19.812 0)
+				(at 3.556 -33.274 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2398,7 +2398,7 @@
 				)
 			)
 			(property "Manufacturer" "METZ-CONNECTOR"
-				(at -6.604 -23.876 0)
+				(at -6.858 -37.338 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2407,7 +2407,7 @@
 				)
 			)
 			(property "MPN" "AST250404"
-				(at 9.652 -23.876 0)
+				(at 9.398 -37.338 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2418,7 +2418,7 @@
 			(symbol "AST250404_0_1"
 				(rectangle
 					(start 2.54 1.905)
-					(end 8.255 -9.525)
+					(end 10.795 -17.145)
 					(stroke
 						(width 0)
 						(type default)
@@ -2448,7 +2448,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 0)
+					(at 0 -5.08 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -2466,7 +2466,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 0)
+					(at 0 -10.16 0)
 					(length 2.54)
 					(name "3"
 						(effects
@@ -2484,7 +2484,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -7.62 0)
+					(at 0 -15.24 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -3110,7 +3110,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 165.1) (xy 369.57 165.1)
+			(xy 340.36 165.1) (xy 361.95 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3267,16 +3267,6 @@
 			(type default)
 		)
 		(uuid "1ccc150a-0fc9-441a-a9b4-10e3ba6cc799")
-	)
-	(wire
-		(pts
-			(xy 369.57 165.1) (xy 369.57 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20e3cb3e-7fea-4050-a358-c56bc4a68cd7")
 	)
 	(wire
 		(pts
@@ -3470,7 +3460,7 @@
 	)
 	(wire
 		(pts
-			(xy 331.47 160.02) (xy 367.03 160.02)
+			(xy 331.47 160.02) (xy 361.95 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3550,6 +3540,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 43.18) (xy 137.16 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "555dc05d-bc31-446f-b7bd-fcd7f97a6613")
+	)
+	(wire
+		(pts
 			(xy 50.8 68.58) (xy 55.88 68.58)
 		)
 		(stroke
@@ -3570,7 +3570,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 154.94) (xy 367.03 154.94)
+			(xy 322.58 154.94) (xy 361.95 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3600,16 +3600,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 158.75) (xy 372.11 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d760be2-3212-4152-8039-7e4fa7378e5d")
-	)
-	(wire
-		(pts
 			(xy 219.71 140.97) (xy 219.71 149.86)
 		)
 		(stroke
@@ -3620,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 149.86) (xy 369.57 149.86)
+			(xy 313.69 149.86) (xy 361.95 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3667,6 +3657,16 @@
 			(type default)
 		)
 		(uuid "6bb2dac3-ccea-46b1-b277-a8ba5314f700")
+	)
+	(wire
+		(pts
+			(xy 124.46 53.34) (xy 137.16 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cc2b8c8-0695-43f7-abe9-d3222d275e8c")
 	)
 	(wire
 		(pts
@@ -3757,16 +3757,6 @@
 			(type default)
 		)
 		(uuid "79af4232-56a2-465e-aa78-e10adf6e8a05")
-	)
-	(wire
-		(pts
-			(xy 369.57 149.86) (xy 369.57 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a3b622e-8806-4ca9-821f-d206486404d2")
 	)
 	(wire
 		(pts
@@ -4100,16 +4090,6 @@
 	)
 	(wire
 		(pts
-			(xy 369.57 153.67) (xy 372.11 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad26492a-8be6-49ec-aad9-897884e83967")
-	)
-	(wire
-		(pts
 			(xy 63.5 58.42) (xy 63.5 60.96)
 		)
 		(stroke
@@ -4127,16 +4107,6 @@
 			(type default)
 		)
 		(uuid "b3740397-05aa-42ae-9682-209b1cfbd470")
-	)
-	(wire
-		(pts
-			(xy 369.57 161.29) (xy 372.11 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b52c8ee8-6638-482c-9ef2-aed581b6294e")
 	)
 	(wire
 		(pts
@@ -4167,6 +4137,16 @@
 			(type default)
 		)
 		(uuid "bb26559b-6777-402b-baf3-fa13dea9a858")
+	)
+	(wire
+		(pts
+			(xy 124.46 48.26) (xy 137.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be4e9265-4b81-4270-857e-6fd6bb23f9b4")
 	)
 	(wire
 		(pts
@@ -4340,16 +4320,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 156.21) (xy 372.11 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dca9e5fa-76e5-48a8-8b98-52729ac74a23")
-	)
-	(wire
-		(pts
 			(xy 76.2 137.16) (xy 76.2 139.7)
 		)
 		(stroke
@@ -4430,6 +4400,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 58.42) (xy 137.16 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e28f9f43-f99a-4398-b49b-b5204038b922")
+	)
+	(wire
+		(pts
 			(xy 49.53 68.58) (xy 50.8 68.58)
 		)
 		(stroke
@@ -4460,16 +4440,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 160.02) (xy 367.03 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9dae964-24a7-4e29-ab59-f8353307d5aa")
-	)
-	(wire
-		(pts
 			(xy 322.58 129.54) (xy 322.58 134.62)
 		)
 		(stroke
@@ -4487,16 +4457,6 @@
 			(type default)
 		)
 		(uuid "ed9b8c30-e149-4f26-917c-7cd128dacee8")
-	)
-	(wire
-		(pts
-			(xy 367.03 154.94) (xy 367.03 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eff22a93-a155-423d-a73e-ddd1b227e3df")
 	)
 	(wire
 		(pts
@@ -4560,6 +4520,18 @@
 		)
 		(uuid 1f5ed5fc-f24f-4c54-9db3-8341490915ec)
 	)
+	(rectangle
+		(start 107.95 22.86)
+		(end 163.83 71.755)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f25ca206-d987-48dc-ab09-5be376654272)
+	)
 	(text "TMC_STDY controls VCC_IO power state"
 		(exclude_from_sim no)
 		(at 47.244 34.798 0)
@@ -4586,6 +4558,20 @@
 			)
 		)
 		(uuid "4d688ef7-48f5-4fae-b359-17928bd936ca")
+	)
+	(text "Motor connector"
+		(exclude_from_sim no)
+		(at 130.048 29.464 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 3.048 3.048)
+				(thickness 0.254)
+				(bold yes)
+				(color 29 232 255 1)
+			)
+		)
+		(uuid "a45a3389-71c3-49a7-925f-dd6ec61a1f9a")
 	)
 	(label "BRB"
 		(at 208.28 170.18 0)
@@ -4620,8 +4606,19 @@
 		)
 		(uuid "19d416e3-1a92-4f60-8972-b3ebef2d4c4f")
 	)
-	(label "OA1_OUT"
-		(at 358.14 149.86 180)
+	(label "OB2_OUT"
+		(at 124.46 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "309c1908-b035-4181-ba81-45e46c71c599")
+	)
+	(label "OB1_OUT"
+		(at 361.95 160.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4629,7 +4626,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "22b4e24a-34e8-4149-aac1-97cdab26b4f2")
+		(uuid "3f6dbb15-106e-4ba3-9770-10a5de8d9ec9")
 	)
 	(label "TMC_DIR"
 		(at 124.46 162.56 0)
@@ -4642,6 +4639,17 @@
 		)
 		(uuid "414e6e8b-248c-47ce-b042-0a9fc0a346d9")
 	)
+	(label "OA2_OUT"
+		(at 124.46 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45a73e70-ae55-488a-8cc3-e3af542ce8c4")
+	)
 	(label "TMC_MS2{slash}AD1"
 		(at 124.46 171.45 0)
 		(fields_autoplaced yes)
@@ -4652,17 +4660,6 @@
 			(justify left bottom)
 		)
 		(uuid "499032b5-d4b7-4747-bbe3-24ed9296da30")
-	)
-	(label "OA2_OUT"
-		(at 358.14 154.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6732e504-8b40-4bb4-8658-1ce1d8ef6e02")
 	)
 	(label "OB1"
 		(at 208.28 161.29 0)
@@ -4697,6 +4694,17 @@
 		)
 		(uuid "7cdb43fc-064c-411e-96c2-1e35985e3e8b")
 	)
+	(label "OA1_OUT"
+		(at 361.95 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d292dfa-eb4e-48cc-9e2f-62bac985846c")
+	)
 	(label "TMC_VCC_IO"
 		(at 78.74 45.72 0)
 		(fields_autoplaced yes)
@@ -4707,6 +4715,28 @@
 			(justify left bottom)
 		)
 		(uuid "90aba1a3-6822-4e23-932e-109b8dc070a1")
+	)
+	(label "OB1_OUT"
+		(at 124.46 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "984129d0-8bb1-48e1-9c64-ae90f2ec30fe")
+	)
+	(label "OB2_OUT"
+		(at 361.95 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f576aa1-0868-412b-a9f9-838d9b89804f")
 	)
 	(label "TMC_VCC_IO"
 		(at 124.46 180.34 0)
@@ -4741,27 +4771,16 @@
 		)
 		(uuid "a392cbb0-d340-4669-a4e8-bb58baa8a3c5")
 	)
-	(label "OB2_OUT"
-		(at 358.14 165.1 180)
+	(label "OA1_OUT"
+		(at 124.46 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "a3b80590-5dc0-498b-bf1c-d1a31d2ea793")
-	)
-	(label "OB1_OUT"
-		(at 358.14 160.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c3ab24bc-687b-41d1-8ed8-cd3910ddc901")
+		(uuid "af761676-f5f9-4b8b-91c1-235de9e9ff1f")
 	)
 	(label "OB2"
 		(at 208.28 163.83 0)
@@ -4773,6 +4792,17 @@
 			(justify left bottom)
 		)
 		(uuid "dc8697e7-8d79-4f0c-aedf-32c6a96ef2d8")
+	)
+	(label "OA2_OUT"
+		(at 361.95 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f3e9df6f-3bd4-4083-9b4c-7538076c51dc")
 	)
 	(label "TMC_MS1{slash}AD0"
 		(at 124.46 168.91 0)
@@ -6271,6 +6301,99 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
 					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "my_parts:AST250404")
+		(at 137.16 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18ad35cc-7e25-4c83-b0d6-bf79dfc045ea")
+		(property "Reference" "J4"
+			(at 142.748 40.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AST250404"
+			(at 140.462 61.468 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "my_parts:AST250404"
+			(at 165.354 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
+			(at 142.494 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
+			(at 140.97 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "METZ-CONNECTOR"
+			(at 130.556 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AST250404"
+			(at 146.812 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b8f3a437-3e65-41be-8d87-8492b8d544b2")
+		)
+		(pin "4"
+			(uuid "36cebd36-bdec-4477-a5df-60c9c7f8c7fd")
+		)
+		(pin "1"
+			(uuid "17624511-aedb-46ae-b713-294dca2acfdb")
+		)
+		(pin "2"
+			(uuid "56fdc979-2256-4f49-a89c-c9e2ffc93edc")
+		)
+		(instances
+			(project "StepUp"
+				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -9465,100 +9588,6 @@
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
 					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "my_parts:AST250404")
-		(at 372.11 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7877e12c-1479-45ca-8629-107c911f6bed")
-		(property "Reference" "J4"
-			(at 381 156.8449 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AST250404"
-			(at 381 158.75 0)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "my_parts:AST250404"
-			(at 400.304 177.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://media.metz-connect.com/index.php?itno=AST025&type=datasheet&language=en"
-			(at 377.444 168.656 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Wire-To-Board Terminal Block, 5 mm, 4 Ways, 28 AWG, 14 AWG, 1 mm², Push In Lock"
-			(at 375.92 173.482 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "METZ-CONNECTOR"
-			(at 365.506 177.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AST250404"
-			(at 381.762 177.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e8f9bd95-cfe5-496b-bcce-47e75f1846e7")
-		)
-		(pin "4"
-			(uuid "c21bc97a-e1b7-4322-bc36-5b33a467bcd7")
-		)
-		(pin "1"
-			(uuid "1ab833c7-a0cf-4036-8ea7-99e78f5044c0")
-		)
-		(pin "2"
-			(uuid "d5092483-eb57-4c1f-ae1a-a9998f4d9f00")
-		)
-		(instances
-			(project ""
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/f5cf6bff-0c76-4311-a1f3-856e1fd3b2e7"
-					(reference "J4")
 					(unit 1)
 				)
 			)
