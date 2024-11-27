@@ -7229,7 +7229,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 135.89) (xy 125.73 135.89)
+			(xy 106.68 135.89) (xy 135.89 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7427,16 +7427,6 @@
 			(type default)
 		)
 		(uuid "e0c3b9a7-1306-478e-958d-a54f98db88ab")
-	)
-	(wire
-		(pts
-			(xy 125.73 130.81) (xy 125.73 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e11ef9f8-f382-4863-b735-43730865aca5")
 	)
 	(wire
 		(pts
@@ -8512,6 +8502,17 @@
 		)
 		(uuid "6f415a30-7304-494e-8522-3b2c6b3d581d")
 	)
+	(label "VBAT_PACK_POS"
+		(at 135.89 135.89 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6fad094a-49a3-47ae-82bc-49eff2a3d39b")
+	)
 	(label "VBAT_PACK_NEG"
 		(at 190.5 62.23 180)
 		(fields_autoplaced yes)
@@ -8759,71 +8760,6 @@
 				)
 				(justify right)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 125.73 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00183845-ea74-4dac-8b3a-9b589d70cdbc")
-		(property "Reference" "#PWR069"
-			(at 125.73 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Vbat"
-			(at 126.111 126.4158 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 125.73 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46a6cfab-5cfe-4eea-9339-4802329e3a97")
-		)
-		(instances
-			(project "StepUp"
-				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee"
-					(reference "#PWR069")
-					(unit 1)
-				)
 			)
 		)
 	)
