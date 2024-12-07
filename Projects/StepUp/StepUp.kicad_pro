@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.7018,
+          "width": 1.7018
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -59,10 +59,13 @@
         }
       ],
       "drc_exclusions": [
-        "hole_clearance|105592000|97305000|6167e7f3-61e1-47b9-909a-2544dd391fa9|6b354031-faee-42f2-b322-4d927e26698f",
-        "hole_clearance|105592000|97305000|813080ad-461f-4dff-a079-ad1524a1f3a3|6b354031-faee-42f2-b322-4d927e26698f",
-        "hole_clearance|111692000|97305000|2bfed739-587d-4b0b-9e97-cc683d620329|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db",
-        "hole_clearance|111692000|97305000|6a59458c-2dde-4cc4-a1db-cb8a2edc6b66|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db"
+        "hole_clearance|79008000|123375000|6b354031-faee-42f2-b322-4d927e26698f|6167e7f3-61e1-47b9-909a-2544dd391fa9",
+        "hole_clearance|79008000|123375000|6b354031-faee-42f2-b322-4d927e26698f|813080ad-461f-4dff-a079-ad1524a1f3a3",
+        "hole_clearance|85108000|123375000|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db|2bfed739-587d-4b0b-9e97-cc683d620329",
+        "hole_clearance|85108000|123375000|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db|6a59458c-2dde-4cc4-a1db-cb8a2edc6b66",
+        "solder_mask_bridge|108840432|82367582|6d7a5b99-1abc-4a69-abc5-d1df8320b3cb|f92b6df6-8c9e-4021-81a0-382237485e78",
+        "solder_mask_bridge|58740432|119517582|4d175480-4e04-4edf-a8a7-c8500877ba71|f92b6df6-8c9e-4021-81a0-382237485e78",
+        "solder_mask_bridge|80434712|56598395|4d79c74c-7109-446b-8028-f0a6931f088a|f92b6df6-8c9e-4021-81a0-382237485e78"
       ],
       "meta": {
         "version": 2
@@ -102,8 +105,8 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -130,9 +133,9 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.1,
-        "min_text_height": 0.8,
+        "min_text_height": 0.5,
         "min_text_thickness": 0.15,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.4,
@@ -225,7 +228,19 @@
           "drill": 0.0
         },
         {
+          "diameter": 0.6,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.25
+        },
+        {
           "diameter": 0.61,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
           "drill": 0.3
         }
       ],
@@ -479,8 +494,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.61,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -496,8 +511,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 2.0,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.61,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -513,8 +528,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 1.0,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.61,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -530,8 +545,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.1524,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.61,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -560,6 +575,10 @@
       {
         "netclass": "MOTOR_OUTPUTS",
         "pattern": "OB*"
+      },
+      {
+        "netclass": "HIGH_POWER",
+        "pattern": "/Power/VBAT_PACK_NEG"
       }
     ]
   },
@@ -778,7 +797,7 @@
           "group_by": false,
           "label": "Package",
           "name": "Package",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -838,7 +857,7 @@
           "group_by": false,
           "label": "Dielectric",
           "name": "Dielectric",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,

@@ -37,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -49,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +63,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -1258,29 +1261,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "ffc9a797-eb3f-49cf-b398-4a5e7a94eaa6")
-	)
-	(fp_text user "*"
-		(at -2.533599 -1 0)
-		(layer "F.SilkS")
-		(uuid "18e46664-fcc9-463f-9da1-9616960dabac")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "*"
-		(at -2.533599 -1 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "ef16529c-90f6-4765-a5e9-3fc1f088cbfb")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
 	)
 	(fp_text user "*"
 		(at -1.0414 -1 0)

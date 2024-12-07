@@ -95,4 +95,10 @@ D Standard LEDs - SMD Red LED
 K
 F http://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Side%20View/IN-S63AS%20Series_V1.0.pdf
 $ENDCMP
+#
+$CMP WP154A4SUREQBFZGW
+D Standard LEDs - Through Hole 5MM FULL COLOR LED
+K
+F https://www.kingbrightusa.com/images/catalog/spec/WP154A4SUREQBFZGW.pdf
+$ENDCMP
 #End Doc Library
