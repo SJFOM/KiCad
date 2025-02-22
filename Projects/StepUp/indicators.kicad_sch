@@ -2143,7 +2143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05397c3f-b539-4728-81c0-2c3f97391bcd")
-		(property "Reference" "R54"
+		(property "Reference" "R53"
 			(at 185.42 113.284 90)
 			(effects
 				(font
@@ -2187,12 +2187,11 @@
 			)
 		)
 		(property "Tolerance" "0.5%"
-			(at 187.96 113.03 0)
+			(at 187.96 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Type" "SMD"
@@ -2357,7 +2356,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R54")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -2894,7 +2893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e4b4bdf-0976-4126-b393-41dcb18fb6a1")
-		(property "Reference" "R50"
+		(property "Reference" "R48"
 			(at 72.39 97.79 90)
 			(effects
 				(font
@@ -2956,12 +2955,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 77.47 99.06 0)
+			(at 77.47 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MPN" "RC0603FR-07120RL"
@@ -3108,7 +3106,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R50")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -3124,7 +3122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d728d25-8e28-435e-8e9a-11db56ed32ae")
-		(property "Reference" "R52"
+		(property "Reference" "R51"
 			(at 72.39 115.57 90)
 			(effects
 				(font
@@ -3186,12 +3184,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 77.47 116.84 0)
+			(at 77.47 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MPN" "RC0603FR-0722RL"
@@ -3338,7 +3335,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R52")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -3418,7 +3415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a04f026-4a75-43b5-9bb9-dc86fae1155f")
-		(property "Reference" "R55"
+		(property "Reference" "R54"
 			(at 198.12 89.154 90)
 			(effects
 				(font
@@ -3462,12 +3459,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 200.66 88.9 0)
+			(at 200.66 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Type" "SMD"
@@ -3632,7 +3628,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R55")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -3647,7 +3643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "898b2e6d-0132-41de-aac6-5872f59be075")
-		(property "Reference" "R53"
+		(property "Reference" "R52"
 			(at 181.356 104.14 90)
 			(effects
 				(font
@@ -3691,12 +3687,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 181.61 106.68 0)
+			(at 181.61 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Type" "SMD"
@@ -3861,7 +3856,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R53")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -3877,7 +3872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98c12c0d-18f8-4b6f-bc83-97387d7de618")
-		(property "Reference" "R51"
+		(property "Reference" "R49"
 			(at 72.39 103.886 90)
 			(effects
 				(font
@@ -3939,12 +3934,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 77.47 105.41 0)
+			(at 77.47 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MPN" "RC0603FR-07120RL"
@@ -4091,7 +4085,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R51")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -4447,7 +4441,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa70d85f-a8b8-4435-a90b-c429e59c4b3b")
-		(property "Reference" "R56"
+		(property "Reference" "R50"
 			(at 72.39 109.22 90)
 			(effects
 				(font
@@ -4509,12 +4503,11 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 77.47 110.49 0)
+			(at 77.47 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MPN" "RC0603FR-07120RL"
@@ -4661,7 +4654,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R56")
+					(reference "R50")
 					(unit 1)
 				)
 			)

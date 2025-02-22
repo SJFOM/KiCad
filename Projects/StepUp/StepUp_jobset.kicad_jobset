@@ -9,7 +9,9 @@
         "description": "",
         "exclude_dnp": false,
         "field_delimiter": "",
-        "fields_group_by": [],
+        "fields_group_by": [
+          "Value"
+        ],
         "fields_labels": [
           "Reference",
           "Value",
@@ -36,14 +38,14 @@
           "MAXIMUM_PACKAGE_HEIGHT",
           "MF",
           "MP",
-          "MPN",
-          "Manufacturer",
           "Manufacturer_Name",
           "Manufacturer_Part_Number",
           "Mouser Part Number",
           "Mouser Price/Stock",
           "PARTREV",
           "Package",
+          "Manufacturer",
+          "MPN",
           "Power",
           "Price",
           "Purchase-URL",
@@ -57,12 +59,12 @@
           "Vrwm"
         ],
         "fields_ordered": [
-          "__Reference",
-          "__Value",
+          "Reference",
+          "Value",
           "__Footprint",
           "__Datasheet",
           "__Description",
-          "__${QUANTITY}",
+          "${QUANTITY}",
           "__${ITEM_NUMBER}",
           "__Arrow Part Number",
           "__Arrow Price/Stock",
@@ -82,14 +84,14 @@
           "__MAXIMUM_PACKAGE_HEIGHT",
           "__MF",
           "__MP",
-          "__MPN",
-          "__Manufacturer",
           "__Manufacturer_Name",
           "__Manufacturer_Part_Number",
           "__Mouser Part Number",
           "__Mouser Price/Stock",
           "__PARTREV",
-          "__Package",
+          "Package",
+          "Manufacturer",
+          "MPN",
           "__Power",
           "__Price",
           "__Purchase-URL",
@@ -106,7 +108,7 @@
         "include_excluded_from_bom": false,
         "keep_line_breaks": false,
         "keep_tabs": false,
-        "output_filename": "Outputs\\BoM\\StepUp.csv",
+        "output_filename": "Outputs\\BoM\\StepUp_${REVISION}.csv",
         "ref_delimiter": "",
         "ref_range_delimiter": "",
         "sort_asc": true,
@@ -128,7 +130,7 @@
         "hpgl_pen_size": 1.016,
         "hpgl_plot_origin": "A3",
         "min_pen_width": 847,
-        "output_filename": "Outputs\\Schematics\\StepUp_${Revision}.pdf",
+        "output_filename": "Outputs\\Schematics\\StepUp_${REVISION}.pdf",
         "page_size": "auto",
         "pdf_hierarchical_links": true,
         "pdf_metadata": true,
@@ -143,5 +145,15 @@
   "meta": {
     "version": 1
   },
-  "outputs": []
+  "outputs": [
+    {
+      "description": "Outputs folder",
+      "id": "10ac9ce8-eb7c-41d8-94c3-ee287411c546",
+      "only": [],
+      "settings": {
+        "output_path": "C:\\Users\\samom\\OneDrive\\Documents\\KiCad\\Projects\\StepUp\\"
+      },
+      "type": "folder"
+    }
+  ]
 }
