@@ -1,284 +1,36 @@
-(footprint "INS63AS5UW"
-	(version 20240108)
-	(generator "pcbnew")
-	(generator_version "8.0")
-	(layer "F.Cu")
-	(descr "1.7mm x 1.1mm x 0.7mm")
-	(tags "LED")
-	(property "Reference" "LED**"
-		(at 0.3 -2.7 0)
-		(layer "F.SilkS")
-		(uuid "44676401-30ca-4bd2-9982-67dab276ab6c")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-			)
-		)
-	)
-	(property "Value" "INS63AS5UW"
-		(at 8.6 3.4 0)
-		(layer "F.SilkS")
-		(hide yes)
-		(uuid "33329da9-df00-4d48-922b-bab617d29609")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "cfe839d8-5dd1-4fbb-a4fd-0e739bedfac5")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Datasheet" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "fbdc7abc-1b1c-4a46-bf28-28b12cd173a9")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Description" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "1d6d0366-be1e-4f80-ba9e-869d0a81c504")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(attr smd)
-	(fp_line
-		(start -1.7 -0.8)
-		(end -1.7 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f048f610-2558-4e60-8cb2-9ec1823a1482")
-	)
-	(fp_line
-		(start -1.6 -0.8)
-		(end -1.6 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "a365b96a-10a6-4b67-bd28-be2978a3fd50")
-	)
-	(fp_line
-		(start -0.8 -1)
-		(end -0.8 -0.65)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "39aaf1d2-dc9a-4a68-9138-5b8d31ce523d")
-	)
-	(fp_line
-		(start 0.8 -1)
-		(end -0.8 -1)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "0045b834-e8e8-44ab-be48-e9aefa3c1af2")
-	)
-	(fp_line
-		(start 0.8 -0.65)
-		(end 0.8 -1)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "590ff71e-a954-4fc0-921b-1b4c0886a99b")
-	)
-	(fp_arc
-		(start -1.7 -0.8)
-		(mid -1.65 -0.85)
-		(end -1.6 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "2a173f83-48a0-46ee-bb3d-f7187113fe7e")
-	)
-	(fp_arc
-		(start -1.6 -0.8)
-		(mid -1.65 -0.75)
-		(end -1.7 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c497c0d5-4815-4470-88f5-3b4aff94070e")
-	)
-	(fp_line
-		(start -1.8 -1.2)
-		(end 1.8 -1.2)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "67822c4c-4480-4a2a-b921-c1e6a7c4a3e9")
-	)
-	(fp_line
-		(start -1.8 0.7)
-		(end -1.8 -1.2)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "4d130025-61ee-4b58-93f4-cf0d9663dc00")
-	)
-	(fp_line
-		(start 1.8 -1.2)
-		(end 1.8 0.7)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "64920206-641d-47aa-b5af-c9cc36e21aa4")
-	)
-	(fp_line
-		(start 1.8 0.7)
-		(end -1.8 0.7)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "67626ae0-7bf1-4924-b21b-f27f494892a8")
-	)
-	(fp_line
-		(start -0.85 -0.3)
-		(end 0.85 -0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "2b676cb2-42e0-47fa-b10d-303dab25f720")
-	)
-	(fp_line
-		(start -0.85 0.3)
-		(end -0.85 -0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "249b0ef7-edaa-419c-9ba1-6c2716f7104a")
-	)
-	(fp_line
-		(start -0.6 -0.8)
-		(end 0.6 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "921e7c4f-000a-46e6-9ae6-85b0463e2fba")
-	)
-	(fp_line
-		(start -0.6 -0.3)
-		(end -0.6 -0.8)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "b7b33394-5fa4-43e5-98c6-8209016544a9")
-	)
-	(fp_line
-		(start 0.6 -0.8)
-		(end 0.6 -0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "96ca0296-fa50-46b2-a6c5-972a8ec20bdc")
-	)
-	(fp_line
-		(start 0.85 -0.3)
-		(end 0.85 0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "581a4375-2284-468c-9eab-b1c86af28184")
-	)
-	(fp_line
-		(start 0.85 0.3)
-		(end -0.85 0.3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "206de424-a176-414a-8562-acc86f7d89b2")
-	)
-	(fp_text user "${REFERENCE}"
-		(at 9.7 0 0)
-		(layer "F.Fab")
-		(uuid "90adcaa6-3a79-48bc-8c97-bb2f9abbb91f")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-			)
-		)
-	)
-	(pad "1" smd rect
-		(at -0.95 0 90)
-		(size 1 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "aef216d8-ba42-4d93-a8a6-32472828a431")
-	)
-	(pad "2" smd rect
-		(at 0.95 0 90)
-		(size 1 1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "40b4beef-5bea-4c89-a04c-8bd029e1088e")
-	)
-	(model "${KICAD_3RD_PARTY}/Samacsys.3dshapes/IN-S63AS5UW.stp"
-		(offset
-			(xyz -0.85 0.5 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 90 90)
-		)
-	)
+(module "INS63AS5UW" (layer F.Cu)
+  (descr "1.7mm x 1.1mm x 0.7mm")
+  (tags "LED")
+  (attr smd)
+  (fp_text reference LED** (at 0.000 -0) (layer F.SilkS)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (fp_text user %R (at 0.000 -0) (layer F.Fab)
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (fp_text value "INS63AS5UW" (at 0.000 -0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  )
+  (fp_line (start -0.85 -0.3) (end 0.85 -0.3) (layer F.Fab) (width 0.1))
+  (fp_line (start 0.85 -0.3) (end 0.85 0.3) (layer F.Fab) (width 0.1))
+  (fp_line (start 0.85 0.3) (end -0.85 0.3) (layer F.Fab) (width 0.1))
+  (fp_line (start -0.85 0.3) (end -0.85 -0.3) (layer F.Fab) (width 0.1))
+  (fp_line (start -2.45 -1.5) (end 2.45 -1.5) (layer F.CrtYd) (width 0.1))
+  (fp_line (start 2.45 -1.5) (end 2.45 1.5) (layer F.CrtYd) (width 0.1))
+  (fp_line (start 2.45 1.5) (end -2.45 1.5) (layer F.CrtYd) (width 0.1))
+  (fp_line (start -2.45 1.5) (end -2.45 -1.5) (layer F.CrtYd) (width 0.1))
+  (fp_line (start -0.6 -0.3) (end -0.6 -0.8) (layer F.Fab) (width 0.1))
+  (fp_line (start -0.6 -0.8) (end 0.6 -0.8) (layer F.Fab) (width 0.1))
+  (fp_line (start 0.6 -0.8) (end 0.6 -0.3) (layer F.Fab) (width 0.1))
+  (fp_line (start -2 -0) (end -2 -0) (layer F.SilkS) (width 0.1))
+  (fp_line (start -1.9 -0) (end -1.9 -0) (layer F.SilkS) (width 0.1))
+  (fp_arc (start -1.95 -0) (end -2.000 -0) (angle -180) (layer F.SilkS) (width 0.1))
+  (fp_arc (start -1.95 -0) (end -1.900 -0) (angle -180) (layer F.SilkS) (width 0.1))
+  (pad 1 smd rect (at -0.950 -0 90) (size 1.000 1.000) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at 0.950 -0 90) (size 1.000 1.000) (layers F.Cu F.Paste F.Mask))
+  (model "${KICAD_3RD_PARTY}/Samacsys.3dshapes/IN-S63AS5UW.stp"
+    (at (xyz 0.037401574333822 -0.014566929321589 0.033070865109211))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -90))
+  )
 )

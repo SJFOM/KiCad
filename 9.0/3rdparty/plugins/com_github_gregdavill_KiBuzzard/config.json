@@ -1,0 +1,19 @@
+{
+  "MultiLineText": "r2p0",
+  "HeightCtrl": 0.8,
+  "FontComboBox": "UbuntuMono-B",
+  "LayerComboBox": "F.SilkS",
+  "CapLeftChoice": "",
+  "CapRightChoice": "\\",
+  "PaddingTopCtrl": 1.0,
+  "PaddingLeftCtrl": 2.5,
+  "PaddingRightCtrl": 2.5,
+  "PaddingBottomCtrl": 1.0,
+  "LineSpacingCtrl": 1.5,
+  "WidthCtrl": 0.0,
+  "AlignmentChoice": "Center",
+  "advancedCheckbox": false,
+  "inlineFormatTextbox": false,
+  "lineoverStyleChoice": "Square",
+  "lineoverThicknessCtrl": 1
+}
