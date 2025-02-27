@@ -763,6 +763,38 @@ def create_kicad_color_template(template_settings, template_file_path: str) -> b
         "In28.Cu" : "in28",
         "In29.Cu" : "in29",
         "In30.Cu" : "in30",
+        "In31.Cu" : "in31",
+        "In32.Cu" : "in32",
+        "In33.Cu" : "in33",
+        "In34.Cu" : "in34",
+        "In35.Cu" : "in35",
+        "In36.Cu" : "in36",
+        "In37.Cu" : "in37",
+        "In38.Cu" : "in38",
+        "In39.Cu" : "in39",
+        "In40.Cu" : "in40",
+        "In41.Cu" : "in41",
+        "In42.Cu" : "in42",
+        "In43.Cu" : "in43",
+        "In44.Cu" : "in44",
+        "In45.Cu" : "in45",
+        "In46.Cu" : "in46",
+        "In47.Cu" : "in47",
+        "In48.Cu" : "in48",
+        "In49.Cu" : "in49",
+        "In50.Cu" : "in50",
+        "In51.Cu" : "in51",
+        "In52.Cu" : "in52",
+        "In53.Cu" : "in53",
+        "In54.Cu" : "in54",
+        "In55.Cu" : "in55",
+        "In56.Cu" : "in56",
+        "In57.Cu" : "in57",
+        "In58.Cu" : "in58",
+        "In59.Cu" : "in59",
+        "In60.Cu" : "in60",
+        "In61.Cu" : "in61",
+        "In62.Cu" : "in62",
         "B.Cu" : "b",
         "B.Adhesive" : "b_adhes",
         "F.Adhesive" : "f_adhes",
@@ -791,6 +823,42 @@ def create_kicad_color_template(template_settings, template_file_path: str) -> b
         "User.7" : "user_7",
         "User.8" : "user_8",
         "User.9" : "user_9",
+        "User.10" : "user_10",
+        "User.11" : "user_11",
+        "User.12" : "user_12",
+        "User.13" : "user_13",
+        "User.14" : "user_14",
+        "User.15" : "user_15",
+        "User.16" : "user_16",
+        "User.17" : "user_17",
+        "User.18" : "user_18",
+        "User.19" : "user_19",
+        "User.20" : "user_20",
+        "User.21" : "user_21",
+        "User.22" : "user_22",
+        "User.23" : "user_23",
+        "User.24" : "user_24",
+        "User.25" : "user_25",
+        "User.26" : "user_26",
+        "User.27" : "user_27",
+        "User.28" : "user_28",
+        "User.29" : "user_29",
+        "User.30" : "user_30",
+        "User.31" : "user_31",
+        "User.32" : "user_32",
+        "User.33" : "user_33",
+        "User.34" : "user_34",
+        "User.35" : "user_35",
+        "User.36" : "user_36",
+        "User.37" : "user_37",
+        "User.38" : "user_38",
+        "User.39" : "user_39",
+        "User.40" : "user_40",
+        "User.41" : "user_41",
+        "User.42" : "user_42",
+        "User.43" : "user_43",
+        "User.44" : "user_44",
+        "User.45" : "user_45",
         "Rescue" : ""
     }
 
@@ -965,7 +1033,12 @@ def plot_pdfs(board, dlg=None, **kwargs) -> bool:
 
     try:
         # Set General Options:
-        plot_options.SetPlotInvisibleText(False)
+        if int(pcbnew.Version()[0:1]) < 9:
+            plot_options.SetPlotInvisibleText(False)
+        else:
+            plot_options.SetHideDNPFPsOnFabLayers(False)
+            plot_options.SetSketchDNPFPsOnFabLayers(False)
+            plot_options.SetCrossoutDNPFPsOnFabLayers(False)
         # plot_options.SetPlotPadsOnSilkLayer(False);
         plot_options.SetUseAuxOrigin(False)
         plot_options.SetScale(1.0)

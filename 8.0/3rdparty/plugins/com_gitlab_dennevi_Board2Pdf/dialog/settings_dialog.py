@@ -68,6 +68,9 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.hide_template_settings()
         self.hide_layer_settings()
 
+        if (int(pcbnew.Version()[0:1]) >= 9):
+            self.m_checkBox_tent.Show(False)
+
         self.layersColorDict = {}
         self.layersTransparencyDict = {}
         self.layersNegativeDict = {}
@@ -499,6 +502,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                 self.layersReferenceDesignatorsDict = {}
 
             # Update the comboBox where user can select one layer to plot the "frame"
+            layers.sort()
             layers.insert(0, "None")
             self.m_comboBox_frame.SetItems(layers)
             self.m_comboBox_frame.SetSelection(0)

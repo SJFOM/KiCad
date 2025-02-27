@@ -502,6 +502,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                 self.layersReferenceDesignatorsDict = {}
 
             # Update the comboBox where user can select one layer to plot the "frame"
+            layers.sort()
             layers.insert(0, "None")
             self.m_comboBox_frame.SetItems(layers)
             self.m_comboBox_frame.SetSelection(0)

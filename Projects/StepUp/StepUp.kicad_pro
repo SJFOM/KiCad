@@ -84,14 +84,6 @@
           ""
         ],
         [
-          "lib_footprint_mismatch|76200000|90200000|59e8d4c4-b139-4a6c-b7ad-318affc19450|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|82058000|126340000|13056f03-5e46-4640-b3be-fd3785228da5|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "silk_edge_clearance|111388299|69795000|50c26540-872f-4e39-9721-ad53cd9249ca|37d18ccb-d169-4961-8c79-eb3496dd9675",
           ""
         ],
@@ -130,7 +122,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -146,8 +138,8 @@
         "silk_over_copper": "ignore",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "solder_mask_bridge": "ignore",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -175,7 +167,7 @@
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.1,
         "min_text_height": 0.5,
-        "min_text_thickness": 0.15,
+        "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
@@ -304,7 +296,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|3276600|2120900|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -491,14 +488,14 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_issues": "ignore",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -511,7 +508,7 @@
       "pin_not_driven": "error",
       "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
-      "same_local_global_label": "warning",
+      "same_local_global_label": "ignore",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -644,10 +641,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerber & Drill files/",
+      "plot": "${REVISION}/Gerbers",
       "pos_files": "Fabrication data/Centroid files/",
       "specctra_dsn": "",
-      "step": "3D files/StepUp_v0.2.step",
+      "step": ".step",
       "svg": "",
       "vrml": ""
     },

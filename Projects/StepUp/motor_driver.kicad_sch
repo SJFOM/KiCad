@@ -4725,16 +4725,6 @@
 		)
 		(uuid "7d292dfa-eb4e-48cc-9e2f-62bac985846c")
 	)
-	(label "TMC_VCC_IO"
-		(at 78.74 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "90aba1a3-6822-4e23-932e-109b8dc070a1")
-	)
 	(label "OB1_OUT"
 		(at 124.46 53.34 0)
 		(effects
@@ -4804,6 +4794,16 @@
 			(justify left bottom)
 		)
 		(uuid "dc8697e7-8d79-4f0c-aedf-32c6a96ef2d8")
+	)
+	(label "TMC_VCC_IO"
+		(at 88.9 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd83bfbe-3545-41f9-9cf8-9f005a074b3e")
 	)
 	(label "OA2_OUT"
 		(at 361.95 154.94 180)

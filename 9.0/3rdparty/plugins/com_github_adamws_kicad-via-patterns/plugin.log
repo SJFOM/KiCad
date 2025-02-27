@@ -1,0 +1,4 @@
+21:58:26 com_github_adamws_kicad-via-patterns.plugin_action 42: Plugin executed with KiCad version: 9.0.0
+21:58:26 com_github_adamws_kicad-via-patterns.plugin_action 43: Plugin executed with python version: '3.11.5 (main, Jan 27 2025, 07:08:36) [MSC v.1942 64 bit (AMD64)]'
+21:59:41 board2pdf 31: File: C:\Users\samom\OneDrive\Documents\KiCad\9.0\3rdparty\plugins\com_gitlab_dennevi_Board2Pdf\board2pdf_action.py	Version: 1.9.2
+23:02:23 board2pdf 31: File: C:\Users\samom\OneDrive\Documents\KiCad\9.0\3rdparty\plugins\com_gitlab_dennevi_Board2Pdf\board2pdf_action.py	Version: 1.9.2

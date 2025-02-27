@@ -160,9 +160,9 @@ def run_with_dialog():
     if ( pcbnew.Version()[0:3] == "6.0" or pcbnew.Version()[0:3] == "7.0" ):
         # If it was possible to import and open PyMuPdf, select pymupdf for coloring otherwise select pypdf.
         if has_pymupdf:
-            dlg.panel.m_radio_merge_pymupdf.SetValue(True)
+            dlg.panel.m_radio_pymupdf.SetValue(True)
         else:
-            dlg.panel.m_radio_merge_pypdf.SetValue(True)
+            dlg.panel.m_radio_pypdf.SetValue(True)
     else:
         # Set KiCad as default engine for coloring
         dlg.panel.m_radio_kicad.SetValue(True)

@@ -4,8 +4,53 @@ AR checking written on:
 version = 1.7.2
 Testing PCB for Annular Rings
 TH Pads >= 0.125 Vias >= 0.125
-PHD margin on PTH = 0
+PHD margin on PTH = 0.1
 
-VIAS that Pass = 142; Fails = 0
-TH PADS that Pass = 68; Fails = 0
+AR Via violation of 0.105 at XY 90.5,75.35
+AR Via violation of 0.105 at XY 90.5,76.55
+AR Via violation of 0.105 at XY 91.1,75.95
+AR Via violation of 0.105 at XY 91.7,76.55
+AR Via violation of 0.105 at XY 91.7,75.35
+AR Via violation of 0.105 at XY 77.6,71.275
+AR Via violation of 0.105 at XY 71.025,96.825
+AR Via violation of 0.105 at XY 72.625,127.075
+AR Via violation of 0.105 at XY 60.925,105.475
+AR Via violation of 0.105 at XY 81.2836,95.2164
+AR Via violation of 0.105 at XY 80.457935,85.473353
+AR Via violation of 0.105 at XY 72.6,85.3
+AR Via violation of 0.105 at XY 80.75,98.35
+AR Via violation of 0.105 at XY 89.475,73.75
+AR Via violation of 0.105 at XY 89.775,74.35
+AR Via violation of 0.105 at XY 86.55,76.35
+AR Via violation of 0.105 at XY 86.925,75.725
+AR Via violation of 0.105 at XY 86.625,75.075
+AR Via violation of 0.105 at XY 92.4,74.35
+AR Via violation of 0.105 at XY 95.525,76.275
+AR Via violation of 0.105 at XY 95.2,75.7
+AR Via violation of 0.105 at XY 95.5,75.125
+AR Via violation of 0.105 at XY 92.675,73.775
+AR Via violation of 0.105 at XY 79.25,68.725
+AR Via violation of 0.105 at XY 101.4,105.3
+AR Via violation of 0.105 at XY 80.275,116.5
+AR Via violation of 0.105 at XY 79.925,94.925
+AR Via violation of 0.105 at XY 86.5125,111.9125
+AR Via violation of 0.105 at XY 77.725,100.5
+AR Via violation of 0.105 at XY 102.2664,106.275
+AR Via violation of 0.105 at XY 103.9,105.575
+AR Via violation of 0.105 at XY 102.9,105.2
+AR Via violation of 0.105 at XY 69.5,92.025
+AR Via violation of 0.105 at XY 64.925,79.225
+AR Via violation of 0.105 at XY 79.3,67.8
+VIAS that Pass = 107; Fails = 35
+AR PTH violation of 0.1 at XY 84.73,107.774
+AR PTH violation of 0.1 at XY 86.005,107.774
+AR PTH violation of 0.1 at XY 87.28,107.774
+AR PTH violation of 0.1 at XY 84.73,106.499
+AR PTH violation of 0.1 at XY 86.005,106.499
+AR PTH violation of 0.1 at XY 87.28,106.499
+AR PTH violation of 0.1 at XY 84.73,105.224
+AR PTH violation of 0.1 at XY 86.005,105.224
+AR PTH violation of 0.1 at XY 87.28,105.224
+AR PTH violation of 0.1 at XY 68.525,77.5625
+TH PADS that Pass = 58; Fails = 10
 NPTH PADS that Pass = 0; Fails = 0
