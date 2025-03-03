@@ -2143,7 +2143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05397c3f-b539-4728-81c0-2c3f97391bcd")
-		(property "Reference" "R53"
+		(property "Reference" "R54"
 			(at 185.42 113.284 90)
 			(effects
 				(font
@@ -2186,7 +2186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.5%"
+		(property "Tolerance" "1%"
 			(at 187.96 113.03 90)
 			(effects
 				(font
@@ -2212,7 +2212,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603DRE10100KL"
+		(property "MPN" "RC0603FR-07100RL"
 			(at 187.96 113.03 0)
 			(effects
 				(font
@@ -2356,7 +2356,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R53")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -2640,7 +2640,7 @@
 		(at 218.44 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2893,7 +2893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e4b4bdf-0976-4126-b393-41dcb18fb6a1")
-		(property "Reference" "R48"
+		(property "Reference" "R49"
 			(at 72.39 97.79 90)
 			(effects
 				(font
@@ -3106,7 +3106,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R48")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -3122,7 +3122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d728d25-8e28-435e-8e9a-11db56ed32ae")
-		(property "Reference" "R51"
+		(property "Reference" "R52"
 			(at 72.39 115.57 90)
 			(effects
 				(font
@@ -3335,7 +3335,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R51")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -3350,7 +3350,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69d02073-8a47-4e9f-a399-10805256630c")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR096"
 			(at 116.84 118.11 0)
 			(effects
 				(font
@@ -3400,7 +3400,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "#PWR095")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -3415,7 +3415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a04f026-4a75-43b5-9bb9-dc86fae1155f")
-		(property "Reference" "R54"
+		(property "Reference" "R55"
 			(at 198.12 89.154 90)
 			(effects
 				(font
@@ -3628,7 +3628,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R54")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -3643,7 +3643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "898b2e6d-0132-41de-aac6-5872f59be075")
-		(property "Reference" "R52"
+		(property "Reference" "R53"
 			(at 181.356 104.14 90)
 			(effects
 				(font
@@ -3856,7 +3856,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R52")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -3872,7 +3872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98c12c0d-18f8-4b6f-bc83-97387d7de618")
-		(property "Reference" "R49"
+		(property "Reference" "R50"
 			(at 72.39 103.886 90)
 			(effects
 				(font
@@ -4085,7 +4085,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R49")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -4100,7 +4100,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7d6c6a8-9a3c-4511-8a8b-7a64da8d7a9f")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR097"
 			(at 187.96 125.73 0)
 			(effects
 				(font
@@ -4150,7 +4150,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "#PWR096")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -4165,7 +4165,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bd2da2d6-c80f-4da5-b154-c3e4227f7102")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR099"
 			(at 200.66 125.73 0)
 			(effects
 				(font
@@ -4215,7 +4215,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "#PWR098")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -4230,7 +4230,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2fcf174-2451-49b2-8b7a-641c5c37b7a5")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR098"
 			(at 200.66 82.55 0)
 			(effects
 				(font
@@ -4280,7 +4280,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "#PWR097")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -4291,7 +4291,7 @@
 		(at 92.71 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ddd602bc-226b-4393-9211-557cd4a43638")
@@ -4350,7 +4350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Multicomp Pro"
+		(property "Manufacturer" "Multicomp Pro"
 			(at 116.84 619.38 0)
 			(effects
 				(font
@@ -4360,7 +4360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MP008267"
+		(property "Manufacturer Part Number" "MP008267"
 			(at 116.84 719.38 0)
 			(effects
 				(font
@@ -4441,7 +4441,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa70d85f-a8b8-4435-a90b-c429e59c4b3b")
-		(property "Reference" "R50"
+		(property "Reference" "R51"
 			(at 72.39 109.22 90)
 			(effects
 				(font
@@ -4654,7 +4654,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/9dda156e-3fdf-45bb-95f8-ac79c3ca0e44"
-					(reference "R50")
+					(reference "R51")
 					(unit 1)
 				)
 			)

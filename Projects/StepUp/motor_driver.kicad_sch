@@ -5402,7 +5402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.5%"
+		(property "Tolerance" "1%"
 			(at 104.14 191.77 90)
 			(effects
 				(font
@@ -5428,7 +5428,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603DRE10100KL"
+		(property "MPN" "RC0603FR-07100KL"
 			(at 104.14 191.77 0)
 			(effects
 				(font
@@ -6127,7 +6127,7 @@
 		(at 137.16 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "18ad35cc-7e25-4c83-b0d6-bf79dfc045ea")
@@ -8958,7 +8958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 12Vrwm, SMF"
+		(property "Description" "19.9V Clamp 10.1A Ipp Tvs Diode Surface Mount DO-219AB (SMF)"
 			(at 132.08 135.89 0)
 			(effects
 				(font
@@ -8975,7 +8975,7 @@
 				)
 			)
 		)
-		(property "MPN" "SMF12A"
+		(property "MPN" "SMF12A-M3-08"
 			(at 132.08 135.89 0)
 			(effects
 				(font
@@ -8994,114 +8994,6 @@
 			)
 		)
 		(property "Type" "SMD"
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Colour" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 132.08 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 132.08 135.89 0)
 			(effects
 				(font

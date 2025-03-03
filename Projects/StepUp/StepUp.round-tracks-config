@@ -1,0 +1,5 @@
+Default	True	2.0	3
+HIGH_POWER	True	2.0	3
+MOTOR_OUTPUTS	True	2.0	3
+USB_DIFF_PAIR	True	2.0	3
+False	True	False

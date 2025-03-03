@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.6,
-          "width": 0.6
+          "drill": 0.91,
+          "height": 1.3,
+          "width": 1.3
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -59,10 +59,6 @@
         }
       ],
       "drc_exclusions": [
-        [
-          "clearance|107725000|56600000|b4e7a43e-0017-4a65-aeea-322cf615588f|5b0ddffd-c2ea-4d82-bf87-ecf0c5f86908",
-          ""
-        ],
         [
           "hole_clearance|79008000|123375000|6b354031-faee-42f2-b322-4d927e26698f|6167e7f3-61e1-47b9-909a-2544dd391fa9",
           ""
@@ -299,6 +295,10 @@
     "erc_exclusions": [
       [
         "power_pin_not_driven|3276600|2120900|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|3327400|2171700|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|",
         ""
       ]
     ],
@@ -644,7 +644,7 @@
       "plot": "${REVISION}/Gerbers",
       "pos_files": "Fabrication data/Centroid files/",
       "specctra_dsn": "",
-      "step": ".step",
+      "step": "StepUp_${REVISION}.step",
       "svg": "",
       "vrml": ""
     },
@@ -936,10 +936,46 @@
           "label": "Digi-Key_PN",
           "name": "Digi-Key_PN",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "OPERATION-FORCE",
+          "name": "OPERATION-FORCE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "QTY",
+          "name": "QTY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DATASHEET-URL",
+          "name": "DATASHEET-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PART-NUMBER",
+          "name": "PART-NUMBER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "HEIGHT",
+          "name": "HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": true,
+      "group_symbols": false,
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,

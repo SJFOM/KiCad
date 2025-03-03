@@ -45,12 +45,15 @@ class KiBuzzardPlugin(pcbnew.ActionPlugin, object):
     def Run(self):
         if self._pcbnew_frame is None:
             try:
-                self._pcbnew_frame = [x for x in wx.GetTopLevelWindows() if ('pcbnew' in x.GetTitle().lower() and not 'python' in x.GetTitle().lower()) or ('pcb editor' in x.GetTitle().lower())]
-                if len(self._pcbnew_frame) == 1:
-                    self._pcbnew_frame = self._pcbnew_frame[0]
-                else:
-                    self._pcbnew_frame = None
+                tlws = wx.GetTopLevelWindows()
+                for i in range(len(tlws)):
+                    title = tlws[i].GetTitle()
+                    if wx.GetTranslation('pcbnew') in title and not 'python' in title.lower():
+                        self._pcbnew_frame = tlws[i]
+                    elif wx.GetTranslation('PCB Editor') in title:
+                        self._pcbnew_frame = tlws[i]
             except:
+                self.logger.log(logging.ERROR, "Couldn't find PCB editor window. Automatic interactive placement of labels won't work.")
                 pass
 
         def run_buzzard(dlg, p_buzzard): 
@@ -61,7 +64,7 @@ class KiBuzzardPlugin(pcbnew.ActionPlugin, object):
                 dlg.EndModal(wx.ID_OK)
                 return
 
-            if self.IsVersion(['5.99','6.', '7.', '8.']):
+            if self.IsVersion(['5.99','6.', '7.', '8.', '9.']):
                 json_str = json.dumps(dlg.label_params, sort_keys=True)
                 encoded_str = base64.b64encode(json_str.encode('utf-8')).decode('ascii')
                 footprint_string = p_buzzard.create_v6_footprint(parm_text=encoded_str)
@@ -121,7 +124,7 @@ class KiBuzzardPlugin(pcbnew.ActionPlugin, object):
                 if dlg.updateFootprint is not None:
                     return
                 
-                if self.IsVersion(['5.99','6.', '7.', '8.']):
+                if self.IsVersion(['5.99','6.', '7.', '8.', '9.']):
                     if self._pcbnew_frame is not None:
                         # Set focus to main window and attempt to execute a Paste operation 
                         try:

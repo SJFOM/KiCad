@@ -61,7 +61,8 @@
           "QTY",
           "DATASHEET-URL",
           "OPERATION-FORCE",
-          "PART-NUMBER"
+          "PART-NUMBER",
+          "Manufacturer Part Number"
         ],
         "fields_ordered": [
           "Reference",
@@ -112,13 +113,14 @@
           "__QTY",
           "__DATASHEET-URL",
           "__OPERATION-FORCE",
-          "__PART-NUMBER"
+          "__PART-NUMBER",
+          "__Manufacturer Part Number"
         ],
         "filter_string": "",
         "include_excluded_from_bom": false,
         "keep_line_breaks": false,
         "keep_tabs": false,
-        "output_filename": "/BoM/StepUp.csv",
+        "output_filename": "${REVISION}/BoM/StepUp.csv",
         "ref_delimiter": "",
         "ref_range_delimiter": "",
         "sort_asc": true,
@@ -140,7 +142,7 @@
         "hpgl_pen_size": 1.016,
         "hpgl_plot_origin": "A3",
         "min_pen_width": 847,
-        "output_filename": "StepUp_${REVISION}.pdf",
+        "output_filename": "${REVISION}/Schematic/StepUp_${REVISION}.pdf",
         "page_size": "A4",
         "pdf_hierarchical_links": true,
         "pdf_metadata": true,
@@ -161,7 +163,7 @@
         "format": "ascii",
         "gerber_board_edge": true,
         "negate_bottom_x": false,
-        "output_filename": "${REVISION}/Pick & Place",
+        "output_filename": "${REVISION}/Pick & Place/positions.csv",
         "side": "both",
         "single_file": false,
         "smd_only": false,
@@ -290,7 +292,7 @@
           0.0,
           0.0
         ],
-        "output_filename": "PCB_Render_TOP.png",
+        "output_filename": "${REVISION}/Image renders/PCB_Render_TOP.png",
         "pan_x": 0.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
@@ -338,7 +340,7 @@
           0.0,
           0.0
         ],
-        "output_filename": "PCB_Render_BTM.png",
+        "output_filename": "${REVISION}/Image renders/PCB_Render_BTM.png",
         "pan_x": 0.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
@@ -379,7 +381,7 @@
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "StepUp_${REVISION}.step",
+        "output_filename": "${REVISION}/STEP/StepUp_${REVISION}.step",
         "overwrite": false,
         "subst_models": true,
         "use_drill_origin": false,
@@ -406,7 +408,7 @@
         "46b9f53d-62b6-4a86-b0a6-f0c790b2aa25"
       ],
       "settings": {
-        "output_path": "C:\\Users\\samom\\OneDrive\\Documents\\KiCad\\Projects\\StepUp\\Outputs\\${REVISION}"
+        "output_path": "C:\\Users\\samom\\OneDrive\\Documents\\KiCad\\Projects\\StepUp\\Outputs\\"
       },
       "type": "folder"
     },

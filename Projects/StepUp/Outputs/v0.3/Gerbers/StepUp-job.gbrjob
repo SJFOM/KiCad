@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-02-27T23:19:27+00:00"
+    "CreationDate": "2025-03-03T22:11:57+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -19,8 +19,7 @@
     },
     "LayerNumber": 4,
     "BoardThickness": 1.547,
-    "Finish": "HAL lead-free",
-    "ImpedanceControlled": true
+    "Finish": "HAL lead-free"
   },
   "DesignRules": [
     {
@@ -128,8 +127,6 @@
       "Type": "Dielectric",
       "Thickness": 0.1785,
       "Material": "FR4",
-      "DielectricConstant": "4.56",
-      "LossTangent": "0.02",
       "Name": "L1_TopLayer.Cu/L2_InnerLayer1.Cu",
       "Notes": "Type: dielectric layer 1 (from L1_TopLayer.Cu to L2_InnerLayer1.Cu)"
     },
@@ -142,8 +139,6 @@
       "Type": "Dielectric",
       "Thickness": 1.03,
       "Material": "FR4",
-      "DielectricConstant": "4.6",
-      "LossTangent": "0.02",
       "Name": "L2_InnerLayer1.Cu/L3_InnerLayer1.Cu",
       "Notes": "Type: dielectric layer 2 (from L2_InnerLayer1.Cu to L3_InnerLayer1.Cu)"
     },
@@ -156,8 +151,6 @@
       "Type": "Dielectric",
       "Thickness": 0.1785,
       "Material": "FR4",
-      "DielectricConstant": "4.56",
-      "LossTangent": "0.02",
       "Name": "L3_InnerLayer1.Cu/L4_BottomLayer.Cu",
       "Notes": "Type: dielectric layer 3 (from L3_InnerLayer1.Cu to L4_BottomLayer.Cu)"
     },

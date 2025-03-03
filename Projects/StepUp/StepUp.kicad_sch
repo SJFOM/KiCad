@@ -249,7 +249,7 @@
 		)
 		(uuid "8c2283fd-af36-407b-8f48-567c743ce051")
 	)
-	(text "4 x M3 for threaded inserts\n1 x M2 for board support"
+	(text "M3 for threaded inserts\nM2 for board support"
 		(exclude_from_sim no)
 		(at 26.416 154.432 0)
 		(effects
