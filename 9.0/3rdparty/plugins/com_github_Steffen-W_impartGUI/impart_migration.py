@@ -1,19 +1,29 @@
-from pathlib import Path
 import logging
-
-from kicad_cli import kicad_cli
+from pathlib import Path
+from typing import Optional, Union
 
 logger = logging.getLogger(__name__)
-cli = kicad_cli()
+
+try:
+    from .kicad_cli import kicad_cli as KicadCli
+except ImportError:
+    from kicad_cli import kicad_cli as KicadCli  # type: ignore[import-not-found,no-redef]
+
+try:
+    cli: Optional[KicadCli] = KicadCli()
+    logger.info("✓ kicad_cli initialized successfully")
+except Exception as e:
+    logger.error(f"Failed to initialize kicad_cli: {e}")
+    cli = None
 
 
 def find_old_lib_files(
-    folder_path: str,
+    folder_path: Union[str, Path],
     libs: list[str] = ["Octopart", "Samacsys", "UltraLibrarian", "Snapeda", "EasyEDA"],
-) -> list:
+) -> dict[str, dict[str, Path]]:
 
     folder_path = Path(folder_path).expanduser()
-    found_files = {}
+    found_files: dict[str, dict[str, Path]] = {}
 
     if not folder_path.exists():
         return found_files
@@ -28,6 +38,7 @@ def find_old_lib_files(
         for lib in libs:
             if file.name.startswith(lib):
 
+                entry: dict[str, Path]
                 if lib in found_files:
                     entry = found_files[lib]
                 else:
@@ -96,9 +107,22 @@ def convert_lib(SRC: Path, DES: Path, drymode=True):
         if DES_dcm.exists() and DES_dcm.is_file():
             return []
 
-        if not cli.upgrade_sym_lib(SRC, DES) or not DES.exists():
-            logger.error(f"converting {SRC.name} to {DES.name} produced an error")
+        if cli is None or not cli.exists():
+            logger.error("kicad_cli not available for conversion")
             return []
+
+        result = cli.upgrade_sym_lib(str(SRC), str(DES))
+        if not result.success:
+            logger.error(
+                f"Converting {SRC.name} to {DES.name} failed: {result.message}"
+            )
+            if result.stderr:
+                logger.error(f"Conversion error details: {result.stderr}")
+            return []
+        else:
+            logger.info(
+                f"Successfully converted {SRC.name} to {DES.name}: {result.message}"
+            )
         msg.append([SRC.stem, DES.stem])
 
         if SRC_dcm.exists() and SRC_dcm.is_file():
@@ -112,7 +136,7 @@ def convert_lib(SRC: Path, DES: Path, drymode=True):
 
 def convert_lib_list(libs_dict, drymode=True):
 
-    if not cli.exists():
+    if cli is None or not cli.exists():
         logger.error("kicad_cli not found! Conversion is not possible.")
         drymode = True
 

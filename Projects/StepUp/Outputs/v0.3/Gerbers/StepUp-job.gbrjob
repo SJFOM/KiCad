@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-03-03T22:11:57+00:00"
+    "CreationDate": "2025-03-09T19:28:39+00:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -18,7 +18,7 @@
       "Y": 80.3766
     },
     "LayerNumber": 4,
-    "BoardThickness": 1.547,
+    "BoardThickness": 1.561,
     "Finish": "HAL lead-free"
   },
   "DesignRules": [
@@ -125,7 +125,7 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.1785,
+      "Thickness": 0.1855,
       "Material": "FR4",
       "Name": "L1_TopLayer.Cu/L2_InnerLayer1.Cu",
       "Notes": "Type: dielectric layer 1 (from L1_TopLayer.Cu to L2_InnerLayer1.Cu)"
@@ -149,7 +149,7 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.1785,
+      "Thickness": 0.1855,
       "Material": "FR4",
       "Name": "L3_InnerLayer1.Cu/L4_BottomLayer.Cu",
       "Notes": "Type: dielectric layer 3 (from L3_InnerLayer1.Cu to L4_BottomLayer.Cu)"

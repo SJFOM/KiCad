@@ -4,7 +4,7 @@
       "description": "",
       "id": "0daccebd-a3e5-4a97-9c3b-6ed8490c6686",
       "settings": {
-        "bom_format_preset_name": "",
+        "bom_format_preset_name": "CSV",
         "bom_preset_name": "",
         "description": "",
         "exclude_dnp": true,
@@ -121,11 +121,11 @@
         "keep_line_breaks": false,
         "keep_tabs": false,
         "output_filename": "${REVISION}/BoM/StepUp.csv",
-        "ref_delimiter": "",
+        "ref_delimiter": ",",
         "ref_range_delimiter": "",
         "sort_asc": true,
         "sort_field": "Reference",
-        "string_delimiter": ""
+        "string_delimiter": "\""
       },
       "type": "sch_export_bom"
     },

@@ -214,6 +214,12 @@ class MainDialog(wx.Dialog):
             validator=IntValidator(),
         )
 
+        assign_net_checkbox = wx.CheckBox(self, label="Inherit net")
+        assign_net_checkbox.SetValue(False)
+        assign_net_checkbox.SetToolTip(
+            "If checked, all new vias will be assigned to the currently selected via net."
+        )
+
         track_width_ctrl = LabeledTextCtrl(
             self,
             "Track width:",
@@ -222,23 +228,41 @@ class MainDialog(wx.Dialog):
         )
         track_width_label = wx.StaticText(self, -1, self.units_label)
 
+        extra_spacing_ctrl = LabeledTextCtrl(
+            self,
+            "Extra space:",
+            value="0",
+            validator=FloatValidator(),
+        )
+        extra_spacing_label = wx.StaticText(self, -1, self.units_label)
+
         box = wx.StaticBox(self, label="Pattern settings")
         sizer = wx.StaticBoxSizer(box, wx.VERTICAL)
 
         row1 = wx.BoxSizer(wx.HORIZONTAL)
         row1.Add(pattern_ctrl, 0, wx.EXPAND | wx.ALL, 5)
         row1.Add(size_ctrl, 0, wx.LEFT | wx.RIGHT | wx.ALIGN_CENTER_VERTICAL, 5)
+        row1.Add(
+            assign_net_checkbox, 0, wx.LEFT | wx.RIGHT | wx.ALIGN_CENTER_VERTICAL, 5
+        )
 
         row2 = wx.BoxSizer(wx.HORIZONTAL)
         row2.Add(track_width_ctrl, 0, wx.EXPAND | wx.ALL, 5)
         row2.Add(track_width_label, 0, wx.LEFT | wx.ALIGN_CENTER_VERTICAL, 5)
 
+        row3 = wx.BoxSizer(wx.HORIZONTAL)
+        row3.Add(extra_spacing_ctrl, 0, wx.EXPAND | wx.ALL, 5)
+        row3.Add(extra_spacing_label, 0, wx.LEFT | wx.ALIGN_CENTER_VERTICAL, 5)
+
         sizer.Add(row1, 0, wx.EXPAND | wx.ALL, 5)
         sizer.Add(row2, 0, wx.EXPAND | wx.ALL, 5)
+        sizer.Add(row3, 0, wx.EXPAND | wx.ALL, 5)
 
         self.__number_of_vias = size_ctrl.text
         self.__pattern_type = pattern_ctrl.dropdown
+        self.__assign_net_checkbox = assign_net_checkbox
         self.__track_width = track_width_ctrl.text
+        self.__extra_space = extra_spacing_ctrl.text
 
         return sizer
 
@@ -248,17 +272,21 @@ class MainDialog(wx.Dialog):
     def get_pattern_type(self) -> Pattern:
         return Pattern(self.__pattern_type.GetValue())
 
+    def assign_nets(self) -> bool:
+        return self.__assign_net_checkbox.GetValue()
+
     def get_track_width(self) -> str:
         return self.__track_width.GetValue()
+
+    def get_extra_space(self) -> str:
+        return self.__extra_space.GetValue()
 
 
 class RotateDialog(wx.Dialog):
     def __init__(self: RotateDialog, parent: wx.Frame, rotate_callback) -> None:
         super().__init__(parent, -1, "Adjust rotation")
 
-        label = wx.StaticText(
-            self, -1, "Rotate:"
-        )
+        label = wx.StaticText(self, -1, "Rotate:")
         # bitmaps obtained with img2py, using KiCad's undo/redo buttons
         rot_left_bitmap = PyEmbeddedImage(
             b"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAB8klEQVRIx2NgAIJQiZDbIbdD"
@@ -313,10 +341,23 @@ class RotateDialog(wx.Dialog):
 
 # used for tests
 if __name__ == "__main__":
+    import argparse
     import threading
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("dialog", choices=["main", "rotate"], help="Choose the dialog")
+    args = parser.parse_args()
+
     app = wx.App()
-    dlg = MainDialog(None)
+
+    if args.dialog == "main":
+        dlg = MainDialog(None)
+    else:
+
+        def rotate_callback(_) -> None:
+            pass
+
+        dlg = RotateDialog(None, rotate_callback)
 
     if "PYTEST_CURRENT_TEST" in os.environ:
         print(f"Using {wx.version()}")
@@ -336,7 +377,11 @@ if __name__ == "__main__":
         app.MainLoop()
     else:
         dlg.ShowModal()
+
+    if args.dialog == "main":
         print(f"number of vias: {dlg.get_number_of_vias()}")
         print(f"pattern: {dlg.get_pattern_type()}")
+        print(f"assign nets: {dlg.assign_nets()}")
+        print(f"extra space: {dlg.get_extra_space()}")
 
     print("exit ok")
