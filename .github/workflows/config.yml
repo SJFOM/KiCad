@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        kicad-version: ["8.0"]
+        kicad-version: ["9.0"]
         type:
           [
             "schematic_pdf",
