@@ -4,9 +4,7 @@ import argparse
 import os
 import re
 
-from wx import FileConfig
-
-from .. import dialog
+from ..compat import get_wx
 
 
 class Config:
@@ -17,6 +15,8 @@ class Config:
         '    %p : pcb/project title from pcb metadata.\n'
         '    %c : company from pcb metadata.\n'
         '    %r : revision from pcb metadata.\n'
+        '    %v : pcb variant.\n'
+        '    %V : pcb variant or \'default\', if empty.\n'
         '    %d : pcb date from metadata if available, '
         'file modification date otherwise.\n'
         '    %D : bom generation date.\n'
@@ -39,7 +39,7 @@ class Config:
         'dark_mode', 'show_pads', 'show_fabrication', 'show_silkscreen',
         'highlight_pin1', 'redraw_on_drag', 'board_rotation', 'checkboxes',
         'bom_view', 'layer_view', 'offset_back_rotation',
-        'kicad_text_formatting'
+        'kicad_text_formatting', 'mark_when_checked'
     ]
     default_show_group_fields = ["Value", "Footprint"]
 
@@ -55,13 +55,14 @@ class Config:
     board_rotation = 0
     offset_back_rotation = False
     checkboxes = ','.join(default_checkboxes)
+    mark_when_checked = ''
     bom_view = bom_view_choices[1]
     layer_view = layer_view_choices[1]
     compression = True
     open_browser = True
 
     # General section
-    bom_dest_dir = 'bom/'  # This is relative to pcb file directory
+    bom_dest_dir = 'bom'  # This is relative to pcb file directory
     bom_name_format = 'ibom'
     component_sort_order = default_sort_order
     component_blacklist = []
@@ -81,6 +82,9 @@ class Config:
     board_variant_whitelist = []
     board_variant_blacklist = []
     dnp_field = ''
+
+    # this is cli only field
+    kicad_variant = ''
 
     @staticmethod
     def _split(s):
@@ -106,7 +110,7 @@ class Config:
         else:
             return
 
-        f = FileConfig(localFilename=file)
+        f = get_wx().FileConfig(localFilename=file)
 
         f.SetPath('/html_defaults')
         self.dark_mode = f.ReadBool('dark_mode', self.dark_mode)
@@ -121,6 +125,7 @@ class Config:
         self.offset_back_rotation = f.ReadBool(
             'offset_back_rotation', self.offset_back_rotation)
         self.checkboxes = f.Read('checkboxes', self.checkboxes)
+        self.mark_when_checked = f.Read('mark_when_checked', self.mark_when_checked)
         self.bom_view = f.Read('bom_view', self.bom_view)
         self.layer_view = f.Read('layer_view', self.layer_view)
         self.compression = f.ReadBool('compression', self.compression)
@@ -168,7 +173,7 @@ class Config:
     def save(self, locally):
         file = self.local_config_file if locally else self.global_config_file
         print('Saving to', file)
-        f = FileConfig(localFilename=file)
+        f = get_wx().FileConfig(localFilename=file)
 
         f.SetPath('/html_defaults')
         f.WriteBool('dark_mode', self.dark_mode)
@@ -180,6 +185,7 @@ class Config:
         f.WriteInt('board_rotation', self.board_rotation)
         f.WriteBool('offset_back_rotation', self.offset_back_rotation)
         f.Write('checkboxes', self.checkboxes)
+        f.Write('mark_when_checked', self.mark_when_checked)
         f.Write('bom_view', self.bom_view)
         f.Write('layer_view', self.layer_view)
         f.WriteBool('compression', self.compression)
@@ -226,6 +232,7 @@ class Config:
         self.offset_back_rotation = \
             dlg.html.offsetBackRotationCheckbox.IsChecked()
         self.checkboxes = dlg.html.bomCheckboxesCtrl.Value
+        # No dialog for mark_when_checked ...
         self.bom_view = self.bom_view_choices[dlg.html.bomDefaultView.Selection]
         self.layer_view = self.layer_view_choices[
             dlg.html.layerDefaultView.Selection]
@@ -275,6 +282,7 @@ class Config:
         dlg.html.boardRotationSlider.Value = self.board_rotation
         dlg.html.offsetBackRotationCheckbox.Value = self.offset_back_rotation
         dlg.html.bomCheckboxesCtrl.Value = self.checkboxes
+        # No dialog for mark_when_checked ...
         dlg.html.bomDefaultView.Selection = self.bom_view_choices.index(
             self.bom_view)
         dlg.html.layerDefaultView.Selection = self.layer_view_choices.index(
@@ -320,14 +328,21 @@ class Config:
                                  self.board_variant_blacklist)
         dlg.fields.dnpFieldBox.Value = self.dnp_field
 
+        if self.kicad_variant != '':
+            dlg.fields.variantLabel.Show()
+        dlg.fields.variantLabel.SetLabel(f'Current variant: {self.kicad_variant}')
+
         dlg.finish_init()
 
     @classmethod
     def add_options(cls, parser, version):
         # type: (argparse.ArgumentParser, str) -> None
         parser.add_argument('--show-dialog', action='store_true',
-                            help='Shows config dialog. All other flags '
-                                 'will be ignored.')
+                            help='Shows config dialog. All flags except '
+                                 '--kicad-variant will be ignored.')
+        parser.add_argument('--kicad-variant', default='',
+                            help='KiCad board variant, empty is default '
+                                 'variant. (Only for KiCad v10+)')
         parser.add_argument('--version', action='version', version=version)
         # Html
         parser.add_argument('--dark-mode', help='Default to dark mode.',
@@ -360,6 +375,10 @@ class Config:
         parser.add_argument('--checkboxes',
                             default=cls.checkboxes,
                             help='Comma separated list of checkbox columns.')
+        parser.add_argument('--mark-when-checked',
+                            default=cls.mark_when_checked,
+                            help='Name of the checkbox column used to mark '
+                                 'components when checked.')
         parser.add_argument('--bom-view', default=cls.bom_view,
                             choices=cls.bom_view_choices,
                             help='Default BOM view.')
@@ -436,6 +455,8 @@ class Config:
         # type: (argparse.Namespace) -> None
         import math
 
+        self.kicad_variant = args.kicad_variant
+
         # Html
         self.dark_mode = args.dark_mode
         self.show_pads = not args.hide_pads
@@ -446,6 +467,7 @@ class Config:
         self.board_rotation = math.fmod(args.board_rotation // 5, 37)
         self.offset_back_rotation = args.offset_back_rotation
         self.checkboxes = args.checkboxes
+        self.mark_when_checked = args.mark_when_checked
         self.bom_view = args.bom_view
         self.layer_view = args.layer_view
         self.compression = not args.no_compression

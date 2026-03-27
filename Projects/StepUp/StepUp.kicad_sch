@@ -7,7 +7,7 @@
 	(title_block
 		(title "System diagram")
 		(date "2025-03-03")
-		(rev "v0.3")
+		(rev "v0.4")
 		(company "SJFOM")
 	)
 	(lib_symbols
@@ -249,7 +249,7 @@
 		)
 		(uuid "8c2283fd-af36-407b-8f48-567c743ce051")
 	)
-	(text "M3 for threaded inserts\nM2 for board support"
+	(text "M3 for threaded inserts + bolts\nM2 for board support (no bolts)"
 		(exclude_from_sim no)
 		(at 26.416 154.432 0)
 		(effects
@@ -309,6 +309,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
@@ -382,6 +383,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
@@ -455,6 +457,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
@@ -528,6 +531,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
@@ -601,6 +605,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
@@ -674,6 +679,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
@@ -747,6 +753,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
@@ -820,6 +827,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
@@ -893,6 +901,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"

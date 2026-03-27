@@ -7,7 +7,7 @@
 	(title_block
 		(title "User Input")
 		(date "2025-03-03")
-		(rev "v0.3")
+		(rev "v0.4")
 		(company "SJFOM")
 	)
 	(lib_symbols

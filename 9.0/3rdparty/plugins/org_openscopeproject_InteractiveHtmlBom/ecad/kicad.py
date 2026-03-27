@@ -30,10 +30,16 @@ class PcbnewParser(EcadParser):
         self.board = board
         if self.board is None:
             self.board = pcbnew.LoadBoard(self.file_name)  # type: pcbnew.BOARD
+            if not self.board:
+                raise Exception('Failed to load board file')
+            if hasattr(self.board, "SetCurrentVariant"):
+                self.board.SetCurrentVariant(config.kicad_variant)
         if hasattr(self.board, 'GetModules'):
-            self.footprints = list(self.board.GetModules())  # type: list[pcbnew.MODULE]
+            # type: list[pcbnew.MODULE]
+            self.footprints = list(self.board.GetModules())
         else:
-            self.footprints = list(self.board.GetFootprints())  # type: list[pcbnew.FOOTPRINT]
+            # type: list[pcbnew.FOOTPRINT]
+            self.footprints = list(self.board.GetFootprints())
         self.font_parser = FontParser()
 
     def get_extra_field_data(self, file_name):
@@ -46,8 +52,7 @@ class PcbnewParser(EcadParser):
 
         return ExtraFieldData(data[0], data[1])
 
-    @staticmethod
-    def get_footprint_fields(f):
+    def get_footprint_fields(self, f):
         # type: (pcbnew.FOOTPRINT) -> dict
         props = {}
         if hasattr(f, "GetProperties"):
@@ -60,6 +65,15 @@ class PcbnewParser(EcadParser):
         if hasattr(f, "IsDNP"):
             if f.IsDNP():
                 props["kicad_dnp"] = "DNP"
+        if hasattr(f, 'GetVariant'):
+            variant = f.GetVariant(self.config.kicad_variant)
+            if variant:
+                var_fields = variant.GetFields()
+                for k in var_fields.keys():
+                    props[str(k)] = str(f.GetFieldShownText(str(k)))
+                if variant.GetDNP():
+                    props["kicad_dnp"] = "DNP"
+
         return props
 
     def parse_extra_data_from_pcb(self):
@@ -273,7 +287,8 @@ class PcbnewParser(EcadParser):
                 "svgpath": create_path(lines)
             }
         elif hasattr(d, 'GetEffectiveTextShape'):
-            shape = d.GetEffectiveTextShape(False)  # type: pcbnew.SHAPE_COMPOUND
+            # type: pcbnew.SHAPE_COMPOUND
+            shape = d.GetEffectiveTextShape(False)
             segments = []
             polygons = []
             for s in shape.GetSubshapes():
@@ -426,7 +441,7 @@ class PcbnewParser(EcadParser):
             for d in f.GraphicalItems():
                 drawings.append((d.GetClass(), d))
             if hasattr(f, "GetFields"):
-                fields = f.GetFields() # type: list[pcbnew.PCB_FIELD]
+                fields = f.GetFields()  # type: list[pcbnew.PCB_FIELD]
                 for field in fields:
                     if field.IsReference() or field.IsValue():
                         continue
@@ -434,16 +449,31 @@ class PcbnewParser(EcadParser):
 
         return drawings
 
+    @staticmethod
+    def _pad_is_through_hole(pad):
+        # type: (pcbnew.PAD) -> bool
+        if hasattr(pcbnew, 'PAD_ATTRIB_PTH'):
+            through_hole_attributes = [pcbnew.PAD_ATTRIB_PTH,
+                                       pcbnew.PAD_ATTRIB_NPTH]
+        else:
+            through_hole_attributes = [pcbnew.PAD_ATTRIB_STANDARD,
+                                       pcbnew.PAD_ATTRIB_HOLE_NOT_PLATED]
+        return pad.GetAttribute() in through_hole_attributes
+
     def parse_pad(self, pad):
         # type: (pcbnew.PAD) -> list[dict]
         custom_padstack = False
         outer_layers = [(pcbnew.F_Cu, "F"), (pcbnew.B_Cu, "B")]
         if hasattr(pad, 'Padstack'):
-            padstack = pad.Padstack() # type: pcbnew.PADSTACK
+            padstack = pad.Padstack()  # type: pcbnew.PADSTACK
             layers_set = list(padstack.LayerSet().Seq())
+            if hasattr(pcbnew, "UNCONNECTED_LAYER_MODE_REMOVE_ALL"):
+                ULMRA = pcbnew.UNCONNECTED_LAYER_MODE_REMOVE_ALL
+            else:
+                ULMRA = padstack.UNCONNECTED_LAYER_MODE_REMOVE_ALL
             custom_padstack = (
-                padstack.Mode() != padstack.MODE_NORMAL or \
-                    padstack.UnconnectedLayerMode() == padstack.UNCONNECTED_LAYER_MODE_REMOVE_ALL
+                padstack.Mode() != padstack.MODE_NORMAL or
+                padstack.UnconnectedLayerMode() == ULMRA
             )
         else:
             layers_set = list(pad.GetLayerSet().Seq())
@@ -451,7 +481,7 @@ class PcbnewParser(EcadParser):
         for layer, letter in outer_layers:
             if layer in layers_set:
                 layers.append(letter)
-        if not layers:
+        if not layers and not self._pad_is_through_hole(pad):
             return []
 
         if custom_padstack:
@@ -537,13 +567,8 @@ class PcbnewParser(EcadParser):
             except TypeError:
                 pad_dict["chamfpos"] = pad.GetChamferPositions()
                 pad_dict["chamfratio"] = pad.GetChamferRectRatio()
-        if hasattr(pcbnew, 'PAD_ATTRIB_PTH'):
-            through_hole_attributes = [pcbnew.PAD_ATTRIB_PTH,
-                                       pcbnew.PAD_ATTRIB_NPTH]
-        else:
-            through_hole_attributes = [pcbnew.PAD_ATTRIB_STANDARD,
-                                       pcbnew.PAD_ATTRIB_HOLE_NOT_PLATED]
-        if pad.GetAttribute() in through_hole_attributes:
+
+        if self._pad_is_through_hole(pad):
             pad_dict["type"] = "th"
             pad_dict["drillshape"] = {
                 pcbnew.PAD_DRILL_SHAPE_CIRCLE: "circle",
@@ -552,6 +577,7 @@ class PcbnewParser(EcadParser):
             pad_dict["drillsize"] = self.normalize(pad.GetDrillSize())
         else:
             pad_dict["type"] = "smd"
+
         if hasattr(pad, "GetOffset"):
             try:
                 pad_dict["offset"] = self.normalize(pad.GetOffset(layer))
@@ -708,6 +734,8 @@ class PcbnewParser(EcadParser):
                 if (hasattr(zone, 'GetFilledPolysUseThickness') and
                         not zone.GetFilledPolysUseThickness()):
                     width = 0
+                if KICAD_VERSION[0] >= 7:
+                    width = 0
                 zone_dict = {
                     "polygons": self.parse_poly_set(poly_set),
                     "width": width,
@@ -728,8 +756,7 @@ class PcbnewParser(EcadParser):
         nets = sorted([str(s) for s in nets])
         return nets
 
-    @staticmethod
-    def footprint_to_component(footprint, extra_fields):
+    def footprint_to_component(self, footprint, extra_fields):
         try:
             footprint_name = str(footprint.GetFPID().GetFootprintName())
         except AttributeError:
@@ -739,6 +766,10 @@ class PcbnewParser(EcadParser):
         if hasattr(pcbnew, 'FP_EXCLUDE_FROM_BOM'):
             if footprint.GetAttributes() & pcbnew.FP_EXCLUDE_FROM_BOM:
                 attr = 'Virtual'
+            if hasattr(footprint, 'GetExcludedFromBOMForVariant'):
+                if footprint.GetExcludedFromBOMForVariant(
+                        self.config.kicad_variant):
+                    attr = 'Virtual'
         elif hasattr(pcbnew, 'MOD_VIRTUAL'):
             if footprint.GetAttributes() == pcbnew.MOD_VIRTUAL:
                 attr = 'Virtual'
@@ -767,9 +798,9 @@ class PcbnewParser(EcadParser):
                              self.config.dnp_field)
 
         if not self.config.extra_data_file and need_extra_fields:
-            self.logger.warn('Ignoring extra fields related config parameters '
-                             'since no netlist/xml file was specified.')
-            need_extra_fields = False
+            self.config.extra_data_file = self.file_name
+            self.logger.warn('Assuming extra data file to be the pcb file '
+                             'since --extra-data-file was not specified.')
 
         extra_field_data = None
         if (self.config.extra_data_file and
@@ -832,6 +863,7 @@ class PcbnewParser(EcadParser):
                 "revision": revision,
                 "company": company,
                 "date": file_date,
+                "variant": self.config.kicad_variant,
             },
             "bom": {},
             "font_data": self.font_parser.get_parsed_font()
@@ -898,7 +930,7 @@ class InteractiveHtmlBomPlugin(pcbnew.ActionPlugin, object):
         from ..errors import ParsingException
 
         logger = ibom.Logger()
-        board = pcbnew.GetBoard()
+        board = pcbnew.GetBoard()  # type: pcbnew.BOARD
         pcb_file_name = board.GetFileName()
 
         if not pcb_file_name:
@@ -906,6 +938,9 @@ class InteractiveHtmlBomPlugin(pcbnew.ActionPlugin, object):
             return
 
         config = Config(version, os.path.dirname(pcb_file_name))
+        if hasattr(board, 'GetCurrentVariant'):
+            config.kicad_variant = board.GetCurrentVariant()
+
         parser = PcbnewParser(pcb_file_name, config, logger, board)
 
         try:
