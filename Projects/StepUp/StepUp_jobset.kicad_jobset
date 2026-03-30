@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "description": "",
+      "description": "PCBA Bom",
       "id": "0daccebd-a3e5-4a97-9c3b-6ed8490c6686",
       "settings": {
         "bom_format_preset_name": "CSV",
@@ -10,7 +10,8 @@
         "exclude_dnp": true,
         "field_delimiter": ",",
         "fields_group_by": [
-          "Value"
+          "Value",
+          "MPN"
         ],
         "fields_labels": [
           "Reference",
@@ -62,7 +63,8 @@
           "DATASHEET-URL",
           "OPERATION-FORCE",
           "PART-NUMBER",
-          "Manufacturer Part Number"
+          "Manufacturer Part Number",
+          "PLACE_BY_HAND"
         ],
         "fields_ordered": [
           "Reference",
@@ -114,13 +116,14 @@
           "__DATASHEET-URL",
           "__OPERATION-FORCE",
           "__PART-NUMBER",
-          "__Manufacturer Part Number"
+          "__Manufacturer Part Number",
+          "__PLACE_BY_HAND"
         ],
         "filter_string": "",
         "include_excluded_from_bom": false,
         "keep_line_breaks": false,
         "keep_tabs": false,
-        "output_filename": "${REVISION}/BoM/StepUp.csv",
+        "output_filename": "${REVISION}/BoM/PCBA.csv",
         "ref_delimiter": ",",
         "ref_range_delimiter": "",
         "sort_asc": true,
@@ -410,6 +413,30 @@
         "vrml_relative_paths": false
       },
       "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
+      "id": "4dbfac6f-cb45-4ca1-be7e-4ac4ee635b9a",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "Gruvbox",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.016,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_dir": "${REVISION}/StepUp_${REVISION}.pdf",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_pdf"
     }
   ],
   "meta": {
@@ -423,7 +450,8 @@
         "0daccebd-a3e5-4a97-9c3b-6ed8490c6686",
         "e14b24a9-ca48-49bc-abc0-2e92303046f6",
         "277f1368-7d8b-4b30-a5a8-78fb7ce56ad9",
-        "46b9f53d-62b6-4a86-b0a6-f0c790b2aa25"
+        "46b9f53d-62b6-4a86-b0a6-f0c790b2aa25",
+        "0cd450db-fef5-437e-a259-eba3ed1e7425"
       ],
       "settings": {
         "output_path": "C:\\Users\\samom\\OneDrive\\Documents\\KiCad\\Projects\\StepUp\\Outputs\\"

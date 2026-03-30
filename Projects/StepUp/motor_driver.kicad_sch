@@ -7,7 +7,7 @@
 	(title_block
 		(title "Motor Driver")
 		(date "2025-03-03")
-		(rev "v0.4")
+		(rev "v1.0")
 		(company "SJFOM")
 	)
 	(lib_symbols
@@ -9078,7 +9078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0603 "
+		(property "Package" "0603"
 			(at 45.72 68.58 0)
 			(effects
 				(font

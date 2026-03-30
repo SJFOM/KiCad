@@ -7,7 +7,7 @@
 	(title_block
 		(title "Microcontroller")
 		(date "2025-03-03")
-		(rev "v0.4")
+		(rev "v1.0")
 		(company "SJFOM")
 	)
 	(lib_symbols

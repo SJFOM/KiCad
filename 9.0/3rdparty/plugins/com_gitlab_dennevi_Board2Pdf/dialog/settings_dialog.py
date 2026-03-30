@@ -33,7 +33,7 @@ class SettingsDialog(dialog_base.SettingsDialogBase):
         best_size.IncBy(dx=0, dy=30)
         self.SetClientSize(best_size)
         self.SetTitle('Board2Pdf %s' % version)
-        if (int(pcbnew.Version()[0:1]) < 8):
+        if (int(pcbnew.Version().split('.')[0]) < 8):
             # If KiCad version < 8, no support for exporting property popups on just Front or Back layer
             pos = self.panel.m_comboBox_popups.FindString("Front Layer")
             self.panel.m_comboBox_popups.Delete(pos)
@@ -68,7 +68,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
         self.hide_template_settings()
         self.hide_layer_settings()
 
-        if (int(pcbnew.Version()[0:1]) >= 9):
+        if (int(pcbnew.Version().split('.')[0]) >= 9):
             self.m_checkBox_tent.Show(False)
 
         self.layersColorDict = {}
@@ -521,7 +521,7 @@ class SettingsDialogPanel(dialog_base.SettingsDialogPanel):
                 saved_popups = self.templates[item]["popups"]
             else:
                 saved_popups = "Both Layers"
-            if int(pcbnew.Version()[0:1]) < 8 and (saved_popups == "Front Layer" or saved_popups == "Back Layer"):
+            if int(pcbnew.Version().split('.')[0]) < 8 and (saved_popups == "Front Layer" or saved_popups == "Back Layer"):
                 saved_popups = "Both Layers"
             saved_popups_pos = self.m_comboBox_popups.FindString(saved_popups)
             if saved_popups_pos != wx.NOT_FOUND:

@@ -7,7 +7,7 @@
 	(title_block
 		(title "User Input")
 		(date "2025-03-03")
-		(rev "v0.4")
+		(rev "v1.0")
 		(company "SJFOM")
 	)
 	(lib_symbols
@@ -1748,7 +1748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07cb4a5d-6018-44c0-ad3b-db2791a7d23a")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR098"
 			(at 104.14 80.01 0)
 			(effects
 				(font
@@ -1799,7 +1799,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0100")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -2283,6 +2283,15 @@
 				(hide yes)
 			)
 		)
+		(property "PLACE_BY_HAND" "true"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "04771e35-e9ad-4c3a-9455-b68f9270b4a8")
 		)
@@ -2344,7 +2353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c049ccdb-b18c-434b-9613-2abd341a73b2")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0102"
 			(at 165.1 116.84 0)
 			(effects
 				(font
@@ -2394,7 +2403,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0104")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -2410,7 +2419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7db95d7-bb9b-4731-9de9-4f0b44f37ba3")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0101"
 			(at 147.32 80.01 0)
 			(effects
 				(font
@@ -2461,7 +2470,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0103")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -2716,7 +2725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3e6997d-c923-49b6-9cee-1fd100bd450c")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR099"
 			(at 123.19 116.84 0)
 			(effects
 				(font
@@ -2766,7 +2775,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0101")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -2781,7 +2790,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc690f11-477b-42de-b160-c5e3ffddb196")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR0100"
 			(at 125.73 81.28 0)
 			(effects
 				(font
@@ -2831,7 +2840,7 @@
 		(instances
 			(project "StepUp"
 				(path "/e0cca1c7-c263-49eb-8c40-74000ebe5285/62dd6998-8b69-42c0-9c2f-b18953d44bc4"
-					(reference "#PWR0102")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)

@@ -1033,7 +1033,7 @@ def plot_pdfs(board, dlg=None, **kwargs) -> bool:
 
     try:
         # Set General Options:
-        if int(pcbnew.Version()[0:1]) < 9:
+        if int(pcbnew.Version().split('.')[0]) < 9:
             plot_options.SetPlotInvisibleText(False)
         else:
             plot_options.SetHideDNPFPsOnFabLayers(False)
@@ -1117,9 +1117,9 @@ def plot_pdfs(board, dlg=None, **kwargs) -> bool:
                 plot_options.SetPlotValue(layer_info.footprint_value)
                 plot_options.SetPlotReference(layer_info.reference_designator)
                 plot_options.SetMirror(template.mirrored)
-                if int(pcbnew.Version()[0:1]) < 9:
+                if int(pcbnew.Version().split('.')[0]) < 9:
                     plot_options.SetPlotViaOnMaskLayer(template.tented)
-                if int(pcbnew.Version()[0:1]) >= 8:
+                if int(pcbnew.Version().split('.')[0]) >= 8:
                     plot_options.m_PDFFrontFPPropertyPopups = layer_info.front_popups
                     plot_options.m_PDFBackFPPropertyPopups = layer_info.back_popups
 
