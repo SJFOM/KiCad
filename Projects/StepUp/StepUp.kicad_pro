@@ -60,6 +60,22 @@
       ],
       "drc_exclusions": [
         [
+          "hole_clearance|79008000|123375000|6b354031-faee-42f2-b322-4d927e26698f|6167e7f3-61e1-47b9-909a-2544dd391fa9",
+          ""
+        ],
+        [
+          "hole_clearance|79008000|123375000|6b354031-faee-42f2-b322-4d927e26698f|813080ad-461f-4dff-a079-ad1524a1f3a3",
+          ""
+        ],
+        [
+          "hole_clearance|85108000|123375000|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db|2bfed739-587d-4b0b-9e97-cc683d620329",
+          ""
+        ],
+        [
+          "hole_clearance|85108000|123375000|f79a5827-7ff8-40f7-a9bf-28c5c11bd5db|6a59458c-2dde-4cc4-a1db-cb8a2edc6b66",
+          ""
+        ],
+        [
           "lib_footprint_issues|90800000|55950000|6496f20b-1272-4217-8a7a-5cde94820db4|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -277,16 +293,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|3276600|2120900|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|",
-        ""
-      ],
-      [
-        "power_pin_not_driven|3327400|2171700|b2305e22-9202-4563-9db0-f0f13362769d|00000000-0000-0000-0000-000000000000|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|/e0cca1c7-c263-49eb-8c40-74000ebe5285/e827d0b4-d448-43f9-95b8-3deddd7cd4ee|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -501,7 +508,6 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -539,12 +545,13 @@
         "bus_width": 12,
         "clearance": 0.1524,
         "diff_pair_gap": 0.1524,
+        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1524,
         "line_style": 0,
         "microvia_diameter": 0.4572,
         "microvia_drill": 0.254,
         "name": "HIGH_POWER",
-        "pcb_color": "rgb(255, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 2.0,
@@ -556,12 +563,13 @@
         "bus_width": 12,
         "clearance": 0.1524,
         "diff_pair_gap": 0.1524,
+        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1524,
         "line_style": 0,
         "microvia_diameter": 0.4572,
         "microvia_drill": 0.254,
         "name": "MOTOR_OUTPUTS",
-        "pcb_color": "rgb(255, 153, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 1.0,
@@ -573,12 +581,13 @@
         "bus_width": 12,
         "clearance": 0.1524,
         "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.31,
         "line_style": 2,
         "microvia_diameter": 0.4572,
         "microvia_drill": 0.254,
         "name": "USB_DIFF_PAIR",
-        "pcb_color": "rgb(255, 0, 255)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.1524,
@@ -992,6 +1001,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "Schematic pdfs/",
     "space_save_all_events": true,
